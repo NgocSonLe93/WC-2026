@@ -1,6 +1,6 @@
 "use strict";
 const DATA_URL = "data/worldcup.json";
-const CACHE_KEY = "wc2026_ngocsonle_cache_v3";
+const CACHE_KEY = "wc2026_ngocsonle_cache_v4";
 const state = { data: null, selectedDate: "", filter: "all", chartPoints: [] };
 const $ = id => document.getElementById(id);
 const el = {
@@ -16,7 +16,7 @@ function num(v, fallback=0){const n=Number(v);return Number.isFinite(n)?n:fallba
 function showToast(msg){el.toast.textContent=msg;el.toast.classList.add("show");clearTimeout(showToast.t);showToast.t=setTimeout(()=>el.toast.classList.remove("show"),2600);}
 function setStatus(type,text){el.statusPill.className=`status-pill ${type}`;el.statusPill.innerHTML=`<span></span>${esc(text)}`;}
 function flagEmoji(iso2){const c=String(iso2||"").toUpperCase();if(c==="SCO")return "🏴";if(c==="ENG")return "🏴";if(!/^[A-Z]{2}$/.test(c)||c==="TBD")return "🏳️";return [...c].map(x=>String.fromCodePoint(127397+x.charCodeAt())).join("");}
-function flagUrl(iso2, code=""){const c=String(iso2||"").trim().toLowerCase();const alt=String(code||"").trim().toUpperCase();if(c && /^[a-z]{2}$/.test(c) && c!=="tbd")return `https://flagcdn.com/w40/${c}.png`;if(alt==="SCO")return "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg";if(alt==="ENG")return "https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg";if(alt==="WAL")return "https://upload.wikimedia.org/wikipedia/commons/d/dc/Flag_of_Wales.svg";return "";}
+function flagUrl(iso2, code=""){const c=String(iso2||"").trim().toLowerCase();const alt=String(code||iso2||"").trim().toUpperCase();if(alt==="SCO"||alt==="SCT")return "assets/flags/scotland.svg";if(alt==="ENG")return "assets/flags/england.svg";if(c && /^[a-z]{2}$/.test(c) && c!=="tbd")return `https://flagcdn.com/w80/${c}.png`;return "";}
 function flagHtml(iso2, code, name){const url=flagUrl(iso2, code);const label=`Cờ ${name||"đội tuyển"}`;return url?`<span class="flag-badge"><img class="flag-img" src="${url}" alt="${esc(label)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback');this.outerHTML='${flagEmoji(iso2).replace("'","&#39;")}'"></span>`:`<span class="flag-emoji">${flagEmoji(iso2)}</span>`;}
 function formatDate(key,long=true){if(!key)return "—";const [y,m,d]=key.split("-").map(Number);const dt=new Date(y,m-1,d);return new Intl.DateTimeFormat("vi-VN",long?{weekday:"long",day:"2-digit",month:"2-digit",year:"numeric"}:{day:"2-digit",month:"2-digit"}).format(dt);}
 function isScored(m){return ["finished","live"].includes(m.status)&&Number.isFinite(Number(m.score?.home))&&Number.isFinite(Number(m.score?.away));}
