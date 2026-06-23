@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-23T04:17:57.183492Z",
+    "updated_at": "2026-06-23T04:57:56.136559Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -1572,7 +1572,7 @@
       },
       "score": {
         "home": 1,
-        "away": 0
+        "away": 2
       },
       "venue": "Levi's Stadium"
     },
