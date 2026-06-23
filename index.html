@@ -7,10 +7,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="World Cup 2026">
-  <meta name="description" content="Kết quả, bảng xếp hạng, thống kê bàn thắng và phân tích phong độ 10 trận FIFA World Cup 2026.">
+  <meta name="description" content="Kết quả, bảng xếp hạng, thống kê bàn thắng và dự đoán thống kê trước trận FIFA World Cup 2026.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260623-model10-theme3">
+  <link rel="stylesheet" href="styles.css?v=20260623-model10-prediction4">
   <title>World Cup 2026 · NGOC SON LE</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
       <div class="hero-copy">
         <div class="eyebrow"><span class="pulse-dot"></span> FIFA WORLD CUP 2026</div>
         <h1>Kết quả & thống kê<br><span>mỗi ngày thi đấu</span></h1>
-        <p>Theo dõi lịch đấu, tỷ số, bảng xếp hạng 12 bảng, cuộc đua đội hạng ba và phân tích phong độ bằng dữ liệu 10 trận gần nhất — tối ưu cho điện thoại.</p>
+        <p>Theo dõi lịch đấu, tỷ số, bảng xếp hạng 12 bảng, cuộc đua đội hạng ba và dự báo thắng–hòa–thua và bàn thắng bằng dữ liệu 10 trận gần nhất — tối ưu cho điện thoại.</p>
         <div class="hero-actions">
           <button id="refreshBtn" class="button primary" type="button" aria-label="Tải dữ liệu mới nhất">
             <span class="button-icon">↻</span> Cập nhật dữ liệu
@@ -52,7 +52,7 @@
       <button class="tab active" data-tab="results" type="button">Kết quả</button>
       <button class="tab" data-tab="standings" type="button">Bảng xếp hạng</button>
       <button class="tab" data-tab="goals" type="button">Bàn thắng/ngày</button>
-      <button class="tab" data-tab="analysis" type="button">Phân tích</button>
+      <button class="tab" data-tab="analysis" type="button">Dự đoán</button>
     </nav>
 
     <section id="results" class="tab-panel active">
@@ -140,30 +140,31 @@
     <section id="analysis" class="tab-panel">
       <div class="metric-grid analysis-metrics">
         <article class="metric-card glass"><span>Trận sắp tới</span><strong id="analysisUpcoming">0</strong><small>Hiển thị tối đa 8 trận gần nhất</small></article>
-        <article class="metric-card glass"><span>Mẫu phân tích</span><strong>10</strong><small>Trận gần nhất trước giờ bóng lăn</small></article>
+        <article class="metric-card glass"><span>Xếp hạng FIFA</span><strong>11/06</strong><small>Bản cập nhật chính thức năm 2026</small></article>
         <article class="metric-card glass"><span>Trận World Cup đã xong</span><strong id="analysisPlayed">0</strong><small>Được ưu tiên trong 10 trận gần nhất</small></article>
         <article class="metric-card glass"><span>Dữ liệu lịch sử</span><strong id="analysisHistory">0</strong><small>Trận quốc tế đã nạp</small></article>
       </div>
 
       <article class="panel glass">
         <div class="panel-heading">
-          <span class="kicker">PHÂN TÍCH PHONG ĐỘ TRƯỚC TRẬN</span>
-          <h2>So sánh dữ liệu 10 trận gần nhất</h2>
-          <p class="panel-note">Mỗi đội được lấy tối đa 10 trận hoàn thành trước giờ bóng lăn: ưu tiên 5 trận mới nhất và tự bù bằng các trận quốc tế trước World Cup.</p>
+          <span class="kicker">DỰ ĐOÁN THỐNG KÊ TRƯỚC TRẬN</span>
+          <h2>Xác suất kết quả & bàn thắng</h2>
+          <p class="panel-note">Mô hình dùng tối đa 10 trận gần nhất trước giờ bóng lăn: ưu tiên 5 trận mới nhất, tự bù bằng các trận quốc tế trước World Cup, rồi kết hợp điểm FIFA và Poisson. Đây là dự đoán tham khảo, không phải tỷ lệ cược và không bảo đảm kết quả.</p>
         </div>
         <div id="analysisList" class="analysis-list"></div>
       </article>
 
       <article class="panel glass methodology-card">
         <div class="panel-heading">
-          <span class="kicker">CÁCH PHÂN TÍCH HOẠT ĐỘNG</span>
-          <h2>Ý nghĩa các chỉ số</h2>
+          <span class="kicker">CÁCH MÔ HÌNH HOẠT ĐỘNG</span>
+          <h2>Ý nghĩa dự đoán</h2>
         </div>
         <div class="method-grid">
-          <div><b>Điểm/trận</b><span>Điểm trung bình có trọng số trong tối đa 10 trận đã hoàn thành.</span></div>
-          <div><b>Bàn thắng/trận</b><span>Số bàn ghi trung bình, có điều chỉnh theo sức mạnh đối thủ.</span></div>
-          <div><b>Bàn thua/trận</b><span>Số bàn thủng lưới trung bình, có điều chỉnh theo sức mạnh đối thủ.</span></div>
-          <div><b>Trọng số 10 trận</b><span>5 trận gần nhất chiếm 75%; 5 trận trước chiếm 25%. Giao hữu được giảm trọng số.</span></div>
+          <div><b>Xác suất 1X2</b><span>Tỷ lệ mô hình cho đội 1 thắng, hòa hoặc đội 2 thắng; tổng bằng 100%.</span></div>
+          <div><b>Bàn kỳ vọng (xG mô hình)</b><span>Số bàn trung bình mà mô hình ước lượng cho mỗi đội, không phải xG sự kiện chính thức.</span></div>
+          <div><b>Tỷ số dễ xảy ra</b><span>Ba tỷ số có xác suất cao nhất trong ma trận Poisson.</span></div>
+          <div><b>Mức tin cậy</b><span>Dựa trên độ chênh xác suất và mức đầy đủ 10 trận/đội; không đồng nghĩa chắc chắn.</span></div>
+          <div><b>Trọng số 10 trận</b><span>5 trận gần nhất chiếm 75% phần phong độ; 5 trận trước chiếm 25%. Giao hữu được giảm trọng số.</span></div>
         </div>
       </article>
     </section>
@@ -186,7 +187,7 @@
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="config.js?v=20260623-model10-theme3"></script>
-  <script src="app.js?v=20260623-model10-theme3" defer></script>
+  <script src="config.js?v=20260623-model10-prediction4"></script>
+  <script src="app.js?v=20260623-model10-prediction4" defer></script>
 </body>
 </html>

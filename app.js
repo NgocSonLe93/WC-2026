@@ -222,20 +222,135 @@ function formSummary(stats){
   return `${stats.wins}T · ${stats.draws}H · ${stats.losses}B`;
 }
 function dataBadge(stats){const full=stats.count>=10;return `<span class="data-depth ${full?"full":"partial"}">${stats.count}/10 trận</span>`;}
+
+function modelTeamRates(stats,base){
+  const attack=clamp(num(stats?.gfpg,base)/base,.55,1.85);
+  const concede=clamp(num(stats?.gapg,base)/base,.55,1.85);
+  return {attack,concede,ppg:num(stats?.ppg,1.25),form:num(stats?.form,.5)};
+}
+function poisson(k,lambda){
+  let fact=1;
+  for(let i=2;i<=k;i++)fact*=i;
+  return Math.exp(-lambda)*Math.pow(lambda,k)/fact;
+}
+function predictMatch(home,away,homeStats,awayStats){
+  const base=tournamentGoalBase();
+  const hr=fifaRating(home),ar=fifaRating(away);
+  const h=modelTeamRates(homeStats,base),a=modelTeamRates(awayStats,base);
+
+  // Sức mạnh nền theo điểm FIFA; giới hạn để tránh một yếu tố lấn át toàn bộ mô hình.
+  const ratingDiff=clamp((hr.points-ar.points)/1050,-.62,.62);
+  const fifaHome=Math.exp(ratingDiff),fifaAway=Math.exp(-ratingDiff);
+
+  // Phong độ 10 trận đã được tính trọng số ở summarizeTeam().
+  const formHome=clamp(.90+.20*h.form,.90,1.10);
+  const formAway=clamp(.90+.20*a.form,.90,1.10);
+  const ppgDiff=clamp((h.ppg-a.ppg)/3,-1,1);
+  const ppgHome=1+.10*ppgDiff,ppgAway=1-.10*ppgDiff;
+
+  // World Cup 2026 diễn ra trên sân trung lập nên không cộng lợi thế sân nhà.
+  const homeLambda=clamp(base*Math.sqrt(h.attack*a.concede)*fifaHome*formHome*ppgHome,.18,3.80);
+  const awayLambda=clamp(base*Math.sqrt(a.attack*h.concede)*fifaAway*formAway*ppgAway,.18,3.80);
+
+  const cells=[];
+  let homeWin=0,draw=0,awayWin=0,totalMass=0;
+  const maxGoals=10;
+  for(let hg=0;hg<=maxGoals;hg++){
+    for(let ag=0;ag<=maxGoals;ag++){
+      const prob=poisson(hg,homeLambda)*poisson(ag,awayLambda);
+      totalMass+=prob;
+      if(hg>ag)homeWin+=prob;else if(hg===ag)draw+=prob;else awayWin+=prob;
+      cells.push({hg,ag,prob});
+    }
+  }
+  homeWin/=totalMass;draw/=totalMass;awayWin/=totalMass;
+  cells.forEach(x=>x.prob/=totalMass);
+  cells.sort((x,y)=>y.prob-x.prob);
+
+  const totalLambda=homeLambda+awayLambda;
+  const totalBands={low:0,mid:0,high:0};
+  for(const c of cells){
+    const total=c.hg+c.ag;
+    if(total<=1)totalBands.low+=c.prob;
+    else if(total<=3)totalBands.mid+=c.prob;
+    else totalBands.high+=c.prob;
+  }
+
+  const ranked=[homeWin,draw,awayWin].sort((x,y)=>y-x);
+  const depth=clamp((num(homeStats?.count)+num(awayStats?.count))/20,0,1);
+  const separation=ranked[0]-ranked[1];
+  const confidenceScore=clamp(36+depth*28+separation*85,36,86);
+  const confidence=confidenceScore>=68?"Cao":confidenceScore>=52?"Trung bình":"Thấp";
+  return {homeWin,draw,awayWin,homeLambda,awayLambda,totalLambda,totalBands,topScores:cells.slice(0,3),confidence,confidenceScore};
+}
+function pct(v){return `${Math.round(v*100)}%`;}
+function predictionLead(pred,homeName,awayName){
+  const rows=[
+    {key:"home",p:pred.homeWin,label:homeName},
+    {key:"draw",p:pred.draw,label:"Hòa"},
+    {key:"away",p:pred.awayWin,label:awayName}
+  ].sort((a,b)=>b.p-a.p);
+  if(rows[0].p-rows[1].p<.035)return "Trận đấu được đánh giá cân bằng";
+  return rows[0].key==="draw"?"Khả năng hòa nhỉnh hơn":`${rows[0].label} được đánh giá nhỉnh hơn`;
+}
+function expectedTotalLabel(total){
+  if(total<1.8)return "Khoảng 1–2 bàn";
+  if(total<2.8)return "Khoảng 2–3 bàn";
+  if(total<3.8)return "Khoảng 3–4 bàn";
+  return "Có thể từ 4 bàn";
+}
+function scorelineHtml(scores){
+  return scores.map((s,i)=>`<span class="score-pick ${i===0?"primary":""}"><b>${s.hg}–${s.ag}</b><small>${pct(s.prob)}</small></span>`).join("");
+}
+function outcomeBar(pred,homeName,awayName){
+  return `<div class="outcome-grid">
+    <div class="outcome-item home"><span>${esc(homeName)} thắng</span><strong>${pct(pred.homeWin)}</strong><i style="--p:${(pred.homeWin*100).toFixed(1)}%"></i></div>
+    <div class="outcome-item draw"><span>Hòa</span><strong>${pct(pred.draw)}</strong><i style="--p:${(pred.draw*100).toFixed(1)}%"></i></div>
+    <div class="outcome-item away"><span>${esc(awayName)} thắng</span><strong>${pct(pred.awayWin)}</strong><i style="--p:${(pred.awayWin*100).toFixed(1)}%"></i></div>
+  </div>`;
+}
+
 function renderAnalysis(){
   if(!el.analysisList||!state.data)return;
   const upcoming=(state.data.matches||[]).filter(m=>m.status==="upcoming").sort((a,b)=>String(a.kickoff_utc).localeCompare(String(b.kickoff_utc))).slice(0,8);
   const played=(state.data.matches||[]).filter(m=>m.status==="finished"&&isScored(m)).length;
-  el.analysisUpcoming.textContent=upcoming.length;el.analysisPlayed.textContent=played;if(el.analysisHistory)el.analysisHistory.textContent=state.history?.matches?.length||0;
+  el.analysisUpcoming.textContent=upcoming.length;
+  el.analysisPlayed.textContent=played;
+  if(el.analysisHistory)el.analysisHistory.textContent=state.history?.matches?.length||0;
   if(!upcoming.length){el.analysisList.innerHTML='<div class="empty-state">Hiện chưa có trận sắp tới trong dữ liệu.</div>';return;}
+
   el.analysisList.innerHTML=upcoming.map(m=>{
-    const cutoff=matchTimeMs(m)||Date.now(),hs=summarizeTeam(m.home,cutoff),as=summarizeTeam(m.away,cutoff),hr=fifaRating(m.home),ar=fifaRating(m.away);
-    const hrank=hr.rank?`#${hr.rank}`:"—",arank=ar.rank?`#${ar.rank}`:"—",kickoff=`${formatDate(m.date_vn,false)} · ${esc(m.time_vn||"Chờ giờ")}`;
-    return `<article class="analysis-card prediction-card glass"><div class="analysis-card-head"><span>${esc(stageText(m))}</span><b>${kickoff}</b></div>
-      <div class="analysis-teams"><div class="analysis-team home">${flagHtml(m.home.iso2,m.home.code,m.home.name)}<strong>${esc(m.home.name)}</strong><small>FIFA ${hrank} · ${hr.points.toFixed(2)} điểm</small>${formHtml(hs)}${dataBadge(hs)}</div><div class="analysis-vs">VS</div><div class="analysis-team away">${flagHtml(m.away.iso2,m.away.code,m.away.name)}<strong>${esc(m.away.name)}</strong><small>FIFA ${arank} · ${ar.points.toFixed(2)} điểm</small>${formHtml(as)}${dataBadge(as)}</div></div>
+    const cutoff=matchTimeMs(m)||Date.now();
+    const hs=summarizeTeam(m.home,cutoff),as=summarizeTeam(m.away,cutoff);
+    const hr=fifaRating(m.home),ar=fifaRating(m.away);
+    const pred=predictMatch(m.home,m.away,hs,as);
+    const hrank=hr.rank?`#${hr.rank}`:"—",arank=ar.rank?`#${ar.rank}`:"—";
+    const kickoff=`${formatDate(m.date_vn,false)} · ${esc(m.time_vn||"Chờ giờ")}`;
+    const lead=predictionLead(pred,m.home.name,m.away.name);
+
+    return `<article class="analysis-card prediction-card glass">
+      <div class="analysis-card-head"><span>${esc(stageText(m))}</span><b>${kickoff}</b></div>
+      <div class="analysis-teams">
+        <div class="analysis-team home">${flagHtml(m.home.iso2,m.home.code,m.home.name)}<strong>${esc(m.home.name)}</strong><small>FIFA ${hrank} · ${hr.points.toFixed(2)} điểm</small>${formHtml(hs)}${dataBadge(hs)}</div>
+        <div class="analysis-vs">VS</div>
+        <div class="analysis-team away">${flagHtml(m.away.iso2,m.away.code,m.away.name)}<strong>${esc(m.away.name)}</strong><small>FIFA ${arank} · ${ar.points.toFixed(2)} điểm</small>${formHtml(as)}${dataBadge(as)}</div>
+      </div>
+
+      <div class="prediction-headline"><span>${esc(lead)}</span><em class="confidence ${pred.confidence.toLowerCase().replace(" ","-")}">Tin cậy: ${pred.confidence}</em></div>
+      ${outcomeBar(pred,m.home.name,m.away.name)}
+      <div class="prediction-details">
+        <div class="expected-goals"><span>Bàn thắng kỳ vọng</span><div><b>${pred.homeLambda.toFixed(2)}</b><i>–</i><b>${pred.awayLambda.toFixed(2)}</b></div><small>${expectedTotalLabel(pred.totalLambda)} · Tổng ${pred.totalLambda.toFixed(2)}</small></div>
+        <div class="scorelines"><span>Tỷ số dễ xảy ra</span><div>${scorelineHtml(pred.topScores)}</div></div>
+      </div>
+
       <div class="form-comparison-head"><span>${esc(formSummary(hs))}</span><b>Phong độ 10 trận</b><span>${esc(formSummary(as))}</span></div>
-      <div class="comparison-table compact-comparison"><div class="comparison-row"><b>${analysisStat(hs,"ppg")}</b><span>Điểm/trận${comparisonBar(hs.ppg,as.ppg)}</span><b>${analysisStat(as,"ppg")}</b></div><div class="comparison-row"><b>${analysisStat(hs,"gfpg")}</b><span>BT/trận${comparisonBar(hs.gfpg,as.gfpg)}</span><b>${analysisStat(as,"gfpg")}</b></div><div class="comparison-row"><b>${analysisStat(hs,"gapg")}</b><span>BB/trận${comparisonBar(hs.gapg,as.gapg,true)}</span><b>${analysisStat(as,"gapg")}</b></div></div>
-      <div class="analysis-source">10 trận gần nhất: 5 trận mới nhất chiếm 75%, 5 trận trước chiếm 25% · Có điều chỉnh loại trận và sức mạnh đối thủ · Dùng để tham khảo phong độ</div></article>`;
+      <div class="comparison-table compact-comparison">
+        <div class="comparison-row"><b>${analysisStat(hs,"ppg")}</b><span>Điểm/trận${comparisonBar(hs.ppg,as.ppg)}</span><b>${analysisStat(as,"ppg")}</b></div>
+        <div class="comparison-row"><b>${analysisStat(hs,"gfpg")}</b><span>BT/trận${comparisonBar(hs.gfpg,as.gfpg)}</span><b>${analysisStat(as,"gfpg")}</b></div>
+        <div class="comparison-row"><b>${analysisStat(hs,"gapg")}</b><span>BB/trận${comparisonBar(hs.gapg,as.gapg,true)}</span><b>${analysisStat(as,"gapg")}</b></div>
+      </div>
+      <div class="analysis-source">Poisson + điểm FIFA + 10 trận gần nhất: 5 trận mới nhất chiếm 75%, 5 trận trước chiếm 25% · Có điều chỉnh loại trận và sức mạnh đối thủ · Chỉ mang tính tham khảo</div>
+    </article>`;
   }).join("");
 }
 
