@@ -1,0 +1,62 @@
+name: Cập nhật & triển khai World Cup 2026
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+  schedule:
+    # 05:07 UTC = 12:07 trưa Việt Nam; tránh thời điểm đầu giờ dễ bị chậm.
+    - cron: "7 5 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v4
+
+      - name: Cài Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cập nhật dữ liệu World Cup
+        env:
+          WORLD_CUP_API_TOKEN: ${{ secrets.WORLD_CUP_API_TOKEN }}
+        run: python scripts/update_data.py
+
+      - name: Lưu dữ liệu mới vào repository
+        run: |
+          if git diff --quiet -- data/worldcup.json; then
+            echo "Không có thay đổi dữ liệu."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/worldcup.json
+            git commit -m "Cập nhật dữ liệu World Cup [skip ci]"
+            git push
+          fi
+
+      - name: Cấu hình GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Đóng gói website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Triển khai website
+        id: deployment
+        uses: actions/deploy-pages@v4
