@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-06-23T08:03:46.454020Z",
-    "source_matches": 709,
-    "walk_forward_rows": 709,
+    "generated_at": "2026-06-23T08:14:28.922946Z",
+    "source_matches": 735,
+    "walk_forward_rows": 735,
     "train_matches": 193,
-    "test_matches": 336,
-    "test_matches_full_10": 336,
-    "test_matches_min_5": 344,
+    "test_matches": 362,
+    "test_matches_full_10": 362,
+    "test_matches_min_5": 370,
     "test_start": "2024-01-01",
     "minimum_history_primary": 10,
     "temperature": 1.35,
@@ -16,103 +16,103 @@
   "models": {
     "prior": {
       "label": "Tỷ lệ cố định",
-      "matches": 336,
-      "brier": 0.6670874982646104,
-      "log_loss": 1.1031912561782962,
-      "accuracy": 0.4166666666666667,
-      "ece": 0.058673469387755126
+      "matches": 362,
+      "brier": 0.6638259035714843,
+      "log_loss": 1.098024708366463,
+      "accuracy": 0.42265193370165743,
+      "ece": 0.05291840493103319
     },
     "rating": {
       "label": "Rating-only baseline",
-      "matches": 336,
-      "brier": 0.6477336711387065,
-      "log_loss": 1.0756771427452896,
-      "accuracy": 0.4375,
-      "ece": 0.03875415298662838
+      "matches": 362,
+      "brier": 0.6426067050659411,
+      "log_loss": 1.0676016729129325,
+      "accuracy": 0.4585635359116022,
+      "ece": 0.03782052907764187
     },
     "poisson_raw": {
       "label": "Poisson thô",
-      "matches": 336,
-      "brier": 0.6554867618115517,
-      "log_loss": 1.0784448277135892,
-      "accuracy": 0.44642857142857145,
-      "ece": 0.05448228092496109
+      "matches": 362,
+      "brier": 0.6365436124591962,
+      "log_loss": 1.0516520001091085,
+      "accuracy": 0.4696132596685083,
+      "ece": 0.050931590421654835
     },
     "poisson_calibrated": {
       "label": "Poisson đã hiệu chỉnh",
-      "matches": 336,
-      "brier": 0.6444346916193311,
-      "log_loss": 1.0637017730468106,
-      "accuracy": 0.44642857142857145,
-      "ece": 0.017780135180081025
+      "matches": 362,
+      "brier": 0.6294411637060381,
+      "log_loss": 1.042865889634878,
+      "accuracy": 0.4696132596685083,
+      "ece": 0.009730366949653938
     }
   },
   "calibration": {
-    "ece": 0.017780135180081025,
+    "ece": 0.009730366949653938,
     "bins": [
       {
         "label": "0–10%",
         "low": 0.0,
         "high": 0.1,
-        "count": 2,
-        "predicted": 0.09558452332422128,
+        "count": 4,
+        "predicted": 0.09280229812308548,
         "observed": 0.0
       },
       {
         "label": "10–20%",
         "low": 0.1,
         "high": 0.2,
-        "count": 72,
-        "predicted": 0.16519037451933957,
-        "observed": 0.16666666666666666
+        "count": 82,
+        "predicted": 0.16461732859597447,
+        "observed": 0.14634146341463414
       },
       {
         "label": "20–30%",
         "low": 0.2,
         "high": 0.3,
-        "count": 419,
-        "predicted": 0.2586885009528136,
-        "observed": 0.27923627684964203
+        "count": 448,
+        "predicted": 0.25829555970164714,
+        "observed": 0.2700892857142857
       },
       {
         "label": "30–40%",
         "low": 0.3,
         "high": 0.4,
-        "count": 264,
-        "predicted": 0.33997963259324937,
-        "observed": 0.3409090909090909
+        "count": 282,
+        "predicted": 0.3403890158916548,
+        "observed": 0.33687943262411346
       },
       {
         "label": "40–50%",
         "low": 0.4,
         "high": 0.5,
-        "count": 148,
-        "predicted": 0.4450789624910751,
-        "observed": 0.4189189189189189
+        "count": 154,
+        "predicted": 0.4453508557102708,
+        "observed": 0.44155844155844154
       },
       {
         "label": "50–60%",
         "low": 0.5,
         "high": 0.6,
-        "count": 68,
-        "predicted": 0.5440539989050688,
-        "observed": 0.5294117647058824
+        "count": 74,
+        "predicted": 0.5431244487499705,
+        "observed": 0.5405405405405406
       },
       {
         "label": "60–70%",
         "low": 0.6,
         "high": 0.7,
-        "count": 28,
-        "predicted": 0.6373214371957739,
-        "observed": 0.5357142857142857
+        "count": 32,
+        "predicted": 0.6368590714154431,
+        "observed": 0.59375
       },
       {
         "label": "70–80%",
         "low": 0.7,
         "high": 0.8,
-        "count": 7,
-        "predicted": 0.7225229240581349,
-        "observed": 0.5714285714285714
+        "count": 10,
+        "predicted": 0.7269325362679495,
+        "observed": 0.7
       },
       {
         "label": "80–90%",
@@ -133,12 +133,12 @@
     ]
   },
   "goals": {
-    "team_goal_mae": 0.9673382510145123,
-    "total_goal_mae": 1.4336298839757933,
-    "poisson_deviance": 1.2862534707465454,
-    "top1_score": 0.1130952380952381,
-    "top3_score": 0.3273809523809524,
-    "top5_score": 0.5148809523809523
+    "team_goal_mae": 0.9457663371363326,
+    "total_goal_mae": 1.4067357733011263,
+    "poisson_deviance": 1.246123969022878,
+    "top1_score": 0.12430939226519337,
+    "top3_score": 0.3342541436464088,
+    "top5_score": 0.5220994475138122
   },
   "by_year": [
     {
@@ -159,11 +159,11 @@
     },
     {
       "year": "2026",
-      "matches": 100,
-      "brier": 0.5971815568278893,
-      "log_loss": 0.9950877882850737,
-      "accuracy": 0.51,
-      "ece": 0.046723744299447686
+      "matches": 126,
+      "brier": 0.5638555600022178,
+      "log_loss": 0.9493844058143228,
+      "accuracy": 0.5634920634920635,
+      "ece": 0.06775667852277376
     }
   ],
   "worst_errors": [
