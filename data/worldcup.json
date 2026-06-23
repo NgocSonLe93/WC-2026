@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-23T01:38:50.923680Z",
+    "updated_at": "2026-06-23T04:17:57.183492Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -1500,8 +1500,8 @@
       "kickoff_utc": "2026-06-22T20:00:00Z",
       "date_vn": "2026-06-23",
       "time_vn": "03:00",
-      "status": "live",
-      "elapsed": "live",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "36",
         "name": "Norway",
@@ -1516,7 +1516,7 @@
       },
       "score": {
         "home": 3,
-        "away": 1
+        "away": 2
       },
       "venue": "MetLife Stadium"
     },
@@ -1556,8 +1556,8 @@
       "kickoff_utc": "2026-06-22T20:00:00Z",
       "date_vn": "2026-06-23",
       "time_vn": "03:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "live",
+      "elapsed": "live",
       "home": {
         "id": "40",
         "name": "Jordan",
@@ -1571,8 +1571,8 @@
         "iso2": "DZ"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "venue": "Levi's Stadium"
     },
