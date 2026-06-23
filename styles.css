@@ -87,6 +87,22 @@ h1 span { color: var(--green); }
 .panel-note { margin: 7px 0 0; color: var(--muted); line-height: 1.55; }
 .date-badge { flex: 0 0 auto; padding: 9px 12px; border-radius: 12px; color: #05231a; background: var(--green); font-weight: 900; }
 .date-controls { display: grid; grid-template-columns: 48px minmax(180px,1fr) 48px minmax(150px,.65fr); gap: 9px; margin-bottom: 16px; }
+.date-picker-wrap { position:relative; min-width:0; }
+.date-picker-button { display:none; width:100%; min-height:48px; padding:0 14px; align-items:center; justify-content:space-between; gap:12px; border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.045); color:var(--text); cursor:pointer; font-weight:800; text-align:left; }
+.date-picker-chevron { flex:0 0 auto; color:var(--muted); font-size:20px; transition:transform .18s ease; }
+.date-picker-button[aria-expanded="true"] .date-picker-chevron { transform:rotate(180deg); }
+.date-picker-menu { position:absolute; z-index:120; top:calc(100% + 8px); left:0; right:0; max-height:min(360px,58vh); overflow:auto; padding:7px; border:1px solid var(--line); border-radius:16px; background:var(--card-strong); box-shadow:0 22px 60px rgba(0,0,0,.34); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); scrollbar-width:thin; }
+.date-picker-menu[hidden] { display:none; }
+.date-picker-option { width:100%; min-height:45px; padding:8px 11px; display:flex; align-items:center; justify-content:space-between; gap:12px; border:0; border-radius:11px; background:transparent; color:var(--text); cursor:pointer; text-align:left; }
+.date-picker-option:hover, .date-picker-option:focus-visible { background:rgba(66,230,164,.10); outline:none; }
+.date-picker-option.selected { background:var(--green); color:#052319; }
+.date-picker-option span { font-weight:800; }
+.date-picker-option small { color:var(--muted); font-size:10px; }
+.date-picker-option.selected small { color:rgba(5,35,25,.72); }
+@media (min-width:621px) {
+  #dateSelect { display:none; }
+  .date-picker-button { display:flex; }
+}
 .square-button, select { min-height: 48px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.045); color: var(--text); }
 .square-button { font-size: 28px; cursor: pointer; }
 .square-button:disabled { opacity: .35; cursor: default; }
@@ -195,6 +211,8 @@ canvas { width: 100%; height: 100%; }
   .method-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media (max-width: 620px) {
+  .date-picker-button, .date-picker-menu { display:none !important; }
+  #dateSelect { display:block; width:100%; }
   .app-shell { padding-left: 10px; padding-right: 10px; }
   .hero { padding: 24px 20px; border-radius: 27px; }
   h1 { font-size: clamp(36px, 12vw, 54px); }
@@ -297,7 +315,9 @@ html[data-theme="light"] .tabs, html[data-theme="bright"] .tabs { background:rgb
 html[data-theme="light"] .button.secondary, html[data-theme="bright"] .button.secondary,
 html[data-theme="light"] .status-pill, html[data-theme="bright"] .status-pill,
 html[data-theme="light"] .square-button, html[data-theme="bright"] .square-button,
-html[data-theme="light"] select, html[data-theme="bright"] select { background:var(--input-bg); }
+html[data-theme="light"] select, html[data-theme="bright"] select,
+html[data-theme="light"] .date-picker-button, html[data-theme="bright"] .date-picker-button { background:var(--input-bg); }
+html[data-theme="light"] .date-picker-menu, html[data-theme="bright"] .date-picker-menu { background:var(--card-strong); }
 html[data-theme="light"] .match-card, html[data-theme="bright"] .match-card { background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(255,255,255,.45)); }
 html[data-theme="light"] .rank-table td, html[data-theme="bright"] .rank-table td { border-bottom-color:rgba(10,75,50,.09); }
 html[data-theme="light"] .mini-stat, html[data-theme="bright"] .mini-stat { background:rgba(255,255,255,.80); }

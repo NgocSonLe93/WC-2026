@@ -33,7 +33,7 @@ const $ = id => document.getElementById(id);
 const el = {
   refreshBtn: $("refreshBtn"), importBtn: $("importBtn"), exportBtn: $("exportBtn"), statusPill: $("statusPill"), updatedAt: $("updatedAt"), liveRefreshInfo: $("liveRefreshInfo"),
   heroMatches: $("heroMatches"), dayMatches: $("dayMatches"), dayScored: $("dayScored"), dayGoals: $("dayGoals"), dayAverage: $("dayAverage"), dayShare: $("dayShare"),
-  selectedDateTitle: $("selectedDateTitle"), selectedDateBadge: $("selectedDateBadge"), prevDate: $("prevDate"), nextDate: $("nextDate"), dateSelect: $("dateSelect"), statusFilter: $("statusFilter"), matchesList: $("matchesList"),
+  selectedDateTitle: $("selectedDateTitle"), selectedDateBadge: $("selectedDateBadge"), prevDate: $("prevDate"), nextDate: $("nextDate"), dateSelect: $("dateSelect"), datePickerWrap: $("datePickerWrap"), datePickerButton: $("datePickerButton"), datePickerText: $("datePickerText"), datePickerMenu: $("datePickerMenu"), statusFilter: $("statusFilter"), matchesList: $("matchesList"),
   thirdPlaceBody: $("thirdPlaceBody"), standingsGrid: $("standingsGrid"), totalPlayed: $("totalPlayed"), totalGoals: $("totalGoals"), overallAverage: $("overallAverage"), bestDayGoals: $("bestDayGoals"), bestDayLabel: $("bestDayLabel"),
   goalsChart: $("goalsChart"), dailyStatsBody: $("dailyStatsBody"), calibrationChart: $("calibrationChart"), validationMatches: $("validationMatches"), validationBrier: $("validationBrier"), validationLogLoss: $("validationLogLoss"), validationEce: $("validationEce"), validationMeta: $("validationMeta"), validationVerdict: $("validationVerdict"), validationModelsBody: $("validationModelsBody"), calibrationBody: $("calibrationBody"), goalTeamMae: $("goalTeamMae"), goalTotalMae: $("goalTotalMae"), goalTop3: $("goalTop3"), goalTop5: $("goalTop5"), goalValidationNote: $("goalValidationNote"), validationYearBody: $("validationYearBody"), validationErrorsBody: $("validationErrorsBody"), analysisList: $("analysisList"), analysisUpcoming: $("analysisUpcoming"), analysisPlayed: $("analysisPlayed"), analysisHistory: $("analysisHistory"), importModal: $("importModal"), closeModal: $("closeModal"), jsonFile: $("jsonFile"), loadJsonBtn: $("loadJsonBtn"), toast: $("toast")
 };
@@ -107,7 +107,21 @@ async function refreshLive({manual=false,silent=false}={}){if(!liveConfigured())
 async function loadData({manual=false}={}){if(manual&&liveConfigured())return refreshLive({manual:true});el.refreshBtn.disabled=true;setStatus("loading","Đang mở dữ liệu");const historyPromise=loadHistoryData();const evaluationPromise=loadEvaluationData();let loaded=false;try{await loadStaticData({resetDate:true});loaded=true;setStatus("ok",`Đã tải ${state.data.matches.length} trận dự phòng`);}catch(err){console.error("Static load failed",err);if(loadCache()){renderAll(true);loaded=true;setStatus("warning","Đang dùng dữ liệu đã lưu trên thiết bị");}else{renderEmpty();setStatus("error","Không đọc được dữ liệu");}}finally{el.refreshBtn.disabled=false;}await Promise.all([historyPromise,evaluationPromise]);if(liveConfigured()){await refreshLive({manual:false,silent:loaded});}else{if(loaded)setStatus("warning","Chưa bật chế độ cập nhật trực tiếp");updateRefreshInfo();}}
 function renderAll(resetDate=false){if(!state.data)return;const dates=allDates();if(resetDate||!dates.includes(state.selectedDate))state.selectedDate=chooseDate(dates);renderDateControl(dates);renderResults();renderStandings();renderGoals();renderAnalysis();renderValidation();renderMeta();}
 function renderMeta(){const meta=state.data.meta||{};const d=meta.updated_at?new Date(meta.updated_at):null;el.updatedAt.textContent=d&&!Number.isNaN(d.getTime())?`${meta.source||"Dữ liệu website"} • ${new Intl.DateTimeFormat("vi-VN",{dateStyle:"short",timeStyle:"medium",timeZone:"Asia/Ho_Chi_Minh"}).format(d)}`:(meta.source||"Chưa cập nhật");el.heroMatches.textContent=scoredMatches().length;updateRefreshInfo();}
-function renderDateControl(dates){el.dateSelect.innerHTML=dates.map(d=>`<option value="${d}" ${d===state.selectedDate?"selected":""}>${esc(formatDate(d))}</option>`).join("");const idx=dates.indexOf(state.selectedDate);el.prevDate.disabled=idx<=0;el.nextDate.disabled=idx<0||idx>=dates.length-1;}
+function closeDatePicker(){
+  if(!el.datePickerMenu||!el.datePickerButton)return;
+  el.datePickerMenu.hidden=true;
+  el.datePickerButton.setAttribute("aria-expanded","false");
+}
+function renderDateControl(dates){
+  el.dateSelect.innerHTML=dates.map(d=>`<option value="${d}" ${d===state.selectedDate?"selected":""}>${esc(formatDate(d))}</option>`).join("");
+  if(el.datePickerText)el.datePickerText.textContent=formatDate(state.selectedDate);
+  if(el.datePickerMenu){
+    el.datePickerMenu.innerHTML=dates.map(d=>`<button type="button" class="date-picker-option ${d===state.selectedDate?"selected":""}" role="option" aria-selected="${d===state.selectedDate}" data-date="${d}"><span>${esc(formatDate(d))}</span><small>${esc(d)}</small></button>`).join("");
+  }
+  const idx=dates.indexOf(state.selectedDate);
+  el.prevDate.disabled=idx<=0;
+  el.nextDate.disabled=idx<0||idx>=dates.length-1;
+}
 function dailySummary(date){const matches=state.data.matches.filter(m=>m.date_vn===date);const scored=matches.filter(isScored);const goals=scored.reduce((s,m)=>s+num(m.score.home)+num(m.score.away),0);const scoring=scored.filter(m=>num(m.score.home)+num(m.score.away)>0).length;return{date,matches,scored,goals,scoring,avg:scored.length?goals/scored.length:0};}
 function overallSummary(){const scored=scoredMatches();const goals=scored.reduce((s,m)=>s+num(m.score.home)+num(m.score.away),0);return{scored,goals,avg:scored.length?goals/scored.length:0};}
 function stageText(m){if(m.stage==="group")return m.group?`Bảng ${m.group}`:"Vòng bảng";const map={r32:"Vòng 32 đội",r16:"Vòng 16 đội",qf:"Tứ kết",sf:"Bán kết",third:"Tranh hạng ba",final:"Chung kết"};return map[m.stage]||m.stage||"World Cup";}
@@ -446,6 +460,28 @@ function openModal(){el.importModal.hidden=false;}
 function closeModal(){el.importModal.hidden=true;el.jsonFile.value="";}
 async function importJson(){const file=el.jsonFile.files?.[0];if(!file){showToast("Hãy chọn một file JSON");return;}try{const data=normalizeData(JSON.parse(await file.text()));if(!data.matches.length)throw new Error("Không có trận đấu");state.data=data;saveCache();renderAll(true);setStatus("ok","Đang dùng dữ liệu JSON đã nhập");closeModal();showToast("Đã nạp dữ liệu thành công");}catch(e){console.error(e);showToast("File JSON không hợp lệ");}}
 document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===btn));document.querySelectorAll(".tab-panel").forEach(p=>p.classList.toggle("active",p.id===btn.dataset.tab));if(btn.dataset.tab==="goals")requestAnimationFrame(drawChart);if(btn.dataset.tab==="analysis")renderAnalysis();if(btn.dataset.tab==="validation"){renderValidation();requestAnimationFrame(drawCalibrationChart);}}));
+if(el.datePickerButton){
+  el.datePickerButton.addEventListener("click",()=>{
+    const willOpen=el.datePickerMenu.hidden;
+    el.datePickerMenu.hidden=!willOpen;
+    el.datePickerButton.setAttribute("aria-expanded",String(willOpen));
+    if(willOpen){
+      requestAnimationFrame(()=>el.datePickerMenu.querySelector(".date-picker-option.selected")?.scrollIntoView({block:"nearest"}));
+    }
+  });
+}
+if(el.datePickerMenu){
+  el.datePickerMenu.addEventListener("click",e=>{
+    const option=e.target.closest("[data-date]");
+    if(!option)return;
+    state.selectedDate=option.dataset.date;
+    closeDatePicker();
+    renderAll();
+  });
+}
+document.addEventListener("click",e=>{if(el.datePickerWrap&&!el.datePickerWrap.contains(e.target))closeDatePicker();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDatePicker();});
+
 el.refreshBtn.addEventListener("click",()=>loadData({manual:true}));el.importBtn.addEventListener("click",openModal);el.exportBtn.addEventListener("click",exportData);el.closeModal.addEventListener("click",closeModal);el.importModal.addEventListener("click",e=>{if(e.target===el.importModal)closeModal();});el.loadJsonBtn.addEventListener("click",importJson);el.dateSelect.addEventListener("change",e=>{state.selectedDate=e.target.value;renderAll();});el.statusFilter.addEventListener("change",e=>{state.filter=e.target.value;renderResults();});el.prevDate.addEventListener("click",()=>{const d=allDates(),i=d.indexOf(state.selectedDate);if(i>0){state.selectedDate=d[i-1];renderAll();}});el.nextDate.addEventListener("click",()=>{const d=allDates(),i=d.indexOf(state.selectedDate);if(i>=0&&i<d.length-1){state.selectedDate=d[i+1];renderAll();}});window.addEventListener("resize",()=>{clearTimeout(window.__chartTimer);window.__chartTimer=setTimeout(()=>{drawChart();drawCalibrationChart();},120);});
 document.addEventListener("visibilitychange",()=>{if(document.hidden){stopRefreshTimers();updateRefreshInfo();}else if(liveConfigured()){refreshLive({silent:true});}});
 window.addEventListener("online",()=>{if(liveConfigured())refreshLive({silent:true});});
