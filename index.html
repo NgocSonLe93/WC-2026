@@ -10,7 +10,7 @@
   <meta name="description" content="Kết quả, bảng xếp hạng, thống kê bàn thắng và dự đoán thống kê trước trận FIFA World Cup 2026.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260623-model10-prediction4">
+  <link rel="stylesheet" href="styles.css?v=20260623-validation1">
   <title>World Cup 2026 · NGOC SON LE</title>
 </head>
 <body>
@@ -53,6 +53,7 @@
       <button class="tab" data-tab="standings" type="button">Bảng xếp hạng</button>
       <button class="tab" data-tab="goals" type="button">Bàn thắng/ngày</button>
       <button class="tab" data-tab="analysis" type="button">Dự đoán</button>
+      <button class="tab" data-tab="validation" type="button">Kiểm định</button>
     </nav>
 
     <section id="results" class="tab-panel active">
@@ -169,6 +170,110 @@
       </article>
     </section>
 
+
+
+    <section id="validation" class="tab-panel">
+      <div class="metric-grid validation-metrics">
+        <article class="metric-card glass"><span>Mẫu backtest độc lập</span><strong id="validationMatches">—</strong><small>Từ năm 2024, mỗi đội đủ 10 trận trước đó</small></article>
+        <article class="metric-card glass"><span>Brier Score</span><strong id="validationBrier">—</strong><small>Càng thấp càng tốt</small></article>
+        <article class="metric-card glass"><span>Log Loss</span><strong id="validationLogLoss">—</strong><small>Phạt mạnh dự đoán tự tin nhưng sai</small></article>
+        <article class="metric-card glass"><span>Calibration Error</span><strong id="validationEce">—</strong><small>Khoảng cách xác suất và tỷ lệ xảy ra</small></article>
+      </div>
+
+      <article class="panel glass validation-summary-panel">
+        <div class="panel-heading split">
+          <div>
+            <span class="kicker">WALK-FORWARD BACKTEST</span>
+            <h2>So sánh các mô hình</h2>
+            <p id="validationMeta" class="panel-note">Đang tải kết quả kiểm định…</p>
+          </div>
+          <span id="validationVerdict" class="validation-verdict">ĐANG TẢI</span>
+        </div>
+        <div class="table-scroll">
+          <table class="rank-table validation-table">
+            <thead><tr><th>Mô hình</th><th>Số trận</th><th>Brier</th><th>Log Loss</th><th>Đúng 1X2</th><th>ECE</th></tr></thead>
+            <tbody id="validationModelsBody"></tbody>
+          </table>
+        </div>
+        <p class="validation-help">Mô hình chính chỉ được xem là có giá trị bổ sung khi Brier Score và Log Loss thấp hơn baseline trên dữ liệu chưa từng dùng để điều chỉnh.</p>
+      </article>
+
+      <div class="validation-grid">
+        <article class="panel glass">
+          <div class="panel-heading">
+            <span class="kicker">CALIBRATION</span>
+            <h2>Xác suất dự đoán so với thực tế</h2>
+            <p class="panel-note">Điểm càng gần đường chéo 45° thì xác suất càng đáng tin. Ví dụ dự đoán khoảng 60% nên xảy ra gần 60%.</p>
+          </div>
+          <div class="calibration-chart-wrap"><canvas id="calibrationChart" role="img" aria-label="Biểu đồ calibration của mô hình"></canvas></div>
+          <div class="table-scroll">
+            <table class="rank-table calibration-table">
+              <thead><tr><th>Nhóm xác suất</th><th>Số quan sát</th><th>Dự đoán TB</th><th>Xảy ra thực tế</th><th>Chênh lệch</th></tr></thead>
+              <tbody id="calibrationBody"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel glass">
+          <div class="panel-heading">
+            <span class="kicker">ĐÁNH GIÁ BÀN THẮNG</span>
+            <h2>Poisson dự báo tỷ số đến đâu?</h2>
+          </div>
+          <div class="goal-validation-grid">
+            <div><span>MAE bàn/đội</span><strong id="goalTeamMae">—</strong><small>Sai số tuyệt đối trung bình mỗi đội</small></div>
+            <div><span>MAE tổng bàn</span><strong id="goalTotalMae">—</strong><small>Sai số tổng bàn mỗi trận</small></div>
+            <div><span>Tỷ số thật trong Top 3</span><strong id="goalTop3">—</strong><small>Ba tỷ số xác suất cao nhất</small></div>
+            <div><span>Tỷ số thật trong Top 5</span><strong id="goalTop5">—</strong><small>Năm tỷ số xác suất cao nhất</small></div>
+          </div>
+          <div class="validation-note-box">
+            <b>Diễn giải thực tế</b>
+            <p id="goalValidationNote">Đang tải dữ liệu đánh giá bàn thắng.</p>
+          </div>
+        </article>
+      </div>
+
+      <article class="panel glass">
+        <div class="panel-heading">
+          <span class="kicker">ĐỘ ỔN ĐỊNH THEO THỜI GIAN</span>
+          <h2>Kết quả từng năm trong tập kiểm tra</h2>
+        </div>
+        <div class="table-scroll">
+          <table class="rank-table validation-year-table">
+            <thead><tr><th>Năm</th><th>Số trận</th><th>Brier</th><th>Log Loss</th><th>Đúng 1X2</th><th>ECE</th></tr></thead>
+            <tbody id="validationYearBody"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel glass">
+        <div class="panel-heading">
+          <span class="kicker">CẢNH BÁO QUÁ TỰ TIN</span>
+          <h2>Các dự đoán sai với độ tin cậy cao nhất</h2>
+          <p class="panel-note">Danh sách này giúp nhìn rõ những trường hợp mô hình tự tin nhưng vẫn sai — yếu tố quan trọng trước khi sử dụng bất kỳ xác suất nào.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="rank-table validation-errors-table">
+            <thead><tr><th>Ngày</th><th>Trận</th><th>Kết quả</th><th>Mô hình chọn</th><th>Kết quả thật</th><th>Độ tự tin</th></tr></thead>
+            <tbody id="validationErrorsBody"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel glass methodology-card">
+        <div class="panel-heading">
+          <span class="kicker">NGUYÊN TẮC KIỂM ĐỊNH</span>
+          <h2>Không dùng dữ liệu tương lai</h2>
+        </div>
+        <div class="method-grid validation-method-grid">
+          <div><b>Walk-forward</b><span>Mỗi trận chỉ dùng dữ liệu đã tồn tại trước giờ bóng lăn; dự đoán xong mới cập nhật kết quả.</span></div>
+          <div><b>Tập kiểm tra độc lập</b><span>Các trận từ năm 2024 trở đi không được dùng để chọn tham số mô hình.</span></div>
+          <div><b>Baseline</b><span>So với tỷ lệ cố định và mô hình chỉ dùng rating để biết phần phong độ + Poisson có thực sự bổ sung giá trị hay không.</span></div>
+          <div><b>Hiệu chỉnh</b><span>Temperature scaling được học trên dữ liệu cũ rồi khóa lại trước khi đánh giá tập kiểm tra.</span></div>
+          <div><b>Rating lịch sử</b><span>Dùng Elo tuần tự trước từng trận để tránh lấy thứ hạng FIFA tương lai áp ngược cho quá khứ.</span></div>
+        </div>
+      </article>
+    </section>
+
     <footer class="footer glass">
       <div><b>WORLD CUP 2026 DASHBOARD</b><span>Dữ liệu trực tiếp tự làm mới; bảng FIFA dùng bản chính thức ngày 11/06/2026.</span></div>
       <strong>COPYRIGHT © 2026: NGOC SON LE</strong>
@@ -188,6 +293,6 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="config.js?v=20260623-model10-prediction4"></script>
-  <script src="app.js?v=20260623-model10-prediction4" defer></script>
+  <script src="app.js?v=20260623-validation1" defer></script>
 </body>
 </html>

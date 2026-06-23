@@ -1,11 +1,13 @@
 "use strict";
 const DATA_URL = "data/worldcup.json";
 const HISTORY_URL = "data/recent_matches.json";
+const EVALUATION_URL = "data/model_evaluation.json";
 const CONFIG = window.WC2026_CONFIG || {};
 const LIVE_API_URL = String(CONFIG.liveApiUrl || "").trim().replace(/\/$/, "");
 const LIVE_INTERVAL_MS = Math.max(15000, Number(CONFIG.liveIntervalMs) || 30000);
 const IDLE_INTERVAL_MS = Math.max(60000, Number(CONFIG.idleIntervalMs) || 300000);
-const CACHE_KEY = "wc2026_ngocsonle_cache_v8";
+const CACHE_KEY = "wc2026_ngocsonle_cache_v9";
+const EVALUATION_CACHE_KEY = "wc2026_model_evaluation_v1";
 const HISTORY_CACHE_KEY = "wc2026_recent_matches_v1";
 const THEME_KEY = "wc2026_theme";
 
@@ -26,14 +28,14 @@ const FIFA_RATINGS = Object.freeze({
 });
 const FIFA_CODE_ALIASES = Object.freeze({IRI:"IRN", DZA:"ALG", HTI:"HAI", KOR:"KOR", DRK:"COD", DRC:"COD"});
 
-const state = { data: null, history: {meta:{},matches:[]}, selectedDate: "", filter: "all", chartPoints: [], refreshTimer: null, countdownTimer: null, nextRefreshAt: 0, refreshing: false, theme: "dark" };
+const state = { data: null, history: {meta:{},matches:[]}, evaluation: null, selectedDate: "", filter: "all", chartPoints: [], refreshTimer: null, countdownTimer: null, nextRefreshAt: 0, refreshing: false, theme: "dark" };
 const $ = id => document.getElementById(id);
 const el = {
   refreshBtn: $("refreshBtn"), importBtn: $("importBtn"), exportBtn: $("exportBtn"), statusPill: $("statusPill"), updatedAt: $("updatedAt"), liveRefreshInfo: $("liveRefreshInfo"),
   heroMatches: $("heroMatches"), dayMatches: $("dayMatches"), dayScored: $("dayScored"), dayGoals: $("dayGoals"), dayAverage: $("dayAverage"), dayShare: $("dayShare"),
   selectedDateTitle: $("selectedDateTitle"), selectedDateBadge: $("selectedDateBadge"), prevDate: $("prevDate"), nextDate: $("nextDate"), dateSelect: $("dateSelect"), statusFilter: $("statusFilter"), matchesList: $("matchesList"),
   thirdPlaceBody: $("thirdPlaceBody"), standingsGrid: $("standingsGrid"), totalPlayed: $("totalPlayed"), totalGoals: $("totalGoals"), overallAverage: $("overallAverage"), bestDayGoals: $("bestDayGoals"), bestDayLabel: $("bestDayLabel"),
-  goalsChart: $("goalsChart"), dailyStatsBody: $("dailyStatsBody"), analysisList: $("analysisList"), analysisUpcoming: $("analysisUpcoming"), analysisPlayed: $("analysisPlayed"), analysisHistory: $("analysisHistory"), importModal: $("importModal"), closeModal: $("closeModal"), jsonFile: $("jsonFile"), loadJsonBtn: $("loadJsonBtn"), toast: $("toast")
+  goalsChart: $("goalsChart"), dailyStatsBody: $("dailyStatsBody"), calibrationChart: $("calibrationChart"), validationMatches: $("validationMatches"), validationBrier: $("validationBrier"), validationLogLoss: $("validationLogLoss"), validationEce: $("validationEce"), validationMeta: $("validationMeta"), validationVerdict: $("validationVerdict"), validationModelsBody: $("validationModelsBody"), calibrationBody: $("calibrationBody"), goalTeamMae: $("goalTeamMae"), goalTotalMae: $("goalTotalMae"), goalTop3: $("goalTop3"), goalTop5: $("goalTop5"), goalValidationNote: $("goalValidationNote"), validationYearBody: $("validationYearBody"), validationErrorsBody: $("validationErrorsBody"), analysisList: $("analysisList"), analysisUpcoming: $("analysisUpcoming"), analysisPlayed: $("analysisPlayed"), analysisHistory: $("analysisHistory"), importModal: $("importModal"), closeModal: $("closeModal"), jsonFile: $("jsonFile"), loadJsonBtn: $("loadJsonBtn"), toast: $("toast")
 };
 const collator = new Intl.Collator("en", { sensitivity: "base" });
 function esc(v){return String(v??"").replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));}
@@ -84,6 +86,12 @@ async function loadHistoryData(){
   try{state.history=normalizeHistory(await fetchJson(HISTORY_URL,20000));saveHistoryCache();renderAnalysis();return true;}
   catch(err){console.warn("Historical form load failed",err);if(loadHistoryCache()){renderAnalysis();return true;}state.history={meta:{},matches:[]};renderAnalysis();return false;}
 }
+function saveEvaluationCache(){try{localStorage.setItem(EVALUATION_CACHE_KEY,JSON.stringify(state.evaluation));}catch{}}
+function loadEvaluationCache(){try{const raw=localStorage.getItem(EVALUATION_CACHE_KEY);if(!raw)return false;state.evaluation=JSON.parse(raw);return Boolean(state.evaluation?.models);}catch{return false;}}
+async function loadEvaluationData(){
+  try{state.evaluation=await fetchJson(EVALUATION_URL,20000);saveEvaluationCache();renderValidation();return true;}
+  catch(err){console.warn("Model evaluation load failed",err);if(loadEvaluationCache()){renderValidation();return true;}state.evaluation=null;renderValidation();return false;}
+}
 function saveCache(){try{localStorage.setItem(CACHE_KEY,JSON.stringify(state.data));}catch(e){console.warn(e);}}
 function loadCache(){try{const raw=localStorage.getItem(CACHE_KEY);if(!raw)return false;state.data=normalizeData(JSON.parse(raw));return state.data.matches.length>0;}catch{return false;}}
 function liveConfigured(){return /^https:\/\//i.test(LIVE_API_URL)&&!LIVE_API_URL.includes("PASTE_CLOUDFLARE");}
@@ -96,8 +104,8 @@ function updateRefreshInfo(){if(!el.liveRefreshInfo)return;if(!liveConfigured())
 function scheduleRefresh(delay=nextInterval()){stopRefreshTimers();if(!liveConfigured()||document.hidden)return;state.nextRefreshAt=Date.now()+delay;updateRefreshInfo();state.countdownTimer=setInterval(updateRefreshInfo,1000);state.refreshTimer=setTimeout(()=>refreshLive({silent:true}),delay);}
 async function loadStaticData({resetDate=true}={}){const data=normalizeData(await fetchJson(DATA_URL));if(!data.matches.length)throw new Error("File dữ liệu chưa có trận đấu");state.data=data;saveCache();renderAll(resetDate);return data;}
 async function refreshLive({manual=false,silent=false}={}){if(!liveConfigured()){if(manual)showToast("Chưa cấu hình Cloudflare Worker cho chế độ trực tiếp");scheduleRefresh();return false;}if(state.refreshing)return false;state.refreshing=true;el.refreshBtn.disabled=true;if(!silent)setStatus("loading","Đang đồng bộ trực tiếp");updateRefreshInfo();try{const data=normalizeData(await fetchJson(LIVE_API_URL,15000));if(!data.matches.length)throw new Error("API trực tiếp không có trận đấu");const reset=!state.data;state.data=data;saveCache();renderAll(reset);setStatus(hasLiveMatch()?"live":"ok",hasLiveMatch()?"LIVE · tỷ số đang cập nhật":`Trực tiếp · ${data.matches.length} trận`);if(manual)showToast("Đã cập nhật dữ liệu trực tiếp");return true;}catch(err){console.error("Realtime refresh failed",err);if(state.data){setStatus("warning","Mất kết nối LIVE · đang giữ dữ liệu gần nhất");if(manual)showToast("Chưa kết nối được máy chủ trực tiếp");}else{setStatus("error","Không đọc được dữ liệu trực tiếp");renderEmpty();}return false;}finally{state.refreshing=false;el.refreshBtn.disabled=false;scheduleRefresh();}}
-async function loadData({manual=false}={}){if(manual&&liveConfigured())return refreshLive({manual:true});el.refreshBtn.disabled=true;setStatus("loading","Đang mở dữ liệu");const historyPromise=loadHistoryData();let loaded=false;try{await loadStaticData({resetDate:true});loaded=true;setStatus("ok",`Đã tải ${state.data.matches.length} trận dự phòng`);}catch(err){console.error("Static load failed",err);if(loadCache()){renderAll(true);loaded=true;setStatus("warning","Đang dùng dữ liệu đã lưu trên thiết bị");}else{renderEmpty();setStatus("error","Không đọc được dữ liệu");}}finally{el.refreshBtn.disabled=false;}await historyPromise;if(liveConfigured()){await refreshLive({manual:false,silent:loaded});}else{if(loaded)setStatus("warning","Chưa bật chế độ cập nhật trực tiếp");updateRefreshInfo();}}
-function renderAll(resetDate=false){if(!state.data)return;const dates=allDates();if(resetDate||!dates.includes(state.selectedDate))state.selectedDate=chooseDate(dates);renderDateControl(dates);renderResults();renderStandings();renderGoals();renderAnalysis();renderMeta();}
+async function loadData({manual=false}={}){if(manual&&liveConfigured())return refreshLive({manual:true});el.refreshBtn.disabled=true;setStatus("loading","Đang mở dữ liệu");const historyPromise=loadHistoryData();const evaluationPromise=loadEvaluationData();let loaded=false;try{await loadStaticData({resetDate:true});loaded=true;setStatus("ok",`Đã tải ${state.data.matches.length} trận dự phòng`);}catch(err){console.error("Static load failed",err);if(loadCache()){renderAll(true);loaded=true;setStatus("warning","Đang dùng dữ liệu đã lưu trên thiết bị");}else{renderEmpty();setStatus("error","Không đọc được dữ liệu");}}finally{el.refreshBtn.disabled=false;}await Promise.all([historyPromise,evaluationPromise]);if(liveConfigured()){await refreshLive({manual:false,silent:loaded});}else{if(loaded)setStatus("warning","Chưa bật chế độ cập nhật trực tiếp");updateRefreshInfo();}}
+function renderAll(resetDate=false){if(!state.data)return;const dates=allDates();if(resetDate||!dates.includes(state.selectedDate))state.selectedDate=chooseDate(dates);renderDateControl(dates);renderResults();renderStandings();renderGoals();renderAnalysis();renderValidation();renderMeta();}
 function renderMeta(){const meta=state.data.meta||{};const d=meta.updated_at?new Date(meta.updated_at):null;el.updatedAt.textContent=d&&!Number.isNaN(d.getTime())?`${meta.source||"Dữ liệu website"} • ${new Intl.DateTimeFormat("vi-VN",{dateStyle:"short",timeStyle:"medium",timeZone:"Asia/Ho_Chi_Minh"}).format(d)}`:(meta.source||"Chưa cập nhật");el.heroMatches.textContent=scoredMatches().length;updateRefreshInfo();}
 function renderDateControl(dates){el.dateSelect.innerHTML=dates.map(d=>`<option value="${d}" ${d===state.selectedDate?"selected":""}>${esc(formatDate(d))}</option>`).join("");const idx=dates.indexOf(state.selectedDate);el.prevDate.disabled=idx<=0;el.nextDate.disabled=idx<0||idx>=dates.length-1;}
 function dailySummary(date){const matches=state.data.matches.filter(m=>m.date_vn===date);const scored=matches.filter(isScored);const goals=scored.reduce((s,m)=>s+num(m.score.home)+num(m.score.away),0);const scoring=scored.filter(m=>num(m.score.home)+num(m.score.away)>0).length;return{date,matches,scored,goals,scoring,avg:scored.length?goals/scored.length:0};}
@@ -233,6 +241,12 @@ function poisson(k,lambda){
   for(let i=2;i<=k;i++)fact*=i;
   return Math.exp(-lambda)*Math.pow(lambda,k)/fact;
 }
+function calibratedOutcomeProbabilities(values){
+  const temperature=clamp(Number(state.evaluation?.meta?.temperature)||1,.55,2.50);
+  const scaled=values.map(v=>Math.pow(Math.max(1e-12,v),1/temperature));
+  const total=scaled.reduce((sum,v)=>sum+v,0)||1;
+  return scaled.map(v=>v/total);
+}
 function predictMatch(home,away,homeStats,awayStats){
   const base=tournamentGoalBase();
   const hr=fifaRating(home),ar=fifaRating(away);
@@ -264,6 +278,7 @@ function predictMatch(home,away,homeStats,awayStats){
     }
   }
   homeWin/=totalMass;draw/=totalMass;awayWin/=totalMass;
+  [homeWin,draw,awayWin]=calibratedOutcomeProbabilities([homeWin,draw,awayWin]);
   cells.forEach(x=>x.prob/=totalMass);
   cells.sort((x,y)=>y.prob-x.prob);
 
@@ -349,9 +364,80 @@ function renderAnalysis(){
         <div class="comparison-row"><b>${analysisStat(hs,"gfpg")}</b><span>BT/trận${comparisonBar(hs.gfpg,as.gfpg)}</span><b>${analysisStat(as,"gfpg")}</b></div>
         <div class="comparison-row"><b>${analysisStat(hs,"gapg")}</b><span>BB/trận${comparisonBar(hs.gapg,as.gapg,true)}</span><b>${analysisStat(as,"gapg")}</b></div>
       </div>
-      <div class="analysis-source">Poisson + điểm FIFA + 10 trận gần nhất: 5 trận mới nhất chiếm 75%, 5 trận trước chiếm 25% · Có điều chỉnh loại trận và sức mạnh đối thủ · Chỉ mang tính tham khảo</div>
+      <div class="analysis-source">Poisson + điểm FIFA + 10 trận gần nhất: 5 trận mới nhất chiếm 75%, 5 trận trước chiếm 25% · Xác suất 1X2 được temperature scaling theo backtest · Chỉ mang tính tham khảo</div>
     </article>`;
   }).join("");
+}
+
+
+function fmtMetric(v,digits=3){return Number.isFinite(Number(v))?Number(v).toFixed(digits):"—";}
+function fmtPercent(v,digits=1){return Number.isFinite(Number(v))?`${(Number(v)*100).toFixed(digits)}%`:"—";}
+function evaluationWinner(models={}){
+  const entries=Object.entries(models).filter(([,m])=>Number.isFinite(Number(m?.brier))&&Number.isFinite(Number(m?.log_loss)));
+  if(!entries.length)return null;
+  return entries.sort((a,b)=>(a[1].brier-b[1].brier)||(a[1].log_loss-b[1].log_loss))[0];
+}
+function renderValidation(){
+  if(!el.validationModelsBody)return;
+  const ev=state.evaluation;
+  if(!ev?.models){
+    el.validationMatches.textContent="—";el.validationBrier.textContent="—";el.validationLogLoss.textContent="—";el.validationEce.textContent="—";
+    el.validationMeta.textContent="Chưa có file data/model_evaluation.json. Hãy chạy GitHub Actions sau khi tải bản nâng cấp.";
+    el.validationVerdict.textContent="CHƯA CÓ DỮ LIỆU";el.validationVerdict.className="validation-verdict warning";
+    el.validationModelsBody.innerHTML='<tr><td colspan="6">Chưa có dữ liệu kiểm định.</td></tr>';
+    el.calibrationBody.innerHTML='<tr><td colspan="5">Chưa có dữ liệu.</td></tr>';
+    el.validationYearBody.innerHTML='<tr><td colspan="6">Chưa có dữ liệu.</td></tr>';
+    el.validationErrorsBody.innerHTML='<tr><td colspan="6">Chưa có dữ liệu.</td></tr>';
+    return;
+  }
+  const calibrated=ev.models.poisson_calibrated||{};
+  el.validationMatches.textContent=ev.meta?.test_matches??calibrated.matches??"—";
+  el.validationBrier.textContent=fmtMetric(calibrated.brier,3);
+  el.validationLogLoss.textContent=fmtMetric(calibrated.log_loss,3);
+  el.validationEce.textContent=fmtPercent(calibrated.ece,1);
+  const generated=ev.meta?.generated_at?new Date(ev.meta.generated_at):null;
+  const generatedText=generated&&!Number.isNaN(generated.getTime())?new Intl.DateTimeFormat("vi-VN",{dateStyle:"short",timeStyle:"short",timeZone:"Asia/Ho_Chi_Minh"}).format(generated):"—";
+  el.validationMeta.textContent=`${ev.meta?.test_matches||0} trận độc lập từ ${ev.meta?.test_start||"2024"} · ${ev.meta?.train_matches||0} trận dùng để hiệu chỉnh · Cập nhật ${generatedText}.`;
+  const winner=evaluationWinner(ev.models);
+  const mainWins=winner?.[0]==="poisson_calibrated";
+  el.validationVerdict.textContent=mainWins?"TỐT HƠN BASELINE":"CHƯA VƯỢT BASELINE";
+  el.validationVerdict.className=`validation-verdict ${mainWins?"good":"warning"}`;
+  const order=["prior","rating","poisson_raw","poisson_calibrated"];
+  const bestBrier=Math.min(...order.map(k=>Number(ev.models[k]?.brier)).filter(Number.isFinite));
+  el.validationModelsBody.innerHTML=order.map(key=>{
+    const m=ev.models[key];if(!m)return "";
+    const cls=Math.abs(Number(m.brier)-bestBrier)<1e-10?"best-model":"";
+    return `<tr class="${cls}"><td class="model-name">${esc(m.label||key)}${key==="poisson_calibrated"?'<small>Mô hình dùng trên web sau hiệu chỉnh</small>':""}</td><td>${m.matches??"—"}</td><td class="${cls?"points":""}">${fmtMetric(m.brier,3)}</td><td>${fmtMetric(m.log_loss,3)}</td><td>${fmtPercent(m.accuracy,1)}</td><td>${fmtPercent(m.ece,1)}</td></tr>`;
+  }).join("");
+  const bins=ev.calibration?.bins||[];
+  el.calibrationBody.innerHTML=bins.map(b=>{
+    const delta=Number.isFinite(Number(b.predicted))&&Number.isFinite(Number(b.observed))?Math.abs(b.predicted-b.observed):null;
+    return `<tr><td>${esc(b.label||"")}</td><td>${b.count||0}</td><td>${fmtPercent(b.predicted,1)}</td><td>${fmtPercent(b.observed,1)}</td><td class="${delta!==null&&delta<=.05?"cal-good":delta!==null&&delta>.10?"cal-bad":""}">${delta===null?"—":fmtPercent(delta,1)}</td></tr>`;
+  }).join("")||'<tr><td colspan="5">Chưa có dữ liệu calibration.</td></tr>';
+  const goals=ev.goals||{};
+  el.goalTeamMae.textContent=fmtMetric(goals.team_goal_mae,2);
+  el.goalTotalMae.textContent=fmtMetric(goals.total_goal_mae,2);
+  el.goalTop3.textContent=fmtPercent(goals.top3_score,1);
+  el.goalTop5.textContent=fmtPercent(goals.top5_score,1);
+  el.goalValidationNote.textContent=`Trong backtest, tỷ số thật nằm trong 3 lựa chọn cao nhất ${fmtPercent(goals.top3_score,1)} và trong 5 lựa chọn cao nhất ${fmtPercent(goals.top5_score,1)}. MAE tổng bàn ${fmtMetric(goals.total_goal_mae,2)} cho thấy dự báo số bàn vẫn có sai số đáng kể.`;
+  el.validationYearBody.innerHTML=(ev.by_year||[]).map(y=>`<tr><td>${esc(y.year)}</td><td>${y.matches}</td><td>${fmtMetric(y.brier,3)}</td><td>${fmtMetric(y.log_loss,3)}</td><td>${fmtPercent(y.accuracy,1)}</td><td>${fmtPercent(y.ece,1)}</td></tr>`).join("")||'<tr><td colspan="6">Chưa có dữ liệu theo năm.</td></tr>';
+  el.validationErrorsBody.innerHTML=(ev.worst_errors||[]).slice(0,10).map(r=>`<tr><td>${esc(r.date)}</td><td class="team-cell">${esc(r.match)}</td><td>${esc(r.score)}</td><td>${esc(r.predicted)}</td><td>${esc(r.actual)}</td><td class="error-confidence">${fmtPercent(r.confidence,1)}</td></tr>`).join("")||'<tr><td colspan="6">Không có lỗi để hiển thị.</td></tr>';
+  requestAnimationFrame(drawCalibrationChart);
+}
+function drawCalibrationChart(){
+  const canvas=el.calibrationChart;if(!canvas||!state.evaluation?.calibration?.bins)return;
+  const rect=canvas.getBoundingClientRect();if(rect.width<20)return;
+  const dpr=Math.max(1,Math.min(2,window.devicePixelRatio||1));canvas.width=Math.max(320,rect.width*dpr);canvas.height=Math.max(280,rect.height*dpr);
+  const ctx=canvas.getContext("2d");ctx.scale(dpr,dpr);const w=canvas.width/dpr,h=canvas.height/dpr;ctx.clearRect(0,0,w,h);
+  const css=getComputedStyle(document.documentElement),muted=css.getPropertyValue("--muted").trim()||"#9bb7aa",text=css.getPropertyValue("--text").trim()||"#fff",green=css.getPropertyValue("--green").trim()||"#42e6a4",blue=css.getPropertyValue("--blue").trim()||"#6abaff",line=css.getPropertyValue("--line").trim()||"rgba(255,255,255,.12)";
+  const pad={l:48,r:22,t:24,b:44},pw=w-pad.l-pad.r,ph=h-pad.t-pad.b;
+  ctx.strokeStyle=line;ctx.fillStyle=muted;ctx.font="11px system-ui";
+  for(let i=0;i<=5;i++){const v=i/5,x=pad.l+pw*v,y=pad.t+ph*(1-v);ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(w-pad.r,y);ctx.stroke();ctx.beginPath();ctx.moveTo(x,pad.t);ctx.lineTo(x,h-pad.b);ctx.stroke();ctx.textAlign="right";ctx.fillText(`${Math.round(v*100)}%`,pad.l-8,y+4);ctx.textAlign="center";ctx.fillText(`${Math.round(v*100)}%`,x,h-pad.b+18);}
+  ctx.setLineDash([6,5]);ctx.strokeStyle=muted;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(pad.l,h-pad.b);ctx.lineTo(w-pad.r,pad.t);ctx.stroke();ctx.setLineDash([]);
+  const points=(state.evaluation.calibration.bins||[]).filter(b=>Number.isFinite(Number(b.predicted))&&Number.isFinite(Number(b.observed))&&b.count>0);
+  ctx.strokeStyle=green;ctx.lineWidth=3;ctx.beginPath();points.forEach((p,i)=>{const x=pad.l+pw*p.predicted,y=pad.t+ph*(1-p.observed);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.stroke();
+  points.forEach(p=>{const x=pad.l+pw*p.predicted,y=pad.t+ph*(1-p.observed),r=4+Math.min(6,Math.sqrt(p.count)/5);ctx.fillStyle=blue;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle=text;ctx.lineWidth=1;ctx.stroke();});
+  ctx.fillStyle=muted;ctx.font="12px system-ui";ctx.textAlign="center";ctx.fillText("Xác suất dự đoán",pad.l+pw/2,h-7);ctx.save();ctx.translate(14,pad.t+ph/2);ctx.rotate(-Math.PI/2);ctx.fillText("Tỷ lệ xảy ra thực tế",0,0);ctx.restore();
 }
 
 function renderEmpty(){el.matchesList.innerHTML='<div class="empty-state">Chưa có dữ liệu. Hãy chạy workflow GitHub Actions hoặc nhập file JSON.</div>';el.standingsGrid.innerHTML="";el.thirdPlaceBody.innerHTML='<tr><td colspan="4">Chưa có dữ liệu.</td></tr>';}
@@ -359,8 +445,8 @@ function exportData(){if(!state.data)return;const blob=new Blob([JSON.stringify(
 function openModal(){el.importModal.hidden=false;}
 function closeModal(){el.importModal.hidden=true;el.jsonFile.value="";}
 async function importJson(){const file=el.jsonFile.files?.[0];if(!file){showToast("Hãy chọn một file JSON");return;}try{const data=normalizeData(JSON.parse(await file.text()));if(!data.matches.length)throw new Error("Không có trận đấu");state.data=data;saveCache();renderAll(true);setStatus("ok","Đang dùng dữ liệu JSON đã nhập");closeModal();showToast("Đã nạp dữ liệu thành công");}catch(e){console.error(e);showToast("File JSON không hợp lệ");}}
-document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===btn));document.querySelectorAll(".tab-panel").forEach(p=>p.classList.toggle("active",p.id===btn.dataset.tab));if(btn.dataset.tab==="goals")requestAnimationFrame(drawChart);if(btn.dataset.tab==="analysis")renderAnalysis();}));
-el.refreshBtn.addEventListener("click",()=>loadData({manual:true}));el.importBtn.addEventListener("click",openModal);el.exportBtn.addEventListener("click",exportData);el.closeModal.addEventListener("click",closeModal);el.importModal.addEventListener("click",e=>{if(e.target===el.importModal)closeModal();});el.loadJsonBtn.addEventListener("click",importJson);el.dateSelect.addEventListener("change",e=>{state.selectedDate=e.target.value;renderAll();});el.statusFilter.addEventListener("change",e=>{state.filter=e.target.value;renderResults();});el.prevDate.addEventListener("click",()=>{const d=allDates(),i=d.indexOf(state.selectedDate);if(i>0){state.selectedDate=d[i-1];renderAll();}});el.nextDate.addEventListener("click",()=>{const d=allDates(),i=d.indexOf(state.selectedDate);if(i>=0&&i<d.length-1){state.selectedDate=d[i+1];renderAll();}});window.addEventListener("resize",()=>{clearTimeout(window.__chartTimer);window.__chartTimer=setTimeout(drawChart,120);});
+document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===btn));document.querySelectorAll(".tab-panel").forEach(p=>p.classList.toggle("active",p.id===btn.dataset.tab));if(btn.dataset.tab==="goals")requestAnimationFrame(drawChart);if(btn.dataset.tab==="analysis")renderAnalysis();if(btn.dataset.tab==="validation"){renderValidation();requestAnimationFrame(drawCalibrationChart);}}));
+el.refreshBtn.addEventListener("click",()=>loadData({manual:true}));el.importBtn.addEventListener("click",openModal);el.exportBtn.addEventListener("click",exportData);el.closeModal.addEventListener("click",closeModal);el.importModal.addEventListener("click",e=>{if(e.target===el.importModal)closeModal();});el.loadJsonBtn.addEventListener("click",importJson);el.dateSelect.addEventListener("change",e=>{state.selectedDate=e.target.value;renderAll();});el.statusFilter.addEventListener("change",e=>{state.filter=e.target.value;renderResults();});el.prevDate.addEventListener("click",()=>{const d=allDates(),i=d.indexOf(state.selectedDate);if(i>0){state.selectedDate=d[i-1];renderAll();}});el.nextDate.addEventListener("click",()=>{const d=allDates(),i=d.indexOf(state.selectedDate);if(i>=0&&i<d.length-1){state.selectedDate=d[i+1];renderAll();}});window.addEventListener("resize",()=>{clearTimeout(window.__chartTimer);window.__chartTimer=setTimeout(()=>{drawChart();drawCalibrationChart();},120);});
 document.addEventListener("visibilitychange",()=>{if(document.hidden){stopRefreshTimers();updateRefreshInfo();}else if(liveConfigured()){refreshLive({silent:true});}});
 window.addEventListener("online",()=>{if(liveConfigured())refreshLive({silent:true});});
 window.addEventListener("offline",()=>{stopRefreshTimers();setStatus("warning","Thiết bị đang ngoại tuyến");updateRefreshInfo();});
