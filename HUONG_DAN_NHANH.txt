@@ -1,0 +1,9 @@
+HƯỚNG DẪN NHANH
+
+1. Tạo repository Public: world-cup-2026
+2. Upload toàn bộ file và thư mục trong gói này.
+3. Settings → Pages → Source: GitHub Actions.
+4. Actions → Cập nhật & triển khai World Cup 2026 → Run workflow.
+5. Mở: https://TEN-TAI-KHOAN.github.io/world-cup-2026/
+
+COPYRIGHT © 2026: NGOC SON LE

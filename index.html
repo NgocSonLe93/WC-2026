@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#061812">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="World Cup 2026">
+  <meta name="description" content="Kết quả, bảng xếp hạng và thống kê bàn thắng FIFA World Cup 2026.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>World Cup 2026 · NGOC SON LE</title>
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <main class="app-shell">
+    <header class="hero glass">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> FIFA WORLD CUP 2026</div>
+        <h1>Kết quả & thống kê<br><span>mỗi ngày thi đấu</span></h1>
+        <p>Theo dõi lịch đấu, tỷ số, bảng xếp hạng 12 bảng và cuộc đua của các đội đứng thứ ba — tối ưu để xem trên điện thoại.</p>
+        <div class="hero-actions">
+          <button id="refreshBtn" class="button primary" type="button" aria-label="Tải dữ liệu mới nhất">
+            <span class="button-icon">↻</span> Cập nhật dữ liệu
+          </button>
+          <button id="importBtn" class="button secondary" type="button">Nhập JSON</button>
+          <button id="exportBtn" class="button ghost" type="button">Xuất JSON</button>
+        </div>
+        <div class="status-row">
+          <span id="statusPill" class="status-pill loading"><span></span> Đang tải dữ liệu</span>
+          <span id="updatedAt" class="updated-at">Chưa cập nhật</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="ball">⚽</div>
+        <div class="mini-stat"><b id="heroMatches">0</b><span>trận có tỷ số</span></div>
+      </div>
+    </header>
+
+    <nav class="tabs glass" aria-label="Điều hướng nội dung">
+      <button class="tab active" data-tab="results" type="button">Kết quả</button>
+      <button class="tab" data-tab="standings" type="button">Bảng xếp hạng</button>
+      <button class="tab" data-tab="goals" type="button">Bàn thắng/ngày</button>
+    </nav>
+
+    <section id="results" class="tab-panel active">
+      <div class="metric-grid">
+        <article class="metric-card glass"><span>Trận trong ngày</span><strong id="dayMatches">0</strong><small id="dayScored">0 trận có tỷ số</small></article>
+        <article class="metric-card glass"><span>Bàn thắng trong ngày</span><strong id="dayGoals">0</strong><small>Chỉ tính trận có tỷ số</small></article>
+        <article class="metric-card glass"><span>Trung bình bàn/trận</span><strong id="dayAverage">0.00</strong><small>Tổng bàn ÷ số trận</small></article>
+        <article class="metric-card glass"><span>Tỷ trọng bàn thắng</span><strong id="dayShare">0%</strong><small>So với toàn giải đến hiện tại</small></article>
+      </div>
+
+      <article class="panel glass">
+        <div class="panel-heading split">
+          <div>
+            <span class="kicker">LỊCH & KẾT QUẢ</span>
+            <h2 id="selectedDateTitle">Ngày thi đấu</h2>
+          </div>
+          <span id="selectedDateBadge" class="date-badge">—</span>
+        </div>
+        <div class="date-controls">
+          <button id="prevDate" class="square-button" type="button" aria-label="Ngày trước">‹</button>
+          <select id="dateSelect" aria-label="Chọn ngày thi đấu"></select>
+          <button id="nextDate" class="square-button" type="button" aria-label="Ngày sau">›</button>
+          <select id="statusFilter" aria-label="Lọc trạng thái trận đấu">
+            <option value="all">Tất cả trận</option>
+            <option value="finished">Đã kết thúc</option>
+            <option value="live">Đang diễn ra</option>
+            <option value="upcoming">Sắp diễn ra</option>
+          </select>
+        </div>
+        <div id="matchesList" class="matches-list"></div>
+      </article>
+    </section>
+
+    <section id="standings" class="tab-panel">
+      <article class="panel glass third-panel">
+        <div class="panel-heading">
+          <span class="kicker">CUỘC ĐUA VÒNG 32 ĐỘI</span>
+          <h2>Xếp hạng các đội đứng thứ 3</h2>
+          <p class="panel-note">Sắp theo <b>điểm → hiệu số → tên đội A–Z</b>. Tám đội đầu bảng được đánh dấu là tạm thời đi tiếp.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="rank-table third-table">
+            <thead><tr><th>STT</th><th>Đội / Bảng</th><th>Điểm</th><th>Hệ số</th></tr></thead>
+            <tbody id="thirdPlaceBody"></tbody>
+          </table>
+        </div>
+        <div class="legend"><span><i class="legend-line qualified"></i> Top 8 tạm đi tiếp</span><span><i class="legend-line cutoff"></i> Ngoài nhóm đi tiếp</span></div>
+      </article>
+
+      <div id="standingsGrid" class="standings-grid"></div>
+    </section>
+
+    <section id="goals" class="tab-panel">
+      <div class="metric-grid">
+        <article class="metric-card glass"><span>Tổng trận có tỷ số</span><strong id="totalPlayed">0</strong><small>Đã kết thúc hoặc đang diễn ra</small></article>
+        <article class="metric-card glass"><span>Tổng bàn thắng</span><strong id="totalGoals">0</strong><small>Tính đến lần cập nhật gần nhất</small></article>
+        <article class="metric-card glass"><span>Trung bình toàn giải</span><strong id="overallAverage">0.00</strong><small>Bàn thắng mỗi trận</small></article>
+        <article class="metric-card glass"><span>Ngày nhiều bàn nhất</span><strong id="bestDayGoals">0</strong><small id="bestDayLabel">Chưa có dữ liệu</small></article>
+      </div>
+
+      <article class="panel glass">
+        <div class="panel-heading">
+          <span class="kicker">BIỂU ĐỒ</span>
+          <h2>Bàn thắng theo ngày</h2>
+          <p class="panel-note">Chạm vào cột để xem chi tiết ngày thi đấu.</p>
+        </div>
+        <div class="chart-wrap"><canvas id="goalsChart" role="img" aria-label="Biểu đồ bàn thắng theo ngày"></canvas></div>
+      </article>
+
+      <article class="panel glass">
+        <div class="panel-heading">
+          <span class="kicker">THỐNG KÊ CHI TIẾT</span>
+          <h2>Từng ngày thi đấu</h2>
+        </div>
+        <div class="table-scroll">
+          <table class="rank-table daily-table">
+            <thead><tr><th>Ngày</th><th>Trận</th><th>Bàn</th><th>Bàn/trận</th><th>Trận có bàn</th><th>Tỷ trọng</th></tr></thead>
+            <tbody id="dailyStatsBody"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer glass">
+      <div><b>WORLD CUP 2026 DASHBOARD</b><span>Dữ liệu được GitHub Actions cập nhật tự động mỗi ngày vào khoảng 12:00 trưa Việt Nam.</span></div>
+      <strong>COPYRIGHT © 2026: NGOC SON LE</strong>
+    </footer>
+  </main>
+
+  <div id="importModal" class="modal-backdrop" hidden>
+    <div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="importTitle">
+      <button id="closeModal" class="modal-close" type="button" aria-label="Đóng">×</button>
+      <span class="kicker">DỮ LIỆU DỰ PHÒNG</span>
+      <h2 id="importTitle">Nhập file JSON</h2>
+      <p>Chọn file đã xuất từ chính trang này hoặc file có cấu trúc <code>{ meta, teams, matches }</code>.</p>
+      <input id="jsonFile" type="file" accept="application/json,.json">
+      <button id="loadJsonBtn" class="button primary full" type="button">Nạp dữ liệu</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

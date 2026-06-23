@@ -1,0 +1,17 @@
+{
+  "name": "World Cup 2026 Dashboard — NGOC SON LE",
+  "short_name": "World Cup 2026",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#04110d",
+  "theme_color": "#061812",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
