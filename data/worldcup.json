@@ -1,19 +1,11 @@
 {
   "meta": {
-    "updated_at": "2026-06-01T00:00:00Z",
-    "source": "Lịch thi đấu mẫu đi kèm — GitHub Actions sẽ thay bằng dữ liệu mới",
+    "updated_at": "2026-06-23T01:20:56.558483Z",
+    "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
-    "version": 3,
-    "note": "Chạy workflow Cập nhật & triển khai World Cup 2026 sau khi tải lên GitHub."
+    "version": 3
   },
   "teams": [
-    {
-      "id": "1",
-      "name": "Mexico",
-      "code": "MEX",
-      "iso2": "MX",
-      "group": "A"
-    },
     {
       "id": "2",
       "name": "South Africa",
@@ -22,66 +14,10 @@
       "group": "A"
     },
     {
-      "id": "3",
-      "name": "South Korea",
-      "code": "KOR",
-      "iso2": "KR",
-      "group": "A"
-    },
-    {
-      "id": "4",
-      "name": "UEFA Path D Winner",
-      "code": "TBD",
-      "iso2": "TBD",
-      "group": "A"
-    },
-    {
-      "id": "5",
-      "name": "Canada",
-      "code": "CAN",
-      "iso2": "CA",
-      "group": "B"
-    },
-    {
-      "id": "6",
-      "name": "UEFA Path A Winner",
-      "code": "TBD",
-      "iso2": "TBD",
-      "group": "B"
-    },
-    {
-      "id": "7",
-      "name": "Qatar",
-      "code": "QAT",
-      "iso2": "QA",
-      "group": "B"
-    },
-    {
-      "id": "8",
-      "name": "Switzerland",
-      "code": "SUI",
-      "iso2": "CH",
-      "group": "B"
-    },
-    {
       "id": "9",
       "name": "Brazil",
       "code": "BRA",
       "iso2": "BR",
-      "group": "C"
-    },
-    {
-      "id": "10",
-      "name": "Morocco",
-      "code": "MAR",
-      "iso2": "MA",
-      "group": "C"
-    },
-    {
-      "id": "11",
-      "name": "Haiti",
-      "code": "HAI",
-      "iso2": "HT",
       "group": "C"
     },
     {
@@ -92,59 +28,17 @@
       "group": "C"
     },
     {
-      "id": "13",
-      "name": "United States",
-      "code": "USA",
-      "iso2": "US",
-      "group": "D"
-    },
-    {
-      "id": "14",
-      "name": "Paraguay",
-      "code": "PAR",
-      "iso2": "PY",
-      "group": "D"
-    },
-    {
-      "id": "15",
-      "name": "Australia",
-      "code": "AUS",
-      "iso2": "AU",
-      "group": "D"
-    },
-    {
       "id": "16",
-      "name": "UEFA Path C Winner",
-      "code": "TBD",
-      "iso2": "TBD",
+      "name": "Turkey",
+      "code": "TUR",
+      "iso2": "TR",
       "group": "D"
-    },
-    {
-      "id": "17",
-      "name": "Germany",
-      "code": "GER",
-      "iso2": "DE",
-      "group": "E"
-    },
-    {
-      "id": "18",
-      "name": "Curaçao",
-      "code": "CUW",
-      "iso2": "CW",
-      "group": "E"
     },
     {
       "id": "19",
       "name": "Ivory Coast",
       "code": "CIV",
       "iso2": "CI",
-      "group": "E"
-    },
-    {
-      "id": "20",
-      "name": "Ecuador",
-      "code": "ECU",
-      "iso2": "EC",
       "group": "E"
     },
     {
@@ -155,80 +49,10 @@
       "group": "F"
     },
     {
-      "id": "22",
-      "name": "Japan",
-      "code": "JPN",
-      "iso2": "JP",
-      "group": "F"
-    },
-    {
-      "id": "23",
-      "name": "UEFA Path B Winner",
-      "code": "TBD",
-      "iso2": "TBD",
-      "group": "F"
-    },
-    {
-      "id": "24",
-      "name": "Tunisia",
-      "code": "TUN",
-      "iso2": "TN",
-      "group": "F"
-    },
-    {
-      "id": "25",
-      "name": "Belgium",
-      "code": "BEL",
-      "iso2": "BE",
-      "group": "G"
-    },
-    {
-      "id": "26",
-      "name": "Egypt",
-      "code": "EGY",
-      "iso2": "EG",
-      "group": "G"
-    },
-    {
-      "id": "27",
-      "name": "Iran",
-      "code": "IRN",
-      "iso2": "IR",
-      "group": "G"
-    },
-    {
-      "id": "28",
-      "name": "New Zealand",
-      "code": "NZL",
-      "iso2": "NZ",
-      "group": "G"
-    },
-    {
-      "id": "29",
-      "name": "Spain",
-      "code": "ESP",
-      "iso2": "ES",
-      "group": "H"
-    },
-    {
       "id": "30",
       "name": "Cape Verde",
       "code": "CPV",
       "iso2": "CV",
-      "group": "H"
-    },
-    {
-      "id": "31",
-      "name": "Saudi Arabia",
-      "code": "KSA",
-      "iso2": "SA",
-      "group": "H"
-    },
-    {
-      "id": "32",
-      "name": "Uruguay",
-      "code": "URU",
-      "iso2": "UY",
       "group": "H"
     },
     {
@@ -239,66 +63,31 @@
       "group": "I"
     },
     {
-      "id": "34",
-      "name": "Senegal",
-      "code": "SEN",
-      "iso2": "SN",
-      "group": "I"
+      "id": "24",
+      "name": "Tunisia",
+      "code": "TUN",
+      "iso2": "TN",
+      "group": "F"
+    },
+    {
+      "id": "26",
+      "name": "Egypt",
+      "code": "EGY",
+      "iso2": "EG",
+      "group": "G"
     },
     {
       "id": "35",
-      "name": "IC Path 2 Winner",
-      "code": "TBD",
-      "iso2": "TBD",
+      "name": "Iraq",
+      "code": "IRQ",
+      "iso2": "IQ",
       "group": "I"
-    },
-    {
-      "id": "36",
-      "name": "Norway",
-      "code": "NOR",
-      "iso2": "NO",
-      "group": "I"
-    },
-    {
-      "id": "37",
-      "name": "Argentina",
-      "code": "ARG",
-      "iso2": "AR",
-      "group": "J"
-    },
-    {
-      "id": "38",
-      "name": "Algeria",
-      "code": "ALG",
-      "iso2": "DZ",
-      "group": "J"
-    },
-    {
-      "id": "39",
-      "name": "Austria",
-      "code": "AUT",
-      "iso2": "AT",
-      "group": "J"
-    },
-    {
-      "id": "40",
-      "name": "Jordan",
-      "code": "JOR",
-      "iso2": "JO",
-      "group": "J"
     },
     {
       "id": "41",
       "name": "Portugal",
       "code": "POR",
       "iso2": "PT",
-      "group": "K"
-    },
-    {
-      "id": "42",
-      "name": "IC Path 1 Winner",
-      "code": "TBD",
-      "iso2": "TBD",
       "group": "K"
     },
     {
@@ -316,18 +105,39 @@
       "group": "K"
     },
     {
-      "id": "45",
-      "name": "England",
-      "code": "ENG",
-      "iso2": "ENG",
-      "group": "L"
+      "id": "20",
+      "name": "Ecuador",
+      "code": "ECU",
+      "iso2": "EC",
+      "group": "E"
     },
     {
-      "id": "46",
-      "name": "Croatia",
-      "code": "CRO",
-      "iso2": "HR",
-      "group": "L"
+      "id": "22",
+      "name": "Japan",
+      "code": "JPN",
+      "iso2": "JP",
+      "group": "F"
+    },
+    {
+      "id": "28",
+      "name": "New Zealand",
+      "code": "NZL",
+      "iso2": "NZ",
+      "group": "G"
+    },
+    {
+      "id": "31",
+      "name": "Saudi Arabia",
+      "code": "KSA",
+      "iso2": "SA",
+      "group": "H"
+    },
+    {
+      "id": "39",
+      "name": "Austria",
+      "code": "AUT",
+      "iso2": "AT",
+      "group": "J"
     },
     {
       "id": "47",
@@ -337,10 +147,199 @@
       "group": "L"
     },
     {
+      "id": "3",
+      "name": "South Korea",
+      "code": "KOR",
+      "iso2": "KR",
+      "group": "A"
+    },
+    {
+      "id": "29",
+      "name": "Spain",
+      "code": "ESP",
+      "iso2": "ES",
+      "group": "H"
+    },
+    {
+      "id": "36",
+      "name": "Norway",
+      "code": "NOR",
+      "iso2": "NO",
+      "group": "I"
+    },
+    {
+      "id": "37",
+      "name": "Argentina",
+      "code": "ARG",
+      "iso2": "AR",
+      "group": "J"
+    },
+    {
+      "id": "42",
+      "name": "Democratic Republic of the Congo",
+      "code": "COD",
+      "iso2": "CD",
+      "group": "K"
+    },
+    {
+      "id": "45",
+      "name": "England",
+      "code": "ENG",
+      "iso2": "ENG",
+      "group": "L"
+    },
+    {
+      "id": "4",
+      "name": "Czech Republic",
+      "code": "CZE",
+      "iso2": "CZ",
+      "group": "A"
+    },
+    {
+      "id": "5",
+      "name": "Canada",
+      "code": "CAN",
+      "iso2": "CA",
+      "group": "B"
+    },
+    {
+      "id": "7",
+      "name": "Qatar",
+      "code": "QAT",
+      "iso2": "QA",
+      "group": "B"
+    },
+    {
+      "id": "8",
+      "name": "Switzerland",
+      "code": "SUI",
+      "iso2": "CH",
+      "group": "B"
+    },
+    {
+      "id": "10",
+      "name": "Morocco",
+      "code": "MAR",
+      "iso2": "MA",
+      "group": "C"
+    },
+    {
+      "id": "14",
+      "name": "Paraguay",
+      "code": "PAR",
+      "iso2": "PY",
+      "group": "D"
+    },
+    {
+      "id": "18",
+      "name": "Curaçao",
+      "code": "CUW",
+      "iso2": "CW",
+      "group": "E"
+    },
+    {
+      "id": "23",
+      "name": "Sweden",
+      "code": "SWE",
+      "iso2": "SE",
+      "group": "F"
+    },
+    {
+      "id": "38",
+      "name": "Algeria",
+      "code": "ALG",
+      "iso2": "DZ",
+      "group": "J"
+    },
+    {
+      "id": "40",
+      "name": "Jordan",
+      "code": "JOR",
+      "iso2": "JO",
+      "group": "J"
+    },
+    {
+      "id": "11",
+      "name": "Haiti",
+      "code": "HAI",
+      "iso2": "HT",
+      "group": "C"
+    },
+    {
+      "id": "17",
+      "name": "Germany",
+      "code": "GER",
+      "iso2": "DE",
+      "group": "E"
+    },
+    {
+      "id": "32",
+      "name": "Uruguay",
+      "code": "URU",
+      "iso2": "UY",
+      "group": "H"
+    },
+    {
+      "id": "34",
+      "name": "Senegal",
+      "code": "SEN",
+      "iso2": "SN",
+      "group": "I"
+    },
+    {
       "id": "48",
       "name": "Panama",
       "code": "PAN",
       "iso2": "PA",
+      "group": "L"
+    },
+    {
+      "id": "1",
+      "name": "Mexico",
+      "code": "MEX",
+      "iso2": "MX",
+      "group": "A"
+    },
+    {
+      "id": "6",
+      "name": "Bosnia and Herzegovina",
+      "code": "BIH",
+      "iso2": "BA",
+      "group": "B"
+    },
+    {
+      "id": "13",
+      "name": "United States",
+      "code": "USA",
+      "iso2": "US",
+      "group": "D"
+    },
+    {
+      "id": "15",
+      "name": "Australia",
+      "code": "AUS",
+      "iso2": "AU",
+      "group": "D"
+    },
+    {
+      "id": "25",
+      "name": "Belgium",
+      "code": "BEL",
+      "iso2": "BE",
+      "group": "G"
+    },
+    {
+      "id": "27",
+      "name": "Iran",
+      "code": "IRN",
+      "iso2": "IR",
+      "group": "G"
+    },
+    {
+      "id": "46",
+      "name": "Croatia",
+      "code": "CRO",
+      "iso2": "HR",
       "group": "L"
     }
   ],
@@ -350,11 +349,11 @@
       "stage": "group",
       "group": "A",
       "matchday": 1,
-      "kickoff_utc": "2026-06-11T09:30:00.000Z",
+      "kickoff_utc": "2026-06-11T13:00:00Z",
       "date_vn": "2026-06-11",
-      "time_vn": "16:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "20:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "1",
         "name": "Mexico",
@@ -368,21 +367,21 @@
         "iso2": "ZA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
-      "venue": ""
+      "venue": "Estadio Azteca"
     },
     {
       "id": "2",
       "stage": "group",
       "group": "A",
       "matchday": 1,
-      "kickoff_utc": "2026-06-11T16:30:00.000Z",
-      "date_vn": "2026-06-11",
-      "time_vn": "23:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-11T20:00:00Z",
+      "date_vn": "2026-06-12",
+      "time_vn": "03:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "3",
         "name": "South Korea",
@@ -391,26 +390,26 @@
       },
       "away": {
         "id": "4",
-        "name": "UEFA Path D Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Czech Republic",
+        "code": "CZE",
+        "iso2": "CZ"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Estadio Akron"
     },
     {
       "id": "3",
       "stage": "group",
       "group": "B",
       "matchday": 1,
-      "kickoff_utc": "2026-06-12T11:30:00.000Z",
+      "kickoff_utc": "2026-06-12T15:00:00Z",
       "date_vn": "2026-06-12",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "22:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "5",
         "name": "Canada",
@@ -419,26 +418,26 @@
       },
       "away": {
         "id": "6",
-        "name": "UEFA Path A Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "iso2": "BA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "venue": ""
+      "venue": "BMO Field"
     },
     {
       "id": "4",
       "stage": "group",
       "group": "D",
       "matchday": 1,
-      "kickoff_utc": "2026-06-12T14:30:00.000Z",
-      "date_vn": "2026-06-12",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-12T18:00:00Z",
+      "date_vn": "2026-06-13",
+      "time_vn": "01:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "13",
         "name": "United States",
@@ -452,21 +451,21 @@
         "iso2": "PY"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 4,
+        "away": 1
       },
-      "venue": ""
+      "venue": "SoFi Stadium"
     },
     {
       "id": "5",
       "stage": "group",
       "group": "C",
       "matchday": 1,
-      "kickoff_utc": "2026-06-13T17:30:00.000Z",
+      "kickoff_utc": "2026-06-13T21:00:00Z",
       "date_vn": "2026-06-14",
-      "time_vn": "00:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "04:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "11",
         "name": "Haiti",
@@ -480,21 +479,21 @@
         "iso2": "SCO"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Gillette Stadium"
     },
     {
       "id": "6",
       "stage": "group",
       "group": "D",
       "matchday": 1,
-      "kickoff_utc": "2026-06-13T08:30:00.000Z",
-      "date_vn": "2026-06-13",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-13T21:00:00Z",
+      "date_vn": "2026-06-14",
+      "time_vn": "04:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "15",
         "name": "Australia",
@@ -503,26 +502,26 @@
       },
       "away": {
         "id": "16",
-        "name": "UEFA Path C Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Turkey",
+        "code": "TUR",
+        "iso2": "TR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
-      "venue": ""
+      "venue": "BC Place"
     },
     {
       "id": "7",
       "stage": "group",
       "group": "C",
       "matchday": 1,
-      "kickoff_utc": "2026-06-13T14:30:00.000Z",
-      "date_vn": "2026-06-13",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-13T18:00:00Z",
+      "date_vn": "2026-06-14",
+      "time_vn": "01:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "9",
         "name": "Brazil",
@@ -536,21 +535,21 @@
         "iso2": "MA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "venue": ""
+      "venue": "MetLife Stadium"
     },
     {
       "id": "8",
       "stage": "group",
       "group": "B",
       "matchday": 1,
-      "kickoff_utc": "2026-06-13T08:30:00.000Z",
+      "kickoff_utc": "2026-06-13T12:00:00Z",
       "date_vn": "2026-06-13",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "7",
         "name": "Qatar",
@@ -564,21 +563,21 @@
         "iso2": "CH"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Levi's Stadium"
     },
     {
       "id": "9",
       "stage": "group",
       "group": "E",
       "matchday": 1,
-      "kickoff_utc": "2026-06-14T14:30:00.000Z",
-      "date_vn": "2026-06-14",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-14T19:00:00Z",
+      "date_vn": "2026-06-15",
+      "time_vn": "02:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "19",
         "name": "Ivory Coast",
@@ -592,21 +591,21 @@
         "iso2": "EC"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "venue": ""
+      "venue": "Lincoln Financial Field"
     },
     {
       "id": "10",
       "stage": "group",
       "group": "E",
       "matchday": 1,
-      "kickoff_utc": "2026-06-14T08:30:00.000Z",
+      "kickoff_utc": "2026-06-14T12:00:00Z",
       "date_vn": "2026-06-14",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "17",
         "name": "Germany",
@@ -620,21 +619,21 @@
         "iso2": "CW"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 7,
+        "away": 1
       },
-      "venue": ""
+      "venue": "NRG Stadium"
     },
     {
       "id": "11",
       "stage": "group",
       "group": "F",
       "matchday": 1,
-      "kickoff_utc": "2026-06-14T11:30:00.000Z",
+      "kickoff_utc": "2026-06-14T15:00:00Z",
       "date_vn": "2026-06-14",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "22:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "21",
         "name": "Netherlands",
@@ -648,26 +647,26 @@
         "iso2": "JP"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 2
       },
-      "venue": ""
+      "venue": "AT&T Stadium"
     },
     {
       "id": "12",
       "stage": "group",
       "group": "F",
       "matchday": 1,
-      "kickoff_utc": "2026-06-14T17:30:00.000Z",
+      "kickoff_utc": "2026-06-14T20:00:00Z",
       "date_vn": "2026-06-15",
-      "time_vn": "00:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "03:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "23",
-        "name": "UEFA Path B Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Sweden",
+        "code": "SWE",
+        "iso2": "SE"
       },
       "away": {
         "id": "24",
@@ -676,21 +675,21 @@
         "iso2": "TN"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 5,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Estadio BBVA"
     },
     {
       "id": "13",
       "stage": "group",
       "group": "G",
       "matchday": 1,
-      "kickoff_utc": "2026-06-15T14:30:00.000Z",
-      "date_vn": "2026-06-15",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-15T18:00:00Z",
+      "date_vn": "2026-06-16",
+      "time_vn": "01:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "27",
         "name": "Iran",
@@ -704,21 +703,21 @@
         "iso2": "NZ"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 2
       },
-      "venue": ""
+      "venue": "SoFi Stadium"
     },
     {
       "id": "14",
       "stage": "group",
       "group": "H",
       "matchday": 1,
-      "kickoff_utc": "2026-06-15T08:30:00.000Z",
+      "kickoff_utc": "2026-06-15T12:00:00Z",
       "date_vn": "2026-06-15",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "29",
         "name": "Spain",
@@ -732,21 +731,21 @@
         "iso2": "CV"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "venue": ""
+      "venue": "Mercedes-Benz Stadium"
     },
     {
       "id": "15",
       "stage": "group",
       "group": "G",
       "matchday": 1,
-      "kickoff_utc": "2026-06-15T11:30:00.000Z",
+      "kickoff_utc": "2026-06-15T12:00:00Z",
       "date_vn": "2026-06-15",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "25",
         "name": "Belgium",
@@ -760,21 +759,21 @@
         "iso2": "EG"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Lumen Field"
     },
     {
       "id": "16",
       "stage": "group",
       "group": "H",
       "matchday": 1,
-      "kickoff_utc": "2026-06-15T17:30:00.000Z",
+      "kickoff_utc": "2026-06-15T18:00:00Z",
       "date_vn": "2026-06-16",
-      "time_vn": "00:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "01:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "31",
         "name": "Saudi Arabia",
@@ -788,21 +787,21 @@
         "iso2": "UY"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Hard Rock Stadium"
     },
     {
       "id": "17",
       "stage": "group",
       "group": "I",
       "matchday": 1,
-      "kickoff_utc": "2026-06-16T11:30:00.000Z",
+      "kickoff_utc": "2026-06-16T15:00:00Z",
       "date_vn": "2026-06-16",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "22:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "33",
         "name": "France",
@@ -816,26 +815,26 @@
         "iso2": "SN"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       },
-      "venue": ""
+      "venue": "MetLife Stadium"
     },
     {
       "id": "18",
       "stage": "group",
       "group": "I",
       "matchday": 1,
-      "kickoff_utc": "2026-06-16T14:30:00.000Z",
-      "date_vn": "2026-06-16",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-16T18:00:00Z",
+      "date_vn": "2026-06-17",
+      "time_vn": "01:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "35",
-        "name": "IC Path 2 Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Iraq",
+        "code": "IRQ",
+        "iso2": "IQ"
       },
       "away": {
         "id": "36",
@@ -844,21 +843,21 @@
         "iso2": "NO"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 4
       },
-      "venue": ""
+      "venue": "Gillette Stadium"
     },
     {
       "id": "19",
       "stage": "group",
       "group": "J",
       "matchday": 1,
-      "kickoff_utc": "2026-06-16T16:30:00.000Z",
-      "date_vn": "2026-06-16",
-      "time_vn": "23:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-16T20:00:00Z",
+      "date_vn": "2026-06-17",
+      "time_vn": "03:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "37",
         "name": "Argentina",
@@ -872,21 +871,21 @@
         "iso2": "DZ"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
-      "venue": ""
+      "venue": "GEHA Field at Arrowhead Stadium"
     },
     {
       "id": "20",
       "stage": "group",
       "group": "J",
       "matchday": 1,
-      "kickoff_utc": "2026-06-16T08:30:00.000Z",
-      "date_vn": "2026-06-16",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-16T21:00:00Z",
+      "date_vn": "2026-06-17",
+      "time_vn": "04:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "39",
         "name": "Austria",
@@ -900,21 +899,21 @@
         "iso2": "JO"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Levi's Stadium"
     },
     {
       "id": "21",
       "stage": "group",
       "group": "K",
       "matchday": 1,
-      "kickoff_utc": "2026-06-17T08:30:00.000Z",
+      "kickoff_utc": "2026-06-17T12:00:00Z",
       "date_vn": "2026-06-17",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "Finished",
       "home": {
         "id": "41",
         "name": "Portugal",
@@ -923,26 +922,26 @@
       },
       "away": {
         "id": "42",
-        "name": "IC Path 1 Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Democratic Republic of the Congo",
+        "code": "COD",
+        "iso2": "CD"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "venue": ""
+      "venue": "NRG Stadium"
     },
     {
       "id": "22",
       "stage": "group",
       "group": "L",
       "matchday": 1,
-      "kickoff_utc": "2026-06-17T11:30:00.000Z",
+      "kickoff_utc": "2026-06-17T15:00:00Z",
       "date_vn": "2026-06-17",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "22:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "45",
         "name": "England",
@@ -956,21 +955,21 @@
         "iso2": "HR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 4,
+        "away": 2
       },
-      "venue": ""
+      "venue": "AT&T Stadium"
     },
     {
       "id": "23",
       "stage": "group",
       "group": "K",
       "matchday": 1,
-      "kickoff_utc": "2026-06-17T14:30:00.000Z",
-      "date_vn": "2026-06-17",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-17T20:00:00Z",
+      "date_vn": "2026-06-18",
+      "time_vn": "03:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "43",
         "name": "Uzbekistan",
@@ -984,21 +983,21 @@
         "iso2": "CO"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 3
       },
-      "venue": ""
+      "venue": "Estadio Azteca"
     },
     {
       "id": "24",
       "stage": "group",
       "group": "L",
       "matchday": 1,
-      "kickoff_utc": "2026-06-17T17:30:00.000Z",
+      "kickoff_utc": "2026-06-17T19:00:00Z",
       "date_vn": "2026-06-18",
-      "time_vn": "00:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "02:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "47",
         "name": "Ghana",
@@ -1012,21 +1011,21 @@
         "iso2": "PA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "venue": ""
+      "venue": "BMO Field"
     },
     {
       "id": "25",
       "stage": "group",
       "group": "A",
       "matchday": 2,
-      "kickoff_utc": "2026-06-18T09:30:00.000Z",
-      "date_vn": "2026-06-18",
-      "time_vn": "16:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-18T19:00:00Z",
+      "date_vn": "2026-06-19",
+      "time_vn": "02:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "1",
         "name": "Mexico",
@@ -1040,21 +1039,21 @@
         "iso2": "KR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
-      "venue": ""
+      "venue": "Estadio Akron"
     },
     {
       "id": "26",
       "stage": "group",
       "group": "B",
       "matchday": 2,
-      "kickoff_utc": "2026-06-18T08:30:00.000Z",
+      "kickoff_utc": "2026-06-18T12:00:00Z",
       "date_vn": "2026-06-18",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "8",
         "name": "Switzerland",
@@ -1063,26 +1062,26 @@
       },
       "away": {
         "id": "6",
-        "name": "UEFA Path A Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "iso2": "BA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 4,
+        "away": 1
       },
-      "venue": ""
+      "venue": "SoFi Stadium"
     },
     {
       "id": "27",
       "stage": "group",
       "group": "B",
       "matchday": 2,
-      "kickoff_utc": "2026-06-18T11:30:00.000Z",
+      "kickoff_utc": "2026-06-18T15:00:00Z",
       "date_vn": "2026-06-18",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "22:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "5",
         "name": "Canada",
@@ -1096,26 +1095,26 @@
         "iso2": "QA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 6,
+        "away": 0
       },
-      "venue": ""
+      "venue": "BC Place"
     },
     {
       "id": "28",
       "stage": "group",
       "group": "A",
       "matchday": 2,
-      "kickoff_utc": "2026-06-18T14:30:00.000Z",
+      "kickoff_utc": "2026-06-18T12:00:00Z",
       "date_vn": "2026-06-18",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "4",
-        "name": "UEFA Path D Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Czech Republic",
+        "code": "CZE",
+        "iso2": "CZ"
       },
       "away": {
         "id": "2",
@@ -1124,21 +1123,21 @@
         "iso2": "ZA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Mercedes-Benz Stadium"
     },
     {
       "id": "29",
       "stage": "group",
       "group": "C",
       "matchday": 2,
-      "kickoff_utc": "2026-06-19T17:30:00.000Z",
+      "kickoff_utc": "2026-06-19T21:00:00Z",
       "date_vn": "2026-06-20",
-      "time_vn": "00:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "04:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "9",
         "name": "Brazil",
@@ -1152,21 +1151,21 @@
         "iso2": "HT"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
-      "venue": ""
+      "venue": "Lincoln Financial Field"
     },
     {
       "id": "30",
       "stage": "group",
       "group": "C",
       "matchday": 2,
-      "kickoff_utc": "2026-06-19T14:30:00.000Z",
-      "date_vn": "2026-06-19",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-19T18:00:00Z",
+      "date_vn": "2026-06-20",
+      "time_vn": "01:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "12",
         "name": "Scotland",
@@ -1180,21 +1179,21 @@
         "iso2": "MA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Gillette Stadium"
     },
     {
       "id": "31",
       "stage": "group",
       "group": "D",
       "matchday": 2,
-      "kickoff_utc": "2026-06-19T08:30:00.000Z",
+      "kickoff_utc": "2026-06-19T12:00:00Z",
       "date_vn": "2026-06-19",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "13",
         "name": "United States",
@@ -1208,26 +1207,26 @@
         "iso2": "AU"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
-      "venue": ""
+      "venue": "Lumen Field"
     },
     {
       "id": "32",
       "stage": "group",
       "group": "D",
       "matchday": 2,
-      "kickoff_utc": "2026-06-19T11:30:00.000Z",
-      "date_vn": "2026-06-19",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-19T20:00:00Z",
+      "date_vn": "2026-06-20",
+      "time_vn": "03:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "16",
-        "name": "UEFA Path C Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Turkey",
+        "code": "TUR",
+        "iso2": "TR"
       },
       "away": {
         "id": "14",
@@ -1236,21 +1235,21 @@
         "iso2": "PY"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
-      "venue": ""
+      "venue": "Levi's Stadium"
     },
     {
       "id": "33",
       "stage": "group",
       "group": "E",
       "matchday": 2,
-      "kickoff_utc": "2026-06-20T15:30:00.000Z",
+      "kickoff_utc": "2026-06-20T16:00:00Z",
       "date_vn": "2026-06-20",
-      "time_vn": "22:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "23:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "17",
         "name": "Germany",
@@ -1264,21 +1263,21 @@
         "iso2": "CI"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
-      "venue": ""
+      "venue": "BMO Field"
     },
     {
       "id": "34",
       "stage": "group",
       "group": "E",
       "matchday": 2,
-      "kickoff_utc": "2026-06-20T15:30:00.000Z",
-      "date_vn": "2026-06-20",
-      "time_vn": "22:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-20T19:00:00Z",
+      "date_vn": "2026-06-21",
+      "time_vn": "02:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "20",
         "name": "Ecuador",
@@ -1292,21 +1291,21 @@
         "iso2": "CW"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "venue": ""
+      "venue": "GEHA Field at Arrowhead Stadium"
     },
     {
       "id": "35",
       "stage": "group",
       "group": "F",
       "matchday": 2,
-      "kickoff_utc": "2026-06-20T08:30:00.000Z",
+      "kickoff_utc": "2026-06-20T12:00:00Z",
       "date_vn": "2026-06-20",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "21",
         "name": "Netherlands",
@@ -1315,26 +1314,26 @@
       },
       "away": {
         "id": "23",
-        "name": "UEFA Path B Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Sweden",
+        "code": "SWE",
+        "iso2": "SE"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 5,
+        "away": 1
       },
-      "venue": ""
+      "venue": "NRG Stadium"
     },
     {
       "id": "36",
       "stage": "group",
       "group": "F",
       "matchday": 2,
-      "kickoff_utc": "2026-06-20T11:30:00.000Z",
-      "date_vn": "2026-06-20",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-20T22:00:00Z",
+      "date_vn": "2026-06-21",
+      "time_vn": "05:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "24",
         "name": "Tunisia",
@@ -1348,21 +1347,21 @@
         "iso2": "JP"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 4
       },
-      "venue": ""
+      "venue": "Estadio BBVA"
     },
     {
       "id": "37",
       "stage": "group",
       "group": "G",
       "matchday": 2,
-      "kickoff_utc": "2026-06-21T11:30:00.000Z",
+      "kickoff_utc": "2026-06-21T12:00:00Z",
       "date_vn": "2026-06-21",
-      "time_vn": "18:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "25",
         "name": "Belgium",
@@ -1376,21 +1375,21 @@
         "iso2": "IR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "venue": ""
+      "venue": "SoFi Stadium"
     },
     {
       "id": "38",
       "stage": "group",
       "group": "G",
       "matchday": 2,
-      "kickoff_utc": "2026-06-21T08:30:00.000Z",
-      "date_vn": "2026-06-21",
-      "time_vn": "15:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-21T18:00:00Z",
+      "date_vn": "2026-06-22",
+      "time_vn": "01:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "28",
         "name": "New Zealand",
@@ -1404,21 +1403,21 @@
         "iso2": "EG"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 3
       },
-      "venue": ""
+      "venue": "BC Place"
     },
     {
       "id": "39",
       "stage": "group",
       "group": "H",
       "matchday": 2,
-      "kickoff_utc": "2026-06-21T14:30:00.000Z",
+      "kickoff_utc": "2026-06-21T12:00:00Z",
       "date_vn": "2026-06-21",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "29",
         "name": "Spain",
@@ -1432,21 +1431,21 @@
         "iso2": "SA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 4,
+        "away": 0
       },
-      "venue": ""
+      "venue": "Mercedes-Benz Stadium"
     },
     {
       "id": "40",
       "stage": "group",
       "group": "H",
       "matchday": 2,
-      "kickoff_utc": "2026-06-21T17:30:00.000Z",
+      "kickoff_utc": "2026-06-21T18:00:00Z",
       "date_vn": "2026-06-22",
-      "time_vn": "00:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "01:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "32",
         "name": "Uruguay",
@@ -1460,21 +1459,21 @@
         "iso2": "CV"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 2
       },
-      "venue": ""
+      "venue": "Hard Rock Stadium"
     },
     {
       "id": "41",
       "stage": "group",
       "group": "I",
       "matchday": 2,
-      "kickoff_utc": "2026-06-22T13:30:00.000Z",
-      "date_vn": "2026-06-22",
-      "time_vn": "20:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-22T17:00:00Z",
+      "date_vn": "2026-06-23",
+      "time_vn": "00:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "33",
         "name": "France",
@@ -1483,26 +1482,26 @@
       },
       "away": {
         "id": "35",
-        "name": "IC Path 2 Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Iraq",
+        "code": "IRQ",
+        "iso2": "IQ"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
-      "venue": ""
+      "venue": "Lincoln Financial Field"
     },
     {
       "id": "42",
       "stage": "group",
       "group": "I",
       "matchday": 2,
-      "kickoff_utc": "2026-06-22T10:30:00.000Z",
-      "date_vn": "2026-06-22",
-      "time_vn": "17:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "kickoff_utc": "2026-06-22T20:00:00Z",
+      "date_vn": "2026-06-23",
+      "time_vn": "03:00",
+      "status": "live",
+      "elapsed": "live",
       "home": {
         "id": "36",
         "name": "Norway",
@@ -1516,21 +1515,21 @@
         "iso2": "SN"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       },
-      "venue": ""
+      "venue": "MetLife Stadium"
     },
     {
       "id": "43",
       "stage": "group",
       "group": "J",
       "matchday": 2,
-      "kickoff_utc": "2026-06-22T16:30:00.000Z",
+      "kickoff_utc": "2026-06-22T12:00:00Z",
       "date_vn": "2026-06-22",
-      "time_vn": "23:30",
-      "status": "upcoming",
-      "elapsed": "",
+      "time_vn": "19:00",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "37",
         "name": "Argentina",
@@ -1544,21 +1543,21 @@
         "iso2": "AT"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
-      "venue": ""
+      "venue": "AT&T Stadium"
     },
     {
       "id": "44",
       "stage": "group",
       "group": "J",
       "matchday": 2,
-      "kickoff_utc": "2026-06-22T07:30:00.000Z",
-      "date_vn": "2026-06-22",
-      "time_vn": "14:30",
+      "kickoff_utc": "2026-06-22T20:00:00Z",
+      "date_vn": "2026-06-23",
+      "time_vn": "03:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "40",
         "name": "Jordan",
@@ -1575,18 +1574,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Levi's Stadium"
     },
     {
       "id": "45",
       "stage": "group",
       "group": "K",
       "matchday": 2,
-      "kickoff_utc": "2026-06-23T11:30:00.000Z",
+      "kickoff_utc": "2026-06-23T12:00:00Z",
       "date_vn": "2026-06-23",
-      "time_vn": "18:30",
+      "time_vn": "19:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "41",
         "name": "Portugal",
@@ -1603,18 +1602,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "NRG Stadium"
     },
     {
       "id": "46",
       "stage": "group",
       "group": "L",
       "matchday": 2,
-      "kickoff_utc": "2026-06-23T15:30:00.000Z",
-      "date_vn": "2026-06-23",
-      "time_vn": "22:30",
+      "kickoff_utc": "2026-06-23T19:00:00Z",
+      "date_vn": "2026-06-24",
+      "time_vn": "02:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "48",
         "name": "Panama",
@@ -1631,18 +1630,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "BMO Field"
     },
     {
       "id": "47",
       "stage": "group",
       "group": "K",
       "matchday": 2,
-      "kickoff_utc": "2026-06-23T08:30:00.000Z",
-      "date_vn": "2026-06-23",
-      "time_vn": "15:30",
+      "kickoff_utc": "2026-06-23T20:00:00Z",
+      "date_vn": "2026-06-24",
+      "time_vn": "03:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "44",
         "name": "Colombia",
@@ -1651,26 +1650,26 @@
       },
       "away": {
         "id": "42",
-        "name": "IC Path 1 Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Democratic Republic of the Congo",
+        "code": "COD",
+        "iso2": "CD"
       },
       "score": {
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Estadio Akron"
     },
     {
       "id": "48",
       "stage": "group",
       "group": "L",
       "matchday": 2,
-      "kickoff_utc": "2026-06-23T17:30:00.000Z",
-      "date_vn": "2026-06-24",
-      "time_vn": "00:30",
+      "kickoff_utc": "2026-06-23T16:00:00Z",
+      "date_vn": "2026-06-23",
+      "time_vn": "23:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "45",
         "name": "England",
@@ -1687,18 +1686,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Gillette Stadium"
     },
     {
       "id": "49",
       "stage": "group",
       "group": "C",
       "matchday": 3,
-      "kickoff_utc": "2026-06-24T14:30:00.000Z",
-      "date_vn": "2026-06-24",
-      "time_vn": "21:30",
+      "kickoff_utc": "2026-06-24T18:00:00Z",
+      "date_vn": "2026-06-25",
+      "time_vn": "01:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "12",
         "name": "Scotland",
@@ -1715,18 +1714,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Hard Rock Stadium"
     },
     {
       "id": "50",
       "stage": "group",
       "group": "C",
       "matchday": 3,
-      "kickoff_utc": "2026-06-24T14:30:00.000Z",
-      "date_vn": "2026-06-24",
-      "time_vn": "21:30",
+      "kickoff_utc": "2026-06-24T18:00:00Z",
+      "date_vn": "2026-06-25",
+      "time_vn": "01:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "10",
         "name": "Morocco",
@@ -1743,18 +1742,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Mercedes-Benz Stadium"
     },
     {
       "id": "51",
       "stage": "group",
       "group": "A",
       "matchday": 3,
-      "kickoff_utc": "2026-06-24T15:30:00.000Z",
-      "date_vn": "2026-06-24",
-      "time_vn": "22:30",
+      "kickoff_utc": "2026-06-24T19:00:00Z",
+      "date_vn": "2026-06-25",
+      "time_vn": "02:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "2",
         "name": "South Africa",
@@ -1771,23 +1770,23 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Estadio BBVA"
     },
     {
       "id": "52",
       "stage": "group",
       "group": "A",
       "matchday": 3,
-      "kickoff_utc": "2026-06-24T15:30:00.000Z",
-      "date_vn": "2026-06-24",
-      "time_vn": "22:30",
+      "kickoff_utc": "2026-06-24T19:00:00Z",
+      "date_vn": "2026-06-25",
+      "time_vn": "02:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "4",
-        "name": "UEFA Path D Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Czech Republic",
+        "code": "CZE",
+        "iso2": "CZ"
       },
       "away": {
         "id": "1",
@@ -1799,23 +1798,51 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Estadio Azteca"
     },
     {
       "id": "53",
       "stage": "group",
       "group": "B",
       "matchday": 3,
-      "kickoff_utc": "2026-06-25T14:30:00.000Z",
-      "date_vn": "2026-06-25",
-      "time_vn": "21:30",
+      "kickoff_utc": "2026-06-24T12:00:00Z",
+      "date_vn": "2026-06-24",
+      "time_vn": "19:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "6",
-        "name": "UEFA Path A Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "iso2": "BA"
+      },
+      "away": {
+        "id": "7",
+        "name": "Qatar",
+        "code": "QAT",
+        "iso2": "QA"
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Lumen Field"
+    },
+    {
+      "id": "54",
+      "stage": "group",
+      "group": "B",
+      "matchday": 3,
+      "kickoff_utc": "2026-06-24T12:00:00Z",
+      "date_vn": "2026-06-24",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "8",
+        "name": "Switzerland",
+        "code": "SUI",
+        "iso2": "CH"
       },
       "away": {
         "id": "5",
@@ -1827,46 +1854,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
-    },
-    {
-      "id": "54",
-      "stage": "group",
-      "group": "B",
-      "matchday": 3,
-      "kickoff_utc": "2026-06-25T14:30:00.000Z",
-      "date_vn": "2026-06-25",
-      "time_vn": "21:30",
-      "status": "upcoming",
-      "elapsed": "",
-      "home": {
-        "id": "7",
-        "name": "Qatar",
-        "code": "QAT",
-        "iso2": "QA"
-      },
-      "away": {
-        "id": "8",
-        "name": "Switzerland",
-        "code": "SUI",
-        "iso2": "CH"
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "venue": ""
+      "venue": "BC Place"
     },
     {
       "id": "55",
       "stage": "group",
       "group": "E",
       "matchday": 3,
-      "kickoff_utc": "2026-06-25T12:30:00.000Z",
+      "kickoff_utc": "2026-06-25T16:00:00Z",
       "date_vn": "2026-06-25",
-      "time_vn": "19:30",
+      "time_vn": "23:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "18",
         "name": "Curaçao",
@@ -1883,18 +1882,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Lincoln Financial Field"
     },
     {
       "id": "56",
       "stage": "group",
       "group": "E",
       "matchday": 3,
-      "kickoff_utc": "2026-06-25T12:30:00.000Z",
+      "kickoff_utc": "2026-06-25T16:00:00Z",
       "date_vn": "2026-06-25",
-      "time_vn": "19:30",
+      "time_vn": "23:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "20",
         "name": "Ecuador",
@@ -1911,18 +1910,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "MetLife Stadium"
     },
     {
       "id": "57",
       "stage": "group",
       "group": "D",
       "matchday": 3,
-      "kickoff_utc": "2026-06-25T15:30:00.000Z",
-      "date_vn": "2026-06-25",
-      "time_vn": "22:30",
+      "kickoff_utc": "2026-06-25T19:00:00Z",
+      "date_vn": "2026-06-26",
+      "time_vn": "02:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "14",
         "name": "Paraguay",
@@ -1939,23 +1938,23 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Levi's Stadium"
     },
     {
       "id": "58",
       "stage": "group",
       "group": "D",
       "matchday": 3,
-      "kickoff_utc": "2026-06-25T15:30:00.000Z",
-      "date_vn": "2026-06-25",
-      "time_vn": "22:30",
+      "kickoff_utc": "2026-06-25T19:00:00Z",
+      "date_vn": "2026-06-26",
+      "time_vn": "02:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "16",
-        "name": "UEFA Path C Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Turkey",
+        "code": "TUR",
+        "iso2": "TR"
       },
       "away": {
         "id": "13",
@@ -1967,18 +1966,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "SoFi Stadium"
     },
     {
       "id": "59",
       "stage": "group",
       "group": "F",
       "matchday": 3,
-      "kickoff_utc": "2026-06-26T14:30:00.000Z",
+      "kickoff_utc": "2026-06-25T18:00:00Z",
       "date_vn": "2026-06-26",
-      "time_vn": "21:30",
+      "time_vn": "01:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "22",
         "name": "Japan",
@@ -1987,26 +1986,26 @@
       },
       "away": {
         "id": "23",
-        "name": "UEFA Path B Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Sweden",
+        "code": "SWE",
+        "iso2": "SE"
       },
       "score": {
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "AT&T Stadium"
     },
     {
       "id": "60",
       "stage": "group",
       "group": "F",
       "matchday": 3,
-      "kickoff_utc": "2026-06-26T14:30:00.000Z",
+      "kickoff_utc": "2026-06-25T18:00:00Z",
       "date_vn": "2026-06-26",
-      "time_vn": "21:30",
+      "time_vn": "01:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "24",
         "name": "Tunisia",
@@ -2023,18 +2022,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "GEHA Field at Arrowhead Stadium"
     },
     {
       "id": "61",
       "stage": "group",
       "group": "I",
       "matchday": 3,
-      "kickoff_utc": "2026-06-26T11:30:00.000Z",
+      "kickoff_utc": "2026-06-26T15:00:00Z",
       "date_vn": "2026-06-26",
-      "time_vn": "18:30",
+      "time_vn": "22:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "34",
         "name": "Senegal",
@@ -2043,26 +2042,26 @@
       },
       "away": {
         "id": "35",
-        "name": "IC Path 2 Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Iraq",
+        "code": "IRQ",
+        "iso2": "IQ"
       },
       "score": {
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "BMO Field"
     },
     {
       "id": "62",
       "stage": "group",
       "group": "I",
       "matchday": 3,
-      "kickoff_utc": "2026-06-26T11:30:00.000Z",
+      "kickoff_utc": "2026-06-26T15:00:00Z",
       "date_vn": "2026-06-26",
-      "time_vn": "18:30",
+      "time_vn": "22:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "36",
         "name": "Norway",
@@ -2079,18 +2078,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Gillette Stadium"
     },
     {
       "id": "63",
       "stage": "group",
       "group": "G",
       "matchday": 3,
-      "kickoff_utc": "2026-06-26T16:30:00.000Z",
-      "date_vn": "2026-06-26",
-      "time_vn": "23:30",
+      "kickoff_utc": "2026-06-26T20:00:00Z",
+      "date_vn": "2026-06-27",
+      "time_vn": "03:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "26",
         "name": "Egypt",
@@ -2107,18 +2106,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Lumen Field"
     },
     {
       "id": "64",
       "stage": "group",
       "group": "G",
       "matchday": 3,
-      "kickoff_utc": "2026-06-26T16:30:00.000Z",
-      "date_vn": "2026-06-26",
-      "time_vn": "23:30",
+      "kickoff_utc": "2026-06-26T20:00:00Z",
+      "date_vn": "2026-06-27",
+      "time_vn": "03:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "28",
         "name": "New Zealand",
@@ -2135,18 +2134,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "BC Place"
     },
     {
       "id": "65",
       "stage": "group",
       "group": "H",
       "matchday": 3,
-      "kickoff_utc": "2026-06-27T13:30:00.000Z",
+      "kickoff_utc": "2026-06-26T19:00:00Z",
       "date_vn": "2026-06-27",
-      "time_vn": "20:30",
+      "time_vn": "02:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "30",
         "name": "Cape Verde",
@@ -2163,18 +2162,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "NRG Stadium"
     },
     {
       "id": "66",
       "stage": "group",
       "group": "H",
       "matchday": 3,
-      "kickoff_utc": "2026-06-27T13:30:00.000Z",
+      "kickoff_utc": "2026-06-26T18:00:00Z",
       "date_vn": "2026-06-27",
-      "time_vn": "20:30",
+      "time_vn": "01:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "32",
         "name": "Uruguay",
@@ -2191,18 +2190,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Estadio Akron"
     },
     {
       "id": "67",
       "stage": "group",
       "group": "L",
       "matchday": 3,
-      "kickoff_utc": "2026-06-27T13:30:00.000Z",
-      "date_vn": "2026-06-27",
-      "time_vn": "20:30",
+      "kickoff_utc": "2026-06-27T17:00:00Z",
+      "date_vn": "2026-06-28",
+      "time_vn": "00:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "48",
         "name": "Panama",
@@ -2219,18 +2218,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "MetLife Stadium"
     },
     {
       "id": "68",
       "stage": "group",
       "group": "L",
       "matchday": 3,
-      "kickoff_utc": "2026-06-27T13:30:00.000Z",
-      "date_vn": "2026-06-27",
-      "time_vn": "20:30",
+      "kickoff_utc": "2026-06-27T17:00:00Z",
+      "date_vn": "2026-06-28",
+      "time_vn": "00:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "46",
         "name": "Croatia",
@@ -2247,18 +2246,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Lincoln Financial Field"
     },
     {
       "id": "69",
       "stage": "group",
       "group": "J",
       "matchday": 3,
-      "kickoff_utc": "2026-06-27T16:30:00.000Z",
-      "date_vn": "2026-06-27",
-      "time_vn": "23:30",
+      "kickoff_utc": "2026-06-27T21:00:00Z",
+      "date_vn": "2026-06-28",
+      "time_vn": "04:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "38",
         "name": "Algeria",
@@ -2275,18 +2274,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "GEHA Field at Arrowhead Stadium"
     },
     {
       "id": "70",
       "stage": "group",
       "group": "J",
       "matchday": 3,
-      "kickoff_utc": "2026-06-27T16:30:00.000Z",
-      "date_vn": "2026-06-27",
-      "time_vn": "23:30",
+      "kickoff_utc": "2026-06-27T21:00:00Z",
+      "date_vn": "2026-06-28",
+      "time_vn": "04:00",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "40",
         "name": "Jordan",
@@ -2303,18 +2302,18 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "AT&T Stadium"
     },
     {
       "id": "71",
       "stage": "group",
       "group": "K",
       "matchday": 3,
-      "kickoff_utc": "2026-06-27T16:00:00.000Z",
-      "date_vn": "2026-06-27",
-      "time_vn": "23:00",
+      "kickoff_utc": "2026-06-27T19:30:00Z",
+      "date_vn": "2026-06-28",
+      "time_vn": "02:30",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "44",
         "name": "Colombia",
@@ -2331,23 +2330,23 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Hard Rock Stadium"
     },
     {
       "id": "72",
       "stage": "group",
       "group": "K",
       "matchday": 3,
-      "kickoff_utc": "2026-06-27T16:00:00.000Z",
-      "date_vn": "2026-06-27",
-      "time_vn": "23:00",
+      "kickoff_utc": "2026-06-27T19:30:00Z",
+      "date_vn": "2026-06-28",
+      "time_vn": "02:30",
       "status": "upcoming",
-      "elapsed": "",
+      "elapsed": "notstarted",
       "home": {
         "id": "42",
-        "name": "IC Path 1 Winner",
-        "code": "TBD",
-        "iso2": "TBD"
+        "name": "Democratic Republic of the Congo",
+        "code": "COD",
+        "iso2": "CD"
       },
       "away": {
         "id": "43",
@@ -2359,7 +2358,903 @@
         "home": null,
         "away": null
       },
-      "venue": ""
+      "venue": "Mercedes-Benz Stadium"
+    },
+    {
+      "id": "73",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-06-28T12:00:00Z",
+      "date_vn": "2026-06-28",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "SoFi Stadium"
+    },
+    {
+      "id": "74",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-06-29T16:30:00Z",
+      "date_vn": "2026-06-29",
+      "time_vn": "23:30",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "17",
+        "name": "Germany",
+        "code": "GER",
+        "iso2": "DE"
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Gillette Stadium"
+    },
+    {
+      "id": "75",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-06-29T19:00:00Z",
+      "date_vn": "2026-06-30",
+      "time_vn": "02:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Estadio BBVA"
+    },
+    {
+      "id": "76",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-06-29T12:00:00Z",
+      "date_vn": "2026-06-29",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "NRG Stadium"
+    },
+    {
+      "id": "77",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-06-30T17:00:00Z",
+      "date_vn": "2026-07-01",
+      "time_vn": "00:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "MetLife Stadium"
+    },
+    {
+      "id": "78",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-06-30T12:00:00Z",
+      "date_vn": "2026-06-30",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "AT&T Stadium"
+    },
+    {
+      "id": "79",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-06-30T19:00:00Z",
+      "date_vn": "2026-07-01",
+      "time_vn": "02:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "1",
+        "name": "Mexico",
+        "code": "MEX",
+        "iso2": "MX"
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Estadio Azteca"
+    },
+    {
+      "id": "80",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-01T12:00:00Z",
+      "date_vn": "2026-07-01",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Mercedes-Benz Stadium"
+    },
+    {
+      "id": "81",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-01T17:00:00Z",
+      "date_vn": "2026-07-02",
+      "time_vn": "00:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "13",
+        "name": "United States",
+        "code": "USA",
+        "iso2": "US"
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Levi's Stadium"
+    },
+    {
+      "id": "82",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-01T13:00:00Z",
+      "date_vn": "2026-07-01",
+      "time_vn": "20:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Lumen Field"
+    },
+    {
+      "id": "83",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-02T19:00:00Z",
+      "date_vn": "2026-07-03",
+      "time_vn": "02:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "BMO Field"
+    },
+    {
+      "id": "84",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-02T12:00:00Z",
+      "date_vn": "2026-07-02",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "SoFi Stadium"
+    },
+    {
+      "id": "85",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-02T20:00:00Z",
+      "date_vn": "2026-07-03",
+      "time_vn": "03:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "BC Place"
+    },
+    {
+      "id": "86",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-03T18:00:00Z",
+      "date_vn": "2026-07-04",
+      "time_vn": "01:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Hard Rock Stadium"
+    },
+    {
+      "id": "87",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-03T20:30:00Z",
+      "date_vn": "2026-07-04",
+      "time_vn": "03:30",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "id": "88",
+      "stage": "r32",
+      "group": "R32",
+      "matchday": 4,
+      "kickoff_utc": "2026-07-03T13:00:00Z",
+      "date_vn": "2026-07-03",
+      "time_vn": "20:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "AT&T Stadium"
+    },
+    {
+      "id": "89",
+      "stage": "r16",
+      "group": "R16",
+      "matchday": 5,
+      "kickoff_utc": "2026-07-04T17:00:00Z",
+      "date_vn": "2026-07-05",
+      "time_vn": "00:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Lincoln Financial Field"
+    },
+    {
+      "id": "90",
+      "stage": "r16",
+      "group": "R16",
+      "matchday": 5,
+      "kickoff_utc": "2026-07-04T12:00:00Z",
+      "date_vn": "2026-07-04",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "NRG Stadium"
+    },
+    {
+      "id": "91",
+      "stage": "r16",
+      "group": "R16",
+      "matchday": 5,
+      "kickoff_utc": "2026-07-05T16:00:00Z",
+      "date_vn": "2026-07-05",
+      "time_vn": "23:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "MetLife Stadium"
+    },
+    {
+      "id": "92",
+      "stage": "r16",
+      "group": "R16",
+      "matchday": 5,
+      "kickoff_utc": "2026-07-05T18:00:00Z",
+      "date_vn": "2026-07-06",
+      "time_vn": "01:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Estadio Azteca"
+    },
+    {
+      "id": "93",
+      "stage": "r16",
+      "group": "R16",
+      "matchday": 5,
+      "kickoff_utc": "2026-07-06T14:00:00Z",
+      "date_vn": "2026-07-06",
+      "time_vn": "21:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "AT&T Stadium"
+    },
+    {
+      "id": "94",
+      "stage": "r16",
+      "group": "R16",
+      "matchday": 5,
+      "kickoff_utc": "2026-07-06T17:00:00Z",
+      "date_vn": "2026-07-07",
+      "time_vn": "00:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Lumen Field"
+    },
+    {
+      "id": "95",
+      "stage": "r16",
+      "group": "R16",
+      "matchday": 5,
+      "kickoff_utc": "2026-07-07T12:00:00Z",
+      "date_vn": "2026-07-07",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Mercedes-Benz Stadium"
+    },
+    {
+      "id": "96",
+      "stage": "r16",
+      "group": "R16",
+      "matchday": 5,
+      "kickoff_utc": "2026-07-07T13:00:00Z",
+      "date_vn": "2026-07-07",
+      "time_vn": "20:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "BC Place"
+    },
+    {
+      "id": "97",
+      "stage": "qf",
+      "group": "QF",
+      "matchday": 6,
+      "kickoff_utc": "2026-07-09T16:00:00Z",
+      "date_vn": "2026-07-09",
+      "time_vn": "23:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Gillette Stadium"
+    },
+    {
+      "id": "98",
+      "stage": "qf",
+      "group": "QF",
+      "matchday": 6,
+      "kickoff_utc": "2026-07-10T12:00:00Z",
+      "date_vn": "2026-07-10",
+      "time_vn": "19:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "SoFi Stadium"
+    },
+    {
+      "id": "99",
+      "stage": "qf",
+      "group": "QF",
+      "matchday": 6,
+      "kickoff_utc": "2026-07-11T17:00:00Z",
+      "date_vn": "2026-07-12",
+      "time_vn": "00:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Hard Rock Stadium"
+    },
+    {
+      "id": "100",
+      "stage": "qf",
+      "group": "QF",
+      "matchday": 6,
+      "kickoff_utc": "2026-07-11T20:00:00Z",
+      "date_vn": "2026-07-12",
+      "time_vn": "03:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "GEHA Field at Arrowhead Stadium"
+    },
+    {
+      "id": "101",
+      "stage": "sf",
+      "group": "SF",
+      "matchday": 7,
+      "kickoff_utc": "2026-07-14T14:00:00Z",
+      "date_vn": "2026-07-14",
+      "time_vn": "21:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "AT&T Stadium"
+    },
+    {
+      "id": "102",
+      "stage": "sf",
+      "group": "SF",
+      "matchday": 7,
+      "kickoff_utc": "2026-07-15T15:00:00Z",
+      "date_vn": "2026-07-15",
+      "time_vn": "22:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Mercedes-Benz Stadium"
+    },
+    {
+      "id": "103",
+      "stage": "third",
+      "group": "3RD",
+      "matchday": 8,
+      "kickoff_utc": "2026-07-18T17:00:00Z",
+      "date_vn": "2026-07-19",
+      "time_vn": "00:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "Hard Rock Stadium"
+    },
+    {
+      "id": "104",
+      "stage": "final",
+      "group": "FINAL",
+      "matchday": 9,
+      "kickoff_utc": "2026-07-19T15:00:00Z",
+      "date_vn": "2026-07-19",
+      "time_vn": "22:00",
+      "status": "upcoming",
+      "elapsed": "notstarted",
+      "home": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "away": {
+        "id": "0",
+        "name": "Chưa xác định",
+        "code": "",
+        "iso2": ""
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "venue": "MetLife Stadium"
     }
   ]
 }
