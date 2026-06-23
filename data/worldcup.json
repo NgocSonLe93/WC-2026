@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-23T04:57:56.136559Z",
+    "updated_at": "2026-06-23T07:29:31.004732Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -1556,8 +1556,8 @@
       "kickoff_utc": "2026-06-22T20:00:00Z",
       "date_vn": "2026-06-23",
       "time_vn": "03:00",
-      "status": "live",
-      "elapsed": "live",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "40",
         "name": "Jordan",
