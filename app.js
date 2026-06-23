@@ -1,10 +1,13 @@
 "use strict";
 const DATA_URL = "data/worldcup.json";
+const HISTORY_URL = "data/recent_matches.json";
 const CONFIG = window.WC2026_CONFIG || {};
 const LIVE_API_URL = String(CONFIG.liveApiUrl || "").trim().replace(/\/$/, "");
 const LIVE_INTERVAL_MS = Math.max(15000, Number(CONFIG.liveIntervalMs) || 30000);
 const IDLE_INTERVAL_MS = Math.max(60000, Number(CONFIG.idleIntervalMs) || 300000);
-const CACHE_KEY = "wc2026_ngocsonle_cache_v6";
+const CACHE_KEY = "wc2026_ngocsonle_cache_v8";
+const HISTORY_CACHE_KEY = "wc2026_recent_matches_v1";
+const THEME_KEY = "wc2026_theme";
 
 const FIFA_RANKING_DATE = "11/06/2026";
 const FIFA_RATINGS = Object.freeze({
@@ -23,20 +26,38 @@ const FIFA_RATINGS = Object.freeze({
 });
 const FIFA_CODE_ALIASES = Object.freeze({IRI:"IRN", DZA:"ALG", HTI:"HAI", KOR:"KOR", DRK:"COD", DRC:"COD"});
 
-const state = { data: null, selectedDate: "", filter: "all", chartPoints: [], refreshTimer: null, countdownTimer: null, nextRefreshAt: 0, refreshing: false };
+const state = { data: null, history: {meta:{},matches:[]}, selectedDate: "", filter: "all", chartPoints: [], refreshTimer: null, countdownTimer: null, nextRefreshAt: 0, refreshing: false, theme: "dark" };
 const $ = id => document.getElementById(id);
 const el = {
   refreshBtn: $("refreshBtn"), importBtn: $("importBtn"), exportBtn: $("exportBtn"), statusPill: $("statusPill"), updatedAt: $("updatedAt"), liveRefreshInfo: $("liveRefreshInfo"),
   heroMatches: $("heroMatches"), dayMatches: $("dayMatches"), dayScored: $("dayScored"), dayGoals: $("dayGoals"), dayAverage: $("dayAverage"), dayShare: $("dayShare"),
   selectedDateTitle: $("selectedDateTitle"), selectedDateBadge: $("selectedDateBadge"), prevDate: $("prevDate"), nextDate: $("nextDate"), dateSelect: $("dateSelect"), statusFilter: $("statusFilter"), matchesList: $("matchesList"),
   thirdPlaceBody: $("thirdPlaceBody"), standingsGrid: $("standingsGrid"), totalPlayed: $("totalPlayed"), totalGoals: $("totalGoals"), overallAverage: $("overallAverage"), bestDayGoals: $("bestDayGoals"), bestDayLabel: $("bestDayLabel"),
-  goalsChart: $("goalsChart"), dailyStatsBody: $("dailyStatsBody"), analysisList: $("analysisList"), analysisUpcoming: $("analysisUpcoming"), analysisPlayed: $("analysisPlayed"), importModal: $("importModal"), closeModal: $("closeModal"), jsonFile: $("jsonFile"), loadJsonBtn: $("loadJsonBtn"), toast: $("toast")
+  goalsChart: $("goalsChart"), dailyStatsBody: $("dailyStatsBody"), analysisList: $("analysisList"), analysisUpcoming: $("analysisUpcoming"), analysisPlayed: $("analysisPlayed"), analysisHistory: $("analysisHistory"), importModal: $("importModal"), closeModal: $("closeModal"), jsonFile: $("jsonFile"), loadJsonBtn: $("loadJsonBtn"), toast: $("toast")
 };
 const collator = new Intl.Collator("en", { sensitivity: "base" });
 function esc(v){return String(v??"").replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));}
 function num(v, fallback=0){const n=Number(v);return Number.isFinite(n)?n:fallback;}
 function showToast(msg){el.toast.textContent=msg;el.toast.classList.add("show");clearTimeout(showToast.t);showToast.t=setTimeout(()=>el.toast.classList.remove("show"),2600);}
 function setStatus(type,text){el.statusPill.className=`status-pill ${type}`;el.statusPill.innerHTML=`<span></span>${esc(text)}`;}
+function applyTheme(theme,save=true){
+  const allowed=["dark","light","bright"];
+  const next=allowed.includes(theme)?theme:"dark";
+  state.theme=next;
+  document.documentElement.dataset.theme=next;
+  document.querySelectorAll("[data-theme-choice]").forEach(btn=>btn.classList.toggle("active",btn.dataset.themeChoice===next));
+  const colors={dark:"#061812",light:"#f4f8f6",bright:"#dffbf0"};
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content",colors[next]);
+  if(save){try{localStorage.setItem(THEME_KEY,next);}catch{}}
+  if(document.querySelector(".tab.active")?.dataset.tab==="goals")requestAnimationFrame(drawChart);
+}
+function initTheme(){
+  let saved="";
+  try{saved=localStorage.getItem(THEME_KEY)||"";}catch{}
+  const preferred=window.matchMedia?.("(prefers-color-scheme: light)")?.matches?"light":"dark";
+  applyTheme(saved||preferred,false);
+  document.querySelectorAll("[data-theme-choice]").forEach(btn=>btn.addEventListener("click",()=>applyTheme(btn.dataset.themeChoice)));
+}
 function flagEmoji(iso2){const c=String(iso2||"").toUpperCase();if(c==="SCO")return "🏴";if(c==="ENG")return "🏴";if(!/^[A-Z]{2}$/.test(c)||c==="TBD")return "🏳️";return [...c].map(x=>String.fromCodePoint(127397+x.charCodeAt())).join("");}
 function flagUrl(iso2, code=""){const c=String(iso2||"").trim().toLowerCase();const alt=String(code||iso2||"").trim().toUpperCase();if(alt==="SCO"||alt==="SCT")return "assets/flags/scotland.svg";if(alt==="ENG")return "assets/flags/england.svg";if(c && /^[a-z]{2}$/.test(c) && c!=="tbd")return `https://flagcdn.com/w80/${c}.png`;return "";}
 function flagHtml(iso2, code, name){const url=flagUrl(iso2, code);const label=`Cờ ${name||"đội tuyển"}`;return url?`<span class="flag-badge"><img class="flag-img" src="${url}" alt="${esc(label)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('fallback');this.outerHTML='${flagEmoji(iso2).replace("'","&#39;")}'"></span>`:`<span class="flag-emoji">${flagEmoji(iso2)}</span>`;}
@@ -46,6 +67,23 @@ function scoredMatches(){return state.data.matches.filter(isScored);}
 function allDates(){return [...new Set(state.data.matches.map(m=>m.date_vn).filter(Boolean))].sort();}
 function chooseDate(dates){const today=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Ho_Chi_Minh",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());if(dates.includes(today))return today;const completed=dates.filter(d=>state.data.matches.some(m=>m.date_vn===d&&isScored(m)));if(completed.length)return completed.at(-1);return dates.find(d=>d>=today)||dates.at(-1)||"";}
 function normalizeData(raw){const data=raw&&typeof raw==="object"?raw:{};data.meta=data.meta||{};data.teams=Array.isArray(data.teams)?data.teams:[];data.matches=Array.isArray(data.matches)?data.matches:[];data.matches=data.matches.map((m,i)=>({id:String(m.id??i+1),stage:m.stage||"group",group:String(m.group||"").toUpperCase(),matchday:num(m.matchday),kickoff_utc:m.kickoff_utc||"",date_vn:m.date_vn||"",time_vn:m.time_vn||"",status:["finished","live","upcoming"].includes(m.status)?m.status:"upcoming",elapsed:m.elapsed||"",home:{id:String(m.home?.id??""),name:m.home?.name||"Chưa xác định",code:m.home?.code||"",iso2:m.home?.iso2||""},away:{id:String(m.away?.id??""),name:m.away?.name||"Chưa xác định",code:m.away?.code||"",iso2:m.away?.iso2||""},score:{home:m.score?.home===null||m.score?.home===undefined?null:num(m.score.home),away:m.score?.away===null||m.score?.away===undefined?null:num(m.score.away)},venue:m.venue||""}));return data;}
+function normalizeHistory(raw){
+  const data=raw&&typeof raw==="object"?raw:{};
+  const matches=Array.isArray(data.matches)?data.matches:[];
+  return {meta:data.meta||{},matches:matches.map((m,i)=>({
+    id:String(m.id??`h-${i+1}`),date:String(m.date||""),kickoff_utc:String(m.kickoff_utc||`${m.date||""}T12:00:00Z`),
+    tournament:String(m.tournament||"International"),neutral:Boolean(m.neutral),
+    home:{name:String(m.home?.name||""),code:String(m.home?.code||"").toUpperCase()},
+    away:{name:String(m.away?.name||""),code:String(m.away?.code||"").toUpperCase()},
+    score:{home:num(m.score?.home,NaN),away:num(m.score?.away,NaN)}
+  })).filter(m=>m.home.code&&m.away.code&&Number.isFinite(m.score.home)&&Number.isFinite(m.score.away))};
+}
+function saveHistoryCache(){try{localStorage.setItem(HISTORY_CACHE_KEY,JSON.stringify(state.history));}catch{}}
+function loadHistoryCache(){try{const raw=localStorage.getItem(HISTORY_CACHE_KEY);if(!raw)return false;state.history=normalizeHistory(JSON.parse(raw));return state.history.matches.length>0;}catch{return false;}}
+async function loadHistoryData(){
+  try{state.history=normalizeHistory(await fetchJson(HISTORY_URL,20000));saveHistoryCache();renderAnalysis();return true;}
+  catch(err){console.warn("Historical form load failed",err);if(loadHistoryCache()){renderAnalysis();return true;}state.history={meta:{},matches:[]};renderAnalysis();return false;}
+}
 function saveCache(){try{localStorage.setItem(CACHE_KEY,JSON.stringify(state.data));}catch(e){console.warn(e);}}
 function loadCache(){try{const raw=localStorage.getItem(CACHE_KEY);if(!raw)return false;state.data=normalizeData(JSON.parse(raw));return state.data.matches.length>0;}catch{return false;}}
 function liveConfigured(){return /^https:\/\//i.test(LIVE_API_URL)&&!LIVE_API_URL.includes("PASTE_CLOUDFLARE");}
@@ -58,7 +96,7 @@ function updateRefreshInfo(){if(!el.liveRefreshInfo)return;if(!liveConfigured())
 function scheduleRefresh(delay=nextInterval()){stopRefreshTimers();if(!liveConfigured()||document.hidden)return;state.nextRefreshAt=Date.now()+delay;updateRefreshInfo();state.countdownTimer=setInterval(updateRefreshInfo,1000);state.refreshTimer=setTimeout(()=>refreshLive({silent:true}),delay);}
 async function loadStaticData({resetDate=true}={}){const data=normalizeData(await fetchJson(DATA_URL));if(!data.matches.length)throw new Error("File dữ liệu chưa có trận đấu");state.data=data;saveCache();renderAll(resetDate);return data;}
 async function refreshLive({manual=false,silent=false}={}){if(!liveConfigured()){if(manual)showToast("Chưa cấu hình Cloudflare Worker cho chế độ trực tiếp");scheduleRefresh();return false;}if(state.refreshing)return false;state.refreshing=true;el.refreshBtn.disabled=true;if(!silent)setStatus("loading","Đang đồng bộ trực tiếp");updateRefreshInfo();try{const data=normalizeData(await fetchJson(LIVE_API_URL,15000));if(!data.matches.length)throw new Error("API trực tiếp không có trận đấu");const reset=!state.data;state.data=data;saveCache();renderAll(reset);setStatus(hasLiveMatch()?"live":"ok",hasLiveMatch()?"LIVE · tỷ số đang cập nhật":`Trực tiếp · ${data.matches.length} trận`);if(manual)showToast("Đã cập nhật dữ liệu trực tiếp");return true;}catch(err){console.error("Realtime refresh failed",err);if(state.data){setStatus("warning","Mất kết nối LIVE · đang giữ dữ liệu gần nhất");if(manual)showToast("Chưa kết nối được máy chủ trực tiếp");}else{setStatus("error","Không đọc được dữ liệu trực tiếp");renderEmpty();}return false;}finally{state.refreshing=false;el.refreshBtn.disabled=false;scheduleRefresh();}}
-async function loadData({manual=false}={}){if(manual&&liveConfigured())return refreshLive({manual:true});el.refreshBtn.disabled=true;setStatus("loading","Đang mở dữ liệu");let loaded=false;try{await loadStaticData({resetDate:true});loaded=true;setStatus("ok",`Đã tải ${state.data.matches.length} trận dự phòng`);}catch(err){console.error("Static load failed",err);if(loadCache()){renderAll(true);loaded=true;setStatus("warning","Đang dùng dữ liệu đã lưu trên thiết bị");}else{renderEmpty();setStatus("error","Không đọc được dữ liệu");}}finally{el.refreshBtn.disabled=false;}if(liveConfigured()){await refreshLive({manual:false,silent:loaded});}else{if(loaded)setStatus("warning","Chưa bật chế độ cập nhật trực tiếp");updateRefreshInfo();}}
+async function loadData({manual=false}={}){if(manual&&liveConfigured())return refreshLive({manual:true});el.refreshBtn.disabled=true;setStatus("loading","Đang mở dữ liệu");const historyPromise=loadHistoryData();let loaded=false;try{await loadStaticData({resetDate:true});loaded=true;setStatus("ok",`Đã tải ${state.data.matches.length} trận dự phòng`);}catch(err){console.error("Static load failed",err);if(loadCache()){renderAll(true);loaded=true;setStatus("warning","Đang dùng dữ liệu đã lưu trên thiết bị");}else{renderEmpty();setStatus("error","Không đọc được dữ liệu");}}finally{el.refreshBtn.disabled=false;}await historyPromise;if(liveConfigured()){await refreshLive({manual:false,silent:loaded});}else{if(loaded)setStatus("warning","Chưa bật chế độ cập nhật trực tiếp");updateRefreshInfo();}}
 function renderAll(resetDate=false){if(!state.data)return;const dates=allDates();if(resetDate||!dates.includes(state.selectedDate))state.selectedDate=chooseDate(dates);renderDateControl(dates);renderResults();renderStandings();renderGoals();renderAnalysis();renderMeta();}
 function renderMeta(){const meta=state.data.meta||{};const d=meta.updated_at?new Date(meta.updated_at):null;el.updatedAt.textContent=d&&!Number.isNaN(d.getTime())?`${meta.source||"Dữ liệu website"} • ${new Intl.DateTimeFormat("vi-VN",{dateStyle:"short",timeStyle:"medium",timeZone:"Asia/Ho_Chi_Minh"}).format(d)}`:(meta.source||"Chưa cập nhật");el.heroMatches.textContent=scoredMatches().length;updateRefreshInfo();}
 function renderDateControl(dates){el.dateSelect.innerHTML=dates.map(d=>`<option value="${d}" ${d===state.selectedDate?"selected":""}>${esc(formatDate(d))}</option>`).join("");const idx=dates.indexOf(state.selectedDate);el.prevDate.disabled=idx<=0;el.nextDate.disabled=idx<0||idx>=dates.length-1;}
@@ -73,7 +111,7 @@ function computeStandings(){const groups=teamSeed();for(const m of state.data.ma
 function rowTeam(r){return`<div class="table-team"><span class="team-crest">${flagHtml(r.iso2,r.code,r.name)}</span><span class="table-team-name">${esc(r.name)}</span></div>`;}
 function renderStandings(){const groups=computeStandings();const thirds=groups.map(g=>g.rows[2]?{...g.rows[2],group:g.group}:null).filter(Boolean).sort(rankSort);el.thirdPlaceBody.innerHTML=thirds.length?thirds.map((r,i)=>`<tr class="${i<8?"qualified":""}"><td class="rank">${i+1}</td><td class="team-cell">${rowTeam(r)}<small class="group-sub">Bảng ${esc(r.group)}</small></td><td class="points">${r.points}</td><td>${r.gd>0?"+":""}${r.gd}</td></tr>`).join(""):'<tr><td colspan="4">Chưa có dữ liệu.</td></tr>';el.standingsGrid.innerHTML=groups.map(g=>`<article class="group-card glass"><h3 class="group-title">Bảng ${g.group}</h3><div class="table-scroll"><table class="rank-table"><thead><tr><th>#</th><th>Đội</th><th>TR</th><th>T</th><th>H</th><th>B</th><th>BT</th><th>BB</th><th>HS</th><th>Đ</th></tr></thead><tbody>${g.rows.map((r,i)=>`<tr class="${i<2?"qualify":i===2?"third":""}"><td class="rank">${i+1}</td><td class="team-cell">${rowTeam(r)}</td><td>${r.played}</td><td>${r.wins}</td><td>${r.draws}</td><td>${r.losses}</td><td>${r.gf}</td><td>${r.ga}</td><td>${r.gd>0?"+":""}${r.gd}</td><td class="points">${r.points}</td></tr>`).join("")}</tbody></table></div></article>`).join("");}
 function renderGoals(){const overall=overallSummary();const rows=allDates().map(d=>dailySummary(d)).filter(x=>x.scored.length);el.totalPlayed.textContent=overall.scored.length;el.totalGoals.textContent=overall.goals;el.overallAverage.textContent=overall.avg.toFixed(2);const best=rows.reduce((a,b)=>!a||b.goals>a.goals?b:a,null);el.bestDayGoals.textContent=best?.goals||0;el.bestDayLabel.textContent=best?formatDate(best.date,false):"Chưa có dữ liệu";el.dailyStatsBody.innerHTML=rows.length?rows.map(r=>`<tr><td>${esc(formatDate(r.date,false))}</td><td>${r.scored.length}</td><td class="points">${r.goals}</td><td>${r.avg.toFixed(2)}</td><td>${r.scoring}/${r.scored.length}</td><td>${overall.goals?(r.goals/overall.goals*100).toFixed(1):"0.0"}%</td></tr>`).join(""):'<tr><td colspan="6">Chưa có trận có tỷ số.</td></tr>';state.chartPoints=rows;drawChart();}
-function drawChart(){const canvas=el.goalsChart;if(!canvas)return;const rect=canvas.getBoundingClientRect();const dpr=Math.max(1,Math.min(2,window.devicePixelRatio||1));canvas.width=Math.max(320,rect.width*dpr);canvas.height=Math.max(240,rect.height*dpr);const ctx=canvas.getContext("2d");ctx.scale(dpr,dpr);const w=canvas.width/dpr,h=canvas.height/dpr;ctx.clearRect(0,0,w,h);const rows=state.chartPoints;if(!rows.length){ctx.fillStyle="#9bb7aa";ctx.font="14px system-ui";ctx.textAlign="center";ctx.fillText("Chưa có dữ liệu bàn thắng",w/2,h/2);return;}const pad={l:36,r:14,t:20,b:42};const max=Math.max(1,...rows.map(r=>r.goals));const gap=8;const bw=Math.max(12,(w-pad.l-pad.r-gap*(rows.length-1))/rows.length);ctx.strokeStyle="rgba(166,255,218,.12)";ctx.fillStyle="#8fb3a4";ctx.font="11px system-ui";ctx.textAlign="right";for(let i=0;i<=4;i++){const y=pad.t+(h-pad.t-pad.b)*i/4;ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(w-pad.r,y);ctx.stroke();const val=Math.round(max*(1-i/4));ctx.fillText(String(val),pad.l-7,y+4);}rows.forEach((r,i)=>{const x=pad.l+i*(bw+gap);const bh=(h-pad.t-pad.b)*(r.goals/max);const y=h-pad.b-bh;const grad=ctx.createLinearGradient(0,y,0,h-pad.b);grad.addColorStop(0,"#63efb6");grad.addColorStop(1,"#1ebf82");ctx.fillStyle=grad;roundRect(ctx,x,y,bw,bh,6);ctx.fill();if(rows.length<=18||i%2===0){ctx.save();ctx.translate(x+bw/2,h-pad.b+12);ctx.rotate(-Math.PI/5);ctx.fillStyle="#9bb7aa";ctx.font="10px system-ui";ctx.textAlign="right";ctx.fillText(formatDate(r.date,false),0,0);ctx.restore();}ctx.fillStyle="#f4fff9";ctx.font="bold 11px system-ui";ctx.textAlign="center";ctx.fillText(String(r.goals),x+bw/2,Math.max(13,y-5));});}
+function drawChart(){const canvas=el.goalsChart;if(!canvas)return;const rect=canvas.getBoundingClientRect();const dpr=Math.max(1,Math.min(2,window.devicePixelRatio||1));canvas.width=Math.max(320,rect.width*dpr);canvas.height=Math.max(240,rect.height*dpr);const ctx=canvas.getContext("2d");ctx.scale(dpr,dpr);const w=canvas.width/dpr,h=canvas.height/dpr;ctx.clearRect(0,0,w,h);const css=getComputedStyle(document.documentElement),muted=css.getPropertyValue("--muted").trim()||"#9bb7aa",text=css.getPropertyValue("--text").trim()||"#f4fff9",green=css.getPropertyValue("--green").trim()||"#42e6a4",green2=css.getPropertyValue("--green-2").trim()||"#1fc888",line=css.getPropertyValue("--line").trim()||"rgba(166,255,218,.12)";const rows=state.chartPoints;if(!rows.length){ctx.fillStyle=muted;ctx.font="14px system-ui";ctx.textAlign="center";ctx.fillText("Chưa có dữ liệu bàn thắng",w/2,h/2);return;}const pad={l:36,r:14,t:20,b:42};const max=Math.max(1,...rows.map(r=>r.goals));const gap=8;const bw=Math.max(12,(w-pad.l-pad.r-gap*(rows.length-1))/rows.length);ctx.strokeStyle=line;ctx.fillStyle=muted;ctx.font="11px system-ui";ctx.textAlign="right";for(let i=0;i<=4;i++){const y=pad.t+(h-pad.t-pad.b)*i/4;ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(w-pad.r,y);ctx.stroke();const val=Math.round(max*(1-i/4));ctx.fillText(String(val),pad.l-7,y+4);}rows.forEach((r,i)=>{const x=pad.l+i*(bw+gap);const bh=(h-pad.t-pad.b)*(r.goals/max);const y=h-pad.b-bh;const grad=ctx.createLinearGradient(0,y,0,h-pad.b);grad.addColorStop(0,green);grad.addColorStop(1,green2);ctx.fillStyle=grad;roundRect(ctx,x,y,bw,bh,6);ctx.fill();if(rows.length<=18||i%2===0){ctx.save();ctx.translate(x+bw/2,h-pad.b+12);ctx.rotate(-Math.PI/5);ctx.fillStyle=muted;ctx.font="10px system-ui";ctx.textAlign="right";ctx.fillText(formatDate(r.date,false),0,0);ctx.restore();}ctx.fillStyle=text;ctx.font="bold 11px system-ui";ctx.textAlign="center";ctx.fillText(String(r.goals),x+bw/2,Math.max(13,y-5));});}
 function roundRect(ctx,x,y,w,h,r){const rr=Math.min(r,w/2,h/2);ctx.beginPath();ctx.moveTo(x+rr,y);ctx.arcTo(x+w,y,x+w,y+h,rr);ctx.arcTo(x+w,y+h,x,y+h,rr);ctx.arcTo(x,y+h,x,y,rr);ctx.arcTo(x,y,x+w,y,rr);ctx.closePath();}
 
 function canonicalFifaCode(team={}){
@@ -94,75 +132,110 @@ function fifaRating(team={}){
   return FIFA_RATINGS[code]||{rank:null,points:1400};
 }
 function analysisTeamKey(team={}){
-  return String(team.id||canonicalFifaCode(team)||team.name||"").trim().toUpperCase();
+  return String(canonicalFifaCode(team)||team.code||team.name||"").trim().toUpperCase();
 }
-function computeTeamAnalysis(){
+function clamp(v,min,max){return Math.max(min,Math.min(max,v));}
+function matchTimeMs(m){
+  const raw=m.kickoff_utc||m.date||"";
+  const t=Date.parse(raw);
+  return Number.isFinite(t)?t:0;
+}
+function tournamentWeight(name=""){
+  const s=String(name).toLowerCase();
+  if(s.includes("fifa world cup")&&!s.includes("qualification"))return 1.20;
+  if(s.includes("world cup qualification")||s.includes("world cup qualifier"))return 1.05;
+  if(s.includes("uefa euro")||s.includes("copa américa")||s.includes("copa america")||s.includes("african cup")||s.includes("asian cup")||s.includes("gold cup")||s.includes("oceania nations"))return 1.05;
+  if(s.includes("nations league"))return .95;
+  if(s.includes("friendly"))return .70;
+  return .90;
+}
+function modelMatchKey(m){
+  const a=String(m.home.code||"").toUpperCase(),b=String(m.away.code||"").toUpperCase();
+  return `${String(m.date||m.kickoff_utc||"").slice(0,10)}|${a}|${b}|${num(m.score.home)}|${num(m.score.away)}`;
+}
+function completedModelMatches(cutoffMs=Infinity){
   const map=new Map();
-  const ensure=team=>{
-    const key=analysisTeamKey(team);
-    if(!map.has(key))map.set(key,{team:{...team},played:0,wins:0,draws:0,losses:0,gf:0,ga:0,points:0,results:[]});
-    return map.get(key);
-  };
-  for(const t of state.data?.teams||[])ensure(t);
-  const finished=(state.data?.matches||[]).filter(m=>m.status==="finished"&&isScored(m)).sort((a,b)=>String(a.kickoff_utc).localeCompare(String(b.kickoff_utc)));
-  for(const m of finished){
-    const h=ensure(m.home),a=ensure(m.away),hs=num(m.score.home),as=num(m.score.away);
-    h.played++;a.played++;h.gf+=hs;h.ga+=as;a.gf+=as;a.ga+=hs;
-    if(hs>as){h.wins++;a.losses++;h.points+=3;h.results.push("W");a.results.push("L");}
-    else if(hs<as){a.wins++;h.losses++;a.points+=3;h.results.push("L");a.results.push("W");}
-    else{h.draws++;a.draws++;h.points++;a.points++;h.results.push("D");a.results.push("D");}
+  for(const m of state.history?.matches||[]){
+    const t=matchTimeMs(m);if(!t||t>=cutoffMs)continue;
+    map.set(modelMatchKey(m),m);
   }
-  return map;
+  for(const m of state.data?.matches||[]){
+    if(m.status!=="finished"||!isScored(m))continue;
+    const t=matchTimeMs(m);if(!t||t>=cutoffMs)continue;
+    const normalized={id:`wc-${m.id}`,date:String(m.kickoff_utc||m.date_vn||"").slice(0,10),kickoff_utc:m.kickoff_utc||`${m.date_vn}T12:00:00Z`,tournament:"FIFA World Cup 2026",neutral:true,
+      home:{name:m.home.name,code:canonicalFifaCode(m.home)},away:{name:m.away.name,code:canonicalFifaCode(m.away)},score:{home:num(m.score.home),away:num(m.score.away)}};
+    map.set(modelMatchKey(normalized),normalized);
+  }
+  return [...map.values()];
+}
+function teamRecentMatches(team,cutoffMs,limit=10){
+  const code=analysisTeamKey(team);
+  return completedModelMatches(cutoffMs).filter(m=>m.home.code===code||m.away.code===code).sort((a,b)=>matchTimeMs(b)-matchTimeMs(a)).slice(0,limit).map((m,index)=>{
+    const home=m.home.code===code;
+    const gf=home?num(m.score.home):num(m.score.away),ga=home?num(m.score.away):num(m.score.home);
+    const opponent=home?m.away:m.home;
+    const result=gf>ga?"W":gf<ga?"L":"D";
+    const oppPoints=fifaRating(opponent).points||1400;
+    const recency=Math.exp(-.15*index);
+    const typeWeight=tournamentWeight(m.tournament);
+    const matchWeight=recency*typeWeight;
+    const attackAdj=clamp(oppPoints/1500,.84,1.16);
+    const defenseAdj=clamp(1500/oppPoints,.84,1.16);
+    return {...m,index,gf,ga,result,points:result==="W"?3:result==="D"?1:0,opponent,oppPoints,matchWeight,adjGf:gf*attackAdj,adjGa:ga*defenseAdj};
+  });
+}
+function weightedSlice(rows){
+  if(!rows.length)return {count:0,gfpg:1.35,gapg:1.35,ppg:1.25,form:.5,weight:0};
+  const weight=rows.reduce((s,r)=>s+r.matchWeight,0)||1;
+  return {count:rows.length,weight,gfpg:rows.reduce((s,r)=>s+r.adjGf*r.matchWeight,0)/weight,gapg:rows.reduce((s,r)=>s+r.adjGa*r.matchWeight,0)/weight,ppg:rows.reduce((s,r)=>s+r.points*r.matchWeight,0)/weight,form:rows.reduce((s,r)=>s+(r.result==="W"?1:r.result==="D"?.5:0)*r.matchWeight,0)/weight};
+}
+function summarizeTeam(team,cutoffMs){
+  const matches=teamRecentMatches(team,cutoffMs,10);
+  const newest=weightedSlice(matches.slice(0,5)),older=weightedSlice(matches.slice(5,10));
+  const blend=(prop,def)=>{
+    if(newest.count&&older.count)return .75*newest[prop]+.25*older[prop];
+    if(newest.count)return newest[prop];
+    if(older.count)return older[prop];
+    return def;
+  };
+  return {team,matches,count:matches.length,recentCount:newest.count,olderCount:older.count,gfpg:blend("gfpg",1.35),gapg:blend("gapg",1.35),ppg:blend("ppg",1.25),form:blend("form",.5),results:matches.map(r=>r.result),wins:matches.filter(r=>r.result==="W").length,draws:matches.filter(r=>r.result==="D").length,losses:matches.filter(r=>r.result==="L").length,gf:matches.reduce((s,r)=>s+r.gf,0),ga:matches.reduce((s,r)=>s+r.ga,0)};
 }
 function analysisStat(stats,prop){
-  if(!stats||!stats.played)return "0.00";
-  if(prop==="ppg")return (stats.points/stats.played).toFixed(2);
-  if(prop==="gfpg")return (stats.gf/stats.played).toFixed(2);
-  if(prop==="gapg")return (stats.ga/stats.played).toFixed(2);
-  return "0.00";
+  const value=stats?.[prop];return Number.isFinite(value)?value.toFixed(2):"0.00";
 }
 function formHtml(stats){
-  const rows=(stats?.results||[]).slice(-5);
-  if(!rows.length)return '<span class="form-empty">Chưa đá</span>';
+  const rows=(stats?.results||[]).slice(0,5);
+  if(!rows.length)return '<span class="form-empty">Chưa có dữ liệu</span>';
   return `<span class="form-strip">${rows.map(x=>`<i class="form-${x.toLowerCase()}">${x}</i>`).join("")}</span>`;
 }
 function comparisonBar(homeValue,awayValue,invert=false){
-  const h=Math.max(0,num(homeValue)),a=Math.max(0,num(awayValue));
-  const total=h+a||1;
-  let hp=h/total*100,ap=a/total*100;
-  if(invert){hp=a/total*100;ap=h/total*100;}
+  const h=Math.max(0,num(homeValue)),a=Math.max(0,num(awayValue));const total=h+a||1;let hp=h/total*100,ap=a/total*100;if(invert){hp=a/total*100;ap=h/total*100;}
   return `<div class="compare-track"><span class="compare-home" style="width:${hp.toFixed(1)}%"></span><span class="compare-away" style="width:${ap.toFixed(1)}%"></span></div>`;
 }
+function tournamentGoalBase(){
+  const finished=(state.data?.matches||[]).filter(m=>m.status==="finished"&&isScored(m));
+  if(finished.length<8)return 1.35;
+  const total=finished.reduce((sum,m)=>sum+num(m.score.home)+num(m.score.away),0);
+  return clamp(total/(finished.length*2),.90,1.85);
+}
+function formSummary(stats){
+  return `${stats.wins}T · ${stats.draws}H · ${stats.losses}B`;
+}
+function dataBadge(stats){const full=stats.count>=10;return `<span class="data-depth ${full?"full":"partial"}">${stats.count}/10 trận</span>`;}
 function renderAnalysis(){
   if(!el.analysisList||!state.data)return;
-  const stats=computeTeamAnalysis();
   const upcoming=(state.data.matches||[]).filter(m=>m.status==="upcoming").sort((a,b)=>String(a.kickoff_utc).localeCompare(String(b.kickoff_utc))).slice(0,8);
   const played=(state.data.matches||[]).filter(m=>m.status==="finished"&&isScored(m)).length;
-  el.analysisUpcoming.textContent=upcoming.length;
-  el.analysisPlayed.textContent=played;
+  el.analysisUpcoming.textContent=upcoming.length;el.analysisPlayed.textContent=played;if(el.analysisHistory)el.analysisHistory.textContent=state.history?.matches?.length||0;
   if(!upcoming.length){el.analysisList.innerHTML='<div class="empty-state">Hiện chưa có trận sắp tới trong dữ liệu.</div>';return;}
   el.analysisList.innerHTML=upcoming.map(m=>{
-    const hs=stats.get(analysisTeamKey(m.home))||{played:0,wins:0,draws:0,losses:0,gf:0,ga:0,points:0,results:[]};
-    const as=stats.get(analysisTeamKey(m.away))||{played:0,wins:0,draws:0,losses:0,gf:0,ga:0,points:0,results:[]};
-    const hr=fifaRating(m.home),ar=fifaRating(m.away);
-    const hrank=hr.rank?`#${hr.rank}`:"—",arank=ar.rank?`#${ar.rank}`:"—";
-    const kickoff=`${formatDate(m.date_vn,false)} · ${esc(m.time_vn||"Chờ giờ")}`;
-    return `<article class="analysis-card glass">
-      <div class="analysis-card-head"><span>${esc(stageText(m))}</span><b>${kickoff}</b></div>
-      <div class="analysis-teams">
-        <div class="analysis-team home">${flagHtml(m.home.iso2,m.home.code,m.home.name)}<strong>${esc(m.home.name)}</strong><small>FIFA ${hrank} · ${hr.points.toFixed(2)} điểm</small>${formHtml(hs)}</div>
-        <div class="analysis-vs">VS</div>
-        <div class="analysis-team away">${flagHtml(m.away.iso2,m.away.code,m.away.name)}<strong>${esc(m.away.name)}</strong><small>FIFA ${arank} · ${ar.points.toFixed(2)} điểm</small>${formHtml(as)}</div>
-      </div>
-      <div class="comparison-table">
-        <div class="comparison-row"><b>${analysisStat(hs,"ppg")}</b><span>Điểm/trận${comparisonBar(analysisStat(hs,"ppg"),analysisStat(as,"ppg"))}</span><b>${analysisStat(as,"ppg")}</b></div>
-        <div class="comparison-row"><b>${analysisStat(hs,"gfpg")}</b><span>BT/trận${comparisonBar(analysisStat(hs,"gfpg"),analysisStat(as,"gfpg"))}</span><b>${analysisStat(as,"gfpg")}</b></div>
-        <div class="comparison-row"><b>${analysisStat(hs,"gapg")}</b><span>BB/trận${comparisonBar(analysisStat(hs,"gapg"),analysisStat(as,"gapg"),true)}</span><b>${analysisStat(as,"gapg")}</b></div>
-        <div class="comparison-row"><b>${hs.gf}-${hs.ga}</b><span>Bàn thắng – bàn thua</span><b>${as.gf}-${as.ga}</b></div>
-        <div class="comparison-row"><b>${hs.wins}-${hs.draws}-${hs.losses}</b><span>Thắng – hòa – thua</span><b>${as.wins}-${as.draws}-${as.losses}</b></div>
-      </div>
-      <div class="analysis-source">FIFA Ranking ${FIFA_RANKING_DATE} · Dữ liệu World Cup cập nhật theo website</div>
-    </article>`;
+    const cutoff=matchTimeMs(m)||Date.now(),hs=summarizeTeam(m.home,cutoff),as=summarizeTeam(m.away,cutoff),hr=fifaRating(m.home),ar=fifaRating(m.away);
+    const hrank=hr.rank?`#${hr.rank}`:"—",arank=ar.rank?`#${ar.rank}`:"—",kickoff=`${formatDate(m.date_vn,false)} · ${esc(m.time_vn||"Chờ giờ")}`;
+    return `<article class="analysis-card prediction-card glass"><div class="analysis-card-head"><span>${esc(stageText(m))}</span><b>${kickoff}</b></div>
+      <div class="analysis-teams"><div class="analysis-team home">${flagHtml(m.home.iso2,m.home.code,m.home.name)}<strong>${esc(m.home.name)}</strong><small>FIFA ${hrank} · ${hr.points.toFixed(2)} điểm</small>${formHtml(hs)}${dataBadge(hs)}</div><div class="analysis-vs">VS</div><div class="analysis-team away">${flagHtml(m.away.iso2,m.away.code,m.away.name)}<strong>${esc(m.away.name)}</strong><small>FIFA ${arank} · ${ar.points.toFixed(2)} điểm</small>${formHtml(as)}${dataBadge(as)}</div></div>
+      <div class="form-comparison-head"><span>${esc(formSummary(hs))}</span><b>Phong độ 10 trận</b><span>${esc(formSummary(as))}</span></div>
+      <div class="comparison-table compact-comparison"><div class="comparison-row"><b>${analysisStat(hs,"ppg")}</b><span>Điểm/trận${comparisonBar(hs.ppg,as.ppg)}</span><b>${analysisStat(as,"ppg")}</b></div><div class="comparison-row"><b>${analysisStat(hs,"gfpg")}</b><span>BT/trận${comparisonBar(hs.gfpg,as.gfpg)}</span><b>${analysisStat(as,"gfpg")}</b></div><div class="comparison-row"><b>${analysisStat(hs,"gapg")}</b><span>BB/trận${comparisonBar(hs.gapg,as.gapg,true)}</span><b>${analysisStat(as,"gapg")}</b></div></div>
+      <div class="analysis-source">10 trận gần nhất: 5 trận mới nhất chiếm 75%, 5 trận trước chiếm 25% · Có điều chỉnh loại trận và sức mạnh đối thủ · Dùng để tham khảo phong độ</div></article>`;
   }).join("");
 }
 
@@ -176,4 +249,5 @@ el.refreshBtn.addEventListener("click",()=>loadData({manual:true}));el.importBtn
 document.addEventListener("visibilitychange",()=>{if(document.hidden){stopRefreshTimers();updateRefreshInfo();}else if(liveConfigured()){refreshLive({silent:true});}});
 window.addEventListener("online",()=>{if(liveConfigured())refreshLive({silent:true});});
 window.addEventListener("offline",()=>{stopRefreshTimers();setStatus("warning","Thiết bị đang ngoại tuyến");updateRefreshInfo();});
+initTheme();
 loadData();

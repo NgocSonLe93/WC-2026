@@ -7,13 +7,18 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="World Cup 2026">
-  <meta name="description" content="Kết quả, bảng xếp hạng, thống kê bàn thắng và phân tích trước trận FIFA World Cup 2026.">
+  <meta name="description" content="Kết quả, bảng xếp hạng, thống kê bàn thắng và phân tích phong độ 10 trận FIFA World Cup 2026.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260623-analysis1">
+  <link rel="stylesheet" href="styles.css?v=20260623-model10-theme3">
   <title>World Cup 2026 · NGOC SON LE</title>
 </head>
 <body>
+  <div class="theme-dock glass" aria-label="Chọn giao diện">
+    <button type="button" data-theme-choice="dark" title="Dark"><span>◐</span><b>Dark</b></button>
+    <button type="button" data-theme-choice="light" title="Light"><span>☀</span><b>Light</b></button>
+    <button type="button" data-theme-choice="bright" title="Nền sáng"><span>✦</span><b>Nền sáng</b></button>
+  </div>
   <div class="ambient ambient-a"></div>
   <div class="ambient ambient-b"></div>
 
@@ -22,7 +27,7 @@
       <div class="hero-copy">
         <div class="eyebrow"><span class="pulse-dot"></span> FIFA WORLD CUP 2026</div>
         <h1>Kết quả & thống kê<br><span>mỗi ngày thi đấu</span></h1>
-        <p>Theo dõi lịch đấu, tỷ số, bảng xếp hạng 12 bảng, cuộc đua đội hạng ba và phân tích thống kê trước trận — tối ưu cho điện thoại.</p>
+        <p>Theo dõi lịch đấu, tỷ số, bảng xếp hạng 12 bảng, cuộc đua đội hạng ba và phân tích phong độ bằng dữ liệu 10 trận gần nhất — tối ưu cho điện thoại.</p>
         <div class="hero-actions">
           <button id="refreshBtn" class="button primary" type="button" aria-label="Tải dữ liệu mới nhất">
             <span class="button-icon">↻</span> Cập nhật dữ liệu
@@ -135,30 +140,30 @@
     <section id="analysis" class="tab-panel">
       <div class="metric-grid analysis-metrics">
         <article class="metric-card glass"><span>Trận sắp tới</span><strong id="analysisUpcoming">0</strong><small>Hiển thị tối đa 8 trận gần nhất</small></article>
-        <article class="metric-card glass"><span>Xếp hạng FIFA</span><strong>11/06</strong><small>Bản cập nhật chính thức năm 2026</small></article>
-        <article class="metric-card glass"><span>Dữ liệu phong độ</span><strong id="analysisPlayed">0</strong><small>Trận World Cup đã kết thúc</small></article>
-        <article class="metric-card glass"><span>Mô hình hiển thị</span><strong>So sánh</strong><small>Không phải tỷ lệ cược hoặc dự đoán kết quả</small></article>
+        <article class="metric-card glass"><span>Mẫu phân tích</span><strong>10</strong><small>Trận gần nhất trước giờ bóng lăn</small></article>
+        <article class="metric-card glass"><span>Trận World Cup đã xong</span><strong id="analysisPlayed">0</strong><small>Được ưu tiên trong 10 trận gần nhất</small></article>
+        <article class="metric-card glass"><span>Dữ liệu lịch sử</span><strong id="analysisHistory">0</strong><small>Trận quốc tế đã nạp</small></article>
       </div>
 
       <article class="panel glass">
         <div class="panel-heading">
-          <span class="kicker">PHÂN TÍCH TRƯỚC TRẬN</span>
-          <h2>So sánh hai đội</h2>
-          <p class="panel-note">Dựa trên điểm FIFA ngày 11/06/2026 và thành tích tại World Cup hiện tại. Các chỉ số chỉ để tham khảo thể thao.</p>
+          <span class="kicker">PHÂN TÍCH PHONG ĐỘ TRƯỚC TRẬN</span>
+          <h2>So sánh dữ liệu 10 trận gần nhất</h2>
+          <p class="panel-note">Mỗi đội được lấy tối đa 10 trận hoàn thành trước giờ bóng lăn: ưu tiên 5 trận mới nhất và tự bù bằng các trận quốc tế trước World Cup.</p>
         </div>
         <div id="analysisList" class="analysis-list"></div>
       </article>
 
       <article class="panel glass methodology-card">
         <div class="panel-heading">
-          <span class="kicker">CÁCH ĐỌC DỮ LIỆU</span>
+          <span class="kicker">CÁCH PHÂN TÍCH HOẠT ĐỘNG</span>
           <h2>Ý nghĩa các chỉ số</h2>
         </div>
         <div class="method-grid">
-          <div><b>Điểm FIFA</b><span>Sức mạnh nền theo bảng xếp hạng FIFA chính thức.</span></div>
-          <div><b>Điểm/trận</b><span>Điểm trung bình giành được tại World Cup hiện tại.</span></div>
-          <div><b>BT/trận</b><span>Số bàn thắng trung bình mỗi trận.</span></div>
-          <div><b>BB/trận</b><span>Số bàn thua trung bình mỗi trận; thấp hơn thường tốt hơn.</span></div>
+          <div><b>Điểm/trận</b><span>Điểm trung bình có trọng số trong tối đa 10 trận đã hoàn thành.</span></div>
+          <div><b>Bàn thắng/trận</b><span>Số bàn ghi trung bình, có điều chỉnh theo sức mạnh đối thủ.</span></div>
+          <div><b>Bàn thua/trận</b><span>Số bàn thủng lưới trung bình, có điều chỉnh theo sức mạnh đối thủ.</span></div>
+          <div><b>Trọng số 10 trận</b><span>5 trận gần nhất chiếm 75%; 5 trận trước chiếm 25%. Giao hữu được giảm trọng số.</span></div>
         </div>
       </article>
     </section>
@@ -181,7 +186,7 @@
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="config.js?v=20260623-analysis1"></script>
-  <script src="app.js?v=20260623-analysis1" defer></script>
+  <script src="config.js?v=20260623-model10-theme3"></script>
+  <script src="app.js?v=20260623-model10-theme3" defer></script>
 </body>
 </html>
