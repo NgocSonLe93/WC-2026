@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-23T08:51:30.363220Z",
+    "updated_at": "2026-06-24T08:28:19.842978Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -1584,8 +1584,8 @@
       "kickoff_utc": "2026-06-23T12:00:00Z",
       "date_vn": "2026-06-23",
       "time_vn": "19:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "41",
         "name": "Portugal",
@@ -1599,8 +1599,8 @@
         "iso2": "UZ"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 5,
+        "away": 0
       },
       "venue": "NRG Stadium"
     },
@@ -1612,8 +1612,8 @@
       "kickoff_utc": "2026-06-23T19:00:00Z",
       "date_vn": "2026-06-24",
       "time_vn": "02:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "48",
         "name": "Panama",
@@ -1627,8 +1627,8 @@
         "iso2": "HR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "venue": "BMO Field"
     },
@@ -1640,8 +1640,8 @@
       "kickoff_utc": "2026-06-23T20:00:00Z",
       "date_vn": "2026-06-24",
       "time_vn": "03:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "44",
         "name": "Colombia",
@@ -1655,8 +1655,8 @@
         "iso2": "CD"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "venue": "Estadio Akron"
     },
@@ -1668,8 +1668,8 @@
       "kickoff_utc": "2026-06-23T16:00:00Z",
       "date_vn": "2026-06-23",
       "time_vn": "23:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "45",
         "name": "England",
@@ -1683,8 +1683,8 @@
         "iso2": "GH"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "venue": "Gillette Stadium"
     },
