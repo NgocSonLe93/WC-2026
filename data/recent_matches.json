@@ -1,31 +1,12 @@
 {
   "meta": {
-    "updated_at": "2026-06-25T08:28:25.237300Z",
+    "updated_at": "2026-06-26T08:33:59.860032Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
-    "matches": 706
+    "matches": 704
   },
   "matches": [
-    {
-      "id": "intl-22912",
-      "date": "1998-07-22",
-      "kickoff_utc": "1998-07-22T12:00:00Z",
-      "tournament": "CFU Caribbean Cup",
-      "neutral": true,
-      "home": {
-        "name": "Curaçao",
-        "code": "CUW"
-      },
-      "away": {
-        "name": "Haiti",
-        "code": "HAI"
-      },
-      "score": {
-        "home": 0,
-        "away": 4
-      }
-    },
     {
       "id": "intl-26806",
       "date": "2002-11-22",
@@ -844,25 +825,6 @@
       }
     },
     {
-      "id": "intl-42696",
-      "date": "2019-06-28",
-      "kickoff_utc": "2019-06-28T12:00:00Z",
-      "tournament": "African Cup of Nations",
-      "neutral": true,
-      "home": {
-        "name": "Morocco",
-        "code": "MAR"
-      },
-      "away": {
-        "name": "Ivory Coast",
-        "code": "CIV"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-42705",
       "date": "2019-06-29",
       "kickoff_utc": "2019-06-29T12:00:00Z",
@@ -1167,25 +1129,6 @@
       }
     },
     {
-      "id": "intl-43444",
-      "date": "2020-10-07",
-      "kickoff_utc": "2020-10-07T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": false,
-      "home": {
-        "name": "Germany",
-        "code": "GER"
-      },
-      "away": {
-        "name": "Turkey",
-        "code": "TUR"
-      },
-      "score": {
-        "home": 3,
-        "away": 3
-      }
-    },
-    {
       "id": "intl-43455",
       "date": "2020-10-08",
       "kickoff_utc": "2020-10-08T12:00:00Z",
@@ -1221,25 +1164,6 @@
       "score": {
         "home": 0,
         "away": 0
-      }
-    },
-    {
-      "id": "intl-43497",
-      "date": "2020-10-11",
-      "kickoff_utc": "2020-10-11T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": false,
-      "home": {
-        "name": "Croatia",
-        "code": "CRO"
-      },
-      "away": {
-        "name": "Sweden",
-        "code": "SWE"
-      },
-      "score": {
-        "home": 2,
-        "away": 1
       }
     },
     {
@@ -3048,25 +2972,6 @@
       }
     },
     {
-      "id": "intl-45186",
-      "date": "2022-06-02",
-      "kickoff_utc": "2022-06-02T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": false,
-      "home": {
-        "name": "Japan",
-        "code": "JPN"
-      },
-      "away": {
-        "name": "Paraguay",
-        "code": "PAR"
-      },
-      "score": {
-        "home": 4,
-        "away": 1
-      }
-    },
-    {
       "id": "intl-45200",
       "date": "2022-06-03",
       "kickoff_utc": "2022-06-03T12:00:00Z",
@@ -3903,25 +3808,6 @@
       }
     },
     {
-      "id": "intl-45666",
-      "date": "2022-11-17",
-      "kickoff_utc": "2022-11-17T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": true,
-      "home": {
-        "name": "Japan",
-        "code": "JPN"
-      },
-      "away": {
-        "name": "Canada",
-        "code": "CAN"
-      },
-      "score": {
-        "home": 1,
-        "away": 2
-      }
-    },
-    {
       "id": "intl-45667",
       "date": "2022-11-17",
       "kickoff_utc": "2022-11-17T12:00:00Z",
@@ -4093,25 +3979,6 @@
       }
     },
     {
-      "id": "intl-45725",
-      "date": "2022-11-22",
-      "kickoff_utc": "2022-11-22T12:00:00Z",
-      "tournament": "FIFA World Cup",
-      "neutral": true,
-      "home": {
-        "name": "France",
-        "code": "FRA"
-      },
-      "away": {
-        "name": "Australia",
-        "code": "AUS"
-      },
-      "score": {
-        "home": 4,
-        "away": 1
-      }
-    },
-    {
       "id": "intl-45726",
       "date": "2022-11-23",
       "kickoff_utc": "2022-11-23T12:00:00Z",
@@ -4260,25 +4127,6 @@
       },
       "score": {
         "home": 0,
-        "away": 1
-      }
-    },
-    {
-      "id": "intl-45743",
-      "date": "2022-11-27",
-      "kickoff_utc": "2022-11-27T12:00:00Z",
-      "tournament": "FIFA World Cup",
-      "neutral": true,
-      "home": {
-        "name": "Spain",
-        "code": "ESP"
-      },
-      "away": {
-        "name": "Germany",
-        "code": "GER"
-      },
-      "score": {
-        "home": 1,
         "away": 1
       }
     },
@@ -13360,8 +13208,8 @@
         "code": "SUI"
       },
       "score": {
-        "home": 2,
-        "away": 1
+        "home": 1,
+        "away": 2
       }
     },
     {
@@ -13419,6 +13267,120 @@
       "score": {
         "home": 4,
         "away": 2
+      }
+    },
+    {
+      "id": "intl-49460",
+      "date": "2026-06-25",
+      "kickoff_utc": "2026-06-25T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": false,
+      "home": {
+        "name": "United States",
+        "code": "USA"
+      },
+      "away": {
+        "name": "Turkey",
+        "code": "TUR"
+      },
+      "score": {
+        "home": 2,
+        "away": 3
+      }
+    },
+    {
+      "id": "intl-49461",
+      "date": "2026-06-25",
+      "kickoff_utc": "2026-06-25T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Paraguay",
+        "code": "PAR"
+      },
+      "away": {
+        "name": "Australia",
+        "code": "AUS"
+      },
+      "score": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-49462",
+      "date": "2026-06-25",
+      "kickoff_utc": "2026-06-25T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Curaçao",
+        "code": "CUW"
+      },
+      "away": {
+        "name": "Ivory Coast",
+        "code": "CIV"
+      },
+      "score": {
+        "home": 0,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-49463",
+      "date": "2026-06-25",
+      "kickoff_utc": "2026-06-25T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Ecuador",
+        "code": "ECU"
+      },
+      "away": {
+        "name": "Germany",
+        "code": "GER"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49464",
+      "date": "2026-06-25",
+      "kickoff_utc": "2026-06-25T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Japan",
+        "code": "JPN"
+      },
+      "away": {
+        "name": "Sweden",
+        "code": "SWE"
+      },
+      "score": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49465",
+      "date": "2026-06-25",
+      "kickoff_utc": "2026-06-25T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Tunisia",
+        "code": "TUN"
+      },
+      "away": {
+        "name": "Netherlands",
+        "code": "NED"
+      },
+      "score": {
+        "home": 1,
+        "away": 3
       }
     }
   ]

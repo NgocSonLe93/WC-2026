@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-25T08:28:24.893654Z",
+    "updated_at": "2026-06-26T08:33:59.548803Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -548,8 +548,8 @@
       "kickoff_utc": "2026-06-25T18:00:00Z",
       "date_vn": "2026-06-26",
       "time_vn": "01:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "22",
         "name": "Japan",
@@ -563,8 +563,8 @@
         "iso2": "SE"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "venue": "AT&T Stadium"
     },
@@ -856,8 +856,8 @@
       "kickoff_utc": "2026-06-25T18:00:00Z",
       "date_vn": "2026-06-26",
       "time_vn": "01:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "24",
         "name": "Tunisia",
@@ -871,8 +871,8 @@
         "iso2": "NL"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 3
       },
       "venue": "GEHA Field at Arrowhead Stadium"
     },
@@ -1612,8 +1612,8 @@
       "kickoff_utc": "2026-06-25T19:00:00Z",
       "date_vn": "2026-06-26",
       "time_vn": "02:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "16",
         "name": "Turkey",
@@ -1627,8 +1627,8 @@
         "iso2": "US"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 2
       },
       "venue": "SoFi Stadium"
     },
@@ -2732,8 +2732,8 @@
       "kickoff_utc": "2026-06-25T16:00:00Z",
       "date_vn": "2026-06-25",
       "time_vn": "23:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "18",
         "name": "Curaçao",
@@ -2747,8 +2747,8 @@
         "iso2": "CI"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 2
       },
       "venue": "Lincoln Financial Field"
     },
@@ -2760,8 +2760,8 @@
       "kickoff_utc": "2026-06-25T16:00:00Z",
       "date_vn": "2026-06-25",
       "time_vn": "23:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "20",
         "name": "Ecuador",
@@ -2775,8 +2775,8 @@
         "iso2": "DE"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "venue": "MetLife Stadium"
     },
@@ -3012,8 +3012,8 @@
       "kickoff_utc": "2026-06-25T19:00:00Z",
       "date_vn": "2026-06-26",
       "time_vn": "02:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "14",
         "name": "Paraguay",
@@ -3027,8 +3027,8 @@
         "iso2": "AU"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "venue": "Levi's Stadium"
     },
