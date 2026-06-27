@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-26T08:33:59.548803Z",
+    "updated_at": "2026-06-27T07:53:12.241845Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -884,8 +884,8 @@
       "kickoff_utc": "2026-06-26T15:00:00Z",
       "date_vn": "2026-06-26",
       "time_vn": "22:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "34",
         "name": "Senegal",
@@ -899,8 +899,8 @@
         "iso2": "IQ"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 5,
+        "away": 0
       },
       "venue": "BMO Field"
     },
@@ -977,10 +977,10 @@
         "iso2": "AR"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "30",
+        "name": "Cape Verde",
+        "code": "CPV",
+        "iso2": "CV"
       },
       "score": {
         "home": null,
@@ -999,16 +999,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "15",
+        "name": "Australia",
+        "code": "AUS",
+        "iso2": "AU"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "26",
+        "name": "Egypt",
+        "code": "EGY",
+        "iso2": "EG"
       },
       "score": {
         "home": null,
@@ -1640,8 +1640,8 @@
       "kickoff_utc": "2026-06-26T15:00:00Z",
       "date_vn": "2026-06-26",
       "time_vn": "22:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "36",
         "name": "Norway",
@@ -1655,8 +1655,8 @@
         "iso2": "FR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 4
       },
       "venue": "Gillette Stadium"
     },
@@ -1668,8 +1668,8 @@
       "kickoff_utc": "2026-06-26T20:00:00Z",
       "date_vn": "2026-06-27",
       "time_vn": "03:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "26",
         "name": "Egypt",
@@ -1683,8 +1683,8 @@
         "iso2": "IR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "venue": "Lumen Field"
     },
@@ -1696,8 +1696,8 @@
       "kickoff_utc": "2026-06-26T19:00:00Z",
       "date_vn": "2026-06-27",
       "time_vn": "02:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "30",
         "name": "Cape Verde",
@@ -1711,8 +1711,8 @@
         "iso2": "SA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "venue": "NRG Stadium"
     },
@@ -1724,8 +1724,8 @@
       "kickoff_utc": "2026-06-26T18:00:00Z",
       "date_vn": "2026-06-27",
       "time_vn": "01:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "32",
         "name": "Uruguay",
@@ -1739,8 +1739,8 @@
         "iso2": "ES"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "venue": "Estadio Akron"
     },
@@ -1789,10 +1789,10 @@
         "iso2": "BR"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "22",
+        "name": "Japan",
+        "code": "JPN",
+        "iso2": "JP"
       },
       "score": {
         "home": null,
@@ -2231,10 +2231,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "33",
+        "name": "France",
+        "code": "FRA",
+        "iso2": "FR"
       },
       "away": {
         "id": "0",
@@ -2853,10 +2853,10 @@
         "iso2": "DE"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "14",
+        "name": "Paraguay",
+        "code": "PAR",
+        "iso2": "PY"
       },
       "score": {
         "home": null,
@@ -2881,10 +2881,10 @@
         "iso2": "US"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "6",
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "iso2": "BA"
       },
       "score": {
         "home": null,
@@ -3040,8 +3040,8 @@
       "kickoff_utc": "2026-06-26T20:00:00Z",
       "date_vn": "2026-06-27",
       "time_vn": "03:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "28",
         "name": "New Zealand",
@@ -3055,8 +3055,8 @@
         "iso2": "BE"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 5
       },
       "venue": "BC Place"
     },
@@ -3071,10 +3071,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "21",
+        "name": "Netherlands",
+        "code": "NED",
+        "iso2": "NL"
       },
       "away": {
         "id": "10",
@@ -3099,16 +3099,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "19",
+        "name": "Ivory Coast",
+        "code": "CIV",
+        "iso2": "CI"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "36",
+        "name": "Norway",
+        "code": "NOR",
+        "iso2": "NO"
       },
       "score": {
         "home": null,
@@ -3155,10 +3155,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "25",
+        "name": "Belgium",
+        "code": "BEL",
+        "iso2": "BE"
       },
       "away": {
         "id": "0",
