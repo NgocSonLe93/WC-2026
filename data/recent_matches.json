@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-28T08:26:18.684137Z",
+    "updated_at": "2026-06-29T09:54:13.225672Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -707,25 +707,6 @@
       },
       "score": {
         "home": 1,
-        "away": 0
-      }
-    },
-    {
-      "id": "intl-42608",
-      "date": "2019-06-15",
-      "kickoff_utc": "2019-06-15T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": true,
-      "home": {
-        "name": "Ghana",
-        "code": "GHA"
-      },
-      "away": {
-        "name": "South Africa",
-        "code": "RSA"
-      },
-      "score": {
-        "home": 0,
         "away": 0
       }
     },
@@ -13399,6 +13380,25 @@
       },
       "score": {
         "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49478",
+      "date": "2026-06-28",
+      "kickoff_utc": "2026-06-28T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "South Africa",
+        "code": "RSA"
+      },
+      "away": {
+        "name": "Canada",
+        "code": "CAN"
+      },
+      "score": {
+        "home": 0,
         "away": 1
       }
     }

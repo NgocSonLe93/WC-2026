@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-28T08:26:18.314145Z",
+    "updated_at": "2026-06-29T09:54:12.714321Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2200,8 +2200,8 @@
       "kickoff_utc": "2026-06-28T12:00:00Z",
       "date_vn": "2026-06-28",
       "time_vn": "19:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "2",
         "name": "South Africa",
@@ -2215,8 +2215,8 @@
         "iso2": "CA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "venue": "SoFi Stadium"
     },
@@ -2287,10 +2287,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "5",
+        "name": "Canada",
+        "code": "CAN",
+        "iso2": "CA"
       },
       "away": {
         "id": "0",
