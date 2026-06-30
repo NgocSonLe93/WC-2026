@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-29T09:54:13.225672Z",
+    "updated_at": "2026-06-30T08:33:58.851936Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -3010,25 +3010,6 @@
       }
     },
     {
-      "id": "intl-45346",
-      "date": "2022-06-10",
-      "kickoff_utc": "2022-06-10T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": false,
-      "home": {
-        "name": "South Korea",
-        "code": "KOR"
-      },
-      "away": {
-        "name": "Paraguay",
-        "code": "PAR"
-      },
-      "score": {
-        "home": 2,
-        "away": 2
-      }
-    },
-    {
       "id": "intl-45348",
       "date": "2022-06-10",
       "kickoff_utc": "2022-06-10T12:00:00Z",
@@ -3789,25 +3770,6 @@
       }
     },
     {
-      "id": "intl-45726",
-      "date": "2022-11-23",
-      "kickoff_utc": "2022-11-23T12:00:00Z",
-      "tournament": "FIFA World Cup",
-      "neutral": true,
-      "home": {
-        "name": "Germany",
-        "code": "GER"
-      },
-      "away": {
-        "name": "Japan",
-        "code": "JPN"
-      },
-      "score": {
-        "home": 1,
-        "away": 2
-      }
-    },
-    {
       "id": "intl-45728",
       "date": "2022-11-23",
       "kickoff_utc": "2022-11-23T12:00:00Z",
@@ -4165,25 +4127,6 @@
       },
       "score": {
         "home": 2,
-        "away": 1
-      }
-    },
-    {
-      "id": "intl-45766",
-      "date": "2022-12-03",
-      "kickoff_utc": "2022-12-03T12:00:00Z",
-      "tournament": "FIFA World Cup",
-      "neutral": true,
-      "home": {
-        "name": "Netherlands",
-        "code": "NED"
-      },
-      "away": {
-        "name": "United States",
-        "code": "USA"
-      },
-      "score": {
-        "home": 3,
         "away": 1
       }
     },
@@ -13399,6 +13342,63 @@
       },
       "score": {
         "home": 0,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49479",
+      "date": "2026-06-29",
+      "kickoff_utc": "2026-06-29T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Brazil",
+        "code": "BRA"
+      },
+      "away": {
+        "name": "Japan",
+        "code": "JPN"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49480",
+      "date": "2026-06-29",
+      "kickoff_utc": "2026-06-29T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Germany",
+        "code": "GER"
+      },
+      "away": {
+        "name": "Paraguay",
+        "code": "PAR"
+      },
+      "score": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49481",
+      "date": "2026-06-29",
+      "kickoff_utc": "2026-06-29T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Netherlands",
+        "code": "NED"
+      },
+      "away": {
+        "name": "Morocco",
+        "code": "MAR"
+      },
+      "score": {
+        "home": 1,
         "away": 1
       }
     }

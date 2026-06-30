@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-29T09:54:12.714321Z",
+    "updated_at": "2026-06-30T08:33:58.529099Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -1780,8 +1780,8 @@
       "kickoff_utc": "2026-06-29T12:00:00Z",
       "date_vn": "2026-06-29",
       "time_vn": "19:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "9",
         "name": "Brazil",
@@ -1795,8 +1795,8 @@
         "iso2": "JP"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "venue": "NRG Stadium"
     },
@@ -2293,10 +2293,10 @@
         "iso2": "CA"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "10",
+        "name": "Morocco",
+        "code": "MAR",
+        "iso2": "MA"
       },
       "score": {
         "home": null,
@@ -2483,10 +2483,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "9",
+        "name": "Brazil",
+        "code": "BRA",
+        "iso2": "BR"
       },
       "away": {
         "id": "0",
@@ -2844,8 +2844,8 @@
       "kickoff_utc": "2026-06-29T16:30:00Z",
       "date_vn": "2026-06-29",
       "time_vn": "23:30",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "17",
         "name": "Germany",
@@ -2859,8 +2859,8 @@
         "iso2": "PY"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "venue": "Gillette Stadium"
     },
@@ -3068,8 +3068,8 @@
       "kickoff_utc": "2026-06-29T19:00:00Z",
       "date_vn": "2026-06-30",
       "time_vn": "02:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "21",
         "name": "Netherlands",
@@ -3083,8 +3083,8 @@
         "iso2": "MA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "venue": "Estadio BBVA"
     },
@@ -3211,10 +3211,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "14",
+        "name": "Paraguay",
+        "code": "PAR",
+        "iso2": "PY"
       },
       "away": {
         "id": "0",
