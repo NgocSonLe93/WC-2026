@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-30T08:33:58.851936Z",
+    "updated_at": "2026-07-01T08:52:34.514357Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -844,25 +844,6 @@
       }
     },
     {
-      "id": "intl-42749",
-      "date": "2019-07-11",
-      "kickoff_utc": "2019-07-11T12:00:00Z",
-      "tournament": "African Cup of Nations",
-      "neutral": true,
-      "home": {
-        "name": "Ivory Coast",
-        "code": "CIV"
-      },
-      "away": {
-        "name": "Algeria",
-        "code": "ALG"
-      },
-      "score": {
-        "home": 1,
-        "away": 1
-      }
-    },
-    {
       "id": "intl-42898",
       "date": "2019-09-07",
       "kickoff_utc": "2019-09-07T12:00:00Z",
@@ -932,25 +913,6 @@
       "away": {
         "name": "DR Congo",
         "code": "COD"
-      },
-      "score": {
-        "home": 1,
-        "away": 1
-      }
-    },
-    {
-      "id": "intl-43063",
-      "date": "2019-10-12",
-      "kickoff_utc": "2019-10-12T12:00:00Z",
-      "tournament": "UEFA Euro qualification",
-      "neutral": false,
-      "home": {
-        "name": "Norway",
-        "code": "NOR"
-      },
-      "away": {
-        "name": "Spain",
-        "code": "ESP"
       },
       "score": {
         "home": 1,
@@ -1126,25 +1088,6 @@
       "score": {
         "home": 1,
         "away": 1
-      }
-    },
-    {
-      "id": "intl-43545",
-      "date": "2020-10-14",
-      "kickoff_utc": "2020-10-14T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": false,
-      "home": {
-        "name": "Portugal",
-        "code": "POR"
-      },
-      "away": {
-        "name": "Sweden",
-        "code": "SWE"
-      },
-      "score": {
-        "home": 3,
-        "away": 0
       }
     },
     {
@@ -13400,6 +13343,63 @@
       "score": {
         "home": 1,
         "away": 1
+      }
+    },
+    {
+      "id": "intl-49482",
+      "date": "2026-06-30",
+      "kickoff_utc": "2026-06-30T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Ivory Coast",
+        "code": "CIV"
+      },
+      "away": {
+        "name": "Norway",
+        "code": "NOR"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-49483",
+      "date": "2026-06-30",
+      "kickoff_utc": "2026-06-30T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "France",
+        "code": "FRA"
+      },
+      "away": {
+        "name": "Sweden",
+        "code": "SWE"
+      },
+      "score": {
+        "home": 3,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-49484",
+      "date": "2026-06-30",
+      "kickoff_utc": "2026-06-30T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": false,
+      "home": {
+        "name": "Mexico",
+        "code": "MEX"
+      },
+      "away": {
+        "name": "Ecuador",
+        "code": "ECU"
+      },
+      "score": {
+        "home": 2,
+        "away": 0
       }
     }
   ]

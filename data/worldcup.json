@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-30T08:33:58.529099Z",
+    "updated_at": "2026-07-01T08:52:34.098431Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2228,8 +2228,8 @@
       "kickoff_utc": "2026-06-30T17:00:00Z",
       "date_vn": "2026-07-01",
       "time_vn": "00:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "33",
         "name": "France",
@@ -2243,8 +2243,8 @@
         "iso2": "SE"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
       "venue": "MetLife Stadium"
     },
@@ -2315,10 +2315,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "1",
+        "name": "Mexico",
+        "code": "MEX",
+        "iso2": "MX"
       },
       "away": {
         "id": "0",
@@ -2489,10 +2489,10 @@
         "iso2": "BR"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "36",
+        "name": "Norway",
+        "code": "NOR",
+        "iso2": "NO"
       },
       "score": {
         "home": null,
@@ -3096,8 +3096,8 @@
       "kickoff_utc": "2026-06-30T12:00:00Z",
       "date_vn": "2026-06-30",
       "time_vn": "19:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "19",
         "name": "Ivory Coast",
@@ -3111,8 +3111,8 @@
         "iso2": "NO"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "venue": "AT&T Stadium"
     },
@@ -3124,8 +3124,8 @@
       "kickoff_utc": "2026-06-30T19:00:00Z",
       "date_vn": "2026-07-01",
       "time_vn": "02:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "1",
         "name": "Mexico",
@@ -3139,8 +3139,8 @@
         "iso2": "EC"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "venue": "Estadio Azteca"
     },
@@ -3217,10 +3217,10 @@
         "iso2": "PY"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "33",
+        "name": "France",
+        "code": "FRA",
+        "iso2": "FR"
       },
       "score": {
         "home": null,
