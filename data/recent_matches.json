@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-01T08:52:34.514357Z",
+    "updated_at": "2026-07-02T08:16:28.255994Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -274,25 +274,6 @@
       }
     },
     {
-      "id": "intl-40401",
-      "date": "2017-01-16",
-      "kickoff_utc": "2017-01-16T12:00:00Z",
-      "tournament": "African Cup of Nations",
-      "neutral": true,
-      "home": {
-        "name": "DR Congo",
-        "code": "COD"
-      },
-      "away": {
-        "name": "Morocco",
-        "code": "MAR"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-40411",
       "date": "2017-01-20",
       "kickoff_utc": "2017-01-20T12:00:00Z",
@@ -555,25 +536,6 @@
       },
       "score": {
         "home": 1,
-        "away": 0
-      }
-    },
-    {
-      "id": "intl-41411",
-      "date": "2018-03-27",
-      "kickoff_utc": "2018-03-27T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": true,
-      "home": {
-        "name": "Bosnia and Herzegovina",
-        "code": "BIH"
-      },
-      "away": {
-        "name": "Senegal",
-        "code": "SEN"
-      },
-      "score": {
-        "home": 0,
         "away": 0
       }
     },
@@ -1734,25 +1696,6 @@
       "score": {
         "home": 0,
         "away": 2
-      }
-    },
-    {
-      "id": "intl-44192",
-      "date": "2021-06-27",
-      "kickoff_utc": "2021-06-27T12:00:00Z",
-      "tournament": "UEFA Euro",
-      "neutral": true,
-      "home": {
-        "name": "Belgium",
-        "code": "BEL"
-      },
-      "away": {
-        "name": "Portugal",
-        "code": "POR"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
       }
     },
     {
@@ -13396,6 +13339,63 @@
       "away": {
         "name": "Ecuador",
         "code": "ECU"
+      },
+      "score": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-49485",
+      "date": "2026-07-01",
+      "kickoff_utc": "2026-07-01T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "England",
+        "code": "ENG"
+      },
+      "away": {
+        "name": "DR Congo",
+        "code": "COD"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49486",
+      "date": "2026-07-01",
+      "kickoff_utc": "2026-07-01T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Belgium",
+        "code": "BEL"
+      },
+      "away": {
+        "name": "Senegal",
+        "code": "SEN"
+      },
+      "score": {
+        "home": 3,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-49487",
+      "date": "2026-07-01",
+      "kickoff_utc": "2026-07-01T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": false,
+      "home": {
+        "name": "United States",
+        "code": "USA"
+      },
+      "away": {
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH"
       },
       "score": {
         "home": 2,
