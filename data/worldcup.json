@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-02T08:16:27.925610Z",
+    "updated_at": "2026-07-03T08:15:26.088994Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2648,8 +2648,8 @@
       "kickoff_utc": "2026-07-02T19:00:00Z",
       "date_vn": "2026-07-03",
       "time_vn": "02:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "41",
         "name": "Portugal",
@@ -2663,8 +2663,8 @@
         "iso2": "HR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "venue": "BMO Field"
     },
@@ -2676,8 +2676,8 @@
       "kickoff_utc": "2026-07-02T12:00:00Z",
       "date_vn": "2026-07-02",
       "time_vn": "19:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "29",
         "name": "Spain",
@@ -2691,8 +2691,8 @@
         "iso2": "AT"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       },
       "venue": "SoFi Stadium"
     },
@@ -2704,8 +2704,8 @@
       "kickoff_utc": "2026-07-02T20:00:00Z",
       "date_vn": "2026-07-03",
       "time_vn": "03:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "8",
         "name": "Switzerland",
@@ -2719,8 +2719,8 @@
         "iso2": "DZ"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "venue": "BC Place"
     },
@@ -2931,16 +2931,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "41",
+        "name": "Portugal",
+        "code": "POR",
+        "iso2": "PT"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "29",
+        "name": "Spain",
+        "code": "ESP",
+        "iso2": "ES"
       },
       "score": {
         "home": null,
@@ -3015,10 +3015,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "8",
+        "name": "Switzerland",
+        "code": "SUI",
+        "iso2": "CH"
       },
       "away": {
         "id": "0",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-02T08:16:28.255994Z",
+    "updated_at": "2026-07-03T08:15:26.412987Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -898,25 +898,6 @@
       "score": {
         "home": 3,
         "away": 1
-      }
-    },
-    {
-      "id": "intl-43129",
-      "date": "2019-10-15",
-      "kickoff_utc": "2019-10-15T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": true,
-      "home": {
-        "name": "Algeria",
-        "code": "ALG"
-      },
-      "away": {
-        "name": "Colombia",
-        "code": "COL"
-      },
-      "score": {
-        "home": 3,
-        "away": 0
       }
     },
     {
@@ -2725,25 +2706,6 @@
       }
     },
     {
-      "id": "intl-45239",
-      "date": "2022-06-05",
-      "kickoff_utc": "2022-06-05T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": false,
-      "home": {
-        "name": "Portugal",
-        "code": "POR"
-      },
-      "away": {
-        "name": "Switzerland",
-        "code": "SUI"
-      },
-      "score": {
-        "home": 4,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-45240",
       "date": "2022-06-05",
       "kickoff_utc": "2022-06-05T12:00:00Z",
@@ -4127,25 +4089,6 @@
       },
       "score": {
         "home": 6,
-        "away": 1
-      }
-    },
-    {
-      "id": "intl-45774",
-      "date": "2022-12-09",
-      "kickoff_utc": "2022-12-09T12:00:00Z",
-      "tournament": "FIFA World Cup",
-      "neutral": true,
-      "home": {
-        "name": "Croatia",
-        "code": "CRO"
-      },
-      "away": {
-        "name": "Brazil",
-        "code": "BRA"
-      },
-      "score": {
-        "home": 1,
         "away": 1
       }
     },
@@ -13396,6 +13339,63 @@
       "away": {
         "name": "Bosnia and Herzegovina",
         "code": "BIH"
+      },
+      "score": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-49488",
+      "date": "2026-07-02",
+      "kickoff_utc": "2026-07-02T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Spain",
+        "code": "ESP"
+      },
+      "away": {
+        "name": "Austria",
+        "code": "AUT"
+      },
+      "score": {
+        "home": 3,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-49489",
+      "date": "2026-07-02",
+      "kickoff_utc": "2026-07-02T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Portugal",
+        "code": "POR"
+      },
+      "away": {
+        "name": "Croatia",
+        "code": "CRO"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49490",
+      "date": "2026-07-02",
+      "kickoff_utc": "2026-07-02T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Switzerland",
+        "code": "SUI"
+      },
+      "away": {
+        "name": "Algeria",
+        "code": "ALG"
       },
       "score": {
         "home": 2,
