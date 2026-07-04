@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-07-03T08:15:26.412987Z",
+    "updated_at": "2026-07-04T07:52:29.912662Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
-    "matches": 705
+    "matches": 707
   },
   "matches": [
     {
@@ -100,25 +100,6 @@
       "score": {
         "home": 2,
         "away": 2
-      }
-    },
-    {
-      "id": "intl-38470",
-      "date": "2015-01-22",
-      "kickoff_utc": "2015-01-22T12:00:00Z",
-      "tournament": "African Cup of Nations",
-      "neutral": true,
-      "home": {
-        "name": "Cape Verde",
-        "code": "CPV"
-      },
-      "away": {
-        "name": "DR Congo",
-        "code": "COD"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
       }
     },
     {
@@ -13399,6 +13380,63 @@
       },
       "score": {
         "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-49491",
+      "date": "2026-07-03",
+      "kickoff_utc": "2026-07-03T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Australia",
+        "code": "AUS"
+      },
+      "away": {
+        "name": "Egypt",
+        "code": "EGY"
+      },
+      "score": {
+        "home": 1,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49492",
+      "date": "2026-07-03",
+      "kickoff_utc": "2026-07-03T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Argentina",
+        "code": "ARG"
+      },
+      "away": {
+        "name": "Cape Verde",
+        "code": "CPV"
+      },
+      "score": {
+        "home": 3,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-49493",
+      "date": "2026-07-03",
+      "kickoff_utc": "2026-07-03T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Colombia",
+        "code": "COL"
+      },
+      "away": {
+        "name": "Ghana",
+        "code": "GHA"
+      },
+      "score": {
+        "home": 1,
         "away": 0
       }
     }
