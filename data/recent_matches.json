@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-07-04T07:52:29.912662Z",
+    "updated_at": "2026-07-05T08:06:58.350838Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
-    "matches": 707
+    "matches": 708
   },
   "matches": [
     {
@@ -2987,25 +2987,6 @@
       },
       "score": {
         "home": 4,
-        "away": 1
-      }
-    },
-    {
-      "id": "intl-45476",
-      "date": "2022-08-31",
-      "kickoff_utc": "2022-08-31T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": true,
-      "home": {
-        "name": "Mexico",
-        "code": "MEX"
-      },
-      "away": {
-        "name": "Paraguay",
-        "code": "PAR"
-      },
-      "score": {
-        "home": 0,
         "away": 1
       }
     },
@@ -13438,6 +13419,44 @@
       "score": {
         "home": 1,
         "away": 0
+      }
+    },
+    {
+      "id": "intl-49494",
+      "date": "2026-07-04",
+      "kickoff_utc": "2026-07-04T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Canada",
+        "code": "CAN"
+      },
+      "away": {
+        "name": "Morocco",
+        "code": "MAR"
+      },
+      "score": {
+        "home": 0,
+        "away": 3
+      }
+    },
+    {
+      "id": "intl-49495",
+      "date": "2026-07-04",
+      "kickoff_utc": "2026-07-04T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Paraguay",
+        "code": "PAR"
+      },
+      "away": {
+        "name": "France",
+        "code": "FRA"
+      },
+      "score": {
+        "home": 0,
+        "away": 1
       }
     }
   ]

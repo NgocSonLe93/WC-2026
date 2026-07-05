@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-04T07:52:29.596779Z",
+    "updated_at": "2026-07-05T08:06:57.974457Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2816,8 +2816,8 @@
       "kickoff_utc": "2026-07-04T17:00:00Z",
       "date_vn": "2026-07-05",
       "time_vn": "00:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "14",
         "name": "Paraguay",
@@ -2831,8 +2831,8 @@
         "iso2": "FR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "venue": "Lincoln Financial Field"
     },
@@ -2844,8 +2844,8 @@
       "kickoff_utc": "2026-07-04T12:00:00Z",
       "date_vn": "2026-07-04",
       "time_vn": "19:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "5",
         "name": "Canada",
@@ -2859,8 +2859,8 @@
         "iso2": "MA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 3
       },
       "venue": "NRG Stadium"
     },
@@ -3043,16 +3043,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "33",
+        "name": "France",
+        "code": "FRA",
+        "iso2": "FR"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "10",
+        "name": "Morocco",
+        "code": "MAR",
+        "iso2": "MA"
       },
       "score": {
         "home": null,
