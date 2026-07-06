@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-05T08:06:57.974457Z",
+    "updated_at": "2026-07-06T09:05:48.776557Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2872,8 +2872,8 @@
       "kickoff_utc": "2026-07-05T16:00:00Z",
       "date_vn": "2026-07-05",
       "time_vn": "23:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "9",
         "name": "Brazil",
@@ -2887,8 +2887,8 @@
         "iso2": "NO"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "venue": "MetLife Stadium"
     },
@@ -2900,8 +2900,8 @@
       "kickoff_utc": "2026-07-05T18:00:00Z",
       "date_vn": "2026-07-06",
       "time_vn": "01:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "1",
         "name": "Mexico",
@@ -2915,8 +2915,8 @@
         "iso2": "ENG"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 3
       },
       "venue": "Estadio Azteca"
     },
@@ -3099,16 +3099,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "36",
+        "name": "Norway",
+        "code": "NOR",
+        "iso2": "NO"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "45",
+        "name": "England",
+        "code": "ENG",
+        "iso2": "ENG"
       },
       "score": {
         "home": null,
