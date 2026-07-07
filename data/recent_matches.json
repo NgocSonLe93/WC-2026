@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-06T09:05:49.073148Z",
+    "updated_at": "2026-07-07T08:29:24.014387Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -13436,7 +13436,7 @@
         "code": "NOR"
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 2
       }
     },

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-06T09:05:48.776557Z",
+    "updated_at": "2026-07-07T08:29:23.674013Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2928,8 +2928,8 @@
       "kickoff_utc": "2026-07-06T14:00:00Z",
       "date_vn": "2026-07-06",
       "time_vn": "21:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "41",
         "name": "Portugal",
@@ -2943,8 +2943,8 @@
         "iso2": "ES"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "venue": "AT&T Stadium"
     },
@@ -2956,8 +2956,8 @@
       "kickoff_utc": "2026-07-06T17:00:00Z",
       "date_vn": "2026-07-07",
       "time_vn": "00:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "13",
         "name": "United States",
@@ -2971,8 +2971,8 @@
         "iso2": "BE"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 4
       },
       "venue": "Lumen Field"
     },
@@ -3071,16 +3071,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "29",
+        "name": "Spain",
+        "code": "ESP",
+        "iso2": "ES"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "25",
+        "name": "Belgium",
+        "code": "BEL",
+        "iso2": "BE"
       },
       "score": {
         "home": null,
