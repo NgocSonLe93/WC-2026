@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-07T08:29:23.674013Z",
+    "updated_at": "2026-07-08T07:35:12.785975Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2984,8 +2984,8 @@
       "kickoff_utc": "2026-07-07T12:00:00Z",
       "date_vn": "2026-07-07",
       "time_vn": "19:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "37",
         "name": "Argentina",
@@ -2999,8 +2999,8 @@
         "iso2": "EG"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 2
       },
       "venue": "Mercedes-Benz Stadium"
     },
@@ -3012,8 +3012,8 @@
       "kickoff_utc": "2026-07-07T13:00:00Z",
       "date_vn": "2026-07-07",
       "time_vn": "20:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "8",
         "name": "Switzerland",
@@ -3027,8 +3027,8 @@
         "iso2": "CO"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "venue": "BC Place"
     },
@@ -3127,16 +3127,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "37",
+        "name": "Argentina",
+        "code": "ARG",
+        "iso2": "AR"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "8",
+        "name": "Switzerland",
+        "code": "SUI",
+        "iso2": "CH"
       },
       "score": {
         "home": null,
