@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-09T08:33:49.482951Z",
+    "updated_at": "2026-07-10T08:28:23.898754Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -3040,8 +3040,8 @@
       "kickoff_utc": "2026-07-09T16:00:00Z",
       "date_vn": "2026-07-09",
       "time_vn": "23:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "33",
         "name": "France",
@@ -3055,8 +3055,8 @@
         "iso2": "MA"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "venue": "Gillette Stadium"
     },
@@ -3155,10 +3155,10 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "33",
+        "name": "France",
+        "code": "FRA",
+        "iso2": "FR"
       },
       "away": {
         "id": "0",
