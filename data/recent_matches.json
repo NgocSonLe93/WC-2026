@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-10T08:28:24.300953Z",
+    "updated_at": "2026-07-11T07:16:01.148020Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -3501,25 +3501,6 @@
       "score": {
         "home": 6,
         "away": 2
-      }
-    },
-    {
-      "id": "intl-45728",
-      "date": "2022-11-23",
-      "kickoff_utc": "2022-11-23T12:00:00Z",
-      "tournament": "FIFA World Cup",
-      "neutral": true,
-      "home": {
-        "name": "Morocco",
-        "code": "MAR"
-      },
-      "away": {
-        "name": "Croatia",
-        "code": "CRO"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
       }
     },
     {
@@ -13475,6 +13456,25 @@
       },
       "score": {
         "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-49502",
+      "date": "2026-07-09",
+      "kickoff_utc": "2026-07-09T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "France",
+        "code": "FRA"
+      },
+      "away": {
+        "name": "Morocco",
+        "code": "MAR"
+      },
+      "score": {
+        "home": 2,
         "away": 0
       }
     }

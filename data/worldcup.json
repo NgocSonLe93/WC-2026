@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-10T08:28:23.898754Z",
+    "updated_at": "2026-07-11T07:16:00.709845Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -3068,8 +3068,8 @@
       "kickoff_utc": "2026-07-10T12:00:00Z",
       "date_vn": "2026-07-10",
       "time_vn": "19:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "29",
         "name": "Spain",
@@ -3083,8 +3083,8 @@
         "iso2": "BE"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "venue": "SoFi Stadium"
     },
@@ -3161,10 +3161,10 @@
         "iso2": "FR"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "29",
+        "name": "Spain",
+        "code": "ESP",
+        "iso2": "ES"
       },
       "score": {
         "home": null,
