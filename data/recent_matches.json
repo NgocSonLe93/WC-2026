@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-11T07:16:01.148020Z",
+    "updated_at": "2026-07-12T07:32:17.158117Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -1886,25 +1886,6 @@
       "score": {
         "home": 6,
         "away": 1
-      }
-    },
-    {
-      "id": "intl-44501",
-      "date": "2021-10-07",
-      "kickoff_utc": "2021-10-07T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": true,
-      "home": {
-        "name": "Belgium",
-        "code": "BEL"
-      },
-      "away": {
-        "name": "France",
-        "code": "FRA"
-      },
-      "score": {
-        "home": 2,
-        "away": 3
       }
     },
     {
@@ -13476,6 +13457,25 @@
       "score": {
         "home": 2,
         "away": 0
+      }
+    },
+    {
+      "id": "intl-49503",
+      "date": "2026-07-10",
+      "kickoff_utc": "2026-07-10T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Spain",
+        "code": "ESP"
+      },
+      "away": {
+        "name": "Belgium",
+        "code": "BEL"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-11T07:16:00.709845Z",
+    "updated_at": "2026-07-12T07:32:16.725757Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -3096,8 +3096,8 @@
       "kickoff_utc": "2026-07-11T17:00:00Z",
       "date_vn": "2026-07-12",
       "time_vn": "00:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "36",
         "name": "Norway",
@@ -3111,8 +3111,8 @@
         "iso2": "ENG"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "venue": "Hard Rock Stadium"
     },
@@ -3124,8 +3124,8 @@
       "kickoff_utc": "2026-07-11T20:00:00Z",
       "date_vn": "2026-07-12",
       "time_vn": "03:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "37",
         "name": "Argentina",
@@ -3139,8 +3139,8 @@
         "iso2": "CH"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       },
       "venue": "GEHA Field at Arrowhead Stadium"
     },
@@ -3183,16 +3183,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "45",
+        "name": "England",
+        "code": "ENG",
+        "iso2": "ENG"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "37",
+        "name": "Argentina",
+        "code": "ARG",
+        "iso2": "AR"
       },
       "score": {
         "home": null,
