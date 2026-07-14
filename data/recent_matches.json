@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-07-13T08:21:56.510156Z",
+    "updated_at": "2026-07-14T07:15:19.404931Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
-    "matches": 709
+    "matches": 708
   },
   "matches": [
     {
@@ -1126,25 +1126,6 @@
       "score": {
         "home": 4,
         "away": 2
-      }
-    },
-    {
-      "id": "intl-43708",
-      "date": "2020-11-18",
-      "kickoff_utc": "2020-11-18T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": false,
-      "home": {
-        "name": "Austria",
-        "code": "AUT"
-      },
-      "away": {
-        "name": "Norway",
-        "code": "NOR"
-      },
-      "score": {
-        "home": 1,
-        "away": 1
       }
     },
     {
@@ -2459,25 +2440,6 @@
       }
     },
     {
-      "id": "intl-45034",
-      "date": "2022-03-26",
-      "kickoff_utc": "2022-03-26T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": false,
-      "home": {
-        "name": "England",
-        "code": "ENG"
-      },
-      "away": {
-        "name": "Switzerland",
-        "code": "SUI"
-      },
-      "score": {
-        "home": 2,
-        "away": 1
-      }
-    },
-    {
       "id": "intl-45067",
       "date": "2022-03-29",
       "kickoff_utc": "2022-03-29T12:00:00Z",
@@ -2816,25 +2778,6 @@
       },
       "score": {
         "home": 2,
-        "away": 0
-      }
-    },
-    {
-      "id": "intl-45385",
-      "date": "2022-06-12",
-      "kickoff_utc": "2022-06-12T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": false,
-      "home": {
-        "name": "Switzerland",
-        "code": "SUI"
-      },
-      "away": {
-        "name": "Portugal",
-        "code": "POR"
-      },
-      "score": {
-        "home": 1,
         "away": 0
       }
     },
@@ -13475,6 +13418,44 @@
       },
       "score": {
         "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49504",
+      "date": "2026-07-11",
+      "kickoff_utc": "2026-07-11T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Norway",
+        "code": "NOR"
+      },
+      "away": {
+        "name": "England",
+        "code": "ENG"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-49505",
+      "date": "2026-07-11",
+      "kickoff_utc": "2026-07-11T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Argentina",
+        "code": "ARG"
+      },
+      "away": {
+        "name": "Switzerland",
+        "code": "SUI"
+      },
+      "score": {
+        "home": 3,
         "away": 1
       }
     }
