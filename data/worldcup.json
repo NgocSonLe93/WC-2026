@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-15T07:19:24.353145Z",
+    "updated_at": "2026-07-16T07:27:09.667844Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -3180,8 +3180,8 @@
       "kickoff_utc": "2026-07-15T15:00:00Z",
       "date_vn": "2026-07-15",
       "time_vn": "22:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "45",
         "name": "England",
@@ -3195,8 +3195,8 @@
         "iso2": "AR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "venue": "Mercedes-Benz Stadium"
     },
