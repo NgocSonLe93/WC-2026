@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-17T07:23:16.658370Z",
+    "updated_at": "2026-07-18T07:03:17.491835Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2539,16 +2539,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "29",
+        "name": "Spain",
+        "code": "ESP",
+        "iso2": "ES"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "37",
+        "name": "Argentina",
+        "code": "ARG",
+        "iso2": "AR"
       },
       "score": {
         "home": null,
@@ -2903,16 +2903,16 @@
       "status": "upcoming",
       "elapsed": "notstarted",
       "home": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "33",
+        "name": "France",
+        "code": "FRA",
+        "iso2": "FR"
       },
       "away": {
-        "id": "0",
-        "name": "Chưa xác định",
-        "code": "",
-        "iso2": ""
+        "id": "45",
+        "name": "England",
+        "code": "ENG",
+        "iso2": "ENG"
       },
       "score": {
         "home": null,
