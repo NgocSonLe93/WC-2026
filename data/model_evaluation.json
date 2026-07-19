@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-07-18T07:03:19.998126Z",
-    "source_matches": 768,
-    "walk_forward_rows": 768,
+    "generated_at": "2026-07-19T07:31:40.454141Z",
+    "source_matches": 769,
+    "walk_forward_rows": 769,
     "train_matches": 131,
-    "test_matches": 442,
-    "test_matches_full_10": 442,
-    "test_matches_min_5": 464,
+    "test_matches": 443,
+    "test_matches_full_10": 443,
+    "test_matches_min_5": 465,
     "test_start": "2024-01-01",
     "minimum_history_primary": 10,
     "temperature": 1.59,
@@ -16,39 +16,39 @@
   "models": {
     "prior": {
       "label": "Tỷ lệ cố định",
-      "matches": 442,
-      "brier": 0.6547740126946792,
-      "log_loss": 1.082487111271906,
-      "accuracy": 0.43665158371040724,
-      "ece": 0.027306904392066823
+      "matches": 443,
+      "brier": 0.6550348557069754,
+      "log_loss": 1.0827726039007213,
+      "accuracy": 0.435665914221219,
+      "ece": 0.02796401738485902
     },
     "rating": {
       "label": "Rating-only baseline",
-      "matches": 442,
-      "brier": 0.6331726905023346,
-      "log_loss": 1.0501962137659515,
-      "accuracy": 0.4411764705882353,
-      "ece": 0.05432266003218042
+      "matches": 443,
+      "brier": 0.6336285644689422,
+      "log_loss": 1.0508673837242475,
+      "accuracy": 0.4401805869074492,
+      "ece": 0.05420003551743511
     },
     "poisson_raw": {
       "label": "Poisson thô",
-      "matches": 442,
-      "brier": 0.5863446888811831,
-      "log_loss": 0.9823259205237989,
-      "accuracy": 0.5248868778280543,
-      "ece": 0.024773673841793485
+      "matches": 443,
+      "brier": 0.5867820145907718,
+      "log_loss": 0.982897001319393,
+      "accuracy": 0.5237020316027088,
+      "ece": 0.02471775132747793
     },
     "poisson_calibrated": {
       "label": "Poisson đã hiệu chỉnh",
-      "matches": 442,
-      "brier": 0.594801977453615,
-      "log_loss": 0.9963050733466314,
-      "accuracy": 0.5248868778280543,
-      "ece": 0.037814129156203184
+      "matches": 443,
+      "brier": 0.5950996533727866,
+      "log_loss": 0.996708716255422,
+      "accuracy": 0.5237020316027088,
+      "ece": 0.03814246448423649
     }
   },
   "calibration": {
-    "ece": 0.037814129156203184,
+    "ece": 0.03814246448423649,
     "bins": [
       {
         "label": "0–10%",
@@ -70,25 +70,25 @@
         "label": "20–30%",
         "low": 0.2,
         "high": 0.3,
-        "count": 555,
-        "predicted": 0.2636381384567298,
-        "observed": 0.23603603603603604
+        "count": 556,
+        "predicted": 0.2636583936379451,
+        "observed": 0.2356115107913669
       },
       {
         "label": "30–40%",
         "low": 0.3,
         "high": 0.4,
-        "count": 372,
-        "predicted": 0.3410767510962505,
-        "observed": 0.34408602150537637
+        "count": 373,
+        "predicted": 0.34099017071494825,
+        "observed": 0.34584450402144773
       },
       {
         "label": "40–50%",
         "low": 0.4,
         "high": 0.5,
-        "count": 185,
-        "predicted": 0.4432207502432137,
-        "observed": 0.4810810810810811
+        "count": 186,
+        "predicted": 0.44307611025221283,
+        "observed": 0.478494623655914
       },
       {
         "label": "50–60%",
@@ -133,12 +133,12 @@
     ]
   },
   "goals": {
-    "team_goal_mae": 0.914243959541724,
-    "total_goal_mae": 1.3651620709869923,
-    "poisson_deviance": 1.1699874829284442,
-    "top1_score": 0.12217194570135746,
-    "top3_score": 0.3574660633484163,
-    "top5_score": 0.5588235294117647
+    "team_goal_mae": 0.9201780240982522,
+    "total_goal_mae": 1.3780760823756615,
+    "poisson_deviance": 1.180476828642207,
+    "top1_score": 0.12189616252821671,
+    "top3_score": 0.35665914221218964,
+    "top5_score": 0.5575620767494357
   },
   "by_year": [
     {
@@ -159,11 +159,11 @@
     },
     {
       "year": "2026",
-      "matches": 221,
-      "brier": 0.5402741733488896,
-      "log_loss": 0.9196694287769032,
-      "accuracy": 0.6199095022624435,
-      "ece": 0.09948078608728031
+      "matches": 222,
+      "brier": 0.5411138050439247,
+      "log_loss": 0.9208201019893536,
+      "accuracy": 0.6171171171171171,
+      "ece": 0.09985820002145913
     }
   ],
   "worst_errors": [

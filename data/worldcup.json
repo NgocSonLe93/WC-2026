@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-18T07:03:17.491835Z",
+    "updated_at": "2026-07-19T07:31:38.438377Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2900,8 +2900,8 @@
       "kickoff_utc": "2026-07-18T17:00:00Z",
       "date_vn": "2026-07-19",
       "time_vn": "00:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "33",
         "name": "France",
@@ -2915,8 +2915,8 @@
         "iso2": "ENG"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 4,
+        "away": 6
       },
       "venue": "Hard Rock Stadium"
     },
