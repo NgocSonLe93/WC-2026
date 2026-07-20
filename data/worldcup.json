@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-07-19T07:31:38.438377Z",
+    "updated_at": "2026-07-20T08:12:28.829755Z",
     "source": "worldcup26.ir",
     "timezone": "Asia/Ho_Chi_Minh",
     "version": 3
@@ -2536,8 +2536,8 @@
       "kickoff_utc": "2026-07-19T15:00:00Z",
       "date_vn": "2026-07-19",
       "time_vn": "22:00",
-      "status": "upcoming",
-      "elapsed": "notstarted",
+      "status": "finished",
+      "elapsed": "finished",
       "home": {
         "id": "29",
         "name": "Spain",
@@ -2551,8 +2551,8 @@
         "iso2": "AR"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "venue": "MetLife Stadium"
     },

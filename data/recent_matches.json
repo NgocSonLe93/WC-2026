@@ -1,10 +1,10 @@
 {
   "meta": {
-    "updated_at": "2026-07-19T07:31:38.920805Z",
+    "updated_at": "2026-07-20T08:12:29.105371Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
-    "matches": 709
+    "matches": 710
   },
   "matches": [
     {
@@ -2627,25 +2627,6 @@
       "score": {
         "home": 1,
         "away": 2
-      }
-    },
-    {
-      "id": "intl-45281",
-      "date": "2022-06-07",
-      "kickoff_utc": "2022-06-07T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": false,
-      "home": {
-        "name": "Germany",
-        "code": "GER"
-      },
-      "away": {
-        "name": "England",
-        "code": "ENG"
-      },
-      "score": {
-        "home": 1,
-        "away": 1
       }
     },
     {
@@ -13476,6 +13457,44 @@
       "score": {
         "home": 1,
         "away": 2
+      }
+    },
+    {
+      "id": "intl-49519",
+      "date": "2026-07-18",
+      "kickoff_utc": "2026-07-18T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "France",
+        "code": "FRA"
+      },
+      "away": {
+        "name": "England",
+        "code": "ENG"
+      },
+      "score": {
+        "home": 4,
+        "away": 6
+      }
+    },
+    {
+      "id": "intl-49520",
+      "date": "2026-07-19",
+      "kickoff_utc": "2026-07-19T12:00:00Z",
+      "tournament": "FIFA World Cup",
+      "neutral": true,
+      "home": {
+        "name": "Spain",
+        "code": "ESP"
+      },
+      "away": {
+        "name": "Argentina",
+        "code": "ARG"
+      },
+      "score": {
+        "home": 1,
+        "away": 0
       }
     }
   ]
