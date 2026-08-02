@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-08-01T07:32:01.734143Z",
-    "source_matches": 770,
-    "walk_forward_rows": 770,
+    "generated_at": "2026-08-02T07:35:52.645363Z",
+    "source_matches": 710,
+    "walk_forward_rows": 710,
     "train_matches": 129,
-    "test_matches": 445,
-    "test_matches_full_10": 445,
-    "test_matches_min_5": 467,
+    "test_matches": 385,
+    "test_matches_full_10": 385,
+    "test_matches_min_5": 407,
     "test_start": "2024-01-01",
     "minimum_history_primary": 10,
     "temperature": 1.66,
@@ -16,103 +16,103 @@
   "models": {
     "prior": {
       "label": "Tỷ lệ cố định",
-      "matches": 445,
-      "brier": 0.6543759866282872,
-      "log_loss": 1.0815074639393296,
-      "accuracy": 0.43595505617977526,
-      "ece": 0.027545114061968023
+      "matches": 385,
+      "brier": 0.6567001180637555,
+      "log_loss": 1.0854974204131418,
+      "accuracy": 0.43376623376623374,
+      "ece": 0.02900432900432901
     },
     "rating": {
       "label": "Rating-only baseline",
-      "matches": 445,
-      "brier": 0.6336372142613086,
-      "log_loss": 1.0506107726104157,
-      "accuracy": 0.44269662921348313,
-      "ece": 0.04414801204224452
+      "matches": 385,
+      "brier": 0.6399308194716512,
+      "log_loss": 1.0607217815130259,
+      "accuracy": 0.43376623376623374,
+      "ece": 0.04478065138764847
     },
     "poisson_raw": {
       "label": "Poisson thô",
-      "matches": 445,
-      "brier": 0.5867003637574538,
-      "log_loss": 0.9826464821701824,
-      "accuracy": 0.5235955056179775,
-      "ece": 0.02396055893055211
+      "matches": 385,
+      "brier": 0.618299437312198,
+      "log_loss": 1.0276323005984491,
+      "accuracy": 0.4909090909090909,
+      "ece": 0.0305843872949753
     },
     "poisson_calibrated": {
       "label": "Poisson đã hiệu chỉnh",
-      "matches": 445,
-      "brier": 0.5966192838536225,
-      "log_loss": 0.9988787185472158,
-      "accuracy": 0.5235955056179775,
-      "ece": 0.04567699923316893
+      "matches": 385,
+      "brier": 0.6189350518048284,
+      "log_loss": 1.0297599741811565,
+      "accuracy": 0.4909090909090909,
+      "ece": 0.024967584576974
     }
   },
   "calibration": {
-    "ece": 0.04567699923316893,
+    "ece": 0.024967584576974,
     "bins": [
       {
         "label": "0–10%",
         "low": 0.0,
         "high": 0.1,
-        "count": 1,
-        "predicted": 0.09751938373964081,
-        "observed": 0.0
+        "count": 0,
+        "predicted": null,
+        "observed": null
       },
       {
         "label": "10–20%",
         "low": 0.1,
         "high": 0.2,
-        "count": 73,
-        "predicted": 0.16913765206922377,
-        "observed": 0.0547945205479452
+        "count": 47,
+        "predicted": 0.17283774360245827,
+        "observed": 0.0851063829787234
       },
       {
         "label": "20–30%",
         "low": 0.2,
         "high": 0.3,
-        "count": 560,
-        "predicted": 0.26436576607740586,
-        "observed": 0.225
+        "count": 491,
+        "predicted": 0.2653674259549632,
+        "observed": 0.24439918533604887
       },
       {
         "label": "30–40%",
         "low": 0.3,
         "high": 0.4,
-        "count": 397,
-        "predicted": 0.3409678357196055,
-        "observed": 0.35516372795969775
+        "count": 359,
+        "predicted": 0.3408219995101525,
+        "observed": 0.34540389972144847
       },
       {
         "label": "40–50%",
         "low": 0.4,
         "high": 0.5,
-        "count": 192,
-        "predicted": 0.44415658864135527,
-        "observed": 0.484375
+        "count": 172,
+        "predicted": 0.44255154518951356,
+        "observed": 0.48255813953488375
       },
       {
         "label": "50–60%",
         "low": 0.5,
         "high": 0.6,
-        "count": 83,
-        "predicted": 0.541897371247785,
-        "observed": 0.6867469879518072
+        "count": 69,
+        "predicted": 0.5396264460064458,
+        "observed": 0.6086956521739131
       },
       {
         "label": "60–70%",
         "low": 0.6,
         "high": 0.7,
-        "count": 26,
-        "predicted": 0.6438975943550426,
-        "observed": 0.8076923076923077
+        "count": 17,
+        "predicted": 0.6395900903300981,
+        "observed": 0.7058823529411765
       },
       {
         "label": "70–80%",
         "low": 0.7,
         "high": 0.8,
-        "count": 3,
-        "predicted": 0.7164959817462982,
-        "observed": 1.0
+        "count": 0,
+        "predicted": null,
+        "observed": null
       },
       {
         "label": "80–90%",
@@ -133,12 +133,12 @@
     ]
   },
   "goals": {
-    "team_goal_mae": 0.9251506024467585,
-    "total_goal_mae": 1.3903403872463205,
-    "poisson_deviance": 1.1864395747756054,
-    "top1_score": 0.12134831460674157,
-    "top3_score": 0.3550561797752809,
-    "top5_score": 0.5550561797752809
+    "team_goal_mae": 0.9587912599251832,
+    "total_goal_mae": 1.4139188697022065,
+    "poisson_deviance": 1.2559121865292369,
+    "top1_score": 0.10909090909090909,
+    "top3_score": 0.32987012987012987,
+    "top5_score": 0.5376623376623376
   },
   "by_year": [
     {
@@ -159,11 +159,11 @@
     },
     {
       "year": "2026",
-      "matches": 224,
-      "brier": 0.545149274104499,
-      "log_loss": 0.9265045892094097,
-      "accuracy": 0.6160714285714286,
-      "ece": 0.1057450026540723
+      "matches": 164,
+      "brier": 0.5787064087158829,
+      "log_loss": 0.9725218798118408,
+      "accuracy": 0.573170731707317,
+      "ece": 0.07954417090394836
     }
   ],
   "worst_errors": [
@@ -225,11 +225,11 @@
       "score": "2–3",
       "predicted": "Thắng đội 1",
       "actual": "Thắng đội 2",
-      "confidence": 0.6307605257529503,
+      "confidence": 0.6144961080155218,
       "probabilities": [
-        0.6307605257529503,
-        0.21699579309982764,
-        0.15224368114722217
+        0.6144961080155218,
+        0.2214445245454625,
+        0.1640593674390157
       ]
     },
     {
@@ -238,11 +238,11 @@
       "score": "1–1",
       "predicted": "Thắng đội 1",
       "actual": "Hòa",
-      "confidence": 0.5993077398221202,
+      "confidence": 0.59687096115605,
       "probabilities": [
-        0.5993077398221202,
-        0.21278533769266364,
-        0.1879069224852163
+        0.59687096115605,
+        0.22051373996531418,
+        0.18261529887863576
       ]
     },
     {
@@ -272,19 +272,6 @@
       ]
     },
     {
-      "date": "2026-06-26",
-      "match": "Japan – Sweden",
-      "score": "1–1",
-      "predicted": "Thắng đội 1",
-      "actual": "Hòa",
-      "confidence": 0.5699036685630177,
-      "probabilities": [
-        0.5699036685630177,
-        0.22645571873580064,
-        0.2036406127011817
-      ]
-    },
-    {
       "date": "2024-11-19",
       "match": "Bosnia and Herzegovina – Netherlands",
       "score": "1–1",
@@ -295,6 +282,19 @@
         0.19464353568531664,
         0.2407086827924801,
         0.5646477815222033
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "match": "Brazil – Norway",
+      "score": "1–2",
+      "predicted": "Thắng đội 1",
+      "actual": "Thắng đội 2",
+      "confidence": 0.5631953712927602,
+      "probabilities": [
+        0.5631953712927602,
+        0.23184916043250076,
+        0.204955468274739
       ]
     },
     {
