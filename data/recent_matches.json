@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-10-30T11:16:17.248813Z",
+    "updated_at": "2026-10-31T10:49:25.836367Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
@@ -8,7 +8,7 @@
   },
   "matches": [
     {
-      "id": "intl-26818",
+      "id": "intl-26813",
       "date": "2002-11-22",
       "kickoff_utc": "2002-11-22T12:00:00Z",
       "tournament": "Gold Cup qualification",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "id": "intl-32075",
+      "id": "intl-32070",
       "date": "2008-06-15",
       "kickoff_utc": "2008-06-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": "intl-32129",
+      "id": "intl-32124",
       "date": "2008-06-22",
       "kickoff_utc": "2008-06-22T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "intl-35204",
+      "id": "intl-35199",
       "date": "2011-09-06",
       "kickoff_utc": "2011-09-06T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -84,7 +84,7 @@
       }
     },
     {
-      "id": "intl-35357",
+      "id": "intl-35352",
       "date": "2011-10-11",
       "kickoff_utc": "2011-10-11T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -103,7 +103,7 @@
       }
     },
     {
-      "id": "intl-38652",
+      "id": "intl-38647",
       "date": "2015-03-31",
       "kickoff_utc": "2015-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -122,7 +122,7 @@
       }
     },
     {
-      "id": "intl-39556",
+      "id": "intl-39551",
       "date": "2016-03-25",
       "kickoff_utc": "2016-03-25T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -141,7 +141,7 @@
       }
     },
     {
-      "id": "intl-39579",
+      "id": "intl-39574",
       "date": "2016-03-26",
       "kickoff_utc": "2016-03-26T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -160,7 +160,7 @@
       }
     },
     {
-      "id": "intl-39643",
+      "id": "intl-39638",
       "date": "2016-03-29",
       "kickoff_utc": "2016-03-29T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -179,7 +179,7 @@
       }
     },
     {
-      "id": "intl-39648",
+      "id": "intl-39643",
       "date": "2016-03-29",
       "kickoff_utc": "2016-03-29T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -198,7 +198,7 @@
       }
     },
     {
-      "id": "intl-39866",
+      "id": "intl-39861",
       "date": "2016-06-08",
       "kickoff_utc": "2016-06-08T12:00:00Z",
       "tournament": "Copa América",
@@ -217,7 +217,7 @@
       }
     },
     {
-      "id": "intl-39886",
+      "id": "intl-39881",
       "date": "2016-06-12",
       "kickoff_utc": "2016-06-12T12:00:00Z",
       "tournament": "Copa América",
@@ -236,7 +236,7 @@
       }
     },
     {
-      "id": "intl-40173",
+      "id": "intl-40168",
       "date": "2016-10-08",
       "kickoff_utc": "2016-10-08T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -255,7 +255,7 @@
       }
     },
     {
-      "id": "intl-40429",
+      "id": "intl-40424",
       "date": "2017-01-20",
       "kickoff_utc": "2017-01-20T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -274,7 +274,7 @@
       }
     },
     {
-      "id": "intl-40451",
+      "id": "intl-40446",
       "date": "2017-01-29",
       "kickoff_utc": "2017-01-29T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -293,7 +293,7 @@
       }
     },
     {
-      "id": "intl-40747",
+      "id": "intl-40742",
       "date": "2017-06-13",
       "kickoff_utc": "2017-06-13T12:00:00Z",
       "tournament": "Friendly",
@@ -312,7 +312,7 @@
       }
     },
     {
-      "id": "intl-40881",
+      "id": "intl-40876",
       "date": "2017-07-16",
       "kickoff_utc": "2017-07-16T12:00:00Z",
       "tournament": "Gold Cup",
@@ -331,7 +331,7 @@
       }
     },
     {
-      "id": "intl-40931",
+      "id": "intl-40926",
       "date": "2017-09-01",
       "kickoff_utc": "2017-09-01T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -350,7 +350,7 @@
       }
     },
     {
-      "id": "intl-40947",
+      "id": "intl-40942",
       "date": "2017-09-01",
       "kickoff_utc": "2017-09-01T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -369,7 +369,7 @@
       }
     },
     {
-      "id": "intl-40997",
+      "id": "intl-40992",
       "date": "2017-09-05",
       "kickoff_utc": "2017-09-05T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -388,7 +388,7 @@
       }
     },
     {
-      "id": "intl-41027",
+      "id": "intl-41022",
       "date": "2017-09-05",
       "kickoff_utc": "2017-09-05T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -407,7 +407,7 @@
       }
     },
     {
-      "id": "intl-41071",
+      "id": "intl-41066",
       "date": "2017-10-07",
       "kickoff_utc": "2017-10-07T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -426,7 +426,7 @@
       }
     },
     {
-      "id": "intl-41123",
+      "id": "intl-41118",
       "date": "2017-10-10",
       "kickoff_utc": "2017-10-10T12:00:00Z",
       "tournament": "Kirin Challenge Cup",
@@ -445,7 +445,7 @@
       }
     },
     {
-      "id": "intl-41135",
+      "id": "intl-41130",
       "date": "2017-10-10",
       "kickoff_utc": "2017-10-10T12:00:00Z",
       "tournament": "Friendly",
@@ -464,7 +464,7 @@
       }
     },
     {
-      "id": "intl-41391",
+      "id": "intl-41386",
       "date": "2018-03-24",
       "kickoff_utc": "2018-03-24T12:00:00Z",
       "tournament": "Friendly",
@@ -483,7 +483,7 @@
       }
     },
     {
-      "id": "intl-41508",
+      "id": "intl-41503",
       "date": "2018-05-29",
       "kickoff_utc": "2018-05-29T12:00:00Z",
       "tournament": "Friendly",
@@ -502,7 +502,7 @@
       }
     },
     {
-      "id": "intl-41540",
+      "id": "intl-41535",
       "date": "2018-06-01",
       "kickoff_utc": "2018-06-01T12:00:00Z",
       "tournament": "Friendly",
@@ -521,7 +521,7 @@
       }
     },
     {
-      "id": "intl-41864",
+      "id": "intl-41859",
       "date": "2018-09-11",
       "kickoff_utc": "2018-09-11T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -540,7 +540,7 @@
       }
     },
     {
-      "id": "intl-41918",
+      "id": "intl-41913",
       "date": "2018-10-11",
       "kickoff_utc": "2018-10-11T12:00:00Z",
       "tournament": "Friendly",
@@ -559,7 +559,7 @@
       }
     },
     {
-      "id": "intl-42078",
+      "id": "intl-42073",
       "date": "2018-11-15",
       "kickoff_utc": "2018-11-15T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -578,7 +578,7 @@
       }
     },
     {
-      "id": "intl-42151",
+      "id": "intl-42146",
       "date": "2018-11-18",
       "kickoff_utc": "2018-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -597,7 +597,7 @@
       }
     },
     {
-      "id": "intl-42719",
+      "id": "intl-42714",
       "date": "2019-06-26",
       "kickoff_utc": "2019-06-26T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -616,7 +616,7 @@
       }
     },
     {
-      "id": "intl-42736",
+      "id": "intl-42731",
       "date": "2019-06-29",
       "kickoff_utc": "2019-06-29T12:00:00Z",
       "tournament": "Gold Cup",
@@ -635,7 +635,7 @@
       }
     },
     {
-      "id": "intl-42743",
+      "id": "intl-42738",
       "date": "2019-06-30",
       "kickoff_utc": "2019-06-30T12:00:00Z",
       "tournament": "Gold Cup",
@@ -654,7 +654,7 @@
       }
     },
     {
-      "id": "intl-42747",
+      "id": "intl-42742",
       "date": "2019-07-01",
       "kickoff_utc": "2019-07-01T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -673,7 +673,7 @@
       }
     },
     {
-      "id": "intl-42753",
+      "id": "intl-42748",
       "date": "2019-07-02",
       "kickoff_utc": "2019-07-02T12:00:00Z",
       "tournament": "Gold Cup",
@@ -692,7 +692,7 @@
       }
     },
     {
-      "id": "intl-42758",
+      "id": "intl-42753",
       "date": "2019-07-06",
       "kickoff_utc": "2019-07-06T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -711,7 +711,7 @@
       }
     },
     {
-      "id": "intl-42929",
+      "id": "intl-42924",
       "date": "2019-09-07",
       "kickoff_utc": "2019-09-07T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -730,7 +730,7 @@
       }
     },
     {
-      "id": "intl-42991",
+      "id": "intl-42986",
       "date": "2019-09-10",
       "kickoff_utc": "2019-09-10T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -749,7 +749,7 @@
       }
     },
     {
-      "id": "intl-43045",
+      "id": "intl-43040",
       "date": "2019-10-10",
       "kickoff_utc": "2019-10-10T12:00:00Z",
       "tournament": "Friendly",
@@ -768,7 +768,7 @@
       }
     },
     {
-      "id": "intl-43100",
+      "id": "intl-43095",
       "date": "2019-10-12",
       "kickoff_utc": "2019-10-12T12:00:00Z",
       "tournament": "Friendly",
@@ -787,7 +787,7 @@
       }
     },
     {
-      "id": "intl-43213",
+      "id": "intl-43208",
       "date": "2019-11-14",
       "kickoff_utc": "2019-11-14T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -806,7 +806,7 @@
       }
     },
     {
-      "id": "intl-43495",
+      "id": "intl-43490",
       "date": "2020-10-08",
       "kickoff_utc": "2020-10-08T12:00:00Z",
       "tournament": "Friendly",
@@ -825,7 +825,7 @@
       }
     },
     {
-      "id": "intl-43533",
+      "id": "intl-43528",
       "date": "2020-10-11",
       "kickoff_utc": "2020-10-11T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -844,7 +844,7 @@
       }
     },
     {
-      "id": "intl-43570",
+      "id": "intl-43565",
       "date": "2020-10-13",
       "kickoff_utc": "2020-10-13T12:00:00Z",
       "tournament": "Friendly",
@@ -863,7 +863,7 @@
       }
     },
     {
-      "id": "intl-43571",
+      "id": "intl-43566",
       "date": "2020-10-13",
       "kickoff_utc": "2020-10-13T12:00:00Z",
       "tournament": "Friendly",
@@ -882,7 +882,7 @@
       }
     },
     {
-      "id": "intl-43572",
+      "id": "intl-43567",
       "date": "2020-10-13",
       "kickoff_utc": "2020-10-13T12:00:00Z",
       "tournament": "Friendly",
@@ -901,7 +901,7 @@
       }
     },
     {
-      "id": "intl-43631",
+      "id": "intl-43626",
       "date": "2020-11-12",
       "kickoff_utc": "2020-11-12T12:00:00Z",
       "tournament": "Friendly",
@@ -920,7 +920,7 @@
       }
     },
     {
-      "id": "intl-43677",
+      "id": "intl-43672",
       "date": "2020-11-15",
       "kickoff_utc": "2020-11-15T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -939,7 +939,7 @@
       }
     },
     {
-      "id": "intl-43714",
+      "id": "intl-43709",
       "date": "2020-11-17",
       "kickoff_utc": "2020-11-17T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -958,7 +958,7 @@
       }
     },
     {
-      "id": "intl-43831",
+      "id": "intl-43826",
       "date": "2021-03-25",
       "kickoff_utc": "2021-03-25T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -977,7 +977,7 @@
       }
     },
     {
-      "id": "intl-43864",
+      "id": "intl-43859",
       "date": "2021-03-27",
       "kickoff_utc": "2021-03-27T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -996,7 +996,7 @@
       }
     },
     {
-      "id": "intl-43948",
+      "id": "intl-43943",
       "date": "2021-03-31",
       "kickoff_utc": "2021-03-31T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1015,7 +1015,7 @@
       }
     },
     {
-      "id": "intl-44046",
+      "id": "intl-44041",
       "date": "2021-06-05",
       "kickoff_utc": "2021-06-05T12:00:00Z",
       "tournament": "Friendly",
@@ -1034,7 +1034,7 @@
       }
     },
     {
-      "id": "intl-44097",
+      "id": "intl-44092",
       "date": "2021-06-08",
       "kickoff_utc": "2021-06-08T12:00:00Z",
       "tournament": "Friendly",
@@ -1053,7 +1053,7 @@
       }
     },
     {
-      "id": "intl-44137",
+      "id": "intl-44132",
       "date": "2021-06-11",
       "kickoff_utc": "2021-06-11T12:00:00Z",
       "tournament": "Friendly",
@@ -1072,7 +1072,7 @@
       }
     },
     {
-      "id": "intl-44141",
+      "id": "intl-44136",
       "date": "2021-06-12",
       "kickoff_utc": "2021-06-12T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1091,7 +1091,7 @@
       }
     },
     {
-      "id": "intl-44142",
+      "id": "intl-44137",
       "date": "2021-06-12",
       "kickoff_utc": "2021-06-12T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1110,7 +1110,7 @@
       }
     },
     {
-      "id": "intl-44144",
+      "id": "intl-44139",
       "date": "2021-06-12",
       "kickoff_utc": "2021-06-12T12:00:00Z",
       "tournament": "Friendly",
@@ -1129,7 +1129,7 @@
       }
     },
     {
-      "id": "intl-44161",
+      "id": "intl-44156",
       "date": "2021-06-14",
       "kickoff_utc": "2021-06-14T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -1148,7 +1148,7 @@
       }
     },
     {
-      "id": "intl-44170",
+      "id": "intl-44165",
       "date": "2021-06-15",
       "kickoff_utc": "2021-06-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1167,7 +1167,7 @@
       }
     },
     {
-      "id": "intl-44177",
+      "id": "intl-44172",
       "date": "2021-06-15",
       "kickoff_utc": "2021-06-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1186,7 +1186,7 @@
       }
     },
     {
-      "id": "intl-44178",
+      "id": "intl-44173",
       "date": "2021-06-15",
       "kickoff_utc": "2021-06-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1205,7 +1205,7 @@
       }
     },
     {
-      "id": "intl-44195",
+      "id": "intl-44190",
       "date": "2021-06-18",
       "kickoff_utc": "2021-06-18T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -1224,7 +1224,7 @@
       }
     },
     {
-      "id": "intl-44196",
+      "id": "intl-44191",
       "date": "2021-06-18",
       "kickoff_utc": "2021-06-18T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -1243,7 +1243,7 @@
       }
     },
     {
-      "id": "intl-44205",
+      "id": "intl-44200",
       "date": "2021-06-20",
       "kickoff_utc": "2021-06-20T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -1262,7 +1262,7 @@
       }
     },
     {
-      "id": "intl-44215",
+      "id": "intl-44210",
       "date": "2021-06-22",
       "kickoff_utc": "2021-06-22T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -1281,7 +1281,7 @@
       }
     },
     {
-      "id": "intl-44216",
+      "id": "intl-44211",
       "date": "2021-06-22",
       "kickoff_utc": "2021-06-22T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -1300,7 +1300,7 @@
       }
     },
     {
-      "id": "intl-44231",
+      "id": "intl-44226",
       "date": "2021-06-27",
       "kickoff_utc": "2021-06-27T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -1319,7 +1319,7 @@
       }
     },
     {
-      "id": "intl-44284",
+      "id": "intl-44279",
       "date": "2021-07-11",
       "kickoff_utc": "2021-07-11T12:00:00Z",
       "tournament": "Gold Cup",
@@ -1338,7 +1338,7 @@
       }
     },
     {
-      "id": "intl-44299",
+      "id": "intl-44294",
       "date": "2021-07-15",
       "kickoff_utc": "2021-07-15T12:00:00Z",
       "tournament": "Gold Cup",
@@ -1357,7 +1357,7 @@
       }
     },
     {
-      "id": "intl-44308",
+      "id": "intl-44303",
       "date": "2021-07-18",
       "kickoff_utc": "2021-07-18T12:00:00Z",
       "tournament": "COSAFA Cup",
@@ -1376,7 +1376,7 @@
       }
     },
     {
-      "id": "intl-44343",
+      "id": "intl-44338",
       "date": "2021-09-01",
       "kickoff_utc": "2021-09-01T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1395,7 +1395,7 @@
       }
     },
     {
-      "id": "intl-44369",
+      "id": "intl-44364",
       "date": "2021-09-02",
       "kickoff_utc": "2021-09-02T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1414,7 +1414,7 @@
       }
     },
     {
-      "id": "intl-44398",
+      "id": "intl-44393",
       "date": "2021-09-04",
       "kickoff_utc": "2021-09-04T12:00:00Z",
       "tournament": "Friendly",
@@ -1433,7 +1433,7 @@
       }
     },
     {
-      "id": "intl-44416",
+      "id": "intl-44411",
       "date": "2021-09-05",
       "kickoff_utc": "2021-09-05T12:00:00Z",
       "tournament": "Friendly",
@@ -1452,7 +1452,7 @@
       }
     },
     {
-      "id": "intl-44425",
+      "id": "intl-44420",
       "date": "2021-09-05",
       "kickoff_utc": "2021-09-05T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1471,7 +1471,7 @@
       }
     },
     {
-      "id": "intl-44444",
+      "id": "intl-44439",
       "date": "2021-09-06",
       "kickoff_utc": "2021-09-06T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1490,7 +1490,7 @@
       }
     },
     {
-      "id": "intl-44471",
+      "id": "intl-44466",
       "date": "2021-09-07",
       "kickoff_utc": "2021-09-07T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1509,7 +1509,7 @@
       }
     },
     {
-      "id": "intl-44474",
+      "id": "intl-44469",
       "date": "2021-09-07",
       "kickoff_utc": "2021-09-07T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1528,7 +1528,7 @@
       }
     },
     {
-      "id": "intl-44546",
+      "id": "intl-44541",
       "date": "2021-10-08",
       "kickoff_utc": "2021-10-08T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1547,7 +1547,7 @@
       }
     },
     {
-      "id": "intl-44578",
+      "id": "intl-44573",
       "date": "2021-10-09",
       "kickoff_utc": "2021-10-09T12:00:00Z",
       "tournament": "Friendly",
@@ -1566,7 +1566,7 @@
       }
     },
     {
-      "id": "intl-44648",
+      "id": "intl-44643",
       "date": "2021-10-12",
       "kickoff_utc": "2021-10-12T12:00:00Z",
       "tournament": "Friendly",
@@ -1585,7 +1585,7 @@
       }
     },
     {
-      "id": "intl-44744",
+      "id": "intl-44739",
       "date": "2021-11-14",
       "kickoff_utc": "2021-11-14T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1604,7 +1604,7 @@
       }
     },
     {
-      "id": "intl-44750",
+      "id": "intl-44745",
       "date": "2021-11-14",
       "kickoff_utc": "2021-11-14T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1623,7 +1623,7 @@
       }
     },
     {
-      "id": "intl-44805",
+      "id": "intl-44800",
       "date": "2021-11-16",
       "kickoff_utc": "2021-11-16T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1642,7 +1642,7 @@
       }
     },
     {
-      "id": "intl-44833",
+      "id": "intl-44828",
       "date": "2021-12-06",
       "kickoff_utc": "2021-12-06T12:00:00Z",
       "tournament": "Arab Cup",
@@ -1661,7 +1661,7 @@
       }
     },
     {
-      "id": "intl-44840",
+      "id": "intl-44835",
       "date": "2021-12-07",
       "kickoff_utc": "2021-12-07T12:00:00Z",
       "tournament": "Arab Cup",
@@ -1680,7 +1680,7 @@
       }
     },
     {
-      "id": "intl-44851",
+      "id": "intl-44846",
       "date": "2021-12-11",
       "kickoff_utc": "2021-12-11T12:00:00Z",
       "tournament": "Arab Cup",
@@ -1699,7 +1699,7 @@
       }
     },
     {
-      "id": "intl-44859",
+      "id": "intl-44854",
       "date": "2021-12-15",
       "kickoff_utc": "2021-12-15T12:00:00Z",
       "tournament": "Arab Cup",
@@ -1715,67 +1715,67 @@
       "score": {
         "home": 1,
         "away": 0
+      }
+    },
+    {
+      "id": "intl-44855",
+      "date": "2021-12-15",
+      "kickoff_utc": "2021-12-15T12:00:00Z",
+      "tournament": "Arab Cup",
+      "neutral": false,
+      "home": {
+        "name": "Qatar",
+        "code": "QAT"
+      },
+      "away": {
+        "name": "Algeria",
+        "code": "ALG"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-44858",
+      "date": "2021-12-18",
+      "kickoff_utc": "2021-12-18T12:00:00Z",
+      "tournament": "Arab Cup",
+      "neutral": false,
+      "home": {
+        "name": "Qatar",
+        "code": "QAT"
+      },
+      "away": {
+        "name": "Egypt",
+        "code": "EGY"
+      },
+      "score": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-44859",
+      "date": "2021-12-18",
+      "kickoff_utc": "2021-12-18T12:00:00Z",
+      "tournament": "Arab Cup",
+      "neutral": true,
+      "home": {
+        "name": "Tunisia",
+        "code": "TUN"
+      },
+      "away": {
+        "name": "Algeria",
+        "code": "ALG"
+      },
+      "score": {
+        "home": 0,
+        "away": 2
       }
     },
     {
       "id": "intl-44860",
-      "date": "2021-12-15",
-      "kickoff_utc": "2021-12-15T12:00:00Z",
-      "tournament": "Arab Cup",
-      "neutral": false,
-      "home": {
-        "name": "Qatar",
-        "code": "QAT"
-      },
-      "away": {
-        "name": "Algeria",
-        "code": "ALG"
-      },
-      "score": {
-        "home": 1,
-        "away": 2
-      }
-    },
-    {
-      "id": "intl-44863",
-      "date": "2021-12-18",
-      "kickoff_utc": "2021-12-18T12:00:00Z",
-      "tournament": "Arab Cup",
-      "neutral": false,
-      "home": {
-        "name": "Qatar",
-        "code": "QAT"
-      },
-      "away": {
-        "name": "Egypt",
-        "code": "EGY"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
-      }
-    },
-    {
-      "id": "intl-44864",
-      "date": "2021-12-18",
-      "kickoff_utc": "2021-12-18T12:00:00Z",
-      "tournament": "Arab Cup",
-      "neutral": true,
-      "home": {
-        "name": "Tunisia",
-        "code": "TUN"
-      },
-      "away": {
-        "name": "Algeria",
-        "code": "ALG"
-      },
-      "score": {
-        "home": 0,
-        "away": 2
-      }
-    },
-    {
-      "id": "intl-44865",
       "date": "2021-12-18",
       "kickoff_utc": "2021-12-18T12:00:00Z",
       "tournament": "Friendly",
@@ -1794,7 +1794,7 @@
       }
     },
     {
-      "id": "intl-44883",
+      "id": "intl-44878",
       "date": "2022-01-05",
       "kickoff_utc": "2022-01-05T12:00:00Z",
       "tournament": "Friendly",
@@ -1813,7 +1813,7 @@
       }
     },
     {
-      "id": "intl-44889",
+      "id": "intl-44884",
       "date": "2022-01-10",
       "kickoff_utc": "2022-01-10T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -1832,7 +1832,7 @@
       }
     },
     {
-      "id": "intl-44924",
+      "id": "intl-44919",
       "date": "2022-01-20",
       "kickoff_utc": "2022-01-20T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -1851,7 +1851,7 @@
       }
     },
     {
-      "id": "intl-44935",
+      "id": "intl-44930",
       "date": "2022-01-25",
       "kickoff_utc": "2022-01-25T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -1870,7 +1870,7 @@
       }
     },
     {
-      "id": "intl-44936",
+      "id": "intl-44931",
       "date": "2022-01-26",
       "kickoff_utc": "2022-01-26T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -1889,7 +1889,7 @@
       }
     },
     {
-      "id": "intl-44946",
+      "id": "intl-44941",
       "date": "2022-01-27",
       "kickoff_utc": "2022-01-27T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1908,7 +1908,7 @@
       }
     },
     {
-      "id": "intl-44954",
+      "id": "intl-44949",
       "date": "2022-01-28",
       "kickoff_utc": "2022-01-28T12:00:00Z",
       "tournament": "Friendly",
@@ -1927,7 +1927,7 @@
       }
     },
     {
-      "id": "intl-44993",
+      "id": "intl-44988",
       "date": "2022-02-06",
       "kickoff_utc": "2022-02-06T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -1946,7 +1946,7 @@
       }
     },
     {
-      "id": "intl-45019",
+      "id": "intl-45014",
       "date": "2022-03-24",
       "kickoff_utc": "2022-03-24T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1965,7 +1965,7 @@
       }
     },
     {
-      "id": "intl-45031",
+      "id": "intl-45026",
       "date": "2022-03-24",
       "kickoff_utc": "2022-03-24T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -1984,7 +1984,7 @@
       }
     },
     {
-      "id": "intl-45032",
+      "id": "intl-45027",
       "date": "2022-03-24",
       "kickoff_utc": "2022-03-24T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -2003,7 +2003,7 @@
       }
     },
     {
-      "id": "intl-45047",
+      "id": "intl-45042",
       "date": "2022-03-25",
       "kickoff_utc": "2022-03-25T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -2022,7 +2022,7 @@
       }
     },
     {
-      "id": "intl-45048",
+      "id": "intl-45043",
       "date": "2022-03-25",
       "kickoff_utc": "2022-03-25T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -2041,7 +2041,7 @@
       }
     },
     {
-      "id": "intl-45057",
+      "id": "intl-45052",
       "date": "2022-03-25",
       "kickoff_utc": "2022-03-25T12:00:00Z",
       "tournament": "Friendly",
@@ -2060,7 +2060,7 @@
       }
     },
     {
-      "id": "intl-45107",
+      "id": "intl-45102",
       "date": "2022-03-29",
       "kickoff_utc": "2022-03-29T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -2079,7 +2079,7 @@
       }
     },
     {
-      "id": "intl-45109",
+      "id": "intl-45104",
       "date": "2022-03-29",
       "kickoff_utc": "2022-03-29T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -2098,7 +2098,7 @@
       }
     },
     {
-      "id": "intl-45126",
+      "id": "intl-45121",
       "date": "2022-03-29",
       "kickoff_utc": "2022-03-29T12:00:00Z",
       "tournament": "Friendly",
@@ -2117,7 +2117,7 @@
       }
     },
     {
-      "id": "intl-45135",
+      "id": "intl-45130",
       "date": "2022-03-29",
       "kickoff_utc": "2022-03-29T12:00:00Z",
       "tournament": "Friendly",
@@ -2136,7 +2136,7 @@
       }
     },
     {
-      "id": "intl-45138",
+      "id": "intl-45133",
       "date": "2022-03-29",
       "kickoff_utc": "2022-03-29T12:00:00Z",
       "tournament": "Friendly",
@@ -2155,7 +2155,7 @@
       }
     },
     {
-      "id": "intl-45214",
+      "id": "intl-45209",
       "date": "2022-06-02",
       "kickoff_utc": "2022-06-02T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2174,7 +2174,7 @@
       }
     },
     {
-      "id": "intl-45240",
+      "id": "intl-45235",
       "date": "2022-06-03",
       "kickoff_utc": "2022-06-03T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2193,7 +2193,7 @@
       }
     },
     {
-      "id": "intl-45280",
+      "id": "intl-45275",
       "date": "2022-06-05",
       "kickoff_utc": "2022-06-05T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2212,7 +2212,7 @@
       }
     },
     {
-      "id": "intl-45282",
+      "id": "intl-45277",
       "date": "2022-06-05",
       "kickoff_utc": "2022-06-05T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2231,7 +2231,7 @@
       }
     },
     {
-      "id": "intl-45354",
+      "id": "intl-45349",
       "date": "2022-06-09",
       "kickoff_utc": "2022-06-09T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -2250,7 +2250,7 @@
       }
     },
     {
-      "id": "intl-45356",
+      "id": "intl-45351",
       "date": "2022-06-09",
       "kickoff_utc": "2022-06-09T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -2269,7 +2269,7 @@
       }
     },
     {
-      "id": "intl-45363",
+      "id": "intl-45358",
       "date": "2022-06-09",
       "kickoff_utc": "2022-06-09T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2288,7 +2288,7 @@
       }
     },
     {
-      "id": "intl-45379",
+      "id": "intl-45374",
       "date": "2022-06-10",
       "kickoff_utc": "2022-06-10T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2307,7 +2307,7 @@
       }
     },
     {
-      "id": "intl-45388",
+      "id": "intl-45383",
       "date": "2022-06-10",
       "kickoff_utc": "2022-06-10T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -2326,7 +2326,7 @@
       }
     },
     {
-      "id": "intl-45416",
+      "id": "intl-45411",
       "date": "2022-06-11",
       "kickoff_utc": "2022-06-11T12:00:00Z",
       "tournament": "Friendly",
@@ -2345,7 +2345,7 @@
       }
     },
     {
-      "id": "intl-45424",
+      "id": "intl-45419",
       "date": "2022-06-12",
       "kickoff_utc": "2022-06-12T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2364,7 +2364,7 @@
       }
     },
     {
-      "id": "intl-45426",
+      "id": "intl-45421",
       "date": "2022-06-12",
       "kickoff_utc": "2022-06-12T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2383,7 +2383,7 @@
       }
     },
     {
-      "id": "intl-45433",
+      "id": "intl-45428",
       "date": "2022-06-12",
       "kickoff_utc": "2022-06-12T12:00:00Z",
       "tournament": "Friendly",
@@ -2402,7 +2402,7 @@
       }
     },
     {
-      "id": "intl-45480",
+      "id": "intl-45475",
       "date": "2022-06-14",
       "kickoff_utc": "2022-06-14T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -2421,7 +2421,7 @@
       }
     },
     {
-      "id": "intl-45525",
+      "id": "intl-45520",
       "date": "2022-09-22",
       "kickoff_utc": "2022-09-22T12:00:00Z",
       "tournament": "Friendly",
@@ -2440,7 +2440,7 @@
       }
     },
     {
-      "id": "intl-45533",
+      "id": "intl-45528",
       "date": "2022-09-22",
       "kickoff_utc": "2022-09-22T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2459,7 +2459,7 @@
       }
     },
     {
-      "id": "intl-45546",
+      "id": "intl-45541",
       "date": "2022-09-23",
       "kickoff_utc": "2022-09-23T12:00:00Z",
       "tournament": "Friendly",
@@ -2478,7 +2478,7 @@
       }
     },
     {
-      "id": "intl-45548",
+      "id": "intl-45543",
       "date": "2022-09-23",
       "kickoff_utc": "2022-09-23T12:00:00Z",
       "tournament": "Friendly",
@@ -2497,7 +2497,7 @@
       }
     },
     {
-      "id": "intl-45551",
+      "id": "intl-45546",
       "date": "2022-09-23",
       "kickoff_utc": "2022-09-23T12:00:00Z",
       "tournament": "Friendly",
@@ -2516,7 +2516,7 @@
       }
     },
     {
-      "id": "intl-45583",
+      "id": "intl-45578",
       "date": "2022-09-24",
       "kickoff_utc": "2022-09-24T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2535,7 +2535,7 @@
       }
     },
     {
-      "id": "intl-45594",
+      "id": "intl-45589",
       "date": "2022-09-25",
       "kickoff_utc": "2022-09-25T12:00:00Z",
       "tournament": "Friendly",
@@ -2554,7 +2554,7 @@
       }
     },
     {
-      "id": "intl-45596",
+      "id": "intl-45591",
       "date": "2022-09-25",
       "kickoff_utc": "2022-09-25T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2573,7 +2573,7 @@
       }
     },
     {
-      "id": "intl-45620",
+      "id": "intl-45615",
       "date": "2022-09-27",
       "kickoff_utc": "2022-09-27T12:00:00Z",
       "tournament": "Friendly",
@@ -2592,7 +2592,7 @@
       }
     },
     {
-      "id": "intl-45632",
+      "id": "intl-45627",
       "date": "2022-09-27",
       "kickoff_utc": "2022-09-27T12:00:00Z",
       "tournament": "Friendly",
@@ -2611,7 +2611,7 @@
       }
     },
     {
-      "id": "intl-45649",
+      "id": "intl-45644",
       "date": "2022-09-27",
       "kickoff_utc": "2022-09-27T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -2630,7 +2630,7 @@
       }
     },
     {
-      "id": "intl-45666",
+      "id": "intl-45661",
       "date": "2022-11-07",
       "kickoff_utc": "2022-11-07T12:00:00Z",
       "tournament": "Friendly",
@@ -2649,7 +2649,7 @@
       }
     },
     {
-      "id": "intl-45671",
+      "id": "intl-45666",
       "date": "2022-11-09",
       "kickoff_utc": "2022-11-09T12:00:00Z",
       "tournament": "Friendly",
@@ -2668,7 +2668,7 @@
       }
     },
     {
-      "id": "intl-45676",
+      "id": "intl-45671",
       "date": "2022-11-12",
       "kickoff_utc": "2022-11-12T12:00:00Z",
       "tournament": "Friendly",
@@ -2687,7 +2687,7 @@
       }
     },
     {
-      "id": "intl-45687",
+      "id": "intl-45682",
       "date": "2022-11-16",
       "kickoff_utc": "2022-11-16T12:00:00Z",
       "tournament": "Friendly",
@@ -2706,7 +2706,7 @@
       }
     },
     {
-      "id": "intl-45690",
+      "id": "intl-45685",
       "date": "2022-11-16",
       "kickoff_utc": "2022-11-16T12:00:00Z",
       "tournament": "Friendly",
@@ -2725,7 +2725,7 @@
       }
     },
     {
-      "id": "intl-45698",
+      "id": "intl-45693",
       "date": "2022-11-16",
       "kickoff_utc": "2022-11-16T12:00:00Z",
       "tournament": "Friendly",
@@ -2744,7 +2744,7 @@
       }
     },
     {
-      "id": "intl-45720",
+      "id": "intl-45715",
       "date": "2022-11-17",
       "kickoff_utc": "2022-11-17T12:00:00Z",
       "tournament": "Friendly",
@@ -2763,7 +2763,7 @@
       }
     },
     {
-      "id": "intl-45726",
+      "id": "intl-45721",
       "date": "2022-11-18",
       "kickoff_utc": "2022-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -2782,7 +2782,7 @@
       }
     },
     {
-      "id": "intl-45728",
+      "id": "intl-45723",
       "date": "2022-11-19",
       "kickoff_utc": "2022-11-19T12:00:00Z",
       "tournament": "Friendly",
@@ -2801,7 +2801,7 @@
       }
     },
     {
-      "id": "intl-45736",
+      "id": "intl-45731",
       "date": "2022-11-19",
       "kickoff_utc": "2022-11-19T12:00:00Z",
       "tournament": "Friendly",
@@ -2820,7 +2820,7 @@
       }
     },
     {
-      "id": "intl-45737",
+      "id": "intl-45732",
       "date": "2022-11-19",
       "kickoff_utc": "2022-11-19T12:00:00Z",
       "tournament": "Friendly",
@@ -2839,7 +2839,7 @@
       }
     },
     {
-      "id": "intl-45758",
+      "id": "intl-45753",
       "date": "2022-11-20",
       "kickoff_utc": "2022-11-20T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -2858,7 +2858,7 @@
       }
     },
     {
-      "id": "intl-45759",
+      "id": "intl-45754",
       "date": "2022-11-21",
       "kickoff_utc": "2022-11-21T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -2877,7 +2877,7 @@
       }
     },
     {
-      "id": "intl-45760",
+      "id": "intl-45755",
       "date": "2022-11-21",
       "kickoff_utc": "2022-11-21T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -2896,7 +2896,7 @@
       }
     },
     {
-      "id": "intl-45769",
+      "id": "intl-45764",
       "date": "2022-11-23",
       "kickoff_utc": "2022-11-23T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -2915,7 +2915,7 @@
       }
     },
     {
-      "id": "intl-45773",
+      "id": "intl-45768",
       "date": "2022-11-24",
       "kickoff_utc": "2022-11-24T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -2934,7 +2934,7 @@
       }
     },
     {
-      "id": "intl-45774",
+      "id": "intl-45769",
       "date": "2022-11-25",
       "kickoff_utc": "2022-11-25T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -2953,7 +2953,7 @@
       }
     },
     {
-      "id": "intl-45780",
+      "id": "intl-45775",
       "date": "2022-11-26",
       "kickoff_utc": "2022-11-26T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -2972,7 +2972,7 @@
       }
     },
     {
-      "id": "intl-45784",
+      "id": "intl-45779",
       "date": "2022-11-27",
       "kickoff_utc": "2022-11-27T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -2991,7 +2991,7 @@
       }
     },
     {
-      "id": "intl-45787",
+      "id": "intl-45782",
       "date": "2022-11-28",
       "kickoff_utc": "2022-11-28T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3010,7 +3010,7 @@
       }
     },
     {
-      "id": "intl-45788",
+      "id": "intl-45783",
       "date": "2022-11-28",
       "kickoff_utc": "2022-11-28T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3029,7 +3029,7 @@
       }
     },
     {
-      "id": "intl-45790",
+      "id": "intl-45785",
       "date": "2022-11-29",
       "kickoff_utc": "2022-11-29T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3048,7 +3048,7 @@
       }
     },
     {
-      "id": "intl-45791",
+      "id": "intl-45786",
       "date": "2022-11-29",
       "kickoff_utc": "2022-11-29T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3067,7 +3067,7 @@
       }
     },
     {
-      "id": "intl-45793",
+      "id": "intl-45788",
       "date": "2022-11-29",
       "kickoff_utc": "2022-11-29T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3086,7 +3086,7 @@
       }
     },
     {
-      "id": "intl-45797",
+      "id": "intl-45792",
       "date": "2022-11-30",
       "kickoff_utc": "2022-11-30T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3105,7 +3105,7 @@
       }
     },
     {
-      "id": "intl-45800",
+      "id": "intl-45795",
       "date": "2022-12-01",
       "kickoff_utc": "2022-12-01T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3124,7 +3124,7 @@
       }
     },
     {
-      "id": "intl-45801",
+      "id": "intl-45796",
       "date": "2022-12-01",
       "kickoff_utc": "2022-12-01T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3143,7 +3143,7 @@
       }
     },
     {
-      "id": "intl-45804",
+      "id": "intl-45799",
       "date": "2022-12-02",
       "kickoff_utc": "2022-12-02T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3162,7 +3162,7 @@
       }
     },
     {
-      "id": "intl-45805",
+      "id": "intl-45800",
       "date": "2022-12-02",
       "kickoff_utc": "2022-12-02T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3181,7 +3181,7 @@
       }
     },
     {
-      "id": "intl-45809",
+      "id": "intl-45804",
       "date": "2022-12-04",
       "kickoff_utc": "2022-12-04T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3200,7 +3200,7 @@
       }
     },
     {
-      "id": "intl-45812",
+      "id": "intl-45807",
       "date": "2022-12-06",
       "kickoff_utc": "2022-12-06T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3219,7 +3219,7 @@
       }
     },
     {
-      "id": "intl-45813",
+      "id": "intl-45808",
       "date": "2022-12-06",
       "kickoff_utc": "2022-12-06T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3238,7 +3238,7 @@
       }
     },
     {
-      "id": "intl-45817",
+      "id": "intl-45812",
       "date": "2022-12-10",
       "kickoff_utc": "2022-12-10T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3257,7 +3257,7 @@
       }
     },
     {
-      "id": "intl-45818",
+      "id": "intl-45813",
       "date": "2022-12-10",
       "kickoff_utc": "2022-12-10T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3276,7 +3276,7 @@
       }
     },
     {
-      "id": "intl-45821",
+      "id": "intl-45816",
       "date": "2022-12-14",
       "kickoff_utc": "2022-12-14T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3295,7 +3295,7 @@
       }
     },
     {
-      "id": "intl-45825",
+      "id": "intl-45820",
       "date": "2022-12-17",
       "kickoff_utc": "2022-12-17T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -3314,7 +3314,7 @@
       }
     },
     {
-      "id": "intl-45861",
+      "id": "intl-45856",
       "date": "2023-01-09",
       "kickoff_utc": "2023-01-09T12:00:00Z",
       "tournament": "Gulf Cup",
@@ -3333,7 +3333,7 @@
       }
     },
     {
-      "id": "intl-45873",
+      "id": "intl-45868",
       "date": "2023-01-16",
       "kickoff_utc": "2023-01-16T12:00:00Z",
       "tournament": "Gulf Cup",
@@ -3352,7 +3352,7 @@
       }
     },
     {
-      "id": "intl-45927",
+      "id": "intl-45922",
       "date": "2023-03-24",
       "kickoff_utc": "2023-03-24T12:00:00Z",
       "tournament": "Friendly",
@@ -3371,7 +3371,7 @@
       }
     },
     {
-      "id": "intl-45948",
+      "id": "intl-45943",
       "date": "2023-03-24",
       "kickoff_utc": "2023-03-24T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3390,7 +3390,7 @@
       }
     },
     {
-      "id": "intl-45952",
+      "id": "intl-45947",
       "date": "2023-03-24",
       "kickoff_utc": "2023-03-24T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3409,7 +3409,7 @@
       }
     },
     {
-      "id": "intl-45966",
+      "id": "intl-45961",
       "date": "2023-03-25",
       "kickoff_utc": "2023-03-25T12:00:00Z",
       "tournament": "Friendly",
@@ -3428,7 +3428,7 @@
       }
     },
     {
-      "id": "intl-45971",
+      "id": "intl-45966",
       "date": "2023-03-25",
       "kickoff_utc": "2023-03-25T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3447,7 +3447,7 @@
       }
     },
     {
-      "id": "intl-45978",
+      "id": "intl-45973",
       "date": "2023-03-25",
       "kickoff_utc": "2023-03-25T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -3466,7 +3466,7 @@
       }
     },
     {
-      "id": "intl-46027",
+      "id": "intl-46022",
       "date": "2023-03-28",
       "kickoff_utc": "2023-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -3485,7 +3485,7 @@
       }
     },
     {
-      "id": "intl-46029",
+      "id": "intl-46024",
       "date": "2023-03-28",
       "kickoff_utc": "2023-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -3504,7 +3504,7 @@
       }
     },
     {
-      "id": "intl-46032",
+      "id": "intl-46027",
       "date": "2023-03-28",
       "kickoff_utc": "2023-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -3523,7 +3523,7 @@
       }
     },
     {
-      "id": "intl-46036",
+      "id": "intl-46031",
       "date": "2023-03-28",
       "kickoff_utc": "2023-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -3542,7 +3542,7 @@
       }
     },
     {
-      "id": "intl-46038",
+      "id": "intl-46033",
       "date": "2023-03-28",
       "kickoff_utc": "2023-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -3561,7 +3561,7 @@
       }
     },
     {
-      "id": "intl-46058",
+      "id": "intl-46053",
       "date": "2023-03-28",
       "kickoff_utc": "2023-03-28T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3580,7 +3580,7 @@
       }
     },
     {
-      "id": "intl-46061",
+      "id": "intl-46056",
       "date": "2023-03-28",
       "kickoff_utc": "2023-03-28T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3599,7 +3599,7 @@
       }
     },
     {
-      "id": "intl-46088",
+      "id": "intl-46083",
       "date": "2023-06-12",
       "kickoff_utc": "2023-06-12T12:00:00Z",
       "tournament": "Friendly",
@@ -3618,7 +3618,7 @@
       }
     },
     {
-      "id": "intl-46097",
+      "id": "intl-46092",
       "date": "2023-06-14",
       "kickoff_utc": "2023-06-14T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -3637,7 +3637,7 @@
       }
     },
     {
-      "id": "intl-46107",
+      "id": "intl-46102",
       "date": "2023-06-15",
       "kickoff_utc": "2023-06-15T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -3656,7 +3656,7 @@
       }
     },
     {
-      "id": "intl-46109",
+      "id": "intl-46104",
       "date": "2023-06-15",
       "kickoff_utc": "2023-06-15T12:00:00Z",
       "tournament": "Friendly",
@@ -3675,7 +3675,7 @@
       }
     },
     {
-      "id": "intl-46124",
+      "id": "intl-46119",
       "date": "2023-06-16",
       "kickoff_utc": "2023-06-16T12:00:00Z",
       "tournament": "Friendly",
@@ -3694,7 +3694,7 @@
       }
     },
     {
-      "id": "intl-46129",
+      "id": "intl-46124",
       "date": "2023-06-16",
       "kickoff_utc": "2023-06-16T12:00:00Z",
       "tournament": "Friendly",
@@ -3713,7 +3713,7 @@
       }
     },
     {
-      "id": "intl-46148",
+      "id": "intl-46143",
       "date": "2023-06-17",
       "kickoff_utc": "2023-06-17T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3732,7 +3732,7 @@
       }
     },
     {
-      "id": "intl-46153",
+      "id": "intl-46148",
       "date": "2023-06-17",
       "kickoff_utc": "2023-06-17T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3751,7 +3751,7 @@
       }
     },
     {
-      "id": "intl-46158",
+      "id": "intl-46153",
       "date": "2023-06-17",
       "kickoff_utc": "2023-06-17T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3770,7 +3770,7 @@
       }
     },
     {
-      "id": "intl-46168",
+      "id": "intl-46163",
       "date": "2023-06-17",
       "kickoff_utc": "2023-06-17T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -3789,7 +3789,7 @@
       }
     },
     {
-      "id": "intl-46171",
+      "id": "intl-46166",
       "date": "2023-06-18",
       "kickoff_utc": "2023-06-18T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -3808,7 +3808,7 @@
       }
     },
     {
-      "id": "intl-46178",
+      "id": "intl-46173",
       "date": "2023-06-18",
       "kickoff_utc": "2023-06-18T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -3827,7 +3827,7 @@
       }
     },
     {
-      "id": "intl-46209",
+      "id": "intl-46204",
       "date": "2023-06-20",
       "kickoff_utc": "2023-06-20T12:00:00Z",
       "tournament": "Friendly",
@@ -3846,7 +3846,7 @@
       }
     },
     {
-      "id": "intl-46211",
+      "id": "intl-46206",
       "date": "2023-06-20",
       "kickoff_utc": "2023-06-20T12:00:00Z",
       "tournament": "Friendly",
@@ -3865,7 +3865,7 @@
       }
     },
     {
-      "id": "intl-46226",
+      "id": "intl-46221",
       "date": "2023-06-20",
       "kickoff_utc": "2023-06-20T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -3884,7 +3884,7 @@
       }
     },
     {
-      "id": "intl-46234",
+      "id": "intl-46229",
       "date": "2023-06-20",
       "kickoff_utc": "2023-06-20T12:00:00Z",
       "tournament": "CAFA Nations Cup",
@@ -3903,7 +3903,7 @@
       }
     },
     {
-      "id": "intl-46248",
+      "id": "intl-46243",
       "date": "2023-06-25",
       "kickoff_utc": "2023-06-25T12:00:00Z",
       "tournament": "Gold Cup",
@@ -3922,7 +3922,7 @@
       }
     },
     {
-      "id": "intl-46261",
+      "id": "intl-46256",
       "date": "2023-06-29",
       "kickoff_utc": "2023-06-29T12:00:00Z",
       "tournament": "Gold Cup",
@@ -3941,7 +3941,7 @@
       }
     },
     {
-      "id": "intl-46274",
+      "id": "intl-46269",
       "date": "2023-07-02",
       "kickoff_utc": "2023-07-02T12:00:00Z",
       "tournament": "Gold Cup",
@@ -3960,7 +3960,7 @@
       }
     },
     {
-      "id": "intl-46286",
+      "id": "intl-46281",
       "date": "2023-07-08",
       "kickoff_utc": "2023-07-08T12:00:00Z",
       "tournament": "Gold Cup",
@@ -3979,7 +3979,7 @@
       }
     },
     {
-      "id": "intl-46291",
+      "id": "intl-46286",
       "date": "2023-07-09",
       "kickoff_utc": "2023-07-09T12:00:00Z",
       "tournament": "Gold Cup",
@@ -3998,7 +3998,7 @@
       }
     },
     {
-      "id": "intl-46321",
+      "id": "intl-46316",
       "date": "2023-07-12",
       "kickoff_utc": "2023-07-12T12:00:00Z",
       "tournament": "Gold Cup",
@@ -4017,7 +4017,7 @@
       }
     },
     {
-      "id": "intl-46336",
+      "id": "intl-46331",
       "date": "2023-07-16",
       "kickoff_utc": "2023-07-16T12:00:00Z",
       "tournament": "Gold Cup",
@@ -4036,7 +4036,7 @@
       }
     },
     {
-      "id": "intl-46375",
+      "id": "intl-46370",
       "date": "2023-09-07",
       "kickoff_utc": "2023-09-07T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4055,7 +4055,7 @@
       }
     },
     {
-      "id": "intl-46381",
+      "id": "intl-46376",
       "date": "2023-09-07",
       "kickoff_utc": "2023-09-07T12:00:00Z",
       "tournament": "Friendly",
@@ -4074,7 +4074,7 @@
       }
     },
     {
-      "id": "intl-46428",
+      "id": "intl-46423",
       "date": "2023-09-09",
       "kickoff_utc": "2023-09-09T12:00:00Z",
       "tournament": "Friendly",
@@ -4093,7 +4093,7 @@
       }
     },
     {
-      "id": "intl-46429",
+      "id": "intl-46424",
       "date": "2023-09-09",
       "kickoff_utc": "2023-09-09T12:00:00Z",
       "tournament": "Friendly",
@@ -4112,7 +4112,7 @@
       }
     },
     {
-      "id": "intl-46431",
+      "id": "intl-46426",
       "date": "2023-09-09",
       "kickoff_utc": "2023-09-09T12:00:00Z",
       "tournament": "Friendly",
@@ -4131,7 +4131,7 @@
       }
     },
     {
-      "id": "intl-46496",
+      "id": "intl-46491",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4150,7 +4150,7 @@
       }
     },
     {
-      "id": "intl-46497",
+      "id": "intl-46492",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4169,7 +4169,7 @@
       }
     },
     {
-      "id": "intl-46501",
+      "id": "intl-46496",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4188,7 +4188,7 @@
       }
     },
     {
-      "id": "intl-46503",
+      "id": "intl-46498",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4207,7 +4207,7 @@
       }
     },
     {
-      "id": "intl-46504",
+      "id": "intl-46499",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4226,7 +4226,7 @@
       }
     },
     {
-      "id": "intl-46507",
+      "id": "intl-46502",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4245,7 +4245,7 @@
       }
     },
     {
-      "id": "intl-46508",
+      "id": "intl-46503",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4264,7 +4264,7 @@
       }
     },
     {
-      "id": "intl-46510",
+      "id": "intl-46505",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4283,7 +4283,7 @@
       }
     },
     {
-      "id": "intl-46519",
+      "id": "intl-46514",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4302,7 +4302,7 @@
       }
     },
     {
-      "id": "intl-46536",
+      "id": "intl-46531",
       "date": "2023-10-12",
       "kickoff_utc": "2023-10-12T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4321,7 +4321,7 @@
       }
     },
     {
-      "id": "intl-46538",
+      "id": "intl-46533",
       "date": "2023-10-12",
       "kickoff_utc": "2023-10-12T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4340,7 +4340,7 @@
       }
     },
     {
-      "id": "intl-46551",
+      "id": "intl-46546",
       "date": "2023-10-12",
       "kickoff_utc": "2023-10-12T12:00:00Z",
       "tournament": "Friendly",
@@ -4359,7 +4359,7 @@
       }
     },
     {
-      "id": "intl-46558",
+      "id": "intl-46553",
       "date": "2023-10-12",
       "kickoff_utc": "2023-10-12T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4378,7 +4378,7 @@
       }
     },
     {
-      "id": "intl-46561",
+      "id": "intl-46556",
       "date": "2023-10-12",
       "kickoff_utc": "2023-10-12T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4397,7 +4397,7 @@
       }
     },
     {
-      "id": "intl-46566",
+      "id": "intl-46561",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -4416,7 +4416,7 @@
       }
     },
     {
-      "id": "intl-46573",
+      "id": "intl-46568",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "Friendly",
@@ -4435,7 +4435,7 @@
       }
     },
     {
-      "id": "intl-46574",
+      "id": "intl-46569",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "Friendly",
@@ -4454,7 +4454,7 @@
       }
     },
     {
-      "id": "intl-46577",
+      "id": "intl-46572",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "Jordan International Tournament",
@@ -4473,7 +4473,7 @@
       }
     },
     {
-      "id": "intl-46578",
+      "id": "intl-46573",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "Jordan International Tournament",
@@ -4492,7 +4492,7 @@
       }
     },
     {
-      "id": "intl-46579",
+      "id": "intl-46574",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "Friendly",
@@ -4511,7 +4511,7 @@
       }
     },
     {
-      "id": "intl-46580",
+      "id": "intl-46575",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "Friendly",
@@ -4530,7 +4530,7 @@
       }
     },
     {
-      "id": "intl-46586",
+      "id": "intl-46581",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4549,7 +4549,7 @@
       }
     },
     {
-      "id": "intl-46588",
+      "id": "intl-46583",
       "date": "2023-10-13",
       "kickoff_utc": "2023-10-13T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4568,7 +4568,7 @@
       }
     },
     {
-      "id": "intl-46596",
+      "id": "intl-46591",
       "date": "2023-10-14",
       "kickoff_utc": "2023-10-14T12:00:00Z",
       "tournament": "Friendly",
@@ -4587,7 +4587,7 @@
       }
     },
     {
-      "id": "intl-46599",
+      "id": "intl-46594",
       "date": "2023-10-14",
       "kickoff_utc": "2023-10-14T12:00:00Z",
       "tournament": "Friendly",
@@ -4606,7 +4606,7 @@
       }
     },
     {
-      "id": "intl-46602",
+      "id": "intl-46597",
       "date": "2023-10-14",
       "kickoff_utc": "2023-10-14T12:00:00Z",
       "tournament": "Friendly",
@@ -4625,7 +4625,7 @@
       }
     },
     {
-      "id": "intl-46620",
+      "id": "intl-46615",
       "date": "2023-10-15",
       "kickoff_utc": "2023-10-15T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4644,7 +4644,7 @@
       }
     },
     {
-      "id": "intl-46632",
+      "id": "intl-46627",
       "date": "2023-10-16",
       "kickoff_utc": "2023-10-16T12:00:00Z",
       "tournament": "Friendly",
@@ -4663,7 +4663,7 @@
       }
     },
     {
-      "id": "intl-46641",
+      "id": "intl-46636",
       "date": "2023-10-16",
       "kickoff_utc": "2023-10-16T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4682,7 +4682,7 @@
       }
     },
     {
-      "id": "intl-46643",
+      "id": "intl-46638",
       "date": "2023-10-16",
       "kickoff_utc": "2023-10-16T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4701,7 +4701,7 @@
       }
     },
     {
-      "id": "intl-46645",
+      "id": "intl-46640",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "Jordan International Tournament",
@@ -4720,7 +4720,7 @@
       }
     },
     {
-      "id": "intl-46646",
+      "id": "intl-46641",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "Jordan International Tournament",
@@ -4739,7 +4739,7 @@
       }
     },
     {
-      "id": "intl-46655",
+      "id": "intl-46650",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4758,7 +4758,7 @@
       }
     },
     {
-      "id": "intl-46658",
+      "id": "intl-46653",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4777,7 +4777,7 @@
       }
     },
     {
-      "id": "intl-46671",
+      "id": "intl-46666",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "Soccer Ashes",
@@ -4796,7 +4796,7 @@
       }
     },
     {
-      "id": "intl-46677",
+      "id": "intl-46672",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "Friendly",
@@ -4815,7 +4815,7 @@
       }
     },
     {
-      "id": "intl-46679",
+      "id": "intl-46674",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "Friendly",
@@ -4834,7 +4834,7 @@
       }
     },
     {
-      "id": "intl-46683",
+      "id": "intl-46678",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "Friendly",
@@ -4853,7 +4853,7 @@
       }
     },
     {
-      "id": "intl-46689",
+      "id": "intl-46684",
       "date": "2023-10-17",
       "kickoff_utc": "2023-10-17T12:00:00Z",
       "tournament": "Friendly",
@@ -4872,7 +4872,7 @@
       }
     },
     {
-      "id": "intl-46717",
+      "id": "intl-46712",
       "date": "2023-11-16",
       "kickoff_utc": "2023-11-16T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4891,7 +4891,7 @@
       }
     },
     {
-      "id": "intl-46788",
+      "id": "intl-46783",
       "date": "2023-11-18",
       "kickoff_utc": "2023-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -4910,7 +4910,7 @@
       }
     },
     {
-      "id": "intl-46806",
+      "id": "intl-46801",
       "date": "2023-11-19",
       "kickoff_utc": "2023-11-19T12:00:00Z",
       "tournament": "UEFA Euro qualification",
@@ -4929,7 +4929,7 @@
       }
     },
     {
-      "id": "intl-46846",
+      "id": "intl-46841",
       "date": "2023-11-21",
       "kickoff_utc": "2023-11-21T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4948,7 +4948,7 @@
       }
     },
     {
-      "id": "intl-46849",
+      "id": "intl-46844",
       "date": "2023-11-21",
       "kickoff_utc": "2023-11-21T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4967,7 +4967,7 @@
       }
     },
     {
-      "id": "intl-46858",
+      "id": "intl-46853",
       "date": "2023-11-21",
       "kickoff_utc": "2023-11-21T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -4986,7 +4986,7 @@
       }
     },
     {
-      "id": "intl-46863",
+      "id": "intl-46858",
       "date": "2023-11-21",
       "kickoff_utc": "2023-11-21T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -5005,7 +5005,7 @@
       }
     },
     {
-      "id": "intl-46883",
+      "id": "intl-46878",
       "date": "2023-11-21",
       "kickoff_utc": "2023-11-21T12:00:00Z",
       "tournament": "Friendly",
@@ -5024,7 +5024,7 @@
       }
     },
     {
-      "id": "intl-46920",
+      "id": "intl-46915",
       "date": "2024-01-05",
       "kickoff_utc": "2024-01-05T12:00:00Z",
       "tournament": "Friendly",
@@ -5043,7 +5043,7 @@
       }
     },
     {
-      "id": "intl-46923",
+      "id": "intl-46918",
       "date": "2024-01-06",
       "kickoff_utc": "2024-01-06T12:00:00Z",
       "tournament": "Friendly",
@@ -5062,7 +5062,7 @@
       }
     },
     {
-      "id": "intl-46937",
+      "id": "intl-46932",
       "date": "2024-01-09",
       "kickoff_utc": "2024-01-09T12:00:00Z",
       "tournament": "Friendly",
@@ -5081,7 +5081,7 @@
       }
     },
     {
-      "id": "intl-46948",
+      "id": "intl-46943",
       "date": "2024-01-10",
       "kickoff_utc": "2024-01-10T12:00:00Z",
       "tournament": "Friendly",
@@ -5100,7 +5100,7 @@
       }
     },
     {
-      "id": "intl-46963",
+      "id": "intl-46958",
       "date": "2024-01-14",
       "kickoff_utc": "2024-01-14T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5119,7 +5119,7 @@
       }
     },
     {
-      "id": "intl-46985",
+      "id": "intl-46980",
       "date": "2024-01-18",
       "kickoff_utc": "2024-01-18T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5138,7 +5138,7 @@
       }
     },
     {
-      "id": "intl-46987",
+      "id": "intl-46982",
       "date": "2024-01-19",
       "kickoff_utc": "2024-01-19T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5157,7 +5157,7 @@
       }
     },
     {
-      "id": "intl-46993",
+      "id": "intl-46988",
       "date": "2024-01-20",
       "kickoff_utc": "2024-01-20T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5176,7 +5176,7 @@
       }
     },
     {
-      "id": "intl-47002",
+      "id": "intl-46997",
       "date": "2024-01-21",
       "kickoff_utc": "2024-01-21T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5195,7 +5195,7 @@
       }
     },
     {
-      "id": "intl-47008",
+      "id": "intl-47003",
       "date": "2024-01-22",
       "kickoff_utc": "2024-01-22T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5214,7 +5214,7 @@
       }
     },
     {
-      "id": "intl-47010",
+      "id": "intl-47005",
       "date": "2024-01-23",
       "kickoff_utc": "2024-01-23T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5233,7 +5233,7 @@
       }
     },
     {
-      "id": "intl-47021",
+      "id": "intl-47016",
       "date": "2024-01-24",
       "kickoff_utc": "2024-01-24T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5252,7 +5252,7 @@
       }
     },
     {
-      "id": "intl-47032",
+      "id": "intl-47027",
       "date": "2024-01-28",
       "kickoff_utc": "2024-01-28T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5271,7 +5271,7 @@
       }
     },
     {
-      "id": "intl-47034",
+      "id": "intl-47029",
       "date": "2024-01-29",
       "kickoff_utc": "2024-01-29T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5290,7 +5290,7 @@
       }
     },
     {
-      "id": "intl-47037",
+      "id": "intl-47032",
       "date": "2024-01-29",
       "kickoff_utc": "2024-01-29T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5309,7 +5309,7 @@
       }
     },
     {
-      "id": "intl-47038",
+      "id": "intl-47033",
       "date": "2024-01-30",
       "kickoff_utc": "2024-01-30T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5328,7 +5328,7 @@
       }
     },
     {
-      "id": "intl-47041",
+      "id": "intl-47036",
       "date": "2024-01-30",
       "kickoff_utc": "2024-01-30T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5347,7 +5347,7 @@
       }
     },
     {
-      "id": "intl-47044",
+      "id": "intl-47039",
       "date": "2024-02-02",
       "kickoff_utc": "2024-02-02T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5366,7 +5366,7 @@
       }
     },
     {
-      "id": "intl-47048",
+      "id": "intl-47043",
       "date": "2024-02-03",
       "kickoff_utc": "2024-02-03T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5385,7 +5385,7 @@
       }
     },
     {
-      "id": "intl-47049",
+      "id": "intl-47044",
       "date": "2024-02-03",
       "kickoff_utc": "2024-02-03T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5404,7 +5404,7 @@
       }
     },
     {
-      "id": "intl-47050",
+      "id": "intl-47045",
       "date": "2024-02-03",
       "kickoff_utc": "2024-02-03T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5423,7 +5423,7 @@
       }
     },
     {
-      "id": "intl-47053",
+      "id": "intl-47048",
       "date": "2024-02-06",
       "kickoff_utc": "2024-02-06T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5442,7 +5442,7 @@
       }
     },
     {
-      "id": "intl-47054",
+      "id": "intl-47049",
       "date": "2024-02-07",
       "kickoff_utc": "2024-02-07T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5461,7 +5461,7 @@
       }
     },
     {
-      "id": "intl-47055",
+      "id": "intl-47050",
       "date": "2024-02-07",
       "kickoff_utc": "2024-02-07T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5480,7 +5480,7 @@
       }
     },
     {
-      "id": "intl-47057",
+      "id": "intl-47052",
       "date": "2024-02-10",
       "kickoff_utc": "2024-02-10T12:00:00Z",
       "tournament": "AFC Asian Cup",
@@ -5499,7 +5499,7 @@
       }
     },
     {
-      "id": "intl-47058",
+      "id": "intl-47053",
       "date": "2024-02-10",
       "kickoff_utc": "2024-02-10T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -5518,7 +5518,7 @@
       }
     },
     {
-      "id": "intl-47072",
+      "id": "intl-47067",
       "date": "2024-03-21",
       "kickoff_utc": "2024-03-21T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -5537,7 +5537,7 @@
       }
     },
     {
-      "id": "intl-47105",
+      "id": "intl-47100",
       "date": "2024-03-21",
       "kickoff_utc": "2024-03-21T12:00:00Z",
       "tournament": "Friendly",
@@ -5556,7 +5556,7 @@
       }
     },
     {
-      "id": "intl-47111",
+      "id": "intl-47106",
       "date": "2024-03-22",
       "kickoff_utc": "2024-03-22T12:00:00Z",
       "tournament": "FIFA Series",
@@ -5575,7 +5575,7 @@
       }
     },
     {
-      "id": "intl-47127",
+      "id": "intl-47122",
       "date": "2024-03-22",
       "kickoff_utc": "2024-03-22T12:00:00Z",
       "tournament": "Friendly",
@@ -5594,7 +5594,7 @@
       }
     },
     {
-      "id": "intl-47131",
+      "id": "intl-47126",
       "date": "2024-03-22",
       "kickoff_utc": "2024-03-22T12:00:00Z",
       "tournament": "Friendly",
@@ -5613,7 +5613,7 @@
       }
     },
     {
-      "id": "intl-47138",
+      "id": "intl-47133",
       "date": "2024-03-23",
       "kickoff_utc": "2024-03-23T12:00:00Z",
       "tournament": "FIFA Series",
@@ -5632,7 +5632,7 @@
       }
     },
     {
-      "id": "intl-47143",
+      "id": "intl-47138",
       "date": "2024-03-23",
       "kickoff_utc": "2024-03-23T12:00:00Z",
       "tournament": "Friendly",
@@ -5651,7 +5651,7 @@
       }
     },
     {
-      "id": "intl-47144",
+      "id": "intl-47139",
       "date": "2024-03-23",
       "kickoff_utc": "2024-03-23T12:00:00Z",
       "tournament": "Friendly",
@@ -5670,7 +5670,7 @@
       }
     },
     {
-      "id": "intl-47169",
+      "id": "intl-47164",
       "date": "2024-03-26",
       "kickoff_utc": "2024-03-26T12:00:00Z",
       "tournament": "FIFA Series",
@@ -5689,7 +5689,7 @@
       }
     },
     {
-      "id": "intl-47170",
+      "id": "intl-47165",
       "date": "2024-03-26",
       "kickoff_utc": "2024-03-26T12:00:00Z",
       "tournament": "FIFA Series",
@@ -5708,7 +5708,7 @@
       }
     },
     {
-      "id": "intl-47171",
+      "id": "intl-47166",
       "date": "2024-03-26",
       "kickoff_utc": "2024-03-26T12:00:00Z",
       "tournament": "FIFA Series",
@@ -5727,7 +5727,7 @@
       }
     },
     {
-      "id": "intl-47198",
+      "id": "intl-47193",
       "date": "2024-03-26",
       "kickoff_utc": "2024-03-26T12:00:00Z",
       "tournament": "Friendly",
@@ -5746,7 +5746,7 @@
       }
     },
     {
-      "id": "intl-47203",
+      "id": "intl-47198",
       "date": "2024-03-26",
       "kickoff_utc": "2024-03-26T12:00:00Z",
       "tournament": "Friendly",
@@ -5765,7 +5765,7 @@
       }
     },
     {
-      "id": "intl-47205",
+      "id": "intl-47200",
       "date": "2024-03-26",
       "kickoff_utc": "2024-03-26T12:00:00Z",
       "tournament": "Friendly",
@@ -5784,7 +5784,7 @@
       }
     },
     {
-      "id": "intl-47207",
+      "id": "intl-47202",
       "date": "2024-03-26",
       "kickoff_utc": "2024-03-26T12:00:00Z",
       "tournament": "Friendly",
@@ -5803,7 +5803,7 @@
       }
     },
     {
-      "id": "intl-47239",
+      "id": "intl-47234",
       "date": "2024-06-03",
       "kickoff_utc": "2024-06-03T12:00:00Z",
       "tournament": "Friendly",
@@ -5822,7 +5822,7 @@
       }
     },
     {
-      "id": "intl-47252",
+      "id": "intl-47247",
       "date": "2024-06-05",
       "kickoff_utc": "2024-06-05T12:00:00Z",
       "tournament": "Friendly",
@@ -5841,7 +5841,7 @@
       }
     },
     {
-      "id": "intl-47268",
+      "id": "intl-47263",
       "date": "2024-06-06",
       "kickoff_utc": "2024-06-06T12:00:00Z",
       "tournament": "Friendly",
@@ -5860,7 +5860,7 @@
       }
     },
     {
-      "id": "intl-47272",
+      "id": "intl-47267",
       "date": "2024-06-06",
       "kickoff_utc": "2024-06-06T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -5879,7 +5879,7 @@
       }
     },
     {
-      "id": "intl-47330",
+      "id": "intl-47325",
       "date": "2024-06-08",
       "kickoff_utc": "2024-06-08T12:00:00Z",
       "tournament": "Friendly",
@@ -5898,7 +5898,7 @@
       }
     },
     {
-      "id": "intl-47334",
+      "id": "intl-47329",
       "date": "2024-06-08",
       "kickoff_utc": "2024-06-08T12:00:00Z",
       "tournament": "Friendly",
@@ -5917,7 +5917,7 @@
       }
     },
     {
-      "id": "intl-47344",
+      "id": "intl-47339",
       "date": "2024-06-09",
       "kickoff_utc": "2024-06-09T12:00:00Z",
       "tournament": "Friendly",
@@ -5936,7 +5936,7 @@
       }
     },
     {
-      "id": "intl-47345",
+      "id": "intl-47340",
       "date": "2024-06-09",
       "kickoff_utc": "2024-06-09T12:00:00Z",
       "tournament": "Friendly",
@@ -5955,7 +5955,7 @@
       }
     },
     {
-      "id": "intl-47405",
+      "id": "intl-47400",
       "date": "2024-06-11",
       "kickoff_utc": "2024-06-11T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -5974,7 +5974,7 @@
       }
     },
     {
-      "id": "intl-47409",
+      "id": "intl-47404",
       "date": "2024-06-11",
       "kickoff_utc": "2024-06-11T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -5993,7 +5993,7 @@
       }
     },
     {
-      "id": "intl-47422",
+      "id": "intl-47417",
       "date": "2024-06-14",
       "kickoff_utc": "2024-06-14T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6012,7 +6012,7 @@
       }
     },
     {
-      "id": "intl-47426",
+      "id": "intl-47421",
       "date": "2024-06-15",
       "kickoff_utc": "2024-06-15T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6031,7 +6031,7 @@
       }
     },
     {
-      "id": "intl-47434",
+      "id": "intl-47429",
       "date": "2024-06-16",
       "kickoff_utc": "2024-06-16T12:00:00Z",
       "tournament": "Friendly",
@@ -6050,7 +6050,7 @@
       }
     },
     {
-      "id": "intl-47437",
+      "id": "intl-47432",
       "date": "2024-06-17",
       "kickoff_utc": "2024-06-17T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6069,7 +6069,7 @@
       }
     },
     {
-      "id": "intl-47441",
+      "id": "intl-47436",
       "date": "2024-06-18",
       "kickoff_utc": "2024-06-18T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6088,7 +6088,7 @@
       }
     },
     {
-      "id": "intl-47444",
+      "id": "intl-47439",
       "date": "2024-06-19",
       "kickoff_utc": "2024-06-19T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6107,7 +6107,7 @@
       }
     },
     {
-      "id": "intl-47451",
+      "id": "intl-47446",
       "date": "2024-06-20",
       "kickoff_utc": "2024-06-20T12:00:00Z",
       "tournament": "Copa América",
@@ -6126,7 +6126,7 @@
       }
     },
     {
-      "id": "intl-47453",
+      "id": "intl-47448",
       "date": "2024-06-21",
       "kickoff_utc": "2024-06-21T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6145,7 +6145,7 @@
       }
     },
     {
-      "id": "intl-47459",
+      "id": "intl-47454",
       "date": "2024-06-22",
       "kickoff_utc": "2024-06-22T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6164,7 +6164,7 @@
       }
     },
     {
-      "id": "intl-47464",
+      "id": "intl-47459",
       "date": "2024-06-23",
       "kickoff_utc": "2024-06-23T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6183,7 +6183,7 @@
       }
     },
     {
-      "id": "intl-47467",
+      "id": "intl-47462",
       "date": "2024-06-23",
       "kickoff_utc": "2024-06-23T12:00:00Z",
       "tournament": "Copa América",
@@ -6202,7 +6202,7 @@
       }
     },
     {
-      "id": "intl-47470",
+      "id": "intl-47465",
       "date": "2024-06-24",
       "kickoff_utc": "2024-06-24T12:00:00Z",
       "tournament": "Copa América",
@@ -6221,7 +6221,7 @@
       }
     },
     {
-      "id": "intl-47474",
+      "id": "intl-47469",
       "date": "2024-06-25",
       "kickoff_utc": "2024-06-25T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6240,7 +6240,7 @@
       }
     },
     {
-      "id": "intl-47481",
+      "id": "intl-47476",
       "date": "2024-06-26",
       "kickoff_utc": "2024-06-26T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6259,7 +6259,7 @@
       }
     },
     {
-      "id": "intl-47486",
+      "id": "intl-47481",
       "date": "2024-06-27",
       "kickoff_utc": "2024-06-27T12:00:00Z",
       "tournament": "Copa América",
@@ -6278,7 +6278,7 @@
       }
     },
     {
-      "id": "intl-47489",
+      "id": "intl-47484",
       "date": "2024-06-28",
       "kickoff_utc": "2024-06-28T12:00:00Z",
       "tournament": "Copa América",
@@ -6297,7 +6297,7 @@
       }
     },
     {
-      "id": "intl-47498",
+      "id": "intl-47493",
       "date": "2024-06-30",
       "kickoff_utc": "2024-06-30T12:00:00Z",
       "tournament": "Copa América",
@@ -6316,7 +6316,7 @@
       }
     },
     {
-      "id": "intl-47500",
+      "id": "intl-47495",
       "date": "2024-07-01",
       "kickoff_utc": "2024-07-01T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6335,7 +6335,7 @@
       }
     },
     {
-      "id": "intl-47502",
+      "id": "intl-47497",
       "date": "2024-07-01",
       "kickoff_utc": "2024-07-01T12:00:00Z",
       "tournament": "Copa América",
@@ -6354,7 +6354,7 @@
       }
     },
     {
-      "id": "intl-47505",
+      "id": "intl-47500",
       "date": "2024-07-02",
       "kickoff_utc": "2024-07-02T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6373,7 +6373,7 @@
       }
     },
     {
-      "id": "intl-47506",
+      "id": "intl-47501",
       "date": "2024-07-02",
       "kickoff_utc": "2024-07-02T12:00:00Z",
       "tournament": "Copa América",
@@ -6392,7 +6392,7 @@
       }
     },
     {
-      "id": "intl-47508",
+      "id": "intl-47503",
       "date": "2024-07-04",
       "kickoff_utc": "2024-07-04T12:00:00Z",
       "tournament": "Copa América",
@@ -6411,7 +6411,7 @@
       }
     },
     {
-      "id": "intl-47509",
+      "id": "intl-47504",
       "date": "2024-07-05",
       "kickoff_utc": "2024-07-05T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6430,7 +6430,7 @@
       }
     },
     {
-      "id": "intl-47510",
+      "id": "intl-47505",
       "date": "2024-07-05",
       "kickoff_utc": "2024-07-05T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6449,7 +6449,7 @@
       }
     },
     {
-      "id": "intl-47512",
+      "id": "intl-47507",
       "date": "2024-07-06",
       "kickoff_utc": "2024-07-06T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6468,7 +6468,7 @@
       }
     },
     {
-      "id": "intl-47513",
+      "id": "intl-47508",
       "date": "2024-07-06",
       "kickoff_utc": "2024-07-06T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6487,7 +6487,7 @@
       }
     },
     {
-      "id": "intl-47514",
+      "id": "intl-47509",
       "date": "2024-07-06",
       "kickoff_utc": "2024-07-06T12:00:00Z",
       "tournament": "Copa América",
@@ -6506,7 +6506,7 @@
       }
     },
     {
-      "id": "intl-47515",
+      "id": "intl-47510",
       "date": "2024-07-06",
       "kickoff_utc": "2024-07-06T12:00:00Z",
       "tournament": "Copa América",
@@ -6525,7 +6525,7 @@
       }
     },
     {
-      "id": "intl-47516",
+      "id": "intl-47511",
       "date": "2024-07-09",
       "kickoff_utc": "2024-07-09T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6544,7 +6544,7 @@
       }
     },
     {
-      "id": "intl-47517",
+      "id": "intl-47512",
       "date": "2024-07-09",
       "kickoff_utc": "2024-07-09T12:00:00Z",
       "tournament": "Copa América",
@@ -6563,7 +6563,7 @@
       }
     },
     {
-      "id": "intl-47518",
+      "id": "intl-47513",
       "date": "2024-07-10",
       "kickoff_utc": "2024-07-10T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6582,7 +6582,7 @@
       }
     },
     {
-      "id": "intl-47519",
+      "id": "intl-47514",
       "date": "2024-07-10",
       "kickoff_utc": "2024-07-10T12:00:00Z",
       "tournament": "Copa América",
@@ -6601,7 +6601,7 @@
       }
     },
     {
-      "id": "intl-47520",
+      "id": "intl-47515",
       "date": "2024-07-13",
       "kickoff_utc": "2024-07-13T12:00:00Z",
       "tournament": "Copa América",
@@ -6620,7 +6620,7 @@
       }
     },
     {
-      "id": "intl-47521",
+      "id": "intl-47516",
       "date": "2024-07-14",
       "kickoff_utc": "2024-07-14T12:00:00Z",
       "tournament": "UEFA Euro",
@@ -6639,7 +6639,7 @@
       }
     },
     {
-      "id": "intl-47522",
+      "id": "intl-47517",
       "date": "2024-07-14",
       "kickoff_utc": "2024-07-14T12:00:00Z",
       "tournament": "Copa América",
@@ -6658,7 +6658,7 @@
       }
     },
     {
-      "id": "intl-47557",
+      "id": "intl-47552",
       "date": "2024-09-05",
       "kickoff_utc": "2024-09-05T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -6677,7 +6677,7 @@
       }
     },
     {
-      "id": "intl-47580",
+      "id": "intl-47575",
       "date": "2024-09-06",
       "kickoff_utc": "2024-09-06T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -6696,7 +6696,7 @@
       }
     },
     {
-      "id": "intl-47607",
+      "id": "intl-47602",
       "date": "2024-09-06",
       "kickoff_utc": "2024-09-06T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -6715,7 +6715,7 @@
       }
     },
     {
-      "id": "intl-47608",
+      "id": "intl-47603",
       "date": "2024-09-06",
       "kickoff_utc": "2024-09-06T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -6734,7 +6734,7 @@
       }
     },
     {
-      "id": "intl-47609",
+      "id": "intl-47604",
       "date": "2024-09-07",
       "kickoff_utc": "2024-09-07T12:00:00Z",
       "tournament": "Friendly",
@@ -6753,7 +6753,7 @@
       }
     },
     {
-      "id": "intl-47610",
+      "id": "intl-47605",
       "date": "2024-09-07",
       "kickoff_utc": "2024-09-07T12:00:00Z",
       "tournament": "Friendly",
@@ -6772,7 +6772,7 @@
       }
     },
     {
-      "id": "intl-47620",
+      "id": "intl-47615",
       "date": "2024-09-07",
       "kickoff_utc": "2024-09-07T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -6791,7 +6791,7 @@
       }
     },
     {
-      "id": "intl-47634",
+      "id": "intl-47629",
       "date": "2024-09-08",
       "kickoff_utc": "2024-09-08T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -6810,7 +6810,7 @@
       }
     },
     {
-      "id": "intl-47637",
+      "id": "intl-47632",
       "date": "2024-09-08",
       "kickoff_utc": "2024-09-08T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -6829,7 +6829,7 @@
       }
     },
     {
-      "id": "intl-47659",
+      "id": "intl-47654",
       "date": "2024-09-09",
       "kickoff_utc": "2024-09-09T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -6848,7 +6848,7 @@
       }
     },
     {
-      "id": "intl-47661",
+      "id": "intl-47656",
       "date": "2024-09-09",
       "kickoff_utc": "2024-09-09T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -6867,7 +6867,7 @@
       }
     },
     {
-      "id": "intl-47668",
+      "id": "intl-47663",
       "date": "2024-09-10",
       "kickoff_utc": "2024-09-10T12:00:00Z",
       "tournament": "Friendly",
@@ -6886,7 +6886,7 @@
       }
     },
     {
-      "id": "intl-47670",
+      "id": "intl-47665",
       "date": "2024-09-10",
       "kickoff_utc": "2024-09-10T12:00:00Z",
       "tournament": "Friendly",
@@ -6905,7 +6905,7 @@
       }
     },
     {
-      "id": "intl-47698",
+      "id": "intl-47693",
       "date": "2024-09-10",
       "kickoff_utc": "2024-09-10T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -6924,7 +6924,7 @@
       }
     },
     {
-      "id": "intl-47706",
+      "id": "intl-47701",
       "date": "2024-09-10",
       "kickoff_utc": "2024-09-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -6943,7 +6943,7 @@
       }
     },
     {
-      "id": "intl-47710",
+      "id": "intl-47705",
       "date": "2024-09-10",
       "kickoff_utc": "2024-09-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -6962,7 +6962,7 @@
       }
     },
     {
-      "id": "intl-47749",
+      "id": "intl-47744",
       "date": "2024-10-10",
       "kickoff_utc": "2024-10-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -6981,7 +6981,7 @@
       }
     },
     {
-      "id": "intl-47755",
+      "id": "intl-47750",
       "date": "2024-10-10",
       "kickoff_utc": "2024-10-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7000,7 +7000,7 @@
       }
     },
     {
-      "id": "intl-47757",
+      "id": "intl-47752",
       "date": "2024-10-10",
       "kickoff_utc": "2024-10-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7019,7 +7019,7 @@
       }
     },
     {
-      "id": "intl-47762",
+      "id": "intl-47757",
       "date": "2024-10-10",
       "kickoff_utc": "2024-10-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7038,7 +7038,7 @@
       }
     },
     {
-      "id": "intl-47787",
+      "id": "intl-47782",
       "date": "2024-10-11",
       "kickoff_utc": "2024-10-11T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7057,7 +7057,7 @@
       }
     },
     {
-      "id": "intl-47799",
+      "id": "intl-47794",
       "date": "2024-10-12",
       "kickoff_utc": "2024-10-12T12:00:00Z",
       "tournament": "Friendly",
@@ -7076,7 +7076,7 @@
       }
     },
     {
-      "id": "intl-47808",
+      "id": "intl-47803",
       "date": "2024-10-12",
       "kickoff_utc": "2024-10-12T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7095,7 +7095,7 @@
       }
     },
     {
-      "id": "intl-47825",
+      "id": "intl-47820",
       "date": "2024-10-13",
       "kickoff_utc": "2024-10-13T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7114,7 +7114,7 @@
       }
     },
     {
-      "id": "intl-47844",
+      "id": "intl-47839",
       "date": "2024-10-14",
       "kickoff_utc": "2024-10-14T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7133,7 +7133,7 @@
       }
     },
     {
-      "id": "intl-47847",
+      "id": "intl-47842",
       "date": "2024-10-14",
       "kickoff_utc": "2024-10-14T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7152,7 +7152,7 @@
       }
     },
     {
-      "id": "intl-47856",
+      "id": "intl-47851",
       "date": "2024-10-15",
       "kickoff_utc": "2024-10-15T12:00:00Z",
       "tournament": "Friendly",
@@ -7171,7 +7171,7 @@
       }
     },
     {
-      "id": "intl-47858",
+      "id": "intl-47853",
       "date": "2024-10-15",
       "kickoff_utc": "2024-10-15T12:00:00Z",
       "tournament": "Friendly",
@@ -7190,7 +7190,7 @@
       }
     },
     {
-      "id": "intl-47883",
+      "id": "intl-47878",
       "date": "2024-10-15",
       "kickoff_utc": "2024-10-15T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7209,7 +7209,7 @@
       }
     },
     {
-      "id": "intl-47893",
+      "id": "intl-47888",
       "date": "2024-10-15",
       "kickoff_utc": "2024-10-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7228,7 +7228,7 @@
       }
     },
     {
-      "id": "intl-47897",
+      "id": "intl-47892",
       "date": "2024-10-15",
       "kickoff_utc": "2024-10-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7247,7 +7247,7 @@
       }
     },
     {
-      "id": "intl-47901",
+      "id": "intl-47896",
       "date": "2024-10-15",
       "kickoff_utc": "2024-10-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7266,7 +7266,7 @@
       }
     },
     {
-      "id": "intl-47902",
+      "id": "intl-47897",
       "date": "2024-10-15",
       "kickoff_utc": "2024-10-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7285,7 +7285,7 @@
       }
     },
     {
-      "id": "intl-47932",
+      "id": "intl-47927",
       "date": "2024-11-14",
       "kickoff_utc": "2024-11-14T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7304,7 +7304,7 @@
       }
     },
     {
-      "id": "intl-47936",
+      "id": "intl-47931",
       "date": "2024-11-14",
       "kickoff_utc": "2024-11-14T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7323,7 +7323,7 @@
       }
     },
     {
-      "id": "intl-47939",
+      "id": "intl-47934",
       "date": "2024-11-14",
       "kickoff_utc": "2024-11-14T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7342,7 +7342,7 @@
       }
     },
     {
-      "id": "intl-47942",
+      "id": "intl-47937",
       "date": "2024-11-14",
       "kickoff_utc": "2024-11-14T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7361,7 +7361,7 @@
       }
     },
     {
-      "id": "intl-47953",
+      "id": "intl-47948",
       "date": "2024-11-15",
       "kickoff_utc": "2024-11-15T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7380,7 +7380,7 @@
       }
     },
     {
-      "id": "intl-47970",
+      "id": "intl-47965",
       "date": "2024-11-15",
       "kickoff_utc": "2024-11-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7399,7 +7399,7 @@
       }
     },
     {
-      "id": "intl-47978",
+      "id": "intl-47973",
       "date": "2024-11-15",
       "kickoff_utc": "2024-11-15T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -7418,7 +7418,7 @@
       }
     },
     {
-      "id": "intl-47985",
+      "id": "intl-47980",
       "date": "2024-11-16",
       "kickoff_utc": "2024-11-16T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7437,7 +7437,7 @@
       }
     },
     {
-      "id": "intl-48016",
+      "id": "intl-48011",
       "date": "2024-11-18",
       "kickoff_utc": "2024-11-18T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7456,7 +7456,7 @@
       }
     },
     {
-      "id": "intl-48019",
+      "id": "intl-48014",
       "date": "2024-11-18",
       "kickoff_utc": "2024-11-18T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7475,7 +7475,7 @@
       }
     },
     {
-      "id": "intl-48045",
+      "id": "intl-48040",
       "date": "2024-11-19",
       "kickoff_utc": "2024-11-19T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7494,7 +7494,7 @@
       }
     },
     {
-      "id": "intl-48068",
+      "id": "intl-48063",
       "date": "2024-11-19",
       "kickoff_utc": "2024-11-19T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7513,7 +7513,7 @@
       }
     },
     {
-      "id": "intl-48071",
+      "id": "intl-48066",
       "date": "2024-11-19",
       "kickoff_utc": "2024-11-19T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7532,7 +7532,7 @@
       }
     },
     {
-      "id": "intl-48137",
+      "id": "intl-48132",
       "date": "2024-12-28",
       "kickoff_utc": "2024-12-28T12:00:00Z",
       "tournament": "Gulf Cup",
@@ -7551,7 +7551,7 @@
       }
     },
     {
-      "id": "intl-48155",
+      "id": "intl-48150",
       "date": "2025-01-22",
       "kickoff_utc": "2025-01-22T12:00:00Z",
       "tournament": "Friendly",
@@ -7570,7 +7570,7 @@
       }
     },
     {
-      "id": "intl-48172",
+      "id": "intl-48167",
       "date": "2025-03-20",
       "kickoff_utc": "2025-03-20T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -7589,7 +7589,7 @@
       }
     },
     {
-      "id": "intl-48173",
+      "id": "intl-48168",
       "date": "2025-03-20",
       "kickoff_utc": "2025-03-20T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -7608,7 +7608,7 @@
       }
     },
     {
-      "id": "intl-48174",
+      "id": "intl-48169",
       "date": "2025-03-20",
       "kickoff_utc": "2025-03-20T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7627,7 +7627,7 @@
       }
     },
     {
-      "id": "intl-48177",
+      "id": "intl-48172",
       "date": "2025-03-20",
       "kickoff_utc": "2025-03-20T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7646,7 +7646,7 @@
       }
     },
     {
-      "id": "intl-48190",
+      "id": "intl-48185",
       "date": "2025-03-20",
       "kickoff_utc": "2025-03-20T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7665,7 +7665,7 @@
       }
     },
     {
-      "id": "intl-48222",
+      "id": "intl-48217",
       "date": "2025-03-21",
       "kickoff_utc": "2025-03-21T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7684,7 +7684,7 @@
       }
     },
     {
-      "id": "intl-48252",
+      "id": "intl-48247",
       "date": "2025-03-23",
       "kickoff_utc": "2025-03-23T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -7703,7 +7703,7 @@
       }
     },
     {
-      "id": "intl-48253",
+      "id": "intl-48248",
       "date": "2025-03-23",
       "kickoff_utc": "2025-03-23T12:00:00Z",
       "tournament": "CONCACAF Nations League",
@@ -7722,7 +7722,7 @@
       }
     },
     {
-      "id": "intl-48254",
+      "id": "intl-48249",
       "date": "2025-03-23",
       "kickoff_utc": "2025-03-23T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7741,7 +7741,7 @@
       }
     },
     {
-      "id": "intl-48257",
+      "id": "intl-48252",
       "date": "2025-03-23",
       "kickoff_utc": "2025-03-23T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7760,7 +7760,7 @@
       }
     },
     {
-      "id": "intl-48310",
+      "id": "intl-48305",
       "date": "2025-03-25",
       "kickoff_utc": "2025-03-25T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7779,7 +7779,7 @@
       }
     },
     {
-      "id": "intl-48312",
+      "id": "intl-48307",
       "date": "2025-03-25",
       "kickoff_utc": "2025-03-25T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7798,7 +7798,7 @@
       }
     },
     {
-      "id": "intl-48314",
+      "id": "intl-48309",
       "date": "2025-03-25",
       "kickoff_utc": "2025-03-25T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7817,7 +7817,7 @@
       }
     },
     {
-      "id": "intl-48317",
+      "id": "intl-48312",
       "date": "2025-03-25",
       "kickoff_utc": "2025-03-25T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7836,7 +7836,7 @@
       }
     },
     {
-      "id": "intl-48321",
+      "id": "intl-48316",
       "date": "2025-03-25",
       "kickoff_utc": "2025-03-25T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7855,7 +7855,7 @@
       }
     },
     {
-      "id": "intl-48354",
+      "id": "intl-48349",
       "date": "2025-05-30",
       "kickoff_utc": "2025-05-30T12:00:00Z",
       "tournament": "Friendly",
@@ -7874,7 +7874,7 @@
       }
     },
     {
-      "id": "intl-48362",
+      "id": "intl-48357",
       "date": "2025-06-04",
       "kickoff_utc": "2025-06-04T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7893,7 +7893,7 @@
       }
     },
     {
-      "id": "intl-48371",
+      "id": "intl-48366",
       "date": "2025-06-05",
       "kickoff_utc": "2025-06-05T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -7912,7 +7912,7 @@
       }
     },
     {
-      "id": "intl-48379",
+      "id": "intl-48374",
       "date": "2025-06-05",
       "kickoff_utc": "2025-06-05T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7931,7 +7931,7 @@
       }
     },
     {
-      "id": "intl-48380",
+      "id": "intl-48375",
       "date": "2025-06-05",
       "kickoff_utc": "2025-06-05T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7950,7 +7950,7 @@
       }
     },
     {
-      "id": "intl-48384",
+      "id": "intl-48379",
       "date": "2025-06-05",
       "kickoff_utc": "2025-06-05T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7969,7 +7969,7 @@
       }
     },
     {
-      "id": "intl-48386",
+      "id": "intl-48381",
       "date": "2025-06-05",
       "kickoff_utc": "2025-06-05T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -7988,7 +7988,7 @@
       }
     },
     {
-      "id": "intl-48389",
+      "id": "intl-48384",
       "date": "2025-06-05",
       "kickoff_utc": "2025-06-05T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8007,7 +8007,7 @@
       }
     },
     {
-      "id": "intl-48399",
+      "id": "intl-48394",
       "date": "2025-06-06",
       "kickoff_utc": "2025-06-06T12:00:00Z",
       "tournament": "Friendly",
@@ -8026,7 +8026,7 @@
       }
     },
     {
-      "id": "intl-48425",
+      "id": "intl-48420",
       "date": "2025-06-07",
       "kickoff_utc": "2025-06-07T12:00:00Z",
       "tournament": "Friendly",
@@ -8045,7 +8045,7 @@
       }
     },
     {
-      "id": "intl-48426",
+      "id": "intl-48421",
       "date": "2025-06-07",
       "kickoff_utc": "2025-06-07T12:00:00Z",
       "tournament": "Friendly",
@@ -8064,7 +8064,7 @@
       }
     },
     {
-      "id": "intl-48434",
+      "id": "intl-48429",
       "date": "2025-06-07",
       "kickoff_utc": "2025-06-07T12:00:00Z",
       "tournament": "Canadian Shield",
@@ -8083,7 +8083,7 @@
       }
     },
     {
-      "id": "intl-48442",
+      "id": "intl-48437",
       "date": "2025-06-08",
       "kickoff_utc": "2025-06-08T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -8102,7 +8102,7 @@
       }
     },
     {
-      "id": "intl-48443",
+      "id": "intl-48438",
       "date": "2025-06-08",
       "kickoff_utc": "2025-06-08T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -8121,7 +8121,7 @@
       }
     },
     {
-      "id": "intl-48459",
+      "id": "intl-48454",
       "date": "2025-06-09",
       "kickoff_utc": "2025-06-09T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8140,7 +8140,7 @@
       }
     },
     {
-      "id": "intl-48476",
+      "id": "intl-48471",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "Friendly",
@@ -8159,7 +8159,7 @@
       }
     },
     {
-      "id": "intl-48480",
+      "id": "intl-48475",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "Friendly",
@@ -8178,7 +8178,7 @@
       }
     },
     {
-      "id": "intl-48485",
+      "id": "intl-48480",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "Friendly",
@@ -8197,7 +8197,7 @@
       }
     },
     {
-      "id": "intl-48486",
+      "id": "intl-48481",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "Friendly",
@@ -8216,7 +8216,7 @@
       }
     },
     {
-      "id": "intl-48490",
+      "id": "intl-48485",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8235,7 +8235,7 @@
       }
     },
     {
-      "id": "intl-48491",
+      "id": "intl-48486",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8254,7 +8254,7 @@
       }
     },
     {
-      "id": "intl-48492",
+      "id": "intl-48487",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8273,7 +8273,7 @@
       }
     },
     {
-      "id": "intl-48496",
+      "id": "intl-48491",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8292,7 +8292,7 @@
       }
     },
     {
-      "id": "intl-48500",
+      "id": "intl-48495",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8311,7 +8311,7 @@
       }
     },
     {
-      "id": "intl-48508",
+      "id": "intl-48503",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "Canadian Shield",
@@ -8330,7 +8330,7 @@
       }
     },
     {
-      "id": "intl-48515",
+      "id": "intl-48510",
       "date": "2025-06-10",
       "kickoff_utc": "2025-06-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8349,7 +8349,7 @@
       }
     },
     {
-      "id": "intl-48525",
+      "id": "intl-48520",
       "date": "2025-06-15",
       "kickoff_utc": "2025-06-15T12:00:00Z",
       "tournament": "Gold Cup",
@@ -8368,7 +8368,7 @@
       }
     },
     {
-      "id": "intl-48533",
+      "id": "intl-48528",
       "date": "2025-06-19",
       "kickoff_utc": "2025-06-19T12:00:00Z",
       "tournament": "Gold Cup",
@@ -8387,7 +8387,7 @@
       }
     },
     {
-      "id": "intl-48536",
+      "id": "intl-48531",
       "date": "2025-06-21",
       "kickoff_utc": "2025-06-21T12:00:00Z",
       "tournament": "Gold Cup",
@@ -8406,7 +8406,7 @@
       }
     },
     {
-      "id": "intl-48541",
+      "id": "intl-48536",
       "date": "2025-06-22",
       "kickoff_utc": "2025-06-22T12:00:00Z",
       "tournament": "Gold Cup",
@@ -8425,7 +8425,7 @@
       }
     },
     {
-      "id": "intl-48547",
+      "id": "intl-48542",
       "date": "2025-06-28",
       "kickoff_utc": "2025-06-28T12:00:00Z",
       "tournament": "Gold Cup",
@@ -8444,7 +8444,7 @@
       }
     },
     {
-      "id": "intl-48556",
+      "id": "intl-48551",
       "date": "2025-07-06",
       "kickoff_utc": "2025-07-06T12:00:00Z",
       "tournament": "Gold Cup",
@@ -8463,7 +8463,7 @@
       }
     },
     {
-      "id": "intl-48586",
+      "id": "intl-48581",
       "date": "2025-09-04",
       "kickoff_utc": "2025-09-04T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8482,7 +8482,7 @@
       }
     },
     {
-      "id": "intl-48611",
+      "id": "intl-48606",
       "date": "2025-09-05",
       "kickoff_utc": "2025-09-05T12:00:00Z",
       "tournament": "Soccer Ashes",
@@ -8501,7 +8501,7 @@
       }
     },
     {
-      "id": "intl-48643",
+      "id": "intl-48638",
       "date": "2025-09-06",
       "kickoff_utc": "2025-09-06T12:00:00Z",
       "tournament": "Friendly",
@@ -8520,7 +8520,7 @@
       }
     },
     {
-      "id": "intl-48645",
+      "id": "intl-48640",
       "date": "2025-09-06",
       "kickoff_utc": "2025-09-06T12:00:00Z",
       "tournament": "Friendly",
@@ -8539,7 +8539,7 @@
       }
     },
     {
-      "id": "intl-48657",
+      "id": "intl-48652",
       "date": "2025-09-07",
       "kickoff_utc": "2025-09-07T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8558,7 +8558,7 @@
       }
     },
     {
-      "id": "intl-48665",
+      "id": "intl-48660",
       "date": "2025-09-08",
       "kickoff_utc": "2025-09-08T12:00:00Z",
       "tournament": "Friendly",
@@ -8577,7 +8577,7 @@
       }
     },
     {
-      "id": "intl-48692",
+      "id": "intl-48687",
       "date": "2025-09-09",
       "kickoff_utc": "2025-09-09T12:00:00Z",
       "tournament": "Friendly",
@@ -8596,7 +8596,7 @@
       }
     },
     {
-      "id": "intl-48693",
+      "id": "intl-48688",
       "date": "2025-09-09",
       "kickoff_utc": "2025-09-09T12:00:00Z",
       "tournament": "Soccer Ashes",
@@ -8615,7 +8615,7 @@
       }
     },
     {
-      "id": "intl-48696",
+      "id": "intl-48691",
       "date": "2025-09-09",
       "kickoff_utc": "2025-09-09T12:00:00Z",
       "tournament": "Friendly",
@@ -8634,7 +8634,7 @@
       }
     },
     {
-      "id": "intl-48698",
+      "id": "intl-48693",
       "date": "2025-09-09",
       "kickoff_utc": "2025-09-09T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8653,7 +8653,7 @@
       }
     },
     {
-      "id": "intl-48706",
+      "id": "intl-48701",
       "date": "2025-09-09",
       "kickoff_utc": "2025-09-09T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8672,7 +8672,7 @@
       }
     },
     {
-      "id": "intl-48722",
+      "id": "intl-48717",
       "date": "2025-09-09",
       "kickoff_utc": "2025-09-09T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8691,7 +8691,7 @@
       }
     },
     {
-      "id": "intl-48766",
+      "id": "intl-48761",
       "date": "2025-10-09",
       "kickoff_utc": "2025-10-09T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8710,7 +8710,7 @@
       }
     },
     {
-      "id": "intl-48784",
+      "id": "intl-48779",
       "date": "2025-10-10",
       "kickoff_utc": "2025-10-10T12:00:00Z",
       "tournament": "Friendly",
@@ -8729,7 +8729,7 @@
       }
     },
     {
-      "id": "intl-48786",
+      "id": "intl-48781",
       "date": "2025-10-10",
       "kickoff_utc": "2025-10-10T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -8748,7 +8748,7 @@
       }
     },
     {
-      "id": "intl-48789",
+      "id": "intl-48784",
       "date": "2025-10-10",
       "kickoff_utc": "2025-10-10T12:00:00Z",
       "tournament": "Friendly",
@@ -8767,7 +8767,7 @@
       }
     },
     {
-      "id": "intl-48791",
+      "id": "intl-48786",
       "date": "2025-10-10",
       "kickoff_utc": "2025-10-10T12:00:00Z",
       "tournament": "Friendly",
@@ -8786,7 +8786,7 @@
       }
     },
     {
-      "id": "intl-48804",
+      "id": "intl-48799",
       "date": "2025-10-10",
       "kickoff_utc": "2025-10-10T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8805,7 +8805,7 @@
       }
     },
     {
-      "id": "intl-48814",
+      "id": "intl-48809",
       "date": "2025-10-11",
       "kickoff_utc": "2025-10-11T12:00:00Z",
       "tournament": "Friendly",
@@ -8824,7 +8824,7 @@
       }
     },
     {
-      "id": "intl-48842",
+      "id": "intl-48837",
       "date": "2025-10-13",
       "kickoff_utc": "2025-10-13T12:00:00Z",
       "tournament": "Friendly",
@@ -8843,7 +8843,7 @@
       }
     },
     {
-      "id": "intl-48862",
+      "id": "intl-48857",
       "date": "2025-10-14",
       "kickoff_utc": "2025-10-14T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -8862,7 +8862,7 @@
       }
     },
     {
-      "id": "intl-48864",
+      "id": "intl-48859",
       "date": "2025-10-14",
       "kickoff_utc": "2025-10-14T12:00:00Z",
       "tournament": "Friendly",
@@ -8881,7 +8881,7 @@
       }
     },
     {
-      "id": "intl-48865",
+      "id": "intl-48860",
       "date": "2025-10-14",
       "kickoff_utc": "2025-10-14T12:00:00Z",
       "tournament": "Friendly",
@@ -8900,7 +8900,7 @@
       }
     },
     {
-      "id": "intl-48866",
+      "id": "intl-48861",
       "date": "2025-10-14",
       "kickoff_utc": "2025-10-14T12:00:00Z",
       "tournament": "Friendly",
@@ -8919,7 +8919,7 @@
       }
     },
     {
-      "id": "intl-48867",
+      "id": "intl-48862",
       "date": "2025-10-14",
       "kickoff_utc": "2025-10-14T12:00:00Z",
       "tournament": "Friendly",
@@ -8938,7 +8938,7 @@
       }
     },
     {
-      "id": "intl-48870",
+      "id": "intl-48865",
       "date": "2025-10-14",
       "kickoff_utc": "2025-10-14T12:00:00Z",
       "tournament": "Friendly",
@@ -8957,7 +8957,7 @@
       }
     },
     {
-      "id": "intl-48872",
+      "id": "intl-48867",
       "date": "2025-10-14",
       "kickoff_utc": "2025-10-14T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -8976,7 +8976,7 @@
       }
     },
     {
-      "id": "intl-48920",
+      "id": "intl-48915",
       "date": "2025-11-13",
       "kickoff_utc": "2025-11-13T12:00:00Z",
       "tournament": "Friendly",
@@ -8995,7 +8995,7 @@
       }
     },
     {
-      "id": "intl-48937",
+      "id": "intl-48932",
       "date": "2025-11-13",
       "kickoff_utc": "2025-11-13T12:00:00Z",
       "tournament": "Al Ain International Cup",
@@ -9014,7 +9014,7 @@
       }
     },
     {
-      "id": "intl-48953",
+      "id": "intl-48948",
       "date": "2025-11-14",
       "kickoff_utc": "2025-11-14T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -9033,7 +9033,7 @@
       }
     },
     {
-      "id": "intl-48954",
+      "id": "intl-48949",
       "date": "2025-11-14",
       "kickoff_utc": "2025-11-14T12:00:00Z",
       "tournament": "Friendly",
@@ -9052,7 +9052,7 @@
       }
     },
     {
-      "id": "intl-48955",
+      "id": "intl-48950",
       "date": "2025-11-14",
       "kickoff_utc": "2025-11-14T12:00:00Z",
       "tournament": "Friendly",
@@ -9071,7 +9071,7 @@
       }
     },
     {
-      "id": "intl-48962",
+      "id": "intl-48957",
       "date": "2025-11-14",
       "kickoff_utc": "2025-11-14T12:00:00Z",
       "tournament": "Al Ain International Cup",
@@ -9090,7 +9090,7 @@
       }
     },
     {
-      "id": "intl-48968",
+      "id": "intl-48963",
       "date": "2025-11-15",
       "kickoff_utc": "2025-11-15T12:00:00Z",
       "tournament": "Friendly",
@@ -9109,7 +9109,7 @@
       }
     },
     {
-      "id": "intl-48969",
+      "id": "intl-48964",
       "date": "2025-11-15",
       "kickoff_utc": "2025-11-15T12:00:00Z",
       "tournament": "Friendly",
@@ -9128,7 +9128,7 @@
       }
     },
     {
-      "id": "intl-48970",
+      "id": "intl-48965",
       "date": "2025-11-15",
       "kickoff_utc": "2025-11-15T12:00:00Z",
       "tournament": "Friendly",
@@ -9147,7 +9147,7 @@
       }
     },
     {
-      "id": "intl-48972",
+      "id": "intl-48967",
       "date": "2025-11-15",
       "kickoff_utc": "2025-11-15T12:00:00Z",
       "tournament": "Friendly",
@@ -9166,7 +9166,7 @@
       }
     },
     {
-      "id": "intl-48974",
+      "id": "intl-48969",
       "date": "2025-11-15",
       "kickoff_utc": "2025-11-15T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -9185,7 +9185,7 @@
       }
     },
     {
-      "id": "intl-49013",
+      "id": "intl-49008",
       "date": "2025-11-17",
       "kickoff_utc": "2025-11-17T12:00:00Z",
       "tournament": "Al Ain International Cup",
@@ -9204,7 +9204,7 @@
       }
     },
     {
-      "id": "intl-49018",
+      "id": "intl-49013",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -9223,7 +9223,7 @@
       }
     },
     {
-      "id": "intl-49036",
+      "id": "intl-49031",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -9242,7 +9242,7 @@
       }
     },
     {
-      "id": "intl-49039",
+      "id": "intl-49034",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -9261,7 +9261,7 @@
       }
     },
     {
-      "id": "intl-49041",
+      "id": "intl-49036",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -9280,7 +9280,7 @@
       }
     },
     {
-      "id": "intl-49043",
+      "id": "intl-49038",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -9299,7 +9299,7 @@
       }
     },
     {
-      "id": "intl-49044",
+      "id": "intl-49039",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -9318,7 +9318,7 @@
       }
     },
     {
-      "id": "intl-49045",
+      "id": "intl-49040",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "Friendly",
@@ -9337,7 +9337,7 @@
       }
     },
     {
-      "id": "intl-49051",
+      "id": "intl-49046",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -9356,7 +9356,7 @@
       }
     },
     {
-      "id": "intl-49053",
+      "id": "intl-49048",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "FIFA World Cup qualification",
@@ -9375,7 +9375,7 @@
       }
     },
     {
-      "id": "intl-49060",
+      "id": "intl-49055",
       "date": "2025-11-18",
       "kickoff_utc": "2025-11-18T12:00:00Z",
       "tournament": "Al Ain International Cup",
@@ -9394,7 +9394,7 @@
       }
     },
     {
-      "id": "intl-49094",
+      "id": "intl-49089",
       "date": "2025-12-07",
       "kickoff_utc": "2025-12-07T12:00:00Z",
       "tournament": "Arab Cup",
@@ -9413,7 +9413,7 @@
       }
     },
     {
-      "id": "intl-49096",
+      "id": "intl-49091",
       "date": "2025-12-08",
       "kickoff_utc": "2025-12-08T12:00:00Z",
       "tournament": "Arab Cup",
@@ -9432,7 +9432,7 @@
       }
     },
     {
-      "id": "intl-49098",
+      "id": "intl-49093",
       "date": "2025-12-09",
       "kickoff_utc": "2025-12-09T12:00:00Z",
       "tournament": "Arab Cup",
@@ -9451,7 +9451,7 @@
       }
     },
     {
-      "id": "intl-49100",
+      "id": "intl-49095",
       "date": "2025-12-09",
       "kickoff_utc": "2025-12-09T12:00:00Z",
       "tournament": "Arab Cup",
@@ -9470,7 +9470,7 @@
       }
     },
     {
-      "id": "intl-49104",
+      "id": "intl-49099",
       "date": "2025-12-12",
       "kickoff_utc": "2025-12-12T12:00:00Z",
       "tournament": "Arab Cup",
@@ -9489,7 +9489,7 @@
       }
     },
     {
-      "id": "intl-49107",
+      "id": "intl-49102",
       "date": "2025-12-15",
       "kickoff_utc": "2025-12-15T12:00:00Z",
       "tournament": "Arab Cup",
@@ -9508,7 +9508,7 @@
       }
     },
     {
-      "id": "intl-49108",
+      "id": "intl-49103",
       "date": "2025-12-18",
       "kickoff_utc": "2025-12-18T12:00:00Z",
       "tournament": "Arab Cup",
@@ -9527,7 +9527,7 @@
       }
     },
     {
-      "id": "intl-49124",
+      "id": "intl-49119",
       "date": "2025-12-26",
       "kickoff_utc": "2025-12-26T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -9546,7 +9546,7 @@
       }
     },
     {
-      "id": "intl-49128",
+      "id": "intl-49123",
       "date": "2025-12-27",
       "kickoff_utc": "2025-12-27T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -9565,7 +9565,7 @@
       }
     },
     {
-      "id": "intl-49151",
+      "id": "intl-49146",
       "date": "2026-01-06",
       "kickoff_utc": "2026-01-06T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -9584,7 +9584,7 @@
       }
     },
     {
-      "id": "intl-49156",
+      "id": "intl-49151",
       "date": "2026-01-10",
       "kickoff_utc": "2026-01-10T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -9603,7 +9603,7 @@
       }
     },
     {
-      "id": "intl-49157",
+      "id": "intl-49152",
       "date": "2026-01-14",
       "kickoff_utc": "2026-01-14T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -9622,7 +9622,7 @@
       }
     },
     {
-      "id": "intl-49160",
+      "id": "intl-49155",
       "date": "2026-01-18",
       "kickoff_utc": "2026-01-18T12:00:00Z",
       "tournament": "African Cup of Nations",
@@ -9641,7 +9641,7 @@
       }
     },
     {
-      "id": "intl-49163",
+      "id": "intl-49158",
       "date": "2026-01-22",
       "kickoff_utc": "2026-01-22T12:00:00Z",
       "tournament": "Friendly",
@@ -9660,7 +9660,7 @@
       }
     },
     {
-      "id": "intl-49174",
+      "id": "intl-49169",
       "date": "2026-03-26",
       "kickoff_utc": "2026-03-26T12:00:00Z",
       "tournament": "Friendly",
@@ -9679,7 +9679,7 @@
       }
     },
     {
-      "id": "intl-49175",
+      "id": "intl-49170",
       "date": "2026-03-26",
       "kickoff_utc": "2026-03-26T12:00:00Z",
       "tournament": "Friendly",
@@ -9698,7 +9698,7 @@
       }
     },
     {
-      "id": "intl-49202",
+      "id": "intl-49197",
       "date": "2026-03-27",
       "kickoff_utc": "2026-03-27T12:00:00Z",
       "tournament": "Friendly",
@@ -9717,7 +9717,7 @@
       }
     },
     {
-      "id": "intl-49203",
+      "id": "intl-49198",
       "date": "2026-03-27",
       "kickoff_utc": "2026-03-27T12:00:00Z",
       "tournament": "Friendly",
@@ -9736,7 +9736,7 @@
       }
     },
     {
-      "id": "intl-49209",
+      "id": "intl-49204",
       "date": "2026-03-27",
       "kickoff_utc": "2026-03-27T12:00:00Z",
       "tournament": "Friendly",
@@ -9755,7 +9755,7 @@
       }
     },
     {
-      "id": "intl-49210",
+      "id": "intl-49205",
       "date": "2026-03-27",
       "kickoff_utc": "2026-03-27T12:00:00Z",
       "tournament": "Friendly",
@@ -9774,7 +9774,7 @@
       }
     },
     {
-      "id": "intl-49211",
+      "id": "intl-49206",
       "date": "2026-03-27",
       "kickoff_utc": "2026-03-27T12:00:00Z",
       "tournament": "Friendly",
@@ -9793,7 +9793,7 @@
       }
     },
     {
-      "id": "intl-49212",
+      "id": "intl-49207",
       "date": "2026-03-27",
       "kickoff_utc": "2026-03-27T12:00:00Z",
       "tournament": "Friendly",
@@ -9812,7 +9812,7 @@
       }
     },
     {
-      "id": "intl-49215",
+      "id": "intl-49210",
       "date": "2026-03-27",
       "kickoff_utc": "2026-03-27T12:00:00Z",
       "tournament": "Friendly",
@@ -9831,7 +9831,7 @@
       }
     },
     {
-      "id": "intl-49236",
+      "id": "intl-49231",
       "date": "2026-03-28",
       "kickoff_utc": "2026-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -9850,7 +9850,7 @@
       }
     },
     {
-      "id": "intl-49238",
+      "id": "intl-49233",
       "date": "2026-03-28",
       "kickoff_utc": "2026-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -9869,7 +9869,7 @@
       }
     },
     {
-      "id": "intl-49239",
+      "id": "intl-49234",
       "date": "2026-03-28",
       "kickoff_utc": "2026-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -9888,7 +9888,7 @@
       }
     },
     {
-      "id": "intl-49241",
+      "id": "intl-49236",
       "date": "2026-03-28",
       "kickoff_utc": "2026-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -9907,7 +9907,7 @@
       }
     },
     {
-      "id": "intl-49243",
+      "id": "intl-49238",
       "date": "2026-03-28",
       "kickoff_utc": "2026-03-28T12:00:00Z",
       "tournament": "Friendly",
@@ -9926,7 +9926,7 @@
       }
     },
     {
-      "id": "intl-49250",
+      "id": "intl-49245",
       "date": "2026-03-29",
       "kickoff_utc": "2026-03-29T12:00:00Z",
       "tournament": "Friendly",
@@ -9945,7 +9945,7 @@
       }
     },
     {
-      "id": "intl-49263",
+      "id": "intl-49258",
       "date": "2026-03-30",
       "kickoff_utc": "2026-03-30T12:00:00Z",
       "tournament": "Friendly",
@@ -9964,7 +9964,7 @@
       }
     },
     {
-      "id": "intl-49275",
+      "id": "intl-49270",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -9983,7 +9983,7 @@
       }
     },
     {
-      "id": "intl-49277",
+      "id": "intl-49272",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10002,7 +10002,7 @@
       }
     },
     {
-      "id": "intl-49279",
+      "id": "intl-49274",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10021,7 +10021,7 @@
       }
     },
     {
-      "id": "intl-49281",
+      "id": "intl-49276",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10040,7 +10040,7 @@
       }
     },
     {
-      "id": "intl-49283",
+      "id": "intl-49278",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10059,7 +10059,7 @@
       }
     },
     {
-      "id": "intl-49287",
+      "id": "intl-49282",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10078,7 +10078,7 @@
       }
     },
     {
-      "id": "intl-49291",
+      "id": "intl-49286",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10097,7 +10097,7 @@
       }
     },
     {
-      "id": "intl-49293",
+      "id": "intl-49288",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10116,7 +10116,7 @@
       }
     },
     {
-      "id": "intl-49294",
+      "id": "intl-49289",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10135,7 +10135,7 @@
       }
     },
     {
-      "id": "intl-49296",
+      "id": "intl-49291",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10154,7 +10154,7 @@
       }
     },
     {
-      "id": "intl-49304",
+      "id": "intl-49299",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10173,7 +10173,7 @@
       }
     },
     {
-      "id": "intl-49305",
+      "id": "intl-49300",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10192,7 +10192,7 @@
       }
     },
     {
-      "id": "intl-49307",
+      "id": "intl-49302",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10211,7 +10211,7 @@
       }
     },
     {
-      "id": "intl-49316",
+      "id": "intl-49311",
       "date": "2026-03-31",
       "kickoff_utc": "2026-03-31T12:00:00Z",
       "tournament": "FIFA Series",
@@ -10230,7 +10230,7 @@
       }
     },
     {
-      "id": "intl-49323",
+      "id": "intl-49318",
       "date": "2026-05-22",
       "kickoff_utc": "2026-05-22T12:00:00Z",
       "tournament": "Friendly",
@@ -10249,7 +10249,7 @@
       }
     },
     {
-      "id": "intl-49333",
+      "id": "intl-49328",
       "date": "2026-05-30",
       "kickoff_utc": "2026-05-30T12:00:00Z",
       "tournament": "Friendly",
@@ -10268,7 +10268,7 @@
       }
     },
     {
-      "id": "intl-49335",
+      "id": "intl-49330",
       "date": "2026-05-30",
       "kickoff_utc": "2026-05-30T12:00:00Z",
       "tournament": "Friendly",
@@ -10287,7 +10287,7 @@
       }
     },
     {
-      "id": "intl-49336",
+      "id": "intl-49331",
       "date": "2026-05-30",
       "kickoff_utc": "2026-05-30T12:00:00Z",
       "tournament": "Friendly",
@@ -10306,7 +10306,7 @@
       }
     },
     {
-      "id": "intl-49339",
+      "id": "intl-49334",
       "date": "2026-05-31",
       "kickoff_utc": "2026-05-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10325,7 +10325,7 @@
       }
     },
     {
-      "id": "intl-49345",
+      "id": "intl-49340",
       "date": "2026-05-31",
       "kickoff_utc": "2026-05-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10344,7 +10344,7 @@
       }
     },
     {
-      "id": "intl-49346",
+      "id": "intl-49341",
       "date": "2026-05-31",
       "kickoff_utc": "2026-05-31T12:00:00Z",
       "tournament": "Friendly",
@@ -10363,7 +10363,7 @@
       }
     },
     {
-      "id": "intl-49348",
+      "id": "intl-49343",
       "date": "2026-06-01",
       "kickoff_utc": "2026-06-01T12:00:00Z",
       "tournament": "Friendly",
@@ -10382,7 +10382,7 @@
       }
     },
     {
-      "id": "intl-49350",
+      "id": "intl-49345",
       "date": "2026-06-01",
       "kickoff_utc": "2026-06-01T12:00:00Z",
       "tournament": "Friendly",
@@ -10401,7 +10401,7 @@
       }
     },
     {
-      "id": "intl-49352",
+      "id": "intl-49347",
       "date": "2026-06-01",
       "kickoff_utc": "2026-06-01T12:00:00Z",
       "tournament": "Friendly",
@@ -10420,7 +10420,7 @@
       }
     },
     {
-      "id": "intl-49356",
+      "id": "intl-49351",
       "date": "2026-06-02",
       "kickoff_utc": "2026-06-02T12:00:00Z",
       "tournament": "Friendly",
@@ -10439,7 +10439,7 @@
       }
     },
     {
-      "id": "intl-49358",
+      "id": "intl-49353",
       "date": "2026-06-02",
       "kickoff_utc": "2026-06-02T12:00:00Z",
       "tournament": "Friendly",
@@ -10458,7 +10458,7 @@
       }
     },
     {
-      "id": "intl-49370",
+      "id": "intl-49365",
       "date": "2026-06-03",
       "kickoff_utc": "2026-06-03T12:00:00Z",
       "tournament": "Friendly",
@@ -10477,7 +10477,7 @@
       }
     },
     {
-      "id": "intl-49379",
+      "id": "intl-49374",
       "date": "2026-06-04",
       "kickoff_utc": "2026-06-04T12:00:00Z",
       "tournament": "Friendly",
@@ -10496,7 +10496,7 @@
       }
     },
     {
-      "id": "intl-49386",
+      "id": "intl-49381",
       "date": "2026-06-04",
       "kickoff_utc": "2026-06-04T12:00:00Z",
       "tournament": "Friendly",
@@ -10515,7 +10515,7 @@
       }
     },
     {
-      "id": "intl-49415",
+      "id": "intl-49410",
       "date": "2026-06-06",
       "kickoff_utc": "2026-06-06T12:00:00Z",
       "tournament": "Friendly",
@@ -10534,7 +10534,7 @@
       }
     },
     {
-      "id": "intl-49416",
+      "id": "intl-49411",
       "date": "2026-06-06",
       "kickoff_utc": "2026-06-06T12:00:00Z",
       "tournament": "Friendly",
@@ -10553,7 +10553,7 @@
       }
     },
     {
-      "id": "intl-49419",
+      "id": "intl-49414",
       "date": "2026-06-06",
       "kickoff_utc": "2026-06-06T12:00:00Z",
       "tournament": "Friendly",
@@ -10572,7 +10572,7 @@
       }
     },
     {
-      "id": "intl-49421",
+      "id": "intl-49416",
       "date": "2026-06-06",
       "kickoff_utc": "2026-06-06T12:00:00Z",
       "tournament": "Friendly",
@@ -10591,7 +10591,7 @@
       }
     },
     {
-      "id": "intl-49426",
+      "id": "intl-49421",
       "date": "2026-06-06",
       "kickoff_utc": "2026-06-06T12:00:00Z",
       "tournament": "Friendly",
@@ -10610,7 +10610,7 @@
       }
     },
     {
-      "id": "intl-49430",
+      "id": "intl-49425",
       "date": "2026-06-06",
       "kickoff_utc": "2026-06-06T12:00:00Z",
       "tournament": "Friendly",
@@ -10629,7 +10629,7 @@
       }
     },
     {
-      "id": "intl-49441",
+      "id": "intl-49436",
       "date": "2026-06-07",
       "kickoff_utc": "2026-06-07T12:00:00Z",
       "tournament": "Friendly",
@@ -10648,7 +10648,7 @@
       }
     },
     {
-      "id": "intl-49444",
+      "id": "intl-49439",
       "date": "2026-06-07",
       "kickoff_utc": "2026-06-07T12:00:00Z",
       "tournament": "Friendly",
@@ -10667,7 +10667,7 @@
       }
     },
     {
-      "id": "intl-49447",
+      "id": "intl-49442",
       "date": "2026-06-08",
       "kickoff_utc": "2026-06-08T12:00:00Z",
       "tournament": "Friendly",
@@ -10686,7 +10686,7 @@
       }
     },
     {
-      "id": "intl-49463",
+      "id": "intl-49458",
       "date": "2026-06-09",
       "kickoff_utc": "2026-06-09T12:00:00Z",
       "tournament": "Friendly",
@@ -10705,7 +10705,7 @@
       }
     },
     {
-      "id": "intl-49476",
+      "id": "intl-49471",
       "date": "2026-06-11",
       "kickoff_utc": "2026-06-11T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10724,7 +10724,7 @@
       }
     },
     {
-      "id": "intl-49477",
+      "id": "intl-49472",
       "date": "2026-06-11",
       "kickoff_utc": "2026-06-11T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10743,7 +10743,7 @@
       }
     },
     {
-      "id": "intl-49478",
+      "id": "intl-49473",
       "date": "2026-06-12",
       "kickoff_utc": "2026-06-12T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10762,7 +10762,7 @@
       }
     },
     {
-      "id": "intl-49479",
+      "id": "intl-49474",
       "date": "2026-06-12",
       "kickoff_utc": "2026-06-12T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10781,7 +10781,7 @@
       }
     },
     {
-      "id": "intl-49480",
+      "id": "intl-49475",
       "date": "2026-06-13",
       "kickoff_utc": "2026-06-13T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10800,7 +10800,7 @@
       }
     },
     {
-      "id": "intl-49481",
+      "id": "intl-49476",
       "date": "2026-06-13",
       "kickoff_utc": "2026-06-13T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10819,7 +10819,7 @@
       }
     },
     {
-      "id": "intl-49482",
+      "id": "intl-49477",
       "date": "2026-06-13",
       "kickoff_utc": "2026-06-13T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10838,7 +10838,7 @@
       }
     },
     {
-      "id": "intl-49483",
+      "id": "intl-49478",
       "date": "2026-06-13",
       "kickoff_utc": "2026-06-13T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10857,7 +10857,7 @@
       }
     },
     {
-      "id": "intl-49484",
+      "id": "intl-49479",
       "date": "2026-06-14",
       "kickoff_utc": "2026-06-14T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10876,7 +10876,7 @@
       }
     },
     {
-      "id": "intl-49485",
+      "id": "intl-49480",
       "date": "2026-06-14",
       "kickoff_utc": "2026-06-14T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10895,7 +10895,7 @@
       }
     },
     {
-      "id": "intl-49486",
+      "id": "intl-49481",
       "date": "2026-06-14",
       "kickoff_utc": "2026-06-14T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10914,7 +10914,7 @@
       }
     },
     {
-      "id": "intl-49487",
+      "id": "intl-49482",
       "date": "2026-06-14",
       "kickoff_utc": "2026-06-14T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10933,7 +10933,7 @@
       }
     },
     {
-      "id": "intl-49488",
+      "id": "intl-49483",
       "date": "2026-06-15",
       "kickoff_utc": "2026-06-15T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10952,7 +10952,7 @@
       }
     },
     {
-      "id": "intl-49489",
+      "id": "intl-49484",
       "date": "2026-06-15",
       "kickoff_utc": "2026-06-15T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10971,7 +10971,7 @@
       }
     },
     {
-      "id": "intl-49490",
+      "id": "intl-49485",
       "date": "2026-06-15",
       "kickoff_utc": "2026-06-15T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -10990,7 +10990,7 @@
       }
     },
     {
-      "id": "intl-49491",
+      "id": "intl-49486",
       "date": "2026-06-15",
       "kickoff_utc": "2026-06-15T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11009,7 +11009,7 @@
       }
     },
     {
-      "id": "intl-49492",
+      "id": "intl-49487",
       "date": "2026-06-16",
       "kickoff_utc": "2026-06-16T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11028,7 +11028,7 @@
       }
     },
     {
-      "id": "intl-49493",
+      "id": "intl-49488",
       "date": "2026-06-16",
       "kickoff_utc": "2026-06-16T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11047,7 +11047,7 @@
       }
     },
     {
-      "id": "intl-49494",
+      "id": "intl-49489",
       "date": "2026-06-16",
       "kickoff_utc": "2026-06-16T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11066,7 +11066,7 @@
       }
     },
     {
-      "id": "intl-49495",
+      "id": "intl-49490",
       "date": "2026-06-16",
       "kickoff_utc": "2026-06-16T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11085,7 +11085,7 @@
       }
     },
     {
-      "id": "intl-49496",
+      "id": "intl-49491",
       "date": "2026-06-17",
       "kickoff_utc": "2026-06-17T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11104,7 +11104,7 @@
       }
     },
     {
-      "id": "intl-49497",
+      "id": "intl-49492",
       "date": "2026-06-17",
       "kickoff_utc": "2026-06-17T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11123,7 +11123,7 @@
       }
     },
     {
-      "id": "intl-49498",
+      "id": "intl-49493",
       "date": "2026-06-17",
       "kickoff_utc": "2026-06-17T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11142,7 +11142,7 @@
       }
     },
     {
-      "id": "intl-49499",
+      "id": "intl-49494",
       "date": "2026-06-17",
       "kickoff_utc": "2026-06-17T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11161,7 +11161,7 @@
       }
     },
     {
-      "id": "intl-49500",
+      "id": "intl-49495",
       "date": "2026-06-18",
       "kickoff_utc": "2026-06-18T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11180,7 +11180,7 @@
       }
     },
     {
-      "id": "intl-49501",
+      "id": "intl-49496",
       "date": "2026-06-18",
       "kickoff_utc": "2026-06-18T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11199,7 +11199,7 @@
       }
     },
     {
-      "id": "intl-49502",
+      "id": "intl-49497",
       "date": "2026-06-18",
       "kickoff_utc": "2026-06-18T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11218,7 +11218,7 @@
       }
     },
     {
-      "id": "intl-49503",
+      "id": "intl-49498",
       "date": "2026-06-18",
       "kickoff_utc": "2026-06-18T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11237,7 +11237,7 @@
       }
     },
     {
-      "id": "intl-49504",
+      "id": "intl-49499",
       "date": "2026-06-19",
       "kickoff_utc": "2026-06-19T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11256,7 +11256,7 @@
       }
     },
     {
-      "id": "intl-49505",
+      "id": "intl-49500",
       "date": "2026-06-19",
       "kickoff_utc": "2026-06-19T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11275,7 +11275,7 @@
       }
     },
     {
-      "id": "intl-49506",
+      "id": "intl-49501",
       "date": "2026-06-19",
       "kickoff_utc": "2026-06-19T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11294,7 +11294,7 @@
       }
     },
     {
-      "id": "intl-49507",
+      "id": "intl-49502",
       "date": "2026-06-19",
       "kickoff_utc": "2026-06-19T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11313,7 +11313,7 @@
       }
     },
     {
-      "id": "intl-49508",
+      "id": "intl-49503",
       "date": "2026-06-20",
       "kickoff_utc": "2026-06-20T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11332,7 +11332,7 @@
       }
     },
     {
-      "id": "intl-49509",
+      "id": "intl-49504",
       "date": "2026-06-20",
       "kickoff_utc": "2026-06-20T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11351,7 +11351,7 @@
       }
     },
     {
-      "id": "intl-49510",
+      "id": "intl-49505",
       "date": "2026-06-20",
       "kickoff_utc": "2026-06-20T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11370,7 +11370,7 @@
       }
     },
     {
-      "id": "intl-49511",
+      "id": "intl-49506",
       "date": "2026-06-20",
       "kickoff_utc": "2026-06-20T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11389,7 +11389,7 @@
       }
     },
     {
-      "id": "intl-49512",
+      "id": "intl-49507",
       "date": "2026-06-21",
       "kickoff_utc": "2026-06-21T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11408,7 +11408,7 @@
       }
     },
     {
-      "id": "intl-49513",
+      "id": "intl-49508",
       "date": "2026-06-21",
       "kickoff_utc": "2026-06-21T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11427,7 +11427,7 @@
       }
     },
     {
-      "id": "intl-49514",
+      "id": "intl-49509",
       "date": "2026-06-21",
       "kickoff_utc": "2026-06-21T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11446,7 +11446,7 @@
       }
     },
     {
-      "id": "intl-49515",
+      "id": "intl-49510",
       "date": "2026-06-21",
       "kickoff_utc": "2026-06-21T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11465,7 +11465,7 @@
       }
     },
     {
-      "id": "intl-49516",
+      "id": "intl-49511",
       "date": "2026-06-22",
       "kickoff_utc": "2026-06-22T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11484,7 +11484,7 @@
       }
     },
     {
-      "id": "intl-49517",
+      "id": "intl-49512",
       "date": "2026-06-22",
       "kickoff_utc": "2026-06-22T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11503,7 +11503,7 @@
       }
     },
     {
-      "id": "intl-49518",
+      "id": "intl-49513",
       "date": "2026-06-22",
       "kickoff_utc": "2026-06-22T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11522,7 +11522,7 @@
       }
     },
     {
-      "id": "intl-49519",
+      "id": "intl-49514",
       "date": "2026-06-22",
       "kickoff_utc": "2026-06-22T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11541,7 +11541,7 @@
       }
     },
     {
-      "id": "intl-49520",
+      "id": "intl-49515",
       "date": "2026-06-23",
       "kickoff_utc": "2026-06-23T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11560,7 +11560,7 @@
       }
     },
     {
-      "id": "intl-49521",
+      "id": "intl-49516",
       "date": "2026-06-23",
       "kickoff_utc": "2026-06-23T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11579,7 +11579,7 @@
       }
     },
     {
-      "id": "intl-49522",
+      "id": "intl-49517",
       "date": "2026-06-23",
       "kickoff_utc": "2026-06-23T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11598,7 +11598,7 @@
       }
     },
     {
-      "id": "intl-49523",
+      "id": "intl-49518",
       "date": "2026-06-23",
       "kickoff_utc": "2026-06-23T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11617,7 +11617,7 @@
       }
     },
     {
-      "id": "intl-49524",
+      "id": "intl-49519",
       "date": "2026-06-24",
       "kickoff_utc": "2026-06-24T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11636,7 +11636,7 @@
       }
     },
     {
-      "id": "intl-49525",
+      "id": "intl-49520",
       "date": "2026-06-24",
       "kickoff_utc": "2026-06-24T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11655,7 +11655,7 @@
       }
     },
     {
-      "id": "intl-49526",
+      "id": "intl-49521",
       "date": "2026-06-24",
       "kickoff_utc": "2026-06-24T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11674,7 +11674,7 @@
       }
     },
     {
-      "id": "intl-49527",
+      "id": "intl-49522",
       "date": "2026-06-24",
       "kickoff_utc": "2026-06-24T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11693,7 +11693,7 @@
       }
     },
     {
-      "id": "intl-49528",
+      "id": "intl-49523",
       "date": "2026-06-24",
       "kickoff_utc": "2026-06-24T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11712,7 +11712,7 @@
       }
     },
     {
-      "id": "intl-49529",
+      "id": "intl-49524",
       "date": "2026-06-24",
       "kickoff_utc": "2026-06-24T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11731,7 +11731,7 @@
       }
     },
     {
-      "id": "intl-49530",
+      "id": "intl-49525",
       "date": "2026-06-25",
       "kickoff_utc": "2026-06-25T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11750,7 +11750,7 @@
       }
     },
     {
-      "id": "intl-49531",
+      "id": "intl-49526",
       "date": "2026-06-25",
       "kickoff_utc": "2026-06-25T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11769,7 +11769,7 @@
       }
     },
     {
-      "id": "intl-49532",
+      "id": "intl-49527",
       "date": "2026-06-25",
       "kickoff_utc": "2026-06-25T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11788,7 +11788,7 @@
       }
     },
     {
-      "id": "intl-49533",
+      "id": "intl-49528",
       "date": "2026-06-25",
       "kickoff_utc": "2026-06-25T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11807,7 +11807,7 @@
       }
     },
     {
-      "id": "intl-49534",
+      "id": "intl-49529",
       "date": "2026-06-25",
       "kickoff_utc": "2026-06-25T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11826,7 +11826,7 @@
       }
     },
     {
-      "id": "intl-49535",
+      "id": "intl-49530",
       "date": "2026-06-25",
       "kickoff_utc": "2026-06-25T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11845,7 +11845,7 @@
       }
     },
     {
-      "id": "intl-49536",
+      "id": "intl-49531",
       "date": "2026-06-26",
       "kickoff_utc": "2026-06-26T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11864,7 +11864,7 @@
       }
     },
     {
-      "id": "intl-49537",
+      "id": "intl-49532",
       "date": "2026-06-26",
       "kickoff_utc": "2026-06-26T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11883,7 +11883,7 @@
       }
     },
     {
-      "id": "intl-49538",
+      "id": "intl-49533",
       "date": "2026-06-26",
       "kickoff_utc": "2026-06-26T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11902,7 +11902,7 @@
       }
     },
     {
-      "id": "intl-49539",
+      "id": "intl-49534",
       "date": "2026-06-26",
       "kickoff_utc": "2026-06-26T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11921,7 +11921,7 @@
       }
     },
     {
-      "id": "intl-49540",
+      "id": "intl-49535",
       "date": "2026-06-26",
       "kickoff_utc": "2026-06-26T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11940,7 +11940,7 @@
       }
     },
     {
-      "id": "intl-49541",
+      "id": "intl-49536",
       "date": "2026-06-26",
       "kickoff_utc": "2026-06-26T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11959,7 +11959,7 @@
       }
     },
     {
-      "id": "intl-49542",
+      "id": "intl-49537",
       "date": "2026-06-27",
       "kickoff_utc": "2026-06-27T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11978,7 +11978,7 @@
       }
     },
     {
-      "id": "intl-49543",
+      "id": "intl-49538",
       "date": "2026-06-27",
       "kickoff_utc": "2026-06-27T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -11997,7 +11997,7 @@
       }
     },
     {
-      "id": "intl-49544",
+      "id": "intl-49539",
       "date": "2026-06-27",
       "kickoff_utc": "2026-06-27T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12016,7 +12016,7 @@
       }
     },
     {
-      "id": "intl-49545",
+      "id": "intl-49540",
       "date": "2026-06-27",
       "kickoff_utc": "2026-06-27T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12035,7 +12035,7 @@
       }
     },
     {
-      "id": "intl-49546",
+      "id": "intl-49541",
       "date": "2026-06-27",
       "kickoff_utc": "2026-06-27T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12054,7 +12054,7 @@
       }
     },
     {
-      "id": "intl-49547",
+      "id": "intl-49542",
       "date": "2026-06-27",
       "kickoff_utc": "2026-06-27T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12073,7 +12073,7 @@
       }
     },
     {
-      "id": "intl-49548",
+      "id": "intl-49543",
       "date": "2026-06-28",
       "kickoff_utc": "2026-06-28T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12092,7 +12092,7 @@
       }
     },
     {
-      "id": "intl-49549",
+      "id": "intl-49544",
       "date": "2026-06-29",
       "kickoff_utc": "2026-06-29T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12111,7 +12111,7 @@
       }
     },
     {
-      "id": "intl-49550",
+      "id": "intl-49545",
       "date": "2026-06-29",
       "kickoff_utc": "2026-06-29T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12130,7 +12130,7 @@
       }
     },
     {
-      "id": "intl-49551",
+      "id": "intl-49546",
       "date": "2026-06-29",
       "kickoff_utc": "2026-06-29T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12149,7 +12149,7 @@
       }
     },
     {
-      "id": "intl-49552",
+      "id": "intl-49547",
       "date": "2026-06-30",
       "kickoff_utc": "2026-06-30T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12168,7 +12168,7 @@
       }
     },
     {
-      "id": "intl-49553",
+      "id": "intl-49548",
       "date": "2026-06-30",
       "kickoff_utc": "2026-06-30T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12187,7 +12187,7 @@
       }
     },
     {
-      "id": "intl-49554",
+      "id": "intl-49549",
       "date": "2026-06-30",
       "kickoff_utc": "2026-06-30T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12206,7 +12206,7 @@
       }
     },
     {
-      "id": "intl-49555",
+      "id": "intl-49550",
       "date": "2026-07-01",
       "kickoff_utc": "2026-07-01T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12225,7 +12225,7 @@
       }
     },
     {
-      "id": "intl-49556",
+      "id": "intl-49551",
       "date": "2026-07-01",
       "kickoff_utc": "2026-07-01T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12244,7 +12244,7 @@
       }
     },
     {
-      "id": "intl-49557",
+      "id": "intl-49552",
       "date": "2026-07-01",
       "kickoff_utc": "2026-07-01T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12263,7 +12263,7 @@
       }
     },
     {
-      "id": "intl-49558",
+      "id": "intl-49553",
       "date": "2026-07-02",
       "kickoff_utc": "2026-07-02T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12282,7 +12282,7 @@
       }
     },
     {
-      "id": "intl-49559",
+      "id": "intl-49554",
       "date": "2026-07-02",
       "kickoff_utc": "2026-07-02T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12301,7 +12301,7 @@
       }
     },
     {
-      "id": "intl-49560",
+      "id": "intl-49555",
       "date": "2026-07-02",
       "kickoff_utc": "2026-07-02T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12320,7 +12320,7 @@
       }
     },
     {
-      "id": "intl-49561",
+      "id": "intl-49556",
       "date": "2026-07-03",
       "kickoff_utc": "2026-07-03T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12339,7 +12339,7 @@
       }
     },
     {
-      "id": "intl-49562",
+      "id": "intl-49557",
       "date": "2026-07-03",
       "kickoff_utc": "2026-07-03T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12358,7 +12358,7 @@
       }
     },
     {
-      "id": "intl-49563",
+      "id": "intl-49558",
       "date": "2026-07-03",
       "kickoff_utc": "2026-07-03T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12377,7 +12377,7 @@
       }
     },
     {
-      "id": "intl-49564",
+      "id": "intl-49559",
       "date": "2026-07-04",
       "kickoff_utc": "2026-07-04T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12396,7 +12396,7 @@
       }
     },
     {
-      "id": "intl-49565",
+      "id": "intl-49560",
       "date": "2026-07-04",
       "kickoff_utc": "2026-07-04T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12415,7 +12415,7 @@
       }
     },
     {
-      "id": "intl-49566",
+      "id": "intl-49561",
       "date": "2026-07-05",
       "kickoff_utc": "2026-07-05T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12434,7 +12434,7 @@
       }
     },
     {
-      "id": "intl-49567",
+      "id": "intl-49562",
       "date": "2026-07-05",
       "kickoff_utc": "2026-07-05T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12453,7 +12453,7 @@
       }
     },
     {
-      "id": "intl-49568",
+      "id": "intl-49563",
       "date": "2026-07-06",
       "kickoff_utc": "2026-07-06T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12472,7 +12472,7 @@
       }
     },
     {
-      "id": "intl-49569",
+      "id": "intl-49564",
       "date": "2026-07-06",
       "kickoff_utc": "2026-07-06T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12491,7 +12491,7 @@
       }
     },
     {
-      "id": "intl-49570",
+      "id": "intl-49565",
       "date": "2026-07-07",
       "kickoff_utc": "2026-07-07T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12510,7 +12510,7 @@
       }
     },
     {
-      "id": "intl-49571",
+      "id": "intl-49566",
       "date": "2026-07-07",
       "kickoff_utc": "2026-07-07T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12529,7 +12529,7 @@
       }
     },
     {
-      "id": "intl-49572",
+      "id": "intl-49567",
       "date": "2026-07-09",
       "kickoff_utc": "2026-07-09T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12548,7 +12548,7 @@
       }
     },
     {
-      "id": "intl-49573",
+      "id": "intl-49568",
       "date": "2026-07-10",
       "kickoff_utc": "2026-07-10T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12567,7 +12567,7 @@
       }
     },
     {
-      "id": "intl-49574",
+      "id": "intl-49569",
       "date": "2026-07-11",
       "kickoff_utc": "2026-07-11T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12586,7 +12586,7 @@
       }
     },
     {
-      "id": "intl-49575",
+      "id": "intl-49570",
       "date": "2026-07-11",
       "kickoff_utc": "2026-07-11T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12605,7 +12605,7 @@
       }
     },
     {
-      "id": "intl-49576",
+      "id": "intl-49571",
       "date": "2026-07-14",
       "kickoff_utc": "2026-07-14T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12624,7 +12624,7 @@
       }
     },
     {
-      "id": "intl-49577",
+      "id": "intl-49572",
       "date": "2026-07-15",
       "kickoff_utc": "2026-07-15T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12643,7 +12643,7 @@
       }
     },
     {
-      "id": "intl-49578",
+      "id": "intl-49573",
       "date": "2026-07-18",
       "kickoff_utc": "2026-07-18T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12662,7 +12662,7 @@
       }
     },
     {
-      "id": "intl-49580",
+      "id": "intl-49575",
       "date": "2026-07-19",
       "kickoff_utc": "2026-07-19T12:00:00Z",
       "tournament": "FIFA World Cup",
@@ -12681,7 +12681,7 @@
       }
     },
     {
-      "id": "intl-49621",
+      "id": "intl-49616",
       "date": "2026-09-24",
       "kickoff_utc": "2026-09-24T12:00:00Z",
       "tournament": "Friendly",
@@ -12700,7 +12700,7 @@
       }
     },
     {
-      "id": "intl-49623",
+      "id": "intl-49618",
       "date": "2026-09-24",
       "kickoff_utc": "2026-09-24T12:00:00Z",
       "tournament": "Friendly",
@@ -12719,7 +12719,7 @@
       }
     },
     {
-      "id": "intl-49624",
+      "id": "intl-49619",
       "date": "2026-09-24",
       "kickoff_utc": "2026-09-24T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12738,7 +12738,7 @@
       }
     },
     {
-      "id": "intl-49632",
+      "id": "intl-49627",
       "date": "2026-09-24",
       "kickoff_utc": "2026-09-24T12:00:00Z",
       "tournament": "African Cup of Nations qualification",
@@ -12757,7 +12757,7 @@
       }
     },
     {
-      "id": "intl-49651",
+      "id": "intl-49646",
       "date": "2026-09-25",
       "kickoff_utc": "2026-09-25T12:00:00Z",
       "tournament": "Friendly",
@@ -12776,7 +12776,7 @@
       }
     },
     {
-      "id": "intl-49654",
+      "id": "intl-49649",
       "date": "2026-09-25",
       "kickoff_utc": "2026-09-25T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12795,7 +12795,7 @@
       }
     },
     {
-      "id": "intl-49685",
+      "id": "intl-49680",
       "date": "2026-09-26",
       "kickoff_utc": "2026-09-26T12:00:00Z",
       "tournament": "Friendly",
@@ -12814,7 +12814,7 @@
       }
     },
     {
-      "id": "intl-49688",
+      "id": "intl-49683",
       "date": "2026-09-26",
       "kickoff_utc": "2026-09-26T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12833,7 +12833,7 @@
       }
     },
     {
-      "id": "intl-49689",
+      "id": "intl-49684",
       "date": "2026-09-26",
       "kickoff_utc": "2026-09-26T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12852,7 +12852,7 @@
       }
     },
     {
-      "id": "intl-49717",
+      "id": "intl-49712",
       "date": "2026-09-27",
       "kickoff_utc": "2026-09-27T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12871,7 +12871,7 @@
       }
     },
     {
-      "id": "intl-49733",
+      "id": "intl-49728",
       "date": "2026-09-28",
       "kickoff_utc": "2026-09-28T12:00:00Z",
       "tournament": "Friendly",
@@ -12890,7 +12890,7 @@
       }
     },
     {
-      "id": "intl-49737",
+      "id": "intl-49732",
       "date": "2026-09-28",
       "kickoff_utc": "2026-09-28T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12909,7 +12909,7 @@
       }
     },
     {
-      "id": "intl-49758",
+      "id": "intl-49753",
       "date": "2026-09-29",
       "kickoff_utc": "2026-09-29T12:00:00Z",
       "tournament": "Friendly",
@@ -12928,7 +12928,7 @@
       }
     },
     {
-      "id": "intl-49762",
+      "id": "intl-49757",
       "date": "2026-09-29",
       "kickoff_utc": "2026-09-29T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12947,7 +12947,7 @@
       }
     },
     {
-      "id": "intl-49763",
+      "id": "intl-49758",
       "date": "2026-09-29",
       "kickoff_utc": "2026-09-29T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12966,7 +12966,7 @@
       }
     },
     {
-      "id": "intl-49764",
+      "id": "intl-49759",
       "date": "2026-09-29",
       "kickoff_utc": "2026-09-29T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -12985,7 +12985,7 @@
       }
     },
     {
-      "id": "intl-49796",
+      "id": "intl-49791",
       "date": "2026-09-29",
       "kickoff_utc": "2026-09-29T12:00:00Z",
       "tournament": "Gulf Cup",
@@ -13004,7 +13004,7 @@
       }
     },
     {
-      "id": "intl-49810",
+      "id": "intl-49805",
       "date": "2026-10-01",
       "kickoff_utc": "2026-10-01T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -13023,7 +13023,7 @@
       }
     },
     {
-      "id": "intl-49811",
+      "id": "intl-49806",
       "date": "2026-10-01",
       "kickoff_utc": "2026-10-01T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -13042,7 +13042,7 @@
       }
     },
     {
-      "id": "intl-49835",
+      "id": "intl-49830",
       "date": "2026-10-02",
       "kickoff_utc": "2026-10-02T12:00:00Z",
       "tournament": "Friendly",
@@ -13061,7 +13061,7 @@
       }
     },
     {
-      "id": "intl-49838",
+      "id": "intl-49833",
       "date": "2026-10-02",
       "kickoff_utc": "2026-10-02T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -13080,7 +13080,7 @@
       }
     },
     {
-      "id": "intl-49842",
+      "id": "intl-49837",
       "date": "2026-10-02",
       "kickoff_utc": "2026-10-02T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -13099,7 +13099,7 @@
       }
     },
     {
-      "id": "intl-49862",
+      "id": "intl-49857",
       "date": "2026-10-03",
       "kickoff_utc": "2026-10-03T12:00:00Z",
       "tournament": "Friendly",
@@ -13118,7 +13118,7 @@
       }
     },
     {
-      "id": "intl-49863",
+      "id": "intl-49858",
       "date": "2026-10-03",
       "kickoff_utc": "2026-10-03T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -13137,7 +13137,7 @@
       }
     },
     {
-      "id": "intl-49864",
+      "id": "intl-49859",
       "date": "2026-10-03",
       "kickoff_utc": "2026-10-03T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -13156,7 +13156,7 @@
       }
     },
     {
-      "id": "intl-49874",
+      "id": "intl-49869",
       "date": "2026-10-03",
       "kickoff_utc": "2026-10-03T12:00:00Z",
       "tournament": "Gulf Cup",
@@ -13175,7 +13175,7 @@
       }
     },
     {
-      "id": "intl-49877",
+      "id": "intl-49872",
       "date": "2026-10-04",
       "kickoff_utc": "2026-10-04T12:00:00Z",
       "tournament": "Friendly",
@@ -13194,7 +13194,7 @@
       }
     },
     {
-      "id": "intl-49883",
+      "id": "intl-49878",
       "date": "2026-10-04",
       "kickoff_utc": "2026-10-04T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -13213,7 +13213,7 @@
       }
     },
     {
-      "id": "intl-49896",
+      "id": "intl-49891",
       "date": "2026-10-05",
       "kickoff_utc": "2026-10-05T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -13232,7 +13232,7 @@
       }
     },
     {
-      "id": "intl-49897",
+      "id": "intl-49892",
       "date": "2026-10-05",
       "kickoff_utc": "2026-10-05T12:00:00Z",
       "tournament": "Kirin Cup",
@@ -13251,7 +13251,7 @@
       }
     },
     {
-      "id": "intl-49902",
+      "id": "intl-49897",
       "date": "2026-10-05",
       "kickoff_utc": "2026-10-05T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -13270,7 +13270,7 @@
       }
     },
     {
-      "id": "intl-49926",
+      "id": "intl-49921",
       "date": "2026-10-06",
       "kickoff_utc": "2026-10-06T12:00:00Z",
       "tournament": "Friendly",
@@ -13289,7 +13289,7 @@
       }
     },
     {
-      "id": "intl-49928",
+      "id": "intl-49923",
       "date": "2026-10-06",
       "kickoff_utc": "2026-10-06T12:00:00Z",
       "tournament": "Friendly",
@@ -13308,7 +13308,7 @@
       }
     },
     {
-      "id": "intl-49929",
+      "id": "intl-49924",
       "date": "2026-10-06",
       "kickoff_utc": "2026-10-06T12:00:00Z",
       "tournament": "UEFA Nations League",
@@ -13327,7 +13327,7 @@
       }
     },
     {
-      "id": "intl-49930",
+      "id": "intl-49925",
       "date": "2026-10-06",
       "kickoff_utc": "2026-10-06T12:00:00Z",
       "tournament": "UEFA Nations League",
