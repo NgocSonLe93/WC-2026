@@ -1,50 +1,12 @@
 {
   "meta": {
-    "updated_at": "2026-11-18T13:45:17.929157Z",
+    "updated_at": "2026-11-19T14:14:39.455891Z",
     "source": "martj42/international_results (CC0)",
     "model_buffer_per_team": 25,
     "teams": 48,
-    "matches": 702
+    "matches": 696
   },
   "matches": [
-    {
-      "id": "intl-26813",
-      "date": "2002-11-22",
-      "kickoff_utc": "2002-11-22T12:00:00Z",
-      "tournament": "Gold Cup qualification",
-      "neutral": false,
-      "home": {
-        "name": "Haiti",
-        "code": "HAI"
-      },
-      "away": {
-        "name": "Curaçao",
-        "code": "CUW"
-      },
-      "score": {
-        "home": 3,
-        "away": 0
-      }
-    },
-    {
-      "id": "intl-32070",
-      "date": "2008-06-15",
-      "kickoff_utc": "2008-06-15T12:00:00Z",
-      "tournament": "FIFA World Cup qualification",
-      "neutral": false,
-      "home": {
-        "name": "Haiti",
-        "code": "HAI"
-      },
-      "away": {
-        "name": "Curaçao",
-        "code": "CUW"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
-      }
-    },
     {
       "id": "intl-32124",
       "date": "2008-06-22",
@@ -122,25 +84,6 @@
       }
     },
     {
-      "id": "intl-39551",
-      "date": "2016-03-25",
-      "kickoff_utc": "2016-03-25T12:00:00Z",
-      "tournament": "FIFA World Cup qualification",
-      "neutral": false,
-      "home": {
-        "name": "Haiti",
-        "code": "HAI"
-      },
-      "away": {
-        "name": "Panama",
-        "code": "PAN"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-39574",
       "date": "2016-03-26",
       "kickoff_utc": "2016-03-26T12:00:00Z",
@@ -175,25 +118,6 @@
       },
       "score": {
         "home": 2,
-        "away": 0
-      }
-    },
-    {
-      "id": "intl-39643",
-      "date": "2016-03-29",
-      "kickoff_utc": "2016-03-29T12:00:00Z",
-      "tournament": "FIFA World Cup qualification",
-      "neutral": false,
-      "home": {
-        "name": "Panama",
-        "code": "PAN"
-      },
-      "away": {
-        "name": "Haiti",
-        "code": "HAI"
-      },
-      "score": {
-        "home": 1,
         "away": 0
       }
     },
@@ -518,25 +442,6 @@
       "score": {
         "home": 2,
         "away": 3
-      }
-    },
-    {
-      "id": "intl-41859",
-      "date": "2018-09-11",
-      "kickoff_utc": "2018-09-11T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": false,
-      "home": {
-        "name": "Bosnia and Herzegovina",
-        "code": "BIH"
-      },
-      "away": {
-        "name": "Austria",
-        "code": "AUT"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
       }
     },
     {
@@ -939,25 +844,6 @@
       }
     },
     {
-      "id": "intl-43709",
-      "date": "2020-11-17",
-      "kickoff_utc": "2020-11-17T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": false,
-      "home": {
-        "name": "France",
-        "code": "FRA"
-      },
-      "away": {
-        "name": "Sweden",
-        "code": "SWE"
-      },
-      "score": {
-        "home": 4,
-        "away": 2
-      }
-    },
-    {
       "id": "intl-43826",
       "date": "2021-03-25",
       "kickoff_utc": "2021-03-25T12:00:00Z",
@@ -974,25 +860,6 @@
       "score": {
         "home": 1,
         "away": 1
-      }
-    },
-    {
-      "id": "intl-43859",
-      "date": "2021-03-27",
-      "kickoff_utc": "2021-03-27T12:00:00Z",
-      "tournament": "FIFA World Cup qualification",
-      "neutral": true,
-      "home": {
-        "name": "Norway",
-        "code": "NOR"
-      },
-      "away": {
-        "name": "Turkey",
-        "code": "TUR"
-      },
-      "score": {
-        "home": 0,
-        "away": 3
       }
     },
     {
@@ -1148,25 +1015,6 @@
       }
     },
     {
-      "id": "intl-44165",
-      "date": "2021-06-15",
-      "kickoff_utc": "2021-06-15T12:00:00Z",
-      "tournament": "FIFA World Cup qualification",
-      "neutral": false,
-      "home": {
-        "name": "Saudi Arabia",
-        "code": "KSA"
-      },
-      "away": {
-        "name": "Uzbekistan",
-        "code": "UZB"
-      },
-      "score": {
-        "home": 3,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-44172",
       "date": "2021-06-15",
       "kickoff_utc": "2021-06-15T12:00:00Z",
@@ -1205,63 +1053,6 @@
       }
     },
     {
-      "id": "intl-44190",
-      "date": "2021-06-18",
-      "kickoff_utc": "2021-06-18T12:00:00Z",
-      "tournament": "UEFA Euro",
-      "neutral": true,
-      "home": {
-        "name": "Croatia",
-        "code": "CRO"
-      },
-      "away": {
-        "name": "Czechia",
-        "code": "CZE"
-      },
-      "score": {
-        "home": 1,
-        "away": 1
-      }
-    },
-    {
-      "id": "intl-44191",
-      "date": "2021-06-18",
-      "kickoff_utc": "2021-06-18T12:00:00Z",
-      "tournament": "UEFA Euro",
-      "neutral": false,
-      "home": {
-        "name": "England",
-        "code": "ENG"
-      },
-      "away": {
-        "name": "Scotland",
-        "code": "SCO"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
-      }
-    },
-    {
-      "id": "intl-44200",
-      "date": "2021-06-20",
-      "kickoff_utc": "2021-06-20T12:00:00Z",
-      "tournament": "UEFA Euro",
-      "neutral": true,
-      "home": {
-        "name": "Switzerland",
-        "code": "SUI"
-      },
-      "away": {
-        "name": "Turkey",
-        "code": "TUR"
-      },
-      "score": {
-        "home": 3,
-        "away": 1
-      }
-    },
-    {
       "id": "intl-44210",
       "date": "2021-06-22",
       "kickoff_utc": "2021-06-22T12:00:00Z",
@@ -1278,25 +1069,6 @@
       "score": {
         "home": 1,
         "away": 3
-      }
-    },
-    {
-      "id": "intl-44211",
-      "date": "2021-06-22",
-      "kickoff_utc": "2021-06-22T12:00:00Z",
-      "tournament": "UEFA Euro",
-      "neutral": false,
-      "home": {
-        "name": "England",
-        "code": "ENG"
-      },
-      "away": {
-        "name": "Czechia",
-        "code": "CZE"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
       }
     },
     {
@@ -1642,25 +1414,6 @@
       }
     },
     {
-      "id": "intl-44828",
-      "date": "2021-12-06",
-      "kickoff_utc": "2021-12-06T12:00:00Z",
-      "tournament": "Arab Cup",
-      "neutral": false,
-      "home": {
-        "name": "Qatar",
-        "code": "QAT"
-      },
-      "away": {
-        "name": "Iraq",
-        "code": "IRQ"
-      },
-      "score": {
-        "home": 3,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-44835",
       "date": "2021-12-07",
       "kickoff_utc": "2021-12-07T12:00:00Z",
@@ -1734,25 +1487,6 @@
       "score": {
         "home": 1,
         "away": 2
-      }
-    },
-    {
-      "id": "intl-44858",
-      "date": "2021-12-18",
-      "kickoff_utc": "2021-12-18T12:00:00Z",
-      "tournament": "Arab Cup",
-      "neutral": false,
-      "home": {
-        "name": "Qatar",
-        "code": "QAT"
-      },
-      "away": {
-        "name": "Egypt",
-        "code": "EGY"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
       }
     },
     {
@@ -2478,25 +2212,6 @@
       }
     },
     {
-      "id": "intl-45543",
-      "date": "2022-09-23",
-      "kickoff_utc": "2022-09-23T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": true,
-      "home": {
-        "name": "Canada",
-        "code": "CAN"
-      },
-      "away": {
-        "name": "Qatar",
-        "code": "QAT"
-      },
-      "score": {
-        "home": 2,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-45546",
       "date": "2022-09-23",
       "kickoff_utc": "2022-09-23T12:00:00Z",
@@ -2782,25 +2497,6 @@
       }
     },
     {
-      "id": "intl-45723",
-      "date": "2022-11-19",
-      "kickoff_utc": "2022-11-19T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": true,
-      "home": {
-        "name": "Colombia",
-        "code": "COL"
-      },
-      "away": {
-        "name": "Paraguay",
-        "code": "PAR"
-      },
-      "score": {
-        "home": 2,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-45731",
       "date": "2022-11-19",
       "kickoff_utc": "2022-11-19T12:00:00Z",
@@ -2893,25 +2589,6 @@
       "score": {
         "home": 6,
         "away": 2
-      }
-    },
-    {
-      "id": "intl-45764",
-      "date": "2022-11-23",
-      "kickoff_utc": "2022-11-23T12:00:00Z",
-      "tournament": "FIFA World Cup",
-      "neutral": true,
-      "home": {
-        "name": "Belgium",
-        "code": "BEL"
-      },
-      "away": {
-        "name": "Canada",
-        "code": "CAN"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
       }
     },
     {
@@ -3257,25 +2934,6 @@
       }
     },
     {
-      "id": "intl-45813",
-      "date": "2022-12-10",
-      "kickoff_utc": "2022-12-10T12:00:00Z",
-      "tournament": "FIFA World Cup",
-      "neutral": true,
-      "home": {
-        "name": "England",
-        "code": "ENG"
-      },
-      "away": {
-        "name": "France",
-        "code": "FRA"
-      },
-      "score": {
-        "home": 1,
-        "away": 2
-      }
-    },
-    {
       "id": "intl-45816",
       "date": "2022-12-14",
       "kickoff_utc": "2022-12-14T12:00:00Z",
@@ -3349,44 +3007,6 @@
       "score": {
         "home": 2,
         "away": 1
-      }
-    },
-    {
-      "id": "intl-45922",
-      "date": "2023-03-24",
-      "kickoff_utc": "2023-03-24T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": false,
-      "home": {
-        "name": "Japan",
-        "code": "JPN"
-      },
-      "away": {
-        "name": "Uruguay",
-        "code": "URU"
-      },
-      "score": {
-        "home": 1,
-        "away": 1
-      }
-    },
-    {
-      "id": "intl-45943",
-      "date": "2023-03-24",
-      "kickoff_utc": "2023-03-24T12:00:00Z",
-      "tournament": "UEFA Euro qualification",
-      "neutral": false,
-      "home": {
-        "name": "France",
-        "code": "FRA"
-      },
-      "away": {
-        "name": "Netherlands",
-        "code": "NED"
-      },
-      "score": {
-        "home": 4,
-        "away": 0
       }
     },
     {
@@ -3485,25 +3105,6 @@
       }
     },
     {
-      "id": "intl-46024",
-      "date": "2023-03-28",
-      "kickoff_utc": "2023-03-28T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": false,
-      "home": {
-        "name": "Australia",
-        "code": "AUS"
-      },
-      "away": {
-        "name": "Ecuador",
-        "code": "ECU"
-      },
-      "score": {
-        "home": 1,
-        "away": 2
-      }
-    },
-    {
       "id": "intl-46027",
       "date": "2023-03-28",
       "kickoff_utc": "2023-03-28T12:00:00Z",
@@ -3520,44 +3121,6 @@
       "score": {
         "home": 2,
         "away": 3
-      }
-    },
-    {
-      "id": "intl-46031",
-      "date": "2023-03-28",
-      "kickoff_utc": "2023-03-28T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": false,
-      "home": {
-        "name": "Japan",
-        "code": "JPN"
-      },
-      "away": {
-        "name": "Colombia",
-        "code": "COL"
-      },
-      "score": {
-        "home": 1,
-        "away": 2
-      }
-    },
-    {
-      "id": "intl-46033",
-      "date": "2023-03-28",
-      "kickoff_utc": "2023-03-28T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": false,
-      "home": {
-        "name": "South Korea",
-        "code": "KOR"
-      },
-      "away": {
-        "name": "Uruguay",
-        "code": "URU"
-      },
-      "score": {
-        "home": 1,
-        "away": 2
       }
     },
     {
@@ -3634,25 +3197,6 @@
       "score": {
         "home": 2,
         "away": 4
-      }
-    },
-    {
-      "id": "intl-46102",
-      "date": "2023-06-15",
-      "kickoff_utc": "2023-06-15T12:00:00Z",
-      "tournament": "CONCACAF Nations League",
-      "neutral": true,
-      "home": {
-        "name": "Panama",
-        "code": "PAN"
-      },
-      "away": {
-        "name": "Canada",
-        "code": "CAN"
-      },
-      "score": {
-        "home": 0,
-        "away": 2
       }
     },
     {
@@ -3786,44 +3330,6 @@
       "score": {
         "home": 2,
         "away": 1
-      }
-    },
-    {
-      "id": "intl-46166",
-      "date": "2023-06-18",
-      "kickoff_utc": "2023-06-18T12:00:00Z",
-      "tournament": "CONCACAF Nations League",
-      "neutral": true,
-      "home": {
-        "name": "Panama",
-        "code": "PAN"
-      },
-      "away": {
-        "name": "Mexico",
-        "code": "MEX"
-      },
-      "score": {
-        "home": 0,
-        "away": 1
-      }
-    },
-    {
-      "id": "intl-46173",
-      "date": "2023-06-18",
-      "kickoff_utc": "2023-06-18T12:00:00Z",
-      "tournament": "UEFA Nations League",
-      "neutral": true,
-      "home": {
-        "name": "Croatia",
-        "code": "CRO"
-      },
-      "away": {
-        "name": "Spain",
-        "code": "ESP"
-      },
-      "score": {
-        "home": 0,
-        "away": 0
       }
     },
     {
@@ -4188,25 +3694,6 @@
       }
     },
     {
-      "id": "intl-46498",
-      "date": "2023-09-12",
-      "kickoff_utc": "2023-09-12T12:00:00Z",
-      "tournament": "Friendly",
-      "neutral": true,
-      "home": {
-        "name": "South Korea",
-        "code": "KOR"
-      },
-      "away": {
-        "name": "Saudi Arabia",
-        "code": "KSA"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
-      }
-    },
-    {
       "id": "intl-46499",
       "date": "2023-09-12",
       "kickoff_utc": "2023-09-12T12:00:00Z",
@@ -4299,25 +3786,6 @@
       "score": {
         "home": 1,
         "away": 3
-      }
-    },
-    {
-      "id": "intl-46531",
-      "date": "2023-10-12",
-      "kickoff_utc": "2023-10-12T12:00:00Z",
-      "tournament": "FIFA World Cup qualification",
-      "neutral": false,
-      "home": {
-        "name": "Colombia",
-        "code": "COL"
-      },
-      "away": {
-        "name": "Uruguay",
-        "code": "URU"
-      },
-      "score": {
-        "home": 2,
-        "away": 2
       }
     },
     {
@@ -13343,6 +12811,424 @@
       "score": {
         "home": 1,
         "away": 2
+      }
+    },
+    {
+      "id": "intl-49951",
+      "date": "2026-11-12",
+      "kickoff_utc": "2026-11-12T12:00:00Z",
+      "tournament": "CONCACAF Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Curaçao",
+        "code": "CUW"
+      },
+      "away": {
+        "name": "Panama",
+        "code": "PAN"
+      },
+      "score": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-49956",
+      "date": "2026-11-12",
+      "kickoff_utc": "2026-11-12T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Turkey",
+        "code": "TUR"
+      },
+      "away": {
+        "name": "Belgium",
+        "code": "BEL"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-49958",
+      "date": "2026-11-12",
+      "kickoff_utc": "2026-11-12T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "England",
+        "code": "ENG"
+      },
+      "away": {
+        "name": "Croatia",
+        "code": "CRO"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-49959",
+      "date": "2026-11-12",
+      "kickoff_utc": "2026-11-12T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Czechia",
+        "code": "CZE"
+      },
+      "away": {
+        "name": "Spain",
+        "code": "ESP"
+      },
+      "score": {
+        "home": 0,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-49977",
+      "date": "2026-11-13",
+      "kickoff_utc": "2026-11-13T12:00:00Z",
+      "tournament": "Friendly",
+      "neutral": false,
+      "home": {
+        "name": "Argentina",
+        "code": "ARG"
+      },
+      "away": {
+        "name": "Uruguay",
+        "code": "URU"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-49984",
+      "date": "2026-11-13",
+      "kickoff_utc": "2026-11-13T12:00:00Z",
+      "tournament": "Friendly",
+      "neutral": false,
+      "home": {
+        "name": "Qatar",
+        "code": "QAT"
+      },
+      "away": {
+        "name": "Australia",
+        "code": "AUS"
+      },
+      "score": {
+        "home": 0,
+        "away": 3
+      }
+    },
+    {
+      "id": "intl-49985",
+      "date": "2026-11-13",
+      "kickoff_utc": "2026-11-13T12:00:00Z",
+      "tournament": "Friendly",
+      "neutral": true,
+      "home": {
+        "name": "Saudi Arabia",
+        "code": "KSA"
+      },
+      "away": {
+        "name": "South Korea",
+        "code": "KOR"
+      },
+      "score": {
+        "home": 3,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-50010",
+      "date": "2026-11-14",
+      "kickoff_utc": "2026-11-14T12:00:00Z",
+      "tournament": "The Kallang Football Series",
+      "neutral": true,
+      "home": {
+        "name": "Japan",
+        "code": "JPN"
+      },
+      "away": {
+        "name": "Brazil",
+        "code": "BRA"
+      },
+      "score": {
+        "home": 3,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-50013",
+      "date": "2026-11-14",
+      "kickoff_utc": "2026-11-14T12:00:00Z",
+      "tournament": "CONCACAF Nations League",
+      "neutral": false,
+      "home": {
+        "name": "United States",
+        "code": "USA"
+      },
+      "away": {
+        "name": "Haiti",
+        "code": "HAI"
+      },
+      "score": {
+        "home": 6,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-50023",
+      "date": "2026-11-14",
+      "kickoff_utc": "2026-11-14T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Sweden",
+        "code": "SWE"
+      },
+      "away": {
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH"
+      },
+      "score": {
+        "home": 3,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-50035",
+      "date": "2026-11-15",
+      "kickoff_utc": "2026-11-15T12:00:00Z",
+      "tournament": "CONCACAF Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Panama",
+        "code": "PAN"
+      },
+      "away": {
+        "name": "Curaçao",
+        "code": "CUW"
+      },
+      "score": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-50039",
+      "date": "2026-11-15",
+      "kickoff_utc": "2026-11-15T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "France",
+        "code": "FRA"
+      },
+      "away": {
+        "name": "Turkey",
+        "code": "TUR"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-50040",
+      "date": "2026-11-15",
+      "kickoff_utc": "2026-11-15T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Croatia",
+        "code": "CRO"
+      },
+      "away": {
+        "name": "Czechia",
+        "code": "CZE"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-50041",
+      "date": "2026-11-15",
+      "kickoff_utc": "2026-11-15T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Spain",
+        "code": "ESP"
+      },
+      "away": {
+        "name": "England",
+        "code": "ENG"
+      },
+      "score": {
+        "home": 2,
+        "away": 3
+      }
+    },
+    {
+      "id": "intl-50052",
+      "date": "2026-11-16",
+      "kickoff_utc": "2026-11-16T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Germany",
+        "code": "GER"
+      },
+      "away": {
+        "name": "Netherlands",
+        "code": "NED"
+      },
+      "score": {
+        "home": 5,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-50055",
+      "date": "2026-11-16",
+      "kickoff_utc": "2026-11-16T12:00:00Z",
+      "tournament": "UEFA Nations League",
+      "neutral": false,
+      "home": {
+        "name": "Switzerland",
+        "code": "SUI"
+      },
+      "away": {
+        "name": "Scotland",
+        "code": "SCO"
+      },
+      "score": {
+        "home": 4,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-50070",
+      "date": "2026-11-17",
+      "kickoff_utc": "2026-11-17T12:00:00Z",
+      "tournament": "The Kallang Football Series",
+      "neutral": true,
+      "home": {
+        "name": "Japan",
+        "code": "JPN"
+      },
+      "away": {
+        "name": "Paraguay",
+        "code": "PAR"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-50078",
+      "date": "2026-11-17",
+      "kickoff_utc": "2026-11-17T12:00:00Z",
+      "tournament": "CONCACAF Nations League",
+      "neutral": false,
+      "home": {
+        "name": "United States",
+        "code": "USA"
+      },
+      "away": {
+        "name": "Haiti",
+        "code": "HAI"
+      },
+      "score": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-50084",
+      "date": "2026-11-17",
+      "kickoff_utc": "2026-11-17T12:00:00Z",
+      "tournament": "Friendly",
+      "neutral": true,
+      "home": {
+        "name": "Jordan",
+        "code": "JOR"
+      },
+      "away": {
+        "name": "Australia",
+        "code": "AUS"
+      },
+      "score": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "id": "intl-50087",
+      "date": "2026-11-17",
+      "kickoff_utc": "2026-11-17T12:00:00Z",
+      "tournament": "Friendly",
+      "neutral": false,
+      "home": {
+        "name": "Qatar",
+        "code": "QAT"
+      },
+      "away": {
+        "name": "South Korea",
+        "code": "KOR"
+      },
+      "score": {
+        "home": 0,
+        "away": 1
+      }
+    },
+    {
+      "id": "intl-50088",
+      "date": "2026-11-17",
+      "kickoff_utc": "2026-11-17T12:00:00Z",
+      "tournament": "Friendly",
+      "neutral": true,
+      "home": {
+        "name": "Saudi Arabia",
+        "code": "KSA"
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "code": "UZB"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "id": "intl-50119",
+      "date": "2026-11-17",
+      "kickoff_utc": "2026-11-17T12:00:00Z",
+      "tournament": "Basra International Tournament",
+      "neutral": false,
+      "home": {
+        "name": "Iraq",
+        "code": "IRQ"
+      },
+      "away": {
+        "name": "Iran",
+        "code": "IRN"
+      },
+      "score": {
+        "home": 1,
+        "away": 1
       }
     }
   ]
